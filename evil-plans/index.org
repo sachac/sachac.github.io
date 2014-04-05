@@ -1,0 +1,588 @@
+#+TITLE: Evil plans
+#+HTML_HEAD_EXTRA: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<<top>>
+
+Curious about anything? Contact me at sacha@sachachua.com . 
+Web: http://sachachua.com/evil-plans
+Raw file: [[http://sachachua.com/sharing/evil-plans.org][evil-plans.org]]
+
+Additional notes: http://sachachua.com/blog/2014/03/reflecting-goals-time/
+
+* Plan graph
+
+See raw file or end of document for code.
+
+#+CALL: graph-from-tables[:file evil_plans2.png :cmdline "-Kdot -Tpng -Gdpi=100 -Gsize=10,10"](fill-column=20) :results silent :exports none
+
+#+ATTR_HTML: :usemap #G :style max-width: none
+[[file:evil_plans2.png]]
+
+#+begin_src emacs-lisp :results html :exports results :var fill-column=20
+      (let* ((cmdline (or (cdr (assoc :cmdline params)) "-Kdot -Tcmapx -Gdpi=100 -Gsize=10,10"))
+             (cmd (or (cdr (assoc :cmd params)) "dot"))
+             (in-file (org-babel-temp-file "dot-"))
+             (map (sacha/org-map-to-graphviz (sacha/org-map-goals "goal") fill-column)))
+        (with-temp-file in-file (insert map))
+        (org-babel-eval
+         (concat cmd
+                 " " (org-babel-process-file-name in-file)
+                 " " cmdline) ""))
+#+end_src
+
+#+RESULTS:
+#+BEGIN_HTML
+<map id="G" name="G">
+<area shape="rect" id="node1" href="#review_31_blogs" title="review 31 blogs" alt="" coords="15,192,97,216"/>
+<area shape="rect" id="node2" href="#improve_my_blog" title="improve my blog" alt="" coords="145,159,233,183"/>
+<area shape="rect" id="node4" href="#share_useful_stuff" title="share useful stuff" alt="" coords="277,162,368,187"/>
+<area shape="rect" id="node3" href="#split_off_topic_focused_views" title="split off topic&#45;focused views" alt="" coords="6,154,107,180"/>
+<area shape="rect" id="node15" href="#build_good_karma" title="build good karma" alt="" coords="403,203,494,227"/>
+<area shape="rect" id="node16" href="#get_more_value_from_my_time" title="get more value from my time" alt="" coords="791,324,896,349"/>
+<area shape="rect" id="node5" href="#set_up_regular_Emacs_hangouts" title="set up regular Emacs hangouts" alt="" coords="3,63,110,89"/>
+<area shape="rect" id="node6" href="#help_the_Emacs_community_grow" title="help the Emacs community grow" alt="" coords="145,63,233,89"/>
+<area shape="rect" id="node9" href="#tickle_my_brain" title="tickle my brain" alt="" coords="670,132,748,156"/>
+<area shape="rect" id="node7" href="#draw_10_visual_guides_for_learning_Emacs" title="draw 10 visual guides for learning Emacs" alt="" coords="8,101,105,137"/>
+<area shape="rect" id="node8" href="#create_a_10_week_Emacs_Basics_course" title="create a 10&#45;week Emacs Basics course" alt="" coords="4,25,109,51"/>
+<area shape="rect" id="node10" href="#have_a_solid_foundation" title="have a solid foundation" alt="" coords="810,265,876,290"/>
+<area shape="rect" id="node11" href="#live_a_good_life" title="live a good life" alt="" coords="920,343,997,368"/>
+<area shape="rect" id="node12" href="#add_50_items_to_my_process_library" title="add 50 items to my process library" alt="" coords="140,367,239,393"/>
+<area shape="rect" id="node13" href="#delegate_more_effectively" title="delegate more effectively" alt="" coords="409,374,487,400"/>
+<area shape="rect" id="node14" href="#delegate_2_000_hours_of_meaningful__useful_work" title="delegate 2,000 hours of meaningful, useful work" alt="" coords="269,266,376,302"/>
+<area shape="rect" id="node23" href="#learn_from_people" title="learn from people" alt="" coords="527,286,621,310"/>
+<area shape="rect" id="node17" href="#set_up_Selenium_for_automating_web_actions" title="set up Selenium for automating web actions" alt="" coords="659,286,759,322"/>
+<area shape="rect" id="node18" href="#read_the_iMacros_API" title="read the iMacros API" alt="" coords="656,334,762,359"/>
+<area shape="rect" id="node19" href="#write_AutoHotkey_script_that_has_file_actions" title="write AutoHotkey script that has file actions" alt="" coords="662,371,755,407"/>
+<area shape="rect" id="node20" href="#track_and_reflect_on_25_non_trivial_decisions_assumptions" title="track and reflect on 25 non&#45;trivial decisions/assumptions" alt="" coords="651,446,767,482"/>
+<area shape="rect" id="node21" href="#make_better_decisions" title="make better decisions" alt="" coords="809,362,877,387"/>
+<area shape="rect" id="node22" href="#host_at_least_four_episodes_for_the_Frugal_FIRE_show" title="host at least four episodes for the Frugal FIRE show" alt="" coords="145,287,234,323"/>
+<area shape="rect" id="node24" href="#share_workflow_for_Google_Hangouts_on_Air" title="share workflow for Google Hangouts on Air" alt="" coords="271,340,374,376"/>
+<area shape="rect" id="node25" href="#track_and_follow_up_on_10_conversations" title="track and follow up on 10 conversations" alt="" coords="138,233,241,259"/>
+<area shape="rect" id="node26" href="#complete_project_F" title="complete project F" alt="" coords="400,277,497,302"/>
+<area shape="rect" id="node27" href="#package_Sketchnotes_2012_for_print" title="package Sketchnotes 2012 for print" alt="" coords="136,121,243,147"/>
+<area shape="rect" id="node28" href="#publish_12_free_PWYC_resources" title="publish 12 free/PWYC resources" alt="" coords="134,195,244,221"/>
+<area shape="rect" id="node29" href="#make_ABCs_of_Emacs" title="make ABCs of Emacs" alt="" coords="137,3,242,27"/>
+<area shape="rect" id="node30" href="#memorize_Latin_declensions" title="memorize Latin declensions" alt="" coords="533,104,615,130"/>
+<area shape="rect" id="node31" href="#learn_Morse_code_for_all_the_letters__receive_at_5_WPM__transmit_as_slowly_as_needed" title="learn Morse code for all the letters; receive at 5 WPM; transmit as slowly as needed" alt="" coords="521,143,627,199"/>
+<area shape="rect" id="node32" href="#learn_image_processing_with_the_Raspberry_Pi" title="learn image processing with the Raspberry Pi" alt="" coords="524,211,624,247"/>
+<area shape="rect" id="node33" href="#do_a_5_year_experiment_in_self_directed_living" title="do a 5&#45;year experiment in self&#45;directed living" alt="" coords="796,400,891,436"/>
+</map>
+#+END_HTML
+
+How do I want to represent specific goals?
+* Goals                                                                :goal:
+:PROPERTIES:
+:LOGGING:  TODO(@)
+:CUSTOM_ID: Goals
+:END:
+
+** live a good life
+   :PROPERTIES:
+   :CUSTOM_ID: live_a_good_life
+   :END:
+*** TODO do a 5-year experiment in self-directed living
+    :PROPERTIES:
+    :CUSTOM_ID: do_a_5_year_experiment_in_self_directed_living
+    :END:
+So that I can [[live a good life]]
+
+2012-2017
+
+Questions to resolve: 
+- Would I prefer the structure of a regular career, or can I learn how to make the most of a more self-directed life?
+- Do I understand my wants and needs enough to manage my finances with reasonable safety?
+
+More information: http://sachachua.com/blog/experiment
+
+What could "awesome" look like? 
+- Good handle on expenses, resisted lifestyle inflation
+- Expenses covered by dividends/capital gains, with a reasonable buffer for the next correction (and so that I can buy the next time stocks go on sale)
+- Be the kind of happy, loving, equanimous person I want to be
+- Icing on the cake:
+  - Tickled brain from learning lots of things
+  - Good karma from helping lots of people
+  - Scaling up (building resources)
+
+What kind of concrete actions or projects will move me towards that? What kinds of things do I want to explore?
+- [X] E-book publishing: Easy to do once I have a clear idea of what I want to put together. I like pay-what-you-want.
+- [X] Print publishing: Doable with LaTeX and CreateSpace. 
+- [ ] Useful, organized non-fiction
+- [ ] A way for people to self-identify as tribe members (ex: e-book purchases, mailing list signups)
+- [ ] Git-tip and other microtipping
+- See other projects in this file
+
+** tickle my brain
+   :PROPERTIES:
+   :CUSTOM_ID: tickle_my_brain
+   :END:
+so that I can [[get more value from my time]] and [[share useful stuff]]
+*** TODO learn image processing with the Raspberry Pi
+    :PROPERTIES:
+    :CUSTOM_ID: learn_image_processing_with_the_Raspberry_Pi
+    :END:
+so that I can [[tickle my brain]]
+
+Using simplecv
+
+- [X] Load the images
+- [X] Calculate the absolute difference
+- [X] Identify the largest blob (minimum size of X)
+- [X] Draw the path followed by the centroid of the blob
+- [ ] Figure out a better visualization for litter box monitoring
+
+*** TODO learn Morse code for all the letters; receive at 5 WPM; transmit as slowly as needed
+    :LOGBOOK:
+    - State "TODO"       from "STARTED"    [2014-03-19 Wed 20:33] \\
+      ABCD
+    CLOCK: [2014-03-19 Wed 20:07]--[2014-03-19 Wed 20:07] =>  0:00
+    :END:
+    :PROPERTIES:
+    :Effort:   20:00
+    :CUSTOM_ID: learn_Morse_code_for_all_the_letters__receive_at_5_WPM__transmit_as_slowly_as_needed
+    :END:
+So that I can [[tickle my brain]]
+- [2014-03-19 Wed] Tried Morse Code Trainer on my phone. =) Learning my .- -... -.-. -..!
+*** TODO memorize Latin declensions
+    :LOGBOOK:
+    - State "TODO"       from "TODO"       [2014-03-19 Wed 20:32] \\
+      First declensions: Almost, but not quite.
+    CLOCK: [2014-03-19 Wed 19:59]--[2014-03-19 Wed 20:07] =>  0:08
+    :END:
+    :PROPERTIES:
+    :Effort:   10:00
+    :CUSTOM_ID: memorize_Latin_declensions
+    :END:
+So that I can [[tickle my brain]]
+
+Testing: http://www.latintests.net/grammar/nouns.php - 5 days in a row, first test 100%
+
+- [2014-03-30 Sun] One mistake (first declension), second declension still giving me prblems
+- [2014-03-23 Sun] 100% first declension
+
+*** TODO make ABCs of Emacs
+So that I can [[tickle my brain]] and [[share useful stuff]]
+    :PROPERTIES:
+    :CUSTOM_ID: make_ABCs_of_Emacs
+    :END:
+- apropos
+- browse-kill-ring
+- customize / compile / calc
+- dired, debug-on-entry
+- edebug-defun, eshell
+- fastnav, ffap, fixup-whitespace
+- grep-find, gnus
+- help-with-help, helm
+- ielm
+- just-one-space
+- keyboard macros, kmacro-start-macro, kbd-macro-query
+- load-library, locate-library, list-packages
+- magit, make-indirect-buffer
+- name-last-kbd-macro
+- occur (and occur-edit-mode); org
+- package-list-packages, picture-mode
+- quick-url, query-replace-regexp-eval
+- regexp-builder, recursive-edit, recover-this-file,
+- savehist-mode, server-start, smartparens
+- tags-search, term, thumbs, tmm-menubar, type-break
+- undo-tree-visualize
+- vc-next-action, view-lossage, visual-line-mode
+- where-is, winner-mode, windmove, window-configuration-to-register
+- M-x (execute-extended-command)
+- yank-pop
+- zap-to-char
+
+*** DONE Draw the goal graph based on my Org entries                  :emacs:
+    :PROPERTIES:
+    :CUSTOM_ID: Draw_the_goal_graph_based_on_my_Org_entries
+    :END:
+So that I can [[tickle my brain]] and [[make better decisions]]
+** share useful stuff
+   :PROPERTIES:
+   :CUSTOM_ID: share_useful_stuff
+   :END:
+So that I can [[build good karma]] and [[get more value from my time]]
+*** TODO publish 12 free/PWYC resources
+    :PROPERTIES:
+    :CUSTOM_ID: publish_12_free_PWYC_resources
+    :END:
+So that I can [[share useful stuff]]
+- [X] Sketchnoting resources
+- [X] No Excuses Guide to Blogging
+- [X] Sketchnotes 2012
+- [X] Sketchnotes 2013
+- 10-week Emacs Basics course (or 12...)
+    1. Mouse, copy, paste
+    2. M-x
+    3. Customize
+*** TODO package Sketchnotes 2012 for print
+    :PROPERTIES:
+    :CUSTOM_ID: package_Sketchnotes_2012_for_print
+    :END:
+So that I can [[share useful stuff]]
+*** DONE organize transcripts, MP3s, and videos in one place
+    :PROPERTIES:
+    :CUSTOM_ID: organize_transcripts__MP3s__and_videos_in_one_place
+    :END:
+So that I can [[share useful stuff]]
+
+https://docs.google.com/spreadsheet/pub?key=0AsLpkeSVIjRYdFcxeTJ3SDdkNXdINzJ1NWlvdGJWUUE&output=html
+
+Task: https://trello.com/c/kR2XtkoP/175-create-a-master-spreadsheet-with-all-of-my-youtube-videos-transcripts-blog-posts-related-to-those-videos-and-mp3-urls
+
+** build good karma
+   :PROPERTIES:
+   :CUSTOM_ID: build_good_karma
+   :END:
+So that I can [[learn from people]] and [[have a solid foundation]]
+
+Is this a true goal, or it mainly on the way to something else? Are
+there projects that support this instead of the other stuff?
+
+** learn from people
+   :PROPERTIES:
+   :CUSTOM_ID: learn_from_people
+   :END:
+So that I can [[tickle my brain]] and [[share useful stuff]]
+*** TODO complete project F
+    :PROPERTIES:
+    :CUSTOM_ID: complete_project_F
+    :END:
+So that I can [[learn from people]]
+*** TODO track and follow up on 10 conversations
+    :PROPERTIES:
+    :CUSTOM_ID: track_and_follow_up_on_10_conversations
+    :END:
+So that I can [[learn from people]] and [[share useful stuff]]
+*** TODO share workflow for Google Hangouts on Air
+    :PROPERTIES:
+    :CUSTOM_ID: share_workflow_for_Google_Hangouts_on_Air
+    :END:
+So that I can [[delegate more effectively]] and [[learn from people]]
+*** TODO host at least four episodes for the Frugal FIRE show
+    :PROPERTIES:
+    :CUSTOM_ID: host_at_least_four_episodes_for_the_Frugal_FIRE_show
+    :END:
+So that I can [[learn from people]] and [[share useful stuff]]
+
+http://sachachua.com/blog/frugal-fire
+
+** make better decisions
+   :PROPERTIES:
+   :CUSTOM_ID: make_better_decisions
+   :END:
+So that I can [[live a good life]]
+
+*** TODO track and reflect on 25 non-trivial decisions/assumptions
+    :PROPERTIES:
+    :CUSTOM_ID: track_and_reflect_on_25_non_trivial_decisions_assumptions
+    :END:
+So that I can [[make better decisions]]
+As listed in http://sachachua.com/blog/category/decision
+
+What do I want to tweak about how I make decisions?
+
+- [[http://sachachua.com/blog/category/decision/#post-26177][Hacklab]]
+- [[http://sachachua.com/blog/experiment][Experiment]]
+- Openness and scale
+
+** get more value from my time
+   :PROPERTIES:
+   :CUSTOM_ID: get_more_value_from_my_time
+   :END:
+so that I can [[live a good life]]
+*** TODO write AutoHotkey script that has file actions
+    :PROPERTIES:
+    :CUSTOM_ID: write_AutoHotkey_script_that_has_file_actions
+    :END:
+So that I can [[get more value from my time]]
+*** TODO read the iMacros API
+    :PROPERTIES:
+    :CUSTOM_ID: read_the_iMacros_API
+    :END:
+So that I can [[get more value from my time]]
+*** TODO set up Selenium for automating web actions
+    :PROPERTIES:
+    :CUSTOM_ID: set_up_Selenium_for_automating_web_actions
+    :END:
+So that I can [[get more value from my time]]
+** delegate more effectively
+   :PROPERTIES:
+   :CUSTOM_ID: delegate_more_effectively
+   :END:
+So that I can [[get more value from my time]]
+*** TODO delegate 2,000 hours of meaningful, useful work         :delegation:
+   :PROPERTIES:
+   :Goal:     Delegate
+   :CUSTOM_ID: delegate_2_000_hours_of_meaningful__useful_work
+   :END:
+So that I can [[delegate more effectively]] and [[build good karma]]
+
+So far: 
+
+#+begin_src emacs-lisp
+  (let ((hours 374))
+    (format "%d hours - %d%%" hours (* (/ hours 2000.0) 100.0)))
+#+end_src
+
+#+RESULTS:
+: 374 hours - 18%
+
+The work should:
+- move me towards my primary goals
+- help assistants improve their skills and justify better rates in the marketplace
+*** TODO add 50 items to my process library                      :delegation:
+    :PROPERTIES:
+    :CUSTOM_ID: add_50_items_to_my_process_library
+    :END:
+So that I can [[delegate more effectively]] and [[share useful stuff]]
+https://drive.google.com/a/sachachua.com/#folders/0B8LpkeSVIjRYVHZCQzVCYTJ5X3M
+
+#+begin_src emacs-lisp :results raw
+  (let ((count 0))
+    (mapconcat
+     (lambda (x)
+       (setq count (1+ count))
+       (format "%d. %s" count (replace-regexp-in-string "\\.gdoc$" "" x)))
+     (directory-files "~/Google Drive/Delegation/Processes" nil "How to")
+     "\n"))
+#+end_src
+
+#+RESULTS:
+1. How to add blogs to Feedly
+2. How to add resources to the resources page and sidebar widget
+3. How to add tags to Flickr sketches
+4. How to animate sketches with Autodesk Sketchbook Pro and Camtasia Studio
+5. How to create a Frugal FIRE event on Google+
+6. How to create a Google+ Event banner
+7. How to create a Helpers Help Out event on Google+
+8. How to download invoices from InvoiceTrack
+9. How to draft Q&A posts based on a transcript
+10. How to draft an Emacs Basics blog post
+11. How to draw and implement highlighted hand-drawn icons using CSS sprites
+12. How to extract the MP3 from YouTube or an MP4
+13. How to file a healthcare claim for massage
+14. How to identify Q&A from a transcript
+15. How to import my theme into your local development environment and get ready for work
+16. How to look up additional information for people
+17. How to post show notes
+18. How to prepare for and host a Google Hangout on Air
+19. How to process audio in Audacity
+20. How to process scheduling requests
+21. How to request books from the library
+22. How to research related posts
+23. How to set up a public conversation over Google Hangouts On Air
+24. How to set up a public conversation
+25. How to set up a redirection URL
+26. How to summarize blog posts as tweets
+27. How to transcribe audio
+28. How to update Flickr with blog post URLs
+29. How to update QuantifiedSelf.ca blog posts with video embeds
+30. How to update a blog post with an MP3
+31. How to update the MP3 metadata
+32. How to upload an MP3 to archive.org
+33. How to write a blog post
+
+** have a solid foundation
+   :PROPERTIES:
+   :CUSTOM_ID: have_a_solid_foundation
+   :END:
+So that I can [[live a good life]]
+
+- Finances: Save more, experiment with other sources of income
+- Business: Build solid web development skills (or other things that are good for contracting)
+- Relationships: Awesome relationship with W-
+- Life: Have space and time. Sleep well. Work from a position of abundance.
+
+** help the Emacs community grow
+   :PROPERTIES:
+   :CUSTOM_ID: help_the_Emacs_community_grow
+   :END:
+so that I can [[tickle my brain]] and [[share useful stuff]]
+*** TODO create a 10-week Emacs Basics course                :emacs:specific:
+    :PROPERTIES:
+    :CUSTOM_ID: create_a_10_week_Emacs_Basics_course
+    :END:
+So that I can [[help the Emacs community grow]]
+
+1. [[http://sachachua.com/blog/?p=27062&shareadraft=baba27062_532732552c1f8][Call commands by name with M-x]]
+
+*** TODO draw 10 visual guides for learning Emacs 
+    :PROPERTIES:
+    :CUSTOM_ID: draw_10_visual_guides_for_learning_Emacs
+    :END:
+So that I can [[help the Emacs community grow]] 
+- [X] Beginner's guide
+- [X] Keyboard shortcuts
+- [X] Org mode
+- [X] Dired
+- [X] Managing your tasks
+*** TODO set up regular Emacs hangouts
+    :PROPERTIES:
+    :CUSTOM_ID: set_up_regular_Emacs_hangouts
+    :END:
+so that I can [[help the Emacs community grow]]
+
+** improve my blog
+   :PROPERTIES:
+   :CUSTOM_ID: improve_my_blog
+   :END:
+So that I can [[share useful stuff]]
+*** TODO split off topic-focused views
+    :PROPERTIES:
+    :CUSTOM_ID: split_off_topic_focused_views
+    :END:
+    So that I can [[improve my blog]]
+*** TODO review 31 blogs
+    :PROPERTIES:
+    :CUSTOM_ID: review_31_blogs
+    :END:
+    So that I can [[improve my blog]]
+* Old graph
+#+begin_src dot :file goals.png :cmdline -Kdot -Tpng :results silent
+  digraph G {
+    ratio=expand
+    node [shape=box]
+    "Explore\nEmacs" -> "Learn tools" -> "Tickle my brain" -> "Write blog posts" -> "Share useful stuff" -> "Build good karma" -> "Learn from others"
+    "Automate" -> "Learn tools"
+    "Explore AutoHotkey" -> "Automate"
+    "Read iMacros capabilities" -> "Automate"
+    "Set up Selenium for Java" -> "Automate"
+    "Share useful stuff" -> "Make technical topics friendlier" -> "Help the Emacs community be even awesomer" -> "Tickle my brain"
+    "Make Emacs beginner resources" -> "Share useful stuff"
+    "Read" -> "Tickle my brain"
+    "Draw" -> "Share useful stuff"
+    "Draw" -> "Think more clearly"
+    "Write blog posts" -> "Think more clearly"
+    "Delegate" -> "Share opportunities"
+    "Delegate" -> "Expand capabilities"
+    "Tickle my brain" -> "Expand capabilities"
+    "Do consulting" -> "Tickle my brain"
+    "Package" -> "Share useful stuff"
+    "Respond" -> "Learn from others"
+    "Respond" -> "Build good karma"
+    "Build good karma" -> "Have a good foundation"
+    "Get better at Javascript\n(NodeJS, JQuery)" -> "Learn tools"
+    "Get better at\nRuby, Rails" -> "Learn tools"
+    "Delegate" -> "Build process library" -> "Share useful stuff"
+    "Delegate" -> "Learn from others"
+    "Learn from others" -> "Make good decisions" -> "Enjoy life"
+    "Think more clearly" -> "Make good decisions" -> "Shift my habits"
+    "Understand my life" -> "Think more clearly"
+    "Ask, experiment, measure" -> "Make good decisions"
+    "Sketchnote presentations" -> "Share useful stuff" 
+    "Sketchnote presentations" -> "Keep good ideas from disappearing"
+  }
+#+end_src
+
+#+ATTR_HTML: :width 640
+[[http://sachachua.com/sharing/goals.png][file:goals.png]]
+
+* Code
+
+#+name: graph-from-tables
+#+BEGIN_SRC emacs-lisp :var fill-column=20 :var tag="goal"
+  (defun sacha/fill-string (string new-fill-column &optional replace-char)
+    "Wrap STRING to NEW-FILL-COLUMN. Change newlines to REPLACE-CHAR."
+    (with-temp-buffer
+      (insert string)
+      (let ((fill-column new-fill-column))
+        (fill-region (point-min) (point-max))
+        (if replace-char
+            (progn
+              (goto-char (point-min))
+              (while (re-search-forward "\n" nil t)
+                (replace-match replace-char t t))))
+        (buffer-string))))
+    
+  (defun sacha/org-map-goals (tag)
+    "Return an alist, based on the TAG tree and \"so that I can\" link structure.
+  Structure: ((nodes . ((components) ...)) (edges . ((a . b) ...)))"
+    (let (nodes edges)
+     ;; Go through the entries
+      (org-map-entries
+       (lambda ()
+         (let ((heading (org-heading-components)))
+           (unless (string= "DONE" (elt heading 2))
+             (save-excursion
+               (save-restriction
+                 ;; Ignore subtrees in the body
+                 (org-narrow-to-subtree)
+                 (save-excursion
+                   (org-set-property "CUSTOM_ID" (replace-regexp-in-string "[^A-Za-z0-9]" "_" (elt heading 4))))
+                 (end-of-line)
+                 (narrow-to-region
+                  (point-min)
+                  (if (re-search-forward
+                       (concat "[\r\n]\\(" org-outline-regexp "\\)") nil t)
+                      (match-beginning 1)
+                    (point-max)))
+                 (goto-char (point-min))
+                 (when (> (car heading) 1)
+                   (setq nodes (cons heading nodes)))
+                 (when (re-search-forward "so that I can" nil t)
+                   (while (re-search-forward org-bracket-link-regexp (line-end-position) t)
+                     (setq edges (cons (cons (elt heading 4) (match-string-no-properties 1)) edges)))))))))
+       tag)
+      (list (cons 'nodes nodes) (cons 'edges edges)))) 
+  
+  (defun sacha/org-map-to-graphviz (map fill-column)
+    "Convert MAP to a graphviz representation. Wrap titles at FILL-COLUMN."
+    (concat
+     "digraph G {\n"
+     "rankdir=LR\n" 
+     "node [shape=box,fontname=\"Open Sans\"]\n"
+     "edge [color=\"#CCCCCC\"]\n"
+     (mapconcat
+      (lambda (x)
+        (format "\"%s\" -> \"%s\"" 
+                (sacha/fill-string (car x) fill-column "\\n")
+                (sacha/fill-string (cdr x) fill-column "\\n")))
+      (cdr (assoc 'edges map))
+      "\n")
+     "\n"
+     (mapconcat (lambda (x)
+                  (format
+                   (if (null (elt x 2))
+                       (concat "\"%s\" [style=filled, URL=\"#%s\", tooltip=\"%s\"]")
+                     "\"%s\" [URL=\"#%s\", tooltip=\"%s\"]")
+                   (sacha/fill-string (elt x 4) fill-column "\\n")
+                   (replace-regexp-in-string "[^A-Za-z0-9]" "_" (elt x 4))
+                   (elt x 4)))
+                (cdr (assoc 'nodes map)) "\n")
+     "}\n"))
+  (org-babel-execute:dot (sacha/org-map-to-graphviz (sacha/org-map-goals tag) fill-column) params)
+#+END_SRC
+
+#+begin_html
+<style type="text/css">
+.back-to-top {
+    position: fixed;
+    bottom: 2em;
+    right: 0px;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(235, 235, 235, 0.80);
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+}
+
+.back-to-top:hover {    
+    background-color: rgba(135, 135, 135, 0.50);
+}
+</style>
+
+<a class="back-to-top" href="#top">Back to top</a>
+
+<script type="text/javascript">
+    var offset = 220;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.back-to-top').fadeIn(duration);
+        } else {
+            jQuery('.back-to-top').fadeOut(duration);
+        }
+    });
+</script>    
+#+end_html
