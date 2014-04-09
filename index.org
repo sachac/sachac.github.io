@@ -1,6 +1,6 @@
 Stuff that's here:
 
-- [[evil-plans][Evil plans]]
+- [[evil-plans/][Evil plans]]
 
 Other things you may want to check out:
 
