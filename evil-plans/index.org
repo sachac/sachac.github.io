@@ -9,7 +9,7 @@
 
 Curious about anything? Contact me at sacha@sachachua.com . 
 Web: http://sachachua.com/evil-plans
-Raw file: [[http://sachachua.com/sharing/evil-plans.org][evil-plans.org]]
+Git: https://github.com/sachac/sachac.github.io/tree/master/evil-plans
 
 Additional notes: http://sachachua.com/blog/2014/03/reflecting-goals-time/
 
