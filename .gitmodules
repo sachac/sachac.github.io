@@ -1,3 +1,6 @@
 [submodule ".emacs.d"]
 	path = .emacs.d
 	url = https://github.com/sachac/.emacs.d.git
+[submodule "emacs-notes"]
+	path = emacs-notes
+	url = https://github.com/sachac/emacs-notes.git
