@@ -49,7 +49,7 @@ See raw file or end of document for code.
 <area shape="rect" id="node8" href="#add_50_items_to_my_process_library" title="add 50 items to my process library" alt="" coords="101,79,215,109"/>
 <area shape="rect" id="node9" href="#delegate_more_effectively" title="delegate more effectively" alt="" coords="162,213,251,243"/>
 <area shape="rect" id="node10" href="#delegate_2_000_hours_of_meaningful__useful_work" title="delegate 2,000 hours of meaningful, useful work" alt="" coords="295,144,418,185"/>
-<area shape="rect" id="node13" href="#live_a_good_life" title="live a good life" alt="" coords="320,481,407,509"/>
+<area shape="rect" id="node13" href="#live_a_good_life" title="live a awesome life" alt="" coords="320,481,407,509"/>
 <area shape="rect" id="node14" href="#add_more_tracking_tools_to_Quantified_Awesome" title="add more tracking tools to Quantified Awesome" alt="" coords="150,342,260,383"/>
 <area shape="rect" id="node15" href="#make_better_decisions" title="make better decisions" alt="" coords="166,417,244,447"/>
 <area shape="rect" id="node16" href="#track_and_reflect_on_25_non_trivial_decisions_assumptions" title="track and reflect on 25 non&#45;trivial decisions/assumptions" alt="" coords="3,342,136,383"/>
@@ -72,7 +72,7 @@ How do I want to represent specific goals?
 :CUSTOM_ID: Goals
 :END:
 
-** live a good life
+** live a awesome life
    :PROPERTIES:
    :CUSTOM_ID: live_a_good_life
    :END:
@@ -81,7 +81,7 @@ How do I want to represent specific goals?
     :CUSTOM_ID: do_a_5_year_experiment_in_self_directed_living
     :LINK:     [[file:~/personal/business.org::*5-year%20experiment][5-year experiment]]
     :END:
-so that I can [[live a good life]]
+so that I can [[live a awesome life]]
 
 2012-2017
 
@@ -99,13 +99,14 @@ What could "awesome" look like?
   - Tickled brain from learning lots of things
   - Good karma from helping lots of people
   - Scaling up (building resources)
+- Confederates whom I know well and am in touch with
 
 What kind of concrete actions or projects will move me towards that? What kinds of things do I want to explore?
 - [X] E-book publishing: Easy to do once I have a clear idea of what I want to put together. I like pay-what-you-want.
 - [X] Print publishing: Doable with LaTeX and CreateSpace. 
 - [ ] Useful, organized non-fiction
 - [ ] A way for people to self-identify as tribe members (ex: e-book purchases, mailing list signups)
-- [ ] Git-tip and other microtipping
+- [ ] Git-tip and other microtipping?
 - See other projects in this file
 
 *** TODO improve our garden in 2014
@@ -115,7 +116,7 @@ What kind of concrete actions or projects will move me towards that? What kinds 
 		:END:
 <<garden2014>>
 
-so that I can [[live a good life]]
+so that I can [[live a awesome life]]
 
 This year:
 - Keep track of which plants were planted where
@@ -258,6 +259,8 @@ so that I can [[share useful stuff]]
 		:LINK:     [[file:~/personal/business.org::*Sketchnote%2010%20more%20books][Sketchnote 10 more books]]
 		:CUSTOM_ID: sketchnote_10_more_books
 		:END:
+
+- 
 *** DONE package Sketchnotes 2012 for print
     :PROPERTIES:
     :CUSTOM_ID: package_Sketchnotes_2012_for_print
@@ -289,12 +292,24 @@ there projects that support this instead of the other stuff?
    :END:
 So that I can [[tickle my brain]] and [[share useful stuff]]
 *** TODO project F2
-So that I can [[learn from people]] and [[live a good life]]
+So that I can [[learn from people]] and [[live a awesome life]]
 
     :PROPERTIES:
     :LINK: file:~/personal/people.org::*Project%20F
 		:CUSTOM_ID: project_F2
     :END:
+
+*** TODO host another 10 episodes of Emacs Chats
+		:PROPERTIES:
+		:CUSTOM_ID: host_another_10_episodes_of_Emacs_Chats
+		:END:
+
+So that I can [[learn from people]] and [[help the Emacs community grow]]
+
+11. [ ] Emacs Chat: technomancy - scheduled
+12. [ ] Emacs Chat: Xah Lee - asked
+13. [ ] Emacs Chat: Bozhidar Batsov - asked
+14. Reach out to the other bloggers on Planet Emacsen
 
 *** DONE complete project F
     :PROPERTIES:
@@ -309,7 +324,7 @@ So that I can [[learn from people]]
     :END:
 So that I can [[delegate more effectively]] and [[learn from people]]
 https://docs.google.com/a/sachachua.com/document/d/13taKuenogeXwQmoSvOtPgymNdI5IaLH9ZbovHKuUvt4/edit#
-*** TODO host at least four episodes for the Frugal FIRE show :PROJECT:
+*** DONE host at least four episodes for the Frugal FIRE show				:PROJECT:
     :PROPERTIES:
     :CUSTOM_ID: host_at_least_four_episodes_for_the_Frugal_FIRE_show
     :END:
@@ -338,23 +353,11 @@ So that I can [[learn from people]] and [[help the Emacs community grow]]
 9. [X] Emacs Chat: Tom Marble
 10. [X] Emacs Chat: Janis Mancevics
 
-*** TODO host another 10 episodes of Emacs Chats
-		:PROPERTIES:
-		:CUSTOM_ID: host_another_10_episodes_of_Emacs_Chats
-		:END:
-
-So that I can [[learn from people]] and [[help the Emacs community grow]]
-
-11. [ ] Emacs Chat: technomancy - scheduled
-12. [ ] Emacs Chat: Xah Lee - asked
-13. [ ] Emacs Chat: Bozhidar Batsov - asked
-14. Reach out to the other bloggers on Planet Emacsen
-
 ** make better decisions
    :PROPERTIES:
    :CUSTOM_ID: make_better_decisions
    :END:
-so that I can [[live a good life]]
+so that I can [[live a awesome life]]
 
 *** TODO track and reflect on 25 non-trivial decisions/assumptions  :project:
     :PROPERTIES:
@@ -381,7 +384,7 @@ so that I can [[make better decisions]]
    :PROPERTIES:
    :CUSTOM_ID: get_more_value_from_my_time
    :END:
-so that I can [[live a good life]]
+so that I can [[live a awesome life]]
 *** SOMEDAY write 10 blog posts with Dragon NaturallySpeaking
     :PROPERTIES:
     :CUSTOM_ID: write_10_blog_posts_with_Dragon_NaturallySpeaking
