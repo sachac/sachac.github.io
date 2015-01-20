@@ -326,6 +326,191 @@ Total experience points (XP) as of 2015-01-20: 2985 - level 3: savvy (somewhat).
 |             2015 | Programming |   5 | Pulled information out of Flickr                                                              |
 |             2015 | Programming |   5 | Used continuous integration testing for one of my projects                                    |
 
+* Skill ideas
+
+
+** Cooking
+
+- [X] Help someone cook
+- [X] Cook following a simple recipe (boil, bake, simmer)
+- [X] Stir-fry
+- [X] Invest in kitchen
+- [X] Adopt mise en place
+- [X] Cook multiple things at the same time
+- [X] Recover from some errors
+- [X] Identify common herbs
+- [X] Adjust the taste of things by using herbs
+- [X] Cook with fresh herbs
+- [X] Substitute ingredients
+- [X] Adapt recipes to personal tastes
+- [ ] Make braising and other fancy cooking terms part of your vocabulary
+- [ ] Adjust the feel of things by using herb combinations
+- [ ] Cut consistent sizes
+- [ ] Learn advanced cutting techniques
+- [ ] Garnish and plate
+
+Types of food
+- [X] Soup
+- [X] Cream soup
+- [X] Casserole
+- [X] Noodles
+- [X] Stir-fry
+- [X] Rice
+- [X] Pizza
+- [X] Bread
+- [X] Snacks
+- [X] Desserts
+- [X] Pie
+- [X] Curry
+- [X] Filipino food
+- [ ] Paella
+- [ ] Bread - special types
+- [ ] Pizza - competent
+
+** Finance
+
+- [X] Spend less than you earn
+- [X] Track income and spending
+- [X] Plan for long-term expenses
+- [X] Build emergency fund
+- [X] Build retirement savings
+- [X] Build other savings
+- [X] Make peace with budgeting
+- [X] Build opportunity fund / play money into budget
+- [X] Decide bond-equity allocation and rebalance
+- [X] Plan for large expenses
+- [X] Provide additional information to the tax agency on request
+- [ ] Sell stocks and properly account for them
+- [ ] Weather a bear market with lots of investments
+
+** Analysis
+
+- [X] Analyze text
+- [X] Analyze spreadsheets
+- [X] Scrape data
+- [X] Use commercial analysis tool
+- [X] Build analysis tool
+- [X] Program with chart library
+- [X] Program with drawing library
+- [X] Look for correlations in data
+- [ ] Reject spurious correlations and other analytical errors
+- [ ] Use animations to understand data
+
+** Writing
+
+- [X] Write rough notes
+- [X] Write reasonably polished notes
+- [X] Edit
+- [X] Outline within a post
+- [X] Transform an outline into prose
+- [X] Transform prose into an outline
+- [X] Outline across posts
+- [X] Compile information
+- [X] Compile and revise information
+- [X] Identify writing role models
+- [X] Write about writing
+- [X] Write a 4-part course
+- [ ] Write a set of 4-part courses
+- [ ] Look at my writing with a stranger's eyes
+- [ ] Cut my writing with ruthless scissors
+- [ ] Write book from scratch-ish (according to a plan)
+
+** Speaking
+
+- [X] Give a talk
+- [X] Give talks in front of a large audience
+- [X] Give talks online
+- [X] Create standalone slides
+- [X] Give a talk without slides
+- [X] Give a talk with a drawing
+- [X] Plan and execute short videos
+- [X] Create podcasts
+- [ ] Make videos part of the way I regularly share
+
+** Drawing
+
+- [X] Draw stick figures
+- [X] Draw on paper
+- [X] Draw on a mobile device
+- [X] Draw on a computer
+- [X] Draw objects
+- [X] Draw abstract thoughts
+- [ ] Draw recognizable people
+
+** Business
+
+- [X] Enjoy working in a corporation
+- [X] Enjoy working in my own company
+- [X] Do the paperwork related to running one's own company
+- [X] Take advantage of other people's time through delegation
+- [X] Take advantage of other people's talents through delegation
+- [X] Take advantage of other people's perspectives through delegation
+- [X] Earn enough to cover my expenses
+- [ ] Enjoy working in someone else's small company
+- [ ] Deal with a famine year
+
+** Connecting
+
+- [X] Make friends
+- [X] Be deliberate about friendships
+- [X] Go to meetups
+- [X] Co-organize meetups
+- [ ] Organize meetups
+
+** Learning
+
+- [X] Finish formal education
+- [X] Learn about topics with readily-available resources
+- [X] Learn about topics without readily-available resources
+- [X] Finish a MOOC
+- [X] Finish a paid course
+- [X] Organize my learning from books
+- [X] Learn from interviews
+- [X] Learn from research
+- [X] Learn from communities
+- [ ] Learn from a coach
+
+** Programming
+
+- [X] Learn frameworks
+- [X] Set up automated tests
+- [X] Set up continuous integration
+- [X] Set up code coverage
+- [X] Set up interactive development
+- [X] Write shell scripts
+- [X] Use consoles
+- [X] Use debuggers
+- [X] Deploy code to production
+- [X] Use staging environments
+- [X] Recover from data mistakes
+- [X] Help other people work more effectively
+- [X] Build tools and tweak own workflow
+- [ ] Set up autocomplete
+- [ ] Set up flychecking
+- [ ] Set up style checking and code analysis
+- [ ] Get feedback from coaches or open source community
+- [ ] Make test-driven development part of my normal workflow
+- [ ] Help other people program more effectively
+
+** Life
+
+- [ ] Be tranquil and resilient in the face of challenges:
+  - [X] pain
+  - [X] loss of stuff
+  - [X] loss of people
+  - [ ] sickness
+  - [ ] others' death
+  - [ ] your own mortality
+- [X] Embrace uncertainty
+- [X] Take calculated risks
+- [X] Be open to changing the direction of your life based on other people's input
+- [X] Identify what makes you happy
+- [X] Make difficult decisions
+- [X] Plan with optimism, pessimism, and realism
+- [X] Be happy about how you spend your time
+- [ ] Enjoy middle age
+- [ ] Enjoy old age
+
 ** Level lookup
 
 - Level experience points from http://dnd4.wikia.com/wiki/Level
