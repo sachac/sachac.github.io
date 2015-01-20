@@ -1,0 +1,2153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title></title>
+<!-- 2015-01-20 Tue 16:21 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Sacha Chua" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css"
+href="http://sachachua.com/blog/wp-content/themes/sacha-v3/foundation/css/foundation.min.css"></link>
+<link rel="stylesheet" type="text/css" href="http://sachachua.com/org-export.css"></link>
+<link rel="stylesheet" type="text/css" href="http://sachachua.com/blog/wp-content/themes/sacha-v3/style.css"></link>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<a name="top" id="top"></a>
+</div>
+<div id="content">
+<h1 class="title"></h1>
+<div id="outline-container-unnumbered-1" class="outline-2">
+<h2 id="unnumbered-1">Epic Quest of Awesome</h2>
+<div class="outline-text-2" id="text-unnumbered-1">
+<p>
+Related to <a href="http://quest.digitalcrusader.ca/">http://quest.digitalcrusader.ca/</a> and <a href="http://www.nerdfitness.com/epic-quest/">http://www.nerdfitness.com/epic-quest/</a>
+</p>
+
+<p>
+Should tie this in with my <a href="http://sachachua.com/evil-plans">evil plans</a> somehow.
+</p>
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#unnumbered-1">Epic Quest of Awesome</a>
+<ul>
+<li><a href="#unnumbered-2">Analysis</a>
+<ul>
+<li><a href="#unnumbered-3">Yearly</a></li>
+<li><a href="#unnumbered-4">Categories</a></li>
+<li><a href="#unnumbered-5">Category-year heatmap</a></li>
+</ul>
+</li>
+<li><a href="#unnumbered-6">Future quests</a></li>
+<li><a href="#unnumbered-7">Accomplishments</a></li>
+<li><a href="#unnumbered-8">Level lookup</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-unnumbered-2" class="outline-3">
+<h3 id="unnumbered-2">Analysis</h3>
+<div class="outline-text-3" id="text-unnumbered-2">
+</div><div id="outline-container-unnumbered-3" class="outline-4">
+<h4 id="unnumbered-3">Yearly</h4>
+<div class="outline-text-4" id="text-unnumbered-3">
+
+<div class="figure">
+<p><img src="quest_yearly.png" alt="quest_yearly.png" />
+</p>
+</div>
+
+
+<table id="yearly" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="right">Year</th>
+<th scope="col" class="right">Points gained</th>
+<th scope="col" class="right">Cumulative points</th>
+<th scope="col" class="right">Level</th>
+<th scope="col" class="left">Adjective</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="right">1997</td>
+<td class="right">0</td>
+<td class="right">0</td>
+<td class="right">1</td>
+<td class="left">trained</td>
+</tr>
+
+<tr>
+<td class="right">1998</td>
+<td class="right">10</td>
+<td class="right">10</td>
+<td class="right">1</td>
+<td class="left">trained</td>
+</tr>
+
+<tr>
+<td class="right">1999</td>
+<td class="right">45</td>
+<td class="right">55</td>
+<td class="right">1</td>
+<td class="left">trained</td>
+</tr>
+
+<tr>
+<td class="right">2000</td>
+<td class="right">50</td>
+<td class="right">105</td>
+<td class="right">1</td>
+<td class="left">trained</td>
+</tr>
+
+<tr>
+<td class="right">2001</td>
+<td class="right">100</td>
+<td class="right">205</td>
+<td class="right">1</td>
+<td class="left">trained</td>
+</tr>
+
+<tr>
+<td class="right">2002</td>
+<td class="right">60</td>
+<td class="right">265</td>
+<td class="right">1</td>
+<td class="left">trained</td>
+</tr>
+
+<tr>
+<td class="right">2003</td>
+<td class="right">245</td>
+<td class="right">510</td>
+<td class="right">1</td>
+<td class="left">trained</td>
+</tr>
+
+<tr>
+<td class="right">2004</td>
+<td class="right">115</td>
+<td class="right">625</td>
+<td class="right">1</td>
+<td class="left">trained</td>
+</tr>
+
+<tr>
+<td class="right">2005</td>
+<td class="right">140</td>
+<td class="right">765</td>
+<td class="right">1</td>
+<td class="left">trained</td>
+</tr>
+
+<tr>
+<td class="right">2006</td>
+<td class="right">60</td>
+<td class="right">825</td>
+<td class="right">1</td>
+<td class="left">trained</td>
+</tr>
+
+<tr>
+<td class="right">2007</td>
+<td class="right">270</td>
+<td class="right">1095</td>
+<td class="right">2</td>
+<td class="left">initiate</td>
+</tr>
+
+<tr>
+<td class="right">2008</td>
+<td class="right">290</td>
+<td class="right">1385</td>
+<td class="right">2</td>
+<td class="left">initiate</td>
+</tr>
+
+<tr>
+<td class="right">2009</td>
+<td class="right">205</td>
+<td class="right">1590</td>
+<td class="right">2</td>
+<td class="left">initiate</td>
+</tr>
+
+<tr>
+<td class="right">2010</td>
+<td class="right">215</td>
+<td class="right">1805</td>
+<td class="right">2</td>
+<td class="left">initiate</td>
+</tr>
+
+<tr>
+<td class="right">2011</td>
+<td class="right">115</td>
+<td class="right">1920</td>
+<td class="right">2</td>
+<td class="left">initiate</td>
+</tr>
+
+<tr>
+<td class="right">2012</td>
+<td class="right">355</td>
+<td class="right">2275</td>
+<td class="right">3</td>
+<td class="left">experienced</td>
+</tr>
+
+<tr>
+<td class="right">2013</td>
+<td class="right">290</td>
+<td class="right">2565</td>
+<td class="right">3</td>
+<td class="left">experienced</td>
+</tr>
+
+<tr>
+<td class="right">2014</td>
+<td class="right">350</td>
+<td class="right">2915</td>
+<td class="right">3</td>
+<td class="left">experienced</td>
+</tr>
+</tbody>
+</table>
+
+<div class="org-src-container">
+
+<pre class="src src-R" id="yearly_graph"><span class="org-constant">library</span>(ggplot2)
+<span class="org-constant">library</span>(gridExtra)
+plot <span class="org-constant">&lt;-</span> ggplot(data, aes(x = Year, y = Points.gained, fill = Adjective)) + geom_bar(stat = <span class="org-string">"identity"</span>) + theme(legend.direction = <span class="org-string">"horizontal"</span>) + guides(fill = guide_legend(reverse=<span class="org-type">TRUE</span>)) + labs(y = <span class="org-string">"Points gained"</span>)
+cumulative_plot <span class="org-constant">&lt;-</span> ggplot(data, aes(x = Year, y = Cumulative.points, fill = Adjective)) + geom_bar(stat = <span class="org-string">"identity"</span>) + theme(legend.position = <span class="org-string">"none"</span>) + labs(y = <span class="org-string">"Cumulative points"</span>)
+<span class="org-comment-delimiter"># </span><span class="org-comment">http://stackoverflow.com/questions/12041042/how-to-plot-just-the-legends-in-ggplot2</span>
+<span class="org-function-name">g_legend</span><span class="org-constant">&lt;-</span><span class="org-keyword">function</span>(a.gplot){
+  tmp <span class="org-constant">&lt;-</span> ggplot_gtable(ggplot_build(a.gplot))
+  leg <span class="org-constant">&lt;-</span> which(sapply(tmp$grobs, <span class="org-keyword">function</span>(x) x$name) == <span class="org-string">"guide-box"</span>)
+  legend <span class="org-constant">&lt;-</span> tmp$grobs[[leg]]
+  <span class="org-keyword">return</span>(legend)}
+legend <span class="org-constant">&lt;-</span> g_legend(plot)
+all <span class="org-constant">&lt;-</span> grid.arrange(legend, arrangeGrob(plot + theme(legend.position = <span class="org-string">"none"</span>), cumulative_plot), heights=c(1,10))
+print(all)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-unnumbered-4" class="outline-4">
+<h4 id="unnumbered-4">Categories</h4>
+<div class="outline-text-4" id="text-unnumbered-4">
+<div class="org-src-container">
+
+<pre class="src src-R" id="category_analysis"><span class="org-constant">library</span>(plyr)
+<span class="org-constant">library</span>(ggplot2)
+categories <span class="org-constant">&lt;-</span> ddply(data, c(<span class="org-string">"Category"</span>), summarize, Points=sum(XP))
+cat_sorted <span class="org-constant">&lt;-</span> transform(categories, Category=reorder(Category, Points))
+plot <span class="org-constant">&lt;-</span> ggplot(data = cat_sorted, aes(x = Category, y = Points)) + geom_bar(stat=<span class="org-string">"identity"</span>) + geom_text(aes(label = Points, x = Category, y = 5, hjust = 0), colour=<span class="org-string">"white"</span>) + coord_flip()
+print(plot)
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="quest_category.png" alt="quest_category.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-unnumbered-5" class="outline-4">
+<h4 id="unnumbered-5">Category-year heatmap</h4>
+<div class="outline-text-4" id="text-unnumbered-5">
+<div class="org-src-container">
+
+<pre class="src src-R" id="category_year_analysis"><span class="org-constant">library</span>(plyr)
+<span class="org-constant">library</span>(ggplot2)
+categories <span class="org-constant">&lt;-</span> ddply(data, c(<span class="org-string">"Category"</span>, <span class="org-string">"Approximate.date"</span>), summarize, Points=sum(XP))
+plot <span class="org-constant">&lt;-</span> ggplot(categories, aes(x = Approximate.date, y = Category)) + geom_tile(aes(fill=Points), colour=<span class="org-string">"white"</span>) + scale_fill_gradient(low = <span class="org-string">"white"</span>, high = <span class="org-string">"steelblue"</span>, limits = c(0, max(categories$Points))) + labs(x = <span class="org-string">"Year"</span>)
+print(plot)
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="quest_category_year.png" alt="quest_category_year.png" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-unnumbered-6" class="outline-3">
+<h3 id="unnumbered-6">Future quests</h3>
+<div class="outline-text-3" id="text-unnumbered-6">
+<table id="future" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">Category</th>
+<th scope="col" class="right">Estimated XP</th>
+<th scope="col" class="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">Cooking</td>
+<td class="right">10</td>
+<td class="left">Made braising and other fancy cooking terms part of my vocabulary</td>
+</tr>
+
+<tr>
+<td class="left">Cooking</td>
+<td class="right">10</td>
+<td class="left">Adjusted the feel of things by using herb combinations</td>
+</tr>
+
+<tr>
+<td class="left">Cooking</td>
+<td class="right">20</td>
+<td class="left">Cut standard sizes</td>
+</tr>
+
+<tr>
+<td class="left">Cooking</td>
+<td class="right">20</td>
+<td class="left">Learned advanced cutting and garnishing techniques</td>
+</tr>
+
+<tr>
+<td class="left">Cooking</td>
+<td class="right">20</td>
+<td class="left">Regularly garnish and plate pretty meals</td>
+</tr>
+
+<tr>
+<td class="left">Cooking</td>
+<td class="right">5</td>
+<td class="left">Made paella</td>
+</tr>
+
+<tr>
+<td class="left">Cooking</td>
+<td class="right">5</td>
+<td class="left">Made special types of bread, including sourdough</td>
+</tr>
+
+<tr>
+<td class="left">Cooking</td>
+<td class="right">10</td>
+<td class="left">Competently made pizza</td>
+</tr>
+
+<tr>
+<td class="left">Finance</td>
+<td class="right">10</td>
+<td class="left">Sold stocks in a non-registered account and properly accounted for them</td>
+</tr>
+
+<tr>
+<td class="left">Finance</td>
+<td class="right">20</td>
+<td class="left">Weathered a bear market with lots of investments</td>
+</tr>
+
+<tr>
+<td class="left">Analysis</td>
+<td class="right">20</td>
+<td class="left">Used animations to understand data</td>
+</tr>
+
+<tr>
+<td class="left">Writing</td>
+<td class="right">50</td>
+<td class="left">Wrote a set of three or four 4-part courses</td>
+</tr>
+
+<tr>
+<td class="left">Writing</td>
+<td class="right">50</td>
+<td class="left">Developed ability to look at my writing with strangers' eyes</td>
+</tr>
+
+<tr>
+<td class="left">Writing</td>
+<td class="right">50</td>
+<td class="left">Developed ability to cut writing ruthlessly</td>
+</tr>
+
+<tr>
+<td class="left">Writing</td>
+<td class="right">100</td>
+<td class="left">Wrote book instead of compiling it</td>
+</tr>
+
+<tr>
+<td class="left">Speaking</td>
+<td class="right">10</td>
+<td class="left">Made videos part of the way I regularly share (~12 original videos a year)</td>
+</tr>
+
+<tr>
+<td class="left">Drawing</td>
+<td class="right">20</td>
+<td class="left">Drew recognizable people</td>
+</tr>
+
+<tr>
+<td class="left">Business</td>
+<td class="right">50</td>
+<td class="left">Dealt with a famine year and didn't panic</td>
+</tr>
+
+<tr>
+<td class="left">Business</td>
+<td class="right">50</td>
+<td class="left">Enjoyed working in someone else's small company</td>
+</tr>
+
+<tr>
+<td class="left">Connecting</td>
+<td class="right">20</td>
+<td class="left">Organized meetups</td>
+</tr>
+
+<tr>
+<td class="left">Learning</td>
+<td class="right">20</td>
+<td class="left">Learned from a coach over 3 months</td>
+</tr>
+
+<tr>
+<td class="left">Programming</td>
+<td class="right">5</td>
+<td class="left">Set up autocomplete</td>
+</tr>
+
+<tr>
+<td class="left">Programming</td>
+<td class="right">5</td>
+<td class="left">Set up flychecking</td>
+</tr>
+
+<tr>
+<td class="left">Programming</td>
+<td class="right">10</td>
+<td class="left">Set up style checking and code analysis</td>
+</tr>
+
+<tr>
+<td class="left">Programming</td>
+<td class="right">20</td>
+<td class="left">Got feedback from coaches or open source community</td>
+</tr>
+
+<tr>
+<td class="left">Programming</td>
+<td class="right">5</td>
+<td class="left">Made test-driven development part of my normal workflow</td>
+</tr>
+
+<tr>
+<td class="left">Programming</td>
+<td class="right">5</td>
+<td class="left">Got the hang of a CSS framework</td>
+</tr>
+
+<tr>
+<td class="left">Programming</td>
+<td class="right">5</td>
+<td class="left">Got the hang of a CSS preprocessor</td>
+</tr>
+
+<tr>
+<td class="left">Programming</td>
+<td class="right">5</td>
+<td class="left">Got the hang of a Javascript preprocessor</td>
+</tr>
+
+<tr>
+<td class="left">Programming</td>
+<td class="right">5</td>
+<td class="left">Helped other people program more effectively</td>
+</tr>
+
+<tr>
+<td class="left">Life</td>
+<td class="right">20</td>
+<td class="left">Was tranquil and resilient in the face of sickness</td>
+</tr>
+
+<tr>
+<td class="left">Life</td>
+<td class="right">30</td>
+<td class="left">Was tranquil and resilient in the face of the death of someone close to me</td>
+</tr>
+
+<tr>
+<td class="left">Life</td>
+<td class="right">10</td>
+<td class="left">Was tranquil and resilient in the face of my mortality</td>
+</tr>
+
+<tr>
+<td class="left">Life</td>
+<td class="right">100</td>
+<td class="left">Enjoyed middle age</td>
+</tr>
+
+<tr>
+<td class="left">Life</td>
+<td class="right">100</td>
+<td class="left">Enjoyed old age</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-unnumbered-7" class="outline-3">
+<h3 id="unnumbered-7">Accomplishments</h3>
+<div class="outline-text-3" id="text-unnumbered-7">
+<p>
+Total experience points (XP) as of 2015-01-20: 2985 - level 3: savvy (somewhat).
+765 XP before next level.
+</p>
+
+<table id="accomplishments" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="right" />
+
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="right">Approximate date</th>
+<th scope="col" class="left">Category</th>
+<th scope="col" class="right">XP</th>
+<th scope="col" class="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="right">1995</td>
+<td class="left">Cooking</td>
+<td class="right">10</td>
+<td class="left">Made lasagna</td>
+</tr>
+
+<tr>
+<td class="right">1995</td>
+<td class="left">Learning</td>
+<td class="right">5</td>
+<td class="left">Competed in chess tournaments</td>
+</tr>
+
+<tr>
+<td class="right">1995</td>
+<td class="left">Learning</td>
+<td class="right">10</td>
+<td class="left">Graduated with special award</td>
+</tr>
+
+<tr>
+<td class="right">1998</td>
+<td class="left">Connecting</td>
+<td class="right">5</td>
+<td class="left">Asked someone to the prom</td>
+</tr>
+
+<tr>
+<td class="right">1998</td>
+<td class="left">Connecting</td>
+<td class="right">5</td>
+<td class="left">Went to leadership conference</td>
+</tr>
+
+<tr>
+<td class="right">1999</td>
+<td class="left">Connecting</td>
+<td class="right">5</td>
+<td class="left">Asked someone in a different school to a dance</td>
+</tr>
+
+<tr>
+<td class="right">1999</td>
+<td class="left">Drawing</td>
+<td class="right">5</td>
+<td class="left">Had drawing and poem included in a book</td>
+</tr>
+
+<tr>
+<td class="right">1999</td>
+<td class="left">Learning</td>
+<td class="right">10</td>
+<td class="left">Graduated with special award</td>
+</tr>
+
+<tr>
+<td class="right">1999</td>
+<td class="left">Life</td>
+<td class="right">5</td>
+<td class="left">Danced swing and chacha</td>
+</tr>
+
+<tr>
+<td class="right">1999</td>
+<td class="left">Programming</td>
+<td class="right">20</td>
+<td class="left">Won various programming contests in high school</td>
+</tr>
+
+<tr>
+<td class="right">2000</td>
+<td class="left">Programming</td>
+<td class="right">50</td>
+<td class="left">Picked up Emacs</td>
+</tr>
+
+<tr>
+<td class="right">2001</td>
+<td class="left">Analysis</td>
+<td class="right">20</td>
+<td class="left">Learned pivot tables</td>
+</tr>
+
+<tr>
+<td class="right">2001</td>
+<td class="left">Programming</td>
+<td class="right">10</td>
+<td class="left">Scored in the top 10 for the JITSE</td>
+</tr>
+
+<tr>
+<td class="right">2001</td>
+<td class="left">Speaking</td>
+<td class="right">20</td>
+<td class="left">Started public speaking</td>
+</tr>
+
+<tr>
+<td class="right">2001</td>
+<td class="left">Writing</td>
+<td class="right">50</td>
+<td class="left">Started a blog</td>
+</tr>
+
+<tr>
+<td class="right">2002</td>
+<td class="left">Learning</td>
+<td class="right">10</td>
+<td class="left">Contributed to a published paper</td>
+</tr>
+
+<tr>
+<td class="right">2002</td>
+<td class="left">Programming</td>
+<td class="right">20</td>
+<td class="left">Part of the team that won Best Academic Solution in Microsoft Worldwide .NET Best contest</td>
+</tr>
+
+<tr>
+<td class="right">2002</td>
+<td class="left">Programming</td>
+<td class="right">10</td>
+<td class="left">Got the top score on the JITSE</td>
+</tr>
+
+<tr>
+<td class="right">2002</td>
+<td class="left">Programming</td>
+<td class="right">10</td>
+<td class="left">Contributed to open source project</td>
+</tr>
+
+<tr>
+<td class="right">2002</td>
+<td class="left">Programming</td>
+<td class="right">10</td>
+<td class="left">Gained commit rights to an open source project</td>
+</tr>
+
+<tr>
+<td class="right">2003</td>
+<td class="left">Cooking</td>
+<td class="right">20</td>
+<td class="left">Cooked for friends</td>
+</tr>
+
+<tr>
+<td class="right">2003</td>
+<td class="left">Finance</td>
+<td class="right">10</td>
+<td class="left">Started opportunity fund with prize from Trend Micro Software Contest</td>
+</tr>
+
+<tr>
+<td class="right">2003</td>
+<td class="left">Learning</td>
+<td class="right">100</td>
+<td class="left">Graduated from university</td>
+</tr>
+
+<tr>
+<td class="right">2003</td>
+<td class="left">Learning</td>
+<td class="right">50</td>
+<td class="left">Experimented with wearable computing</td>
+</tr>
+
+<tr>
+<td class="right">2003</td>
+<td class="left">Learning</td>
+<td class="right">5</td>
+<td class="left">Received BPI Science Award</td>
+</tr>
+
+<tr>
+<td class="right">2003</td>
+<td class="left">Learning</td>
+<td class="right">5</td>
+<td class="left">Graduated with special award</td>
+</tr>
+
+<tr>
+<td class="right">2003</td>
+<td class="left">Programming</td>
+<td class="right">20</td>
+<td class="left">Did well in international programming contests in university</td>
+</tr>
+
+<tr>
+<td class="right">2003</td>
+<td class="left">Programming</td>
+<td class="right">20</td>
+<td class="left">Maintained open source project (Planner)</td>
+</tr>
+
+<tr>
+<td class="right">2003</td>
+<td class="left">Programming</td>
+<td class="right">10</td>
+<td class="left">Part of the team that won the Trend Micro Software Contest</td>
+</tr>
+
+<tr>
+<td class="right">2003</td>
+<td class="left">Speaking</td>
+<td class="right">5</td>
+<td class="left">Featured in Philippine news</td>
+</tr>
+
+<tr>
+<td class="right">2004</td>
+<td class="left">Connecting</td>
+<td class="right">10</td>
+<td class="left">Phased out unhelpful friends</td>
+</tr>
+
+<tr>
+<td class="right">2004</td>
+<td class="left">Finance</td>
+<td class="right">10</td>
+<td class="left">Started tracking my finances with Ledger</td>
+</tr>
+
+<tr>
+<td class="right">2004</td>
+<td class="left">Learning</td>
+<td class="right">10</td>
+<td class="left">Applied for master's degree</td>
+</tr>
+
+<tr>
+<td class="right">2004</td>
+<td class="left">Life</td>
+<td class="right">50</td>
+<td class="left">Went for technical internship in Japan</td>
+</tr>
+
+<tr>
+<td class="right">2004</td>
+<td class="left">Life</td>
+<td class="right">10</td>
+<td class="left">Survived my first winter</td>
+</tr>
+
+<tr>
+<td class="right">2004</td>
+<td class="left">Programming</td>
+<td class="right">10</td>
+<td class="left">Built project submission system</td>
+</tr>
+
+<tr>
+<td class="right">2004</td>
+<td class="left">Speaking</td>
+<td class="right">10</td>
+<td class="left">Presented at an IT education conference</td>
+</tr>
+
+<tr>
+<td class="right">2004</td>
+<td class="left">Speaking</td>
+<td class="right">5</td>
+<td class="left">Spoke to an audience of &gt; 750 people</td>
+</tr>
+
+<tr>
+<td class="right">2005</td>
+<td class="left">Connecting</td>
+<td class="right">5</td>
+<td class="left">Digital activism: Made a fuss about the DigitalPinay project</td>
+</tr>
+
+<tr>
+<td class="right">2005</td>
+<td class="left">Learning</td>
+<td class="right">5</td>
+<td class="left">Passed JLPT 3</td>
+</tr>
+
+<tr>
+<td class="right">2005</td>
+<td class="left">Life</td>
+<td class="right">100</td>
+<td class="left">Moved to Canada</td>
+</tr>
+
+<tr>
+<td class="right">2005</td>
+<td class="left">Life</td>
+<td class="right">20</td>
+<td class="left">Survived my first Canadian winter</td>
+</tr>
+
+<tr>
+<td class="right">2005</td>
+<td class="left">Programming</td>
+<td class="right">10</td>
+<td class="left">Built alternative class registration system</td>
+</tr>
+
+<tr>
+<td class="right">2006</td>
+<td class="left">Cooking</td>
+<td class="right">10</td>
+<td class="left">Went to cooking workshops</td>
+</tr>
+
+<tr>
+<td class="right">2006</td>
+<td class="left">Finance</td>
+<td class="right">10</td>
+<td class="left">Got IBM to fund my studies</td>
+</tr>
+
+<tr>
+<td class="right">2006</td>
+<td class="left">Life</td>
+<td class="right">10</td>
+<td class="left">Got myself out of a bind</td>
+</tr>
+
+<tr>
+<td class="right">2006</td>
+<td class="left">Life</td>
+<td class="right">5</td>
+<td class="left">Danced tango</td>
+</tr>
+
+<tr>
+<td class="right">2006</td>
+<td class="left">Life</td>
+<td class="right">5</td>
+<td class="left">Danced Renaissance dances in a performance</td>
+</tr>
+
+<tr>
+<td class="right">2006</td>
+<td class="left">Programming</td>
+<td class="right">10</td>
+<td class="left">Picked up Ruby on Rails</td>
+</tr>
+
+<tr>
+<td class="right">2006</td>
+<td class="left">Speaking</td>
+<td class="right">10</td>
+<td class="left">Survived TA-ing a class that I was really uncertain about</td>
+</tr>
+
+<tr>
+<td class="right">2007</td>
+<td class="left">Business</td>
+<td class="right">30</td>
+<td class="left">Started working at IBM</td>
+</tr>
+
+<tr>
+<td class="right">2007</td>
+<td class="left">Business</td>
+<td class="right">20</td>
+<td class="left">Earned top-contributor ratings at work</td>
+</tr>
+
+<tr>
+<td class="right">2007</td>
+<td class="left">Connecting</td>
+<td class="right">50</td>
+<td class="left">Asserted my independence in terms of relationships</td>
+</tr>
+
+<tr>
+<td class="right">2007</td>
+<td class="left">Connecting</td>
+<td class="right">10</td>
+<td class="left">Parted ways with S</td>
+</tr>
+
+<tr>
+<td class="right">2007</td>
+<td class="left">Cooking</td>
+<td class="right">10</td>
+<td class="left">Survived without meal plan in grad school</td>
+</tr>
+
+<tr>
+<td class="right">2007</td>
+<td class="left">Cooking</td>
+<td class="right">5</td>
+<td class="left">Made meringue</td>
+</tr>
+
+<tr>
+<td class="right">2007</td>
+<td class="left">Drawing</td>
+<td class="right">20</td>
+<td class="left">Drew on Nintendo DS</td>
+</tr>
+
+<tr>
+<td class="right">2007</td>
+<td class="left">Finance</td>
+<td class="right">10</td>
+<td class="left">Set up RRSP</td>
+</tr>
+
+<tr>
+<td class="right">2007</td>
+<td class="left">Finance</td>
+<td class="right">10</td>
+<td class="left">Graduated with savings instead of debt</td>
+</tr>
+
+<tr>
+<td class="right">2007</td>
+<td class="left">Learning</td>
+<td class="right">50</td>
+<td class="left">Finished thesis</td>
+</tr>
+
+<tr>
+<td class="right">2007</td>
+<td class="left">Life</td>
+<td class="right">5</td>
+<td class="left">Went to a charity gala</td>
+</tr>
+
+<tr>
+<td class="right">2007</td>
+<td class="left">Writing</td>
+<td class="right">50</td>
+<td class="left">Migrated my blog to Wordpress</td>
+</tr>
+
+<tr>
+<td class="right">2008</td>
+<td class="left">Analysis</td>
+<td class="right">5</td>
+<td class="left">Analyzed my word use</td>
+</tr>
+
+<tr>
+<td class="right">2008</td>
+<td class="left">Connecting</td>
+<td class="right">10</td>
+<td class="left">Took W- and J- to Manila</td>
+</tr>
+
+<tr>
+<td class="right">2008</td>
+<td class="left">Cooking</td>
+<td class="right">10</td>
+<td class="left">Tried out community-supported agriculture box</td>
+</tr>
+
+<tr>
+<td class="right">2008</td>
+<td class="left">Cooking</td>
+<td class="right">10</td>
+<td class="left">Learned canning</td>
+</tr>
+
+<tr>
+<td class="right">2008</td>
+<td class="left">Cooking</td>
+<td class="right">5</td>
+<td class="left">Made egg tarts</td>
+</tr>
+
+<tr>
+<td class="right">2008</td>
+<td class="left">Drawing</td>
+<td class="right">20</td>
+<td class="left">Won Slideshare best presentation contest</td>
+</tr>
+
+<tr>
+<td class="right">2008</td>
+<td class="left">Drawing</td>
+<td class="right">20</td>
+<td class="left">Drew on Cintiq</td>
+</tr>
+
+<tr>
+<td class="right">2008</td>
+<td class="left">Life</td>
+<td class="right">10</td>
+<td class="left">Adopted two cats</td>
+</tr>
+
+<tr>
+<td class="right">2008</td>
+<td class="left">Life</td>
+<td class="right">10</td>
+<td class="left">Explored krav maga</td>
+</tr>
+
+<tr>
+<td class="right">2008</td>
+<td class="left">Life</td>
+<td class="right">10</td>
+<td class="left">Explored yoga</td>
+</tr>
+
+<tr>
+<td class="right">2008</td>
+<td class="left">Life</td>
+<td class="right">10</td>
+<td class="left">Explored static trapeze</td>
+</tr>
+
+<tr>
+<td class="right">2008</td>
+<td class="left">Life</td>
+<td class="right">10</td>
+<td class="left">Started a garden</td>
+</tr>
+
+<tr>
+<td class="right">2008</td>
+<td class="left">Life</td>
+<td class="right">5</td>
+<td class="left">Used a router to round edges</td>
+</tr>
+
+<tr>
+<td class="right">2008</td>
+<td class="left">Programming</td>
+<td class="right">30</td>
+<td class="left">Delivered Drupal projects</td>
+</tr>
+
+<tr>
+<td class="right">2008</td>
+<td class="left">Programming</td>
+<td class="right">5</td>
+<td class="left">Explored Second Life programming</td>
+</tr>
+
+<tr>
+<td class="right">2008</td>
+<td class="left">Programming</td>
+<td class="right">20</td>
+<td class="left">Learned AutoHotkey</td>
+</tr>
+
+<tr>
+<td class="right">2008</td>
+<td class="left">Speaking</td>
+<td class="right">30</td>
+<td class="left">Made A Gen Y Guide to Web 2.0 at Work</td>
+</tr>
+
+<tr>
+<td class="right">2008</td>
+<td class="left">Speaking</td>
+<td class="right">20</td>
+<td class="left">Made A Shy Connector</td>
+</tr>
+
+<tr>
+<td class="right">2008</td>
+<td class="left">Speaking</td>
+<td class="right">20</td>
+<td class="left">Presented at IBM Technical Leadership Conference</td>
+</tr>
+
+<tr>
+<td class="right">2008</td>
+<td class="left">Speaking</td>
+<td class="right">10</td>
+<td class="left">Gave part of a keynote at an IBM conference</td>
+</tr>
+
+<tr>
+<td class="right">2008</td>
+<td class="left">Speaking</td>
+<td class="right">10</td>
+<td class="left">Won Best Presentation at the IBM Best Practices Conference</td>
+</tr>
+
+<tr>
+<td class="right">2008</td>
+<td class="left">Writing</td>
+<td class="right">5</td>
+<td class="left">Tried out speech recognition</td>
+</tr>
+
+<tr>
+<td class="right">2008</td>
+<td class="left">Writing</td>
+<td class="right">5</td>
+<td class="left">Pitched book proposal</td>
+</tr>
+
+<tr>
+<td class="right">2009</td>
+<td class="left">Business</td>
+<td class="right">30</td>
+<td class="left">Started delegation experiments</td>
+</tr>
+
+<tr>
+<td class="right">2009</td>
+<td class="left">Business</td>
+<td class="right">20</td>
+<td class="left">Facilitated executive workshops</td>
+</tr>
+
+<tr>
+<td class="right">2009</td>
+<td class="left">Connecting</td>
+<td class="right">50</td>
+<td class="left">Made long term plans with W</td>
+</tr>
+
+<tr>
+<td class="right">2009</td>
+<td class="left">Connecting</td>
+<td class="right">5</td>
+<td class="left">Tried improv classes</td>
+</tr>
+
+<tr>
+<td class="right">2009</td>
+<td class="left">Finance</td>
+<td class="right">10</td>
+<td class="left">Set up TFSA</td>
+</tr>
+
+<tr>
+<td class="right">2009</td>
+<td class="left">Life</td>
+<td class="right">20</td>
+<td class="left">Got the hang of bicycle commuting</td>
+</tr>
+
+<tr>
+<td class="right">2009</td>
+<td class="left">Life</td>
+<td class="right">20</td>
+<td class="left">Got a chest freezer</td>
+</tr>
+
+<tr>
+<td class="right">2009</td>
+<td class="left">Life</td>
+<td class="right">10</td>
+<td class="left">Sewed stuff</td>
+</tr>
+
+<tr>
+<td class="right">2009</td>
+<td class="left">Programming</td>
+<td class="right">10</td>
+<td class="left">Developed community toolkit</td>
+</tr>
+
+<tr>
+<td class="right">2009</td>
+<td class="left">Speaking</td>
+<td class="right">20</td>
+<td class="left">Presented at IBM Technical Leadership Conference again</td>
+</tr>
+
+<tr>
+<td class="right">2009</td>
+<td class="left">Speaking</td>
+<td class="right">10</td>
+<td class="left">Spoke at Drupalcon</td>
+</tr>
+
+<tr>
+<td class="right">2010</td>
+<td class="left">Connecting</td>
+<td class="right">30</td>
+<td class="left">Married W</td>
+</tr>
+
+<tr>
+<td class="right">2010</td>
+<td class="left">Drawing</td>
+<td class="right">50</td>
+<td class="left">Drew on tablet PC</td>
+</tr>
+
+<tr>
+<td class="right">2010</td>
+<td class="left">Life</td>
+<td class="right">50</td>
+<td class="left">Became a permanent resident</td>
+</tr>
+
+<tr>
+<td class="right">2010</td>
+<td class="left">Life</td>
+<td class="right">20</td>
+<td class="left">Built Adirondack chairs</td>
+</tr>
+
+<tr>
+<td class="right">2010</td>
+<td class="left">Life</td>
+<td class="right">10</td>
+<td class="left">Brought my cat over</td>
+</tr>
+
+<tr>
+<td class="right">2010</td>
+<td class="left">Life</td>
+<td class="right">10</td>
+<td class="left">Adapted to winter</td>
+</tr>
+
+<tr>
+<td class="right">2010</td>
+<td class="left">Life</td>
+<td class="right">5</td>
+<td class="left">Got my wisdom teeth removed and dealt with post-op procedures; was taken care of afterwards</td>
+</tr>
+
+<tr>
+<td class="right">2010</td>
+<td class="left">Programming</td>
+<td class="right">30</td>
+<td class="left">Delivered Rails projects</td>
+</tr>
+
+<tr>
+<td class="right">2010</td>
+<td class="left">Programming</td>
+<td class="right">5</td>
+<td class="left">Introduced code coverage goals for my team project</td>
+</tr>
+
+<tr>
+<td class="right">2010</td>
+<td class="left">Programming</td>
+<td class="right">5</td>
+<td class="left">Wrote behaviour-driven tests for my team project</td>
+</tr>
+
+<tr>
+<td class="right">2011</td>
+<td class="left">Analysis</td>
+<td class="right">20</td>
+<td class="left">Built Quantified Awesome for tracking time</td>
+</tr>
+
+<tr>
+<td class="right">2011</td>
+<td class="left">Analysis</td>
+<td class="right">20</td>
+<td class="left">Used my time and money analysis to plan for experiment</td>
+</tr>
+
+<tr>
+<td class="right">2011</td>
+<td class="left">Analysis</td>
+<td class="right">10</td>
+<td class="left">Built Quantified Awesome for tracking clothes</td>
+</tr>
+
+<tr>
+<td class="right">2011</td>
+<td class="left">Business</td>
+<td class="right">10</td>
+<td class="left">Promoted at IBM</td>
+</tr>
+
+<tr>
+<td class="right">2011</td>
+<td class="left">Drawing</td>
+<td class="right">5</td>
+<td class="left">Drew comics for the IBM intranet homepage</td>
+</tr>
+
+<tr>
+<td class="right">2011</td>
+<td class="left">Finance</td>
+<td class="right">10</td>
+<td class="left">Set up non-registered investments</td>
+</tr>
+
+<tr>
+<td class="right">2011</td>
+<td class="left">Life</td>
+<td class="right">20</td>
+<td class="left">Disassembled washing machine and dryer</td>
+</tr>
+
+<tr>
+<td class="right">2011</td>
+<td class="left">Life</td>
+<td class="right">5</td>
+<td class="left">Dealt with missed flight</td>
+</tr>
+
+<tr>
+<td class="right">2011</td>
+<td class="left">Programming</td>
+<td class="right">5</td>
+<td class="left">Handled finicky web design things</td>
+</tr>
+
+<tr>
+<td class="right">2011</td>
+<td class="left">Programming</td>
+<td class="right">10</td>
+<td class="left">Switch to a virtual private server</td>
+</tr>
+
+<tr>
+<td class="right">2012</td>
+<td class="left">Analysis</td>
+<td class="right">10</td>
+<td class="left">Became co-organizer for Quantified Self Toronto</td>
+</tr>
+
+<tr>
+<td class="right">2012</td>
+<td class="left">Analysis</td>
+<td class="right">5</td>
+<td class="left">Tracked books</td>
+</tr>
+
+<tr>
+<td class="right">2012</td>
+<td class="left">Analysis</td>
+<td class="right">10</td>
+<td class="left">Presented at Quantified Self conference</td>
+</tr>
+
+<tr>
+<td class="right">2012</td>
+<td class="left">Business</td>
+<td class="right">50</td>
+<td class="left">Incorporated</td>
+</tr>
+
+<tr>
+<td class="right">2012</td>
+<td class="left">Business</td>
+<td class="right">30</td>
+<td class="left">Experimented with sketchnoting business</td>
+</tr>
+
+<tr>
+<td class="right">2012</td>
+<td class="left">Business</td>
+<td class="right">10</td>
+<td class="left">Experimented with various business models</td>
+</tr>
+
+<tr>
+<td class="right">2012</td>
+<td class="left">Business</td>
+<td class="right">10</td>
+<td class="left">Sketchnoted Lean Startup Day</td>
+</tr>
+
+<tr>
+<td class="right">2012</td>
+<td class="left">Connecting</td>
+<td class="right">30</td>
+<td class="left">Worked on I-</td>
+</tr>
+
+<tr>
+<td class="right">2012</td>
+<td class="left">Connecting</td>
+<td class="right">10</td>
+<td class="left">Started Emacs Chat series</td>
+</tr>
+
+<tr>
+<td class="right">2012</td>
+<td class="left">Connecting</td>
+<td class="right">10</td>
+<td class="left">Worked on F-</td>
+</tr>
+
+<tr>
+<td class="right">2012</td>
+<td class="left">Connecting</td>
+<td class="right">10</td>
+<td class="left">Worked on D-</td>
+</tr>
+
+<tr>
+<td class="right">2012</td>
+<td class="left">Cooking</td>
+<td class="right">5</td>
+<td class="left">Made coconut buns</td>
+</tr>
+
+<tr>
+<td class="right">2012</td>
+<td class="left">Cooking</td>
+<td class="right">5</td>
+<td class="left">Switched to a French pin</td>
+</tr>
+
+<tr>
+<td class="right">2012</td>
+<td class="left">Cooking</td>
+<td class="right">5</td>
+<td class="left">Made pie</td>
+</tr>
+
+<tr>
+<td class="right">2012</td>
+<td class="left">Finance</td>
+<td class="right">5</td>
+<td class="left">Shifted from watching movies and buying books to using the library for practically everything</td>
+</tr>
+
+<tr>
+<td class="right">2012</td>
+<td class="left">Learning</td>
+<td class="right">100</td>
+<td class="left">Started 5-year experiment</td>
+</tr>
+
+<tr>
+<td class="right">2012</td>
+<td class="left">Programming</td>
+<td class="right">20</td>
+<td class="left">Converted configuration to Org</td>
+</tr>
+
+<tr>
+<td class="right">2012</td>
+<td class="left">Writing</td>
+<td class="right">20</td>
+<td class="left">Created an index of blog posts</td>
+</tr>
+
+<tr>
+<td class="right">2012</td>
+<td class="left">Writing</td>
+<td class="right">10</td>
+<td class="left">Compiled edited archive of my favourite posts from 20-30 years of age</td>
+</tr>
+
+<tr>
+<td class="right">2013</td>
+<td class="left">Analysis</td>
+<td class="right">5</td>
+<td class="left">Tracked stuff</td>
+</tr>
+
+<tr>
+<td class="right">2013</td>
+<td class="left">Analysis</td>
+<td class="right">20</td>
+<td class="left">Used Tableau for client work</td>
+</tr>
+
+<tr>
+<td class="right">2013</td>
+<td class="left">Business</td>
+<td class="right">20</td>
+<td class="left">Paid myself a salary</td>
+</tr>
+
+<tr>
+<td class="right">2013</td>
+<td class="left">Business</td>
+<td class="right">20</td>
+<td class="left">Filed corporate tax returnfor the first time</td>
+</tr>
+
+<tr>
+<td class="right">2013</td>
+<td class="left">Business</td>
+<td class="right">10</td>
+<td class="left">Amended corporate tax return</td>
+</tr>
+
+<tr>
+<td class="right">2013</td>
+<td class="left">Business</td>
+<td class="right">10</td>
+<td class="left">Included in books on Web 2.0</td>
+</tr>
+
+<tr>
+<td class="right">2013</td>
+<td class="left">Connecting</td>
+<td class="right">20</td>
+<td class="left">Attended Emacs Conference</td>
+</tr>
+
+<tr>
+<td class="right">2013</td>
+<td class="left">Connecting</td>
+<td class="right">10</td>
+<td class="left">Joined Hacklab</td>
+</tr>
+
+<tr>
+<td class="right">2013</td>
+<td class="left">Connecting</td>
+<td class="right">10</td>
+<td class="left">Helped with study groups</td>
+</tr>
+
+<tr>
+<td class="right">2013</td>
+<td class="left">Cooking</td>
+<td class="right">5</td>
+<td class="left">Made pad thai from scratch</td>
+</tr>
+
+<tr>
+<td class="right">2013</td>
+<td class="left">Cooking</td>
+<td class="right">5</td>
+<td class="left">Made pizza from scratch</td>
+</tr>
+
+<tr>
+<td class="right">2013</td>
+<td class="left">Drawing</td>
+<td class="right">20</td>
+<td class="left">Made guide for learning Emacs</td>
+</tr>
+
+<tr>
+<td class="right">2013</td>
+<td class="left">Drawing</td>
+<td class="right">10</td>
+<td class="left">Made guide for learning Org</td>
+</tr>
+
+<tr>
+<td class="right">2013</td>
+<td class="left">Drawing</td>
+<td class="right">10</td>
+<td class="left">Scanned my notebooks</td>
+</tr>
+
+<tr>
+<td class="right">2013</td>
+<td class="left">Finance</td>
+<td class="right">50</td>
+<td class="left">Reached goal 4</td>
+</tr>
+
+<tr>
+<td class="right">2013</td>
+<td class="left">Learning</td>
+<td class="right">30</td>
+<td class="left">Focused on self-directed learning</td>
+</tr>
+
+<tr>
+<td class="right">2013</td>
+<td class="left">Learning</td>
+<td class="right">5</td>
+<td class="left">Finished a MOOC</td>
+</tr>
+
+<tr>
+<td class="right">2013</td>
+<td class="left">Life</td>
+<td class="right">5</td>
+<td class="left">Dealt with lost passport</td>
+</tr>
+
+<tr>
+<td class="right">2013</td>
+<td class="left">Life</td>
+<td class="right">5</td>
+<td class="left">Learned about Stoicism</td>
+</tr>
+
+<tr>
+<td class="right">2013</td>
+<td class="left">Writing</td>
+<td class="right">20</td>
+<td class="left">Compiled Sketchnotes 2012</td>
+</tr>
+
+<tr>
+<td class="right">2014</td>
+<td class="left">Analysis</td>
+<td class="right">5</td>
+<td class="left">Tracked litter box use</td>
+</tr>
+
+<tr>
+<td class="right">2014</td>
+<td class="left">Business</td>
+<td class="right">30</td>
+<td class="left">Started selling PWYW resources</td>
+</tr>
+
+<tr>
+<td class="right">2014</td>
+<td class="left">Business</td>
+<td class="right">10</td>
+<td class="left">Paid myself dividends</td>
+</tr>
+
+<tr>
+<td class="right">2014</td>
+<td class="left">Business</td>
+<td class="right">5</td>
+<td class="left">Narrated videos for client project</td>
+</tr>
+
+<tr>
+<td class="right">2014</td>
+<td class="left">Connecting</td>
+<td class="right">30</td>
+<td class="left">Worked on I2</td>
+</tr>
+
+<tr>
+<td class="right">2014</td>
+<td class="left">Connecting</td>
+<td class="right">20</td>
+<td class="left">Worked on F with P</td>
+</tr>
+
+<tr>
+<td class="right">2014</td>
+<td class="left">Connecting</td>
+<td class="right">20</td>
+<td class="left">Enjoyed park time with friends</td>
+</tr>
+
+<tr>
+<td class="right">2014</td>
+<td class="left">Connecting</td>
+<td class="right">5</td>
+<td class="left">Completed 10 episodes of Emacs Chat series</td>
+</tr>
+
+<tr>
+<td class="right">2014</td>
+<td class="left">Connecting</td>
+<td class="right">10</td>
+<td class="left">Started Emacs Hangout series</td>
+</tr>
+
+<tr>
+<td class="right">2014</td>
+<td class="left">Connecting</td>
+<td class="right">10</td>
+<td class="left">Experimented with Google Helpouts - got good reviews</td>
+</tr>
+
+<tr>
+<td class="right">2014</td>
+<td class="left">Cooking</td>
+<td class="right">10</td>
+<td class="left">Started cooking at Hacklab</td>
+</tr>
+
+<tr>
+<td class="right">2014</td>
+<td class="left">Cooking</td>
+<td class="right">5</td>
+<td class="left">Made good garlic fried rice</td>
+</tr>
+
+<tr>
+<td class="right">2014</td>
+<td class="left">Cooking</td>
+<td class="right">5</td>
+<td class="left">Made Japanese curry from scratch</td>
+</tr>
+
+<tr>
+<td class="right">2014</td>
+<td class="left">Cooking</td>
+<td class="right">5</td>
+<td class="left">Made Thai curry from scratch</td>
+</tr>
+
+<tr>
+<td class="right">2014</td>
+<td class="left">Drawing</td>
+<td class="right">20</td>
+<td class="left">Animated videos for client project</td>
+</tr>
+
+<tr>
+<td class="right">2014</td>
+<td class="left">Drawing</td>
+<td class="right">20</td>
+<td class="left">Created print book of sketches</td>
+</tr>
+
+<tr>
+<td class="right">2014</td>
+<td class="left">Drawing</td>
+<td class="right">5</td>
+<td class="left">Drew in sketchbooks</td>
+</tr>
+
+<tr>
+<td class="right">2014</td>
+<td class="left">Drawing</td>
+<td class="right">5</td>
+<td class="left">Included in books on drawing</td>
+</tr>
+
+<tr>
+<td class="right">2014</td>
+<td class="left">Finance</td>
+<td class="right">20</td>
+<td class="left">Reached goal 3</td>
+</tr>
+
+<tr>
+<td class="right">2014</td>
+<td class="left">Learning</td>
+<td class="right">5</td>
+<td class="left">Worked through Minna no Nihongo I by myself</td>
+</tr>
+
+<tr>
+<td class="right">2014</td>
+<td class="left">Learning</td>
+<td class="right">5</td>
+<td class="left">Finish a paid course</td>
+</tr>
+
+<tr>
+<td class="right">2014</td>
+<td class="left">Life</td>
+<td class="right">50</td>
+<td class="left">Became a Canadian citizen</td>
+</tr>
+
+<tr>
+<td class="right">2014</td>
+<td class="left">Programming</td>
+<td class="right">20</td>
+<td class="left">Used NodeJS and AngularJS for a client project</td>
+</tr>
+
+<tr>
+<td class="right">2014</td>
+<td class="left">Programming</td>
+<td class="right">5</td>
+<td class="left">Pulled information out of Evernote</td>
+</tr>
+
+<tr>
+<td class="right">2014</td>
+<td class="left">Speaking</td>
+<td class="right">5</td>
+<td class="left">Experimented with Frugal Fire series</td>
+</tr>
+
+<tr>
+<td class="right">2014</td>
+<td class="left">Speaking</td>
+<td class="right">5</td>
+<td class="left">Experimented with Helpers Help Out series</td>
+</tr>
+
+<tr>
+<td class="right">2014</td>
+<td class="left">Writing</td>
+<td class="right">5</td>
+<td class="left">Compiled Sketchnotes 2013</td>
+</tr>
+
+<tr>
+<td class="right">2014</td>
+<td class="left">Writing</td>
+<td class="right">10</td>
+<td class="left">Started private journal</td>
+</tr>
+
+<tr>
+<td class="right">2015</td>
+<td class="left">Analysis</td>
+<td class="right">10</td>
+<td class="left">Featured in news for tracking</td>
+</tr>
+
+<tr>
+<td class="right">2015</td>
+<td class="left">Analysis</td>
+<td class="right">5</td>
+<td class="left">Tracked index cards</td>
+</tr>
+
+<tr>
+<td class="right">2015</td>
+<td class="left">Drawing</td>
+<td class="right">10</td>
+<td class="left">Drew on index cards</td>
+</tr>
+
+<tr>
+<td class="right">2015</td>
+<td class="left">Life</td>
+<td class="right">10</td>
+<td class="left">Reduced consulting hours to focus on personal projects</td>
+</tr>
+
+<tr>
+<td class="right">2015</td>
+<td class="left">Programming</td>
+<td class="right">5</td>
+<td class="left">Pulled information out of Flickr</td>
+</tr>
+
+<tr>
+<td class="right">2015</td>
+<td class="left">Programming</td>
+<td class="right">5</td>
+<td class="left">Used continuous integration testing for one of my projects</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-unnumbered-8" class="outline-3">
+<h3 id="unnumbered-8">Level lookup</h3>
+<div class="outline-text-3" id="text-unnumbered-8">
+<ul class="org-ul">
+<li>Level experience points from <a href="http://dnd4.wikia.com/wiki/Level">http://dnd4.wikia.com/wiki/Level</a>
+</li>
+<li>Descriptions from <a href="http://www.reddit.com/r/DnD/comments/240uag/a_level_4_is_a_veteran_my_personal_35_level/">http://www.reddit.com/r/DnD/comments/240uag/a_level_4_is_a_veteran_my_personal_35_level/</a>
+</li>
+</ul>
+
+<table id="levels" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="right">Total XP</th>
+<th scope="col" class="right">Level</th>
+<th scope="col" class="left">Adjective</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="right">0</td>
+<td class="right">1</td>
+<td class="left">trained initiate</td>
+</tr>
+
+<tr>
+<td class="right">1000</td>
+<td class="right">2</td>
+<td class="left">experienced</td>
+</tr>
+
+<tr>
+<td class="right">2250</td>
+<td class="right">3</td>
+<td class="left">savvy</td>
+</tr>
+
+<tr>
+<td class="right">3750</td>
+<td class="right">4</td>
+<td class="left">veteran</td>
+</tr>
+
+<tr>
+<td class="right">5500</td>
+<td class="right">5</td>
+<td class="left">unusually experienced</td>
+</tr>
+
+<tr>
+<td class="right">7500</td>
+<td class="right">6</td>
+<td class="left">master</td>
+</tr>
+
+<tr>
+<td class="right">10000</td>
+<td class="right">7</td>
+<td class="left">amazing</td>
+</tr>
+
+<tr>
+<td class="right">13000</td>
+<td class="right">8</td>
+<td class="left">extraordinary</td>
+</tr>
+
+<tr>
+<td class="right">16500</td>
+<td class="right">9</td>
+<td class="left">legendary</td>
+</tr>
+
+<tr>
+<td class="right">20500</td>
+<td class="right">10</td>
+<td class="left">transcendent</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+
+<style type="text/css">
+.back-to-top {
+    position: fixed;
+    bottom: 2em;
+    right: 0px;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(235, 235, 235, 0.80);
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+}
+
+.back-to-top:hover {
+    background-color: rgba(135, 135, 135, 0.50);
+}
+</style>
+
+<div class="back-to-top">
+<a href="#top">Back to top</a> | <a href="mailto:sacha@sachachua.com">E-mail me</a>
+</div>
+
+<script type="text/javascript">
+    var offset = 220;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.back-to-top').fadeIn(duration);
+        } else {
+            jQuery('.back-to-top').fadeOut(duration);
+        }
+    });
+</script>
+</div>
+</body>
+</html>
