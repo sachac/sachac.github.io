@@ -1,8 +1,9 @@
 * Epic Quest of Awesome
 # <<quest>>
-Related to http://quest.digitalcrusader.ca/ and http://www.nerdfitness.com/epic-quest/
+Related to http://quest.digitalcrusader.ca/ and http://www.nerdfitness.com/epic-quest/ . Should tie this in with my [[http://sachachua.com/evil-plans][evil plans]] somehow.
 
-Should tie this in with my [[http://sachachua.com/evil-plans][evil plans]] somehow.
+You can find the source of this page on [[https://github.com/sachac/sachac.github.io/blob/master/evil-plans/quest.org][Github]]. =) Want to get in touch? Find me at [[mailto:sacha@sachachua.com][sacha@sachachua.com]].
+
 
 #+TOC: headlines 3
 
