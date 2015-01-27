@@ -104,59 +104,99 @@ You can find the source of this page on [[https://github.com/sachac/sachac.githu
 ** Future quests
 
 #+NAME: future
-| ID      | Category    | Estimated XP | Description                                                                | Prerequisites |
-|---------+-------------+--------------+----------------------------------------------------------------------------+---------------|
-|         | Analysis    |            5 | Visualized ideas over a year                                               | time          |
-|         | Analysis    |           20 | Used animations to understand data                                         |               |
-|         | Business    |           50 | Dealt with a famine year and didn't panic                                  | time          |
-|         | Business    |           50 | Enjoyed working in someone else's small company                            |               |
-|         | Connecting  |            5 | Completed another 10 episodes of Emacs Chats                               | C_EC1         |
-|         | Connecting  |           20 | Organized meetups                                                          |               |
-|         | Connecting  |           50 | Completed the rest of the F projects                                       | C_PI2         |
-|         | Cooking     |            5 | Made paella                                                                |               |
-|         | Cooking     |            5 | Made special types of bread, including sourdough                           |               |
-|         | Cooking     |           10 | Made braising and other fancy cooking terms part of my vocabulary          |               |
-|         | Cooking     |           10 | Adjusted the feel of things by using herb combinations                     |               |
-|         | Cooking     |           10 | Competently made pizza                                                     |               |
-| C_CUT   | Cooking     |           20 | Cut standard sizes                                                         |               |
-| C_GAR   | Cooking     |           20 | Learned advanced cutting and garnishing techniques                         | C_CUT         |
-|         | Cooking     |           20 | Regularly garnish and plate pretty meals                                   | C_GAR         |
-|         | Drawing     |            5 | Figured out digital equivalent of index card speed and flexibility         |               |
-|         | Drawing     |            5 | Developed colour habits for index cards                                    |               |
-|         | Drawing     |            5 | Made Sketchnotes 2014                                                      |               |
-|         | Drawing     |           20 | Drew recognizable people                                                   |               |
-|         | Finance     |            5 | Reached goal 2.5                                                           | time          |
-|         | Finance     |           10 | Sold stocks in a non-registered account and properly accounted for them    |               |
-|         | Finance     |           20 | Weathered a bear market with lots of investments                           | time          |
-|         | Learning    |           10 | Worked through the Japanese language books we have at home                 |               |
-| L_COA   | Learning    |           20 | Worked with a coach for three months                                       |               |
-|         | Life        |            5 | Got Canadian passport                                                      |               |
-|         | Life        |           10 | Was tranquil and resilient in the face of my mortality                     | time          |
-|         | Life        |           10 | Created four major projects in 2015                                        |               |
-|         | Life        |           20 | Was tranquil and resilient in the face of sickness                         | time          |
-|         | Life        |           30 | Was tranquil and resilient in the face of the death of someone close to me | time          |
-|         | Life        |          100 | Enjoyed middle age                                                         | time          |
-|         | Life        |          100 | Enjoyed old age                                                            | time          |
-|         | Programming |            5 | Set up autocomplete                                                        |               |
-|         | Programming |            5 | Set up flychecking                                                         |               |
-|         | Programming |            5 | Made test-driven development part of my normal workflow                    |               |
-|         | Programming |            5 | Got the hang of a CSS framework                                            |               |
-|         | Programming |            5 | Got the hang of a CSS preprocessor                                         |               |
-|         | Programming |            5 | Got the hang of a Javascript preprocessor                                  |               |
-|         | Programming |            5 | Helped other people program more effectively                               |               |
-| P_CROSS | Programming |            5 | Set up smooth cross-referencing between blog posts and Flickr              |               |
-|         | Programming |           10 | Set up style checking and code analysis                                    |               |
-|         | Programming |           10 | Contributed automated tests to Emacs packages                              |               |
-|         | Programming |           10 | Built a routine tracker using Node                                         |               |
-|         | Programming |           20 | Got feedback from coaches or open source community                         |               |
-|         | Speaking    |           10 | Made videos part of the way I regularly share (~12 original videos a year) |               |
-|         | Writing     |           10 | Developed structures for journaling                                        |               |
-|         | Writing     |           50 | Wrote a set of three or four 4-part courses                                |               |
-|         | Writing     |           50 | Developed ability to look at my writing with strangers' eyes               |               |
-|         | Writing     |           50 | Developed ability to cut writing ruthlessly                                |               |
-| W_BK    | Writing     |          100 | Wrote book instead of compiling it                                         |               |
-|         | Writing     |          100 | Habitually wrote books (>= 3 books in 5 years)                             | W_BK, W_MINI  |
-| W_MINI  | Writing     |           50 | Habitually wrote mini-guides (>= 4 mini-guides in 2 years)                 |               |
+| <5>   | <5>   |   <5> |                                                                                                        |               |
+| ID    | Category | Estimated XP | Description                                                                                            | Prerequisites |
+|-------+-------+-------+--------------------------------------------------------------------------------------------------------+---------------|
+|       | Analysis |     5 | Visualized ideas over a year                                                                           | time          |
+|       | Analysis |    20 | Used animations to understand data                                                                     |               |
+|       | Analysis |    10 | Modeled goals as graph                                                                                 |               |
+|       | Business |    50 | Dealt with a famine year and didn't panic                                                              | time          |
+|       | Business |    50 | Enjoyed working in someone else's small company                                                        |               |
+|       | Connecting |     5 | Completed another 10 episodes of Emacs Chats                                                           | C_EC1         |
+|       | Connecting |    20 | Organized meetups                                                                                      |               |
+|       | Connecting |    50 | Completed the rest of the F projects                                                                   | C_PI2         |
+|       | Connecting |   100 | Helped p with t                                                                                        | time          |
+|       | Connecting |    20 | Did right by our cats                                                                                  | time          |
+|       | Connecting |   100 | Did right by W- and J-                                                                                 | time          |
+|       | Connecting |    10 | Have a regular plan for meeting friends at least one weekend every month                               |               |
+|       | Connecting |    10 | Developed 4+-month habit of frequent messages to parents                                               |               |
+|       | Connecting |     5 | Helped finish basement floor                                                                           |               |
+|       | Cooking |     5 | Made paella                                                                                            |               |
+|       | Cooking |     5 | Made special types of bread, including sourdough                                                       |               |
+|       | Cooking |    10 | Made braising and other fancy cooking terms part of my vocabulary                                      |               |
+|       | Cooking |    10 | Adjusted the feel of things by using herb combinations                                                 |               |
+|       | Cooking |    10 | Competently made pizza                                                                                 |               |
+| C_CUT | Cooking |    20 | Cut standard sizes                                                                                     |               |
+| C_GAR | Cooking |    20 | Learned advanced cutting and garnishing techniques                                                     | C_CUT         |
+|       | Cooking |    20 | Regularly garnish and plate pretty meals                                                               | C_GAR         |
+|       | Cooking |    10 | Made udon noodles from scratch                                                                         |               |
+|       | Cooking |    10 | Developed a habit of cooking with lots of vegetables (CSA-like volume)                                 |               |
+|       | Cooking |    10 | Created monthly cycles for favourite recipes                                                           |               |
+|       | Drawing |     5 | Figured out digital equivalent of index card speed and flexibility                                     |               |
+|       | Drawing |     5 | Developed colour habits for index cards                                                                |               |
+|       | Drawing |     5 | Made Sketchnotes 2014                                                                                  |               |
+|       | Drawing |    20 | Drew recognizable people                                                                               |               |
+|       | Drawing |    10 | Found or made digital equivalent of index card drawing                                                 |               |
+|       | Finance |     5 | Reached goal 2.5                                                                                       | time          |
+|       | Finance |    10 | Sold stocks in a non-registered account and properly accounted for them                                |               |
+|       | Finance |    20 | Weathered a bear market with lots of investments                                                       | time          |
+|       | Finance |    20 | Moved to target allocation                                                                             |               |
+|       | Finance |    30 | Reached 2% goal                                                                                        |               |
+|       | Finance |    10 | Reached 2.5% goal                                                                                      |               |
+|       | Finance |    10 | Re-examined spending and carved out more for what matters                                              |               |
+|       | Health |    20 | Developed habit of biking safely and comfortably in winter (>= -5C, < 20km wind, not much ice or snow) |               |
+|       | Health |    50 | Graduated from introductory exercise ladder                                                            |               |
+|       | Health |    10 | Restarted jogging with W-                                                                              |               |
+|       | Learning |    10 | Worked through the Japanese language books we have at home                                             |               |
+| L_COA | Learning |    20 | Worked with a coach for three months                                                                   |               |
+|       | Learning |    10 | Japanese: Listened to regular shows with >=80% comprehension                                           |               |
+|       | Learning |    10 | Japanese: Listened to tech talks with >=80% comprehension                                              |               |
+|       | Learning |    10 | Japanese: Listened to cooking shows with >=80% comprehension                                           |               |
+|       | Learning |    10 | Japanese: Read blog posts and tweets about tech with >=80% comprehension                               |               |
+|       | Learning |    10 | Japanese: Read cooking instructions on packages with >=80% comprehension                               |               |
+|       | Learning |    10 | Japanese: Completed Anki decks for JP-2000                                                             |               |
+|       | Learning |    10 | Read the visual dictionary                                                                             |               |
+|       | Learning |    30 | Posted notes and life changes from three months of working with a coach                                |               |
+|       | Learning |    10 | Created syntopicon/bibliography                                                                        |               |
+|       | Life  |     5 | Got Canadian passport                                                                                  |               |
+|       | Life  |    10 | Was tranquil and resilient in the face of my mortality                                                 | time          |
+|       | Life  |    10 | Created four major projects in 2015                                                                    |               |
+|       | Life  |    20 | Was tranquil and resilient in the face of sickness                                                     | time          |
+|       | Life  |    30 | Was tranquil and resilient in the face of the death of someone close to me                             | time          |
+|       | Life  |   100 | Enjoyed middle age                                                                                     | time          |
+|       | Life  |   100 | Enjoyed old age                                                                                        | time          |
+|       | Life  |    30 | Got driver's license?                                                                                  |               |
+|       | Life  |    20 | Deal with rough patches with grace                                                                     |               |
+|       | Life  |    10 | Found a cat sitter we can trust                                                                        |               |
+|       | Life  |    10 | Set up distinctly interesting memories for four months straight                                        |               |
+|       | Programming |     5 | Set up autocomplete                                                                                    |               |
+|       | Programming |     5 | Set up flychecking                                                                                     |               |
+|       | Programming |     5 | Made test-driven development part of my normal workflow                                                |               |
+|       | Programming |     5 | Got the hang of a CSS framework                                                                        |               |
+|       | Programming |     5 | Got the hang of a CSS preprocessor                                                                     |               |
+|       | Programming |     5 | Got the hang of a Javascript preprocessor                                                              |               |
+|       | Programming |     5 | Helped other people program more effectively                                                           |               |
+| P_CROSS | Programming |     5 | Set up smooth cross-referencing between blog posts and Flickr                                          |               |
+|       | Programming |    10 | Set up style checking and code analysis                                                                |               |
+|       | Programming |    10 | Contributed automated tests to Emacs packages                                                          |               |
+|       | Programming |    10 | Built a routine tracker using Node                                                                     |               |
+|       | Programming |    20 | Got feedback from coaches or open source community                                                     |               |
+|       | Programming |    20 | Contributed to Emacs C                                                                                 |               |
+|       | Programming |    10 | Closed an open source issue                                                                            |               |
+|       | Programming |    10 | Contributed to open source documentation                                                               |               |
+|       | Speaking |    10 | Made videos part of the way I regularly share (~12 original videos a year)                             |               |
+|       | Writing |    10 | Developed structures for journaling                                                                    |               |
+|       | Writing |    50 | Wrote a set of three or four 4-part courses                                                            |               |
+|       | Writing |    50 | Developed ability to look at my writing with strangers' eyes                                           |               |
+|       | Writing |    50 | Developed ability to cut writing ruthlessly                                                            |               |
+| W_BK  | Writing |   100 | Wrote book instead of compiling it                                                                     |               |
+|       | Writing |   100 | Habitually wrote books (>= 3 books in 5 years)                                                         | W_BK, W_MINI  |
+| W_MINI | Writing |    50 | Habitually wrote mini-guides (>= 4 mini-guides in 2 years)                                             |               |
+|       | Writing |    10 | Kept a year of private journals (short entries)                                                        |               |
+|       | Writing |    30 | Wrote book about 5-year experiment to capture memories and help other people curious about it          |               |
+|       | Writing |    20 | Wrote mini-book on building Emacs habits                                                               |               |
+
+
 
 ** Accomplishments
 
