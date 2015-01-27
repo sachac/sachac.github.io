@@ -8,6 +8,7 @@
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Sacha Chua" />
+
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center; }
@@ -92,6 +93,7 @@
 href="http://sachachua.com/blog/wp-content/themes/sacha-v3/foundation/css/foundation.min.css"></link>
 <link rel="stylesheet" type="text/css" href="http://sachachua.com/org-export.css"></link>
 <link rel="stylesheet" type="text/css" href="http://sachachua.com/blog/wp-content/themes/sacha-v3/style.css"></link>
+<script type="text/javascript" src="http://ariutta.github.io/svg-pan-zoom/dist/svg-pan-zoom.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript">
@@ -167,7 +169,7 @@ Additional notes: <a href="http://sachachua.com/blog/2014/03/reflecting-goals-ti
 <h2 id="unnumbered-1">Current goals</h2>
 <div class="outline-text-2" id="text-unnumbered-1">
 <p>
-See raw file or end of document for code. 
+See raw file or end of document for code.
 </p>
 
 
@@ -1041,7 +1043,7 @@ So that I can <a href="#unnumbered-33">write a book instead of compiling it</a>
 </li>
 <li><a id="write_in_bigger_chunks"></a><a id="unnumbered-32"></a><span class="todo SOMEDAY">SOMEDAY</span> write in bigger chunks&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Writing">Writing</span></span><br  /><div class="outline-text-5" id="text-write_in_bigger_chunks">
 <p>
-So that I can <a href="#unnumbered-33">write a book instead of compiling it</a>     
+So that I can <a href="#unnumbered-33">write a book instead of compiling it</a>
 </p>
 </div>
 </li>
@@ -1995,12 +1997,12 @@ So that I can <a href="#unnumbered-107">help the Emacs community grow</a>
 <span class="org-rainbow-delimiters-depth-1">(</span><span class="org-keyword">defun</span> <span class="org-function-name">sacha/org-map-to-graphviz</span> <span class="org-rainbow-delimiters-depth-2">(</span>map fill-column id<span class="org-rainbow-delimiters-depth-2">)</span>
   <span class="org-doc">"Convert MAP to a graphviz representation. Wrap titles at FILL-COLUMN."</span>
   <span class="org-rainbow-delimiters-depth-2">(</span>sacha/elgraphviz-digraph id
-   <span class="org-rainbow-delimiters-depth-3">(</span>sacha/elgraphviz-attribute <span class="org-string">"id"</span> id<span class="org-rainbow-delimiters-depth-3">)</span> 
-   <span class="org-rainbow-delimiters-depth-3">(</span>sacha/elgraphviz-default-node <span class="org-builtin">:shape</span> <span class="org-string">"box"</span> <span class="org-builtin">:fontname</span> <span class="org-string">"Open Sans"</span> <span class="org-builtin">:pad</span> 1<span class="org-rainbow-delimiters-depth-3">)</span> 
-   <span class="org-rainbow-delimiters-depth-3">(</span>sacha/elgraphviz-default-edge <span class="org-builtin">:color</span> <span class="org-string">"#CCCCCC"</span><span class="org-rainbow-delimiters-depth-3">)</span> 
+   <span class="org-rainbow-delimiters-depth-3">(</span>sacha/elgraphviz-attribute <span class="org-string">"id"</span> id<span class="org-rainbow-delimiters-depth-3">)</span>
+   <span class="org-rainbow-delimiters-depth-3">(</span>sacha/elgraphviz-default-node <span class="org-builtin">:shape</span> <span class="org-string">"box"</span> <span class="org-builtin">:fontname</span> <span class="org-string">"Open Sans"</span> <span class="org-builtin">:pad</span> 1<span class="org-rainbow-delimiters-depth-3">)</span>
+   <span class="org-rainbow-delimiters-depth-3">(</span>sacha/elgraphviz-default-edge <span class="org-builtin">:color</span> <span class="org-string">"#CCCCCC"</span><span class="org-rainbow-delimiters-depth-3">)</span>
    <span class="org-rainbow-delimiters-depth-3">(</span>mapconcat
     <span class="org-rainbow-delimiters-depth-4">(</span><span class="org-keyword">lambda</span> <span class="org-rainbow-delimiters-depth-5">(</span>x<span class="org-rainbow-delimiters-depth-5">)</span>
-      <span class="org-rainbow-delimiters-depth-5">(</span>sacha/elgraphviz-directed-edge 
+      <span class="org-rainbow-delimiters-depth-5">(</span>sacha/elgraphviz-directed-edge
        <span class="org-rainbow-delimiters-depth-6">(</span>sacha/fill-string <span class="org-rainbow-delimiters-depth-7">(</span>car x<span class="org-rainbow-delimiters-depth-7">)</span> fill-column <span class="org-string">"\\n"</span><span class="org-rainbow-delimiters-depth-6">)</span>
        <span class="org-rainbow-delimiters-depth-6">(</span>sacha/fill-string <span class="org-rainbow-delimiters-depth-7">(</span>cdr x<span class="org-rainbow-delimiters-depth-7">)</span> fill-column <span class="org-string">"\\n"</span><span class="org-rainbow-delimiters-depth-6">)</span><span class="org-rainbow-delimiters-depth-5">)</span><span class="org-rainbow-delimiters-depth-4">)</span>
     <span class="org-rainbow-delimiters-depth-4">(</span>cdr <span class="org-rainbow-delimiters-depth-5">(</span>assoc 'edges map<span class="org-rainbow-delimiters-depth-5">)</span><span class="org-rainbow-delimiters-depth-4">)</span> <span class="org-string">"\n"</span><span class="org-rainbow-delimiters-depth-3">)</span>
@@ -2086,6 +2088,7 @@ So that I can <a href="#unnumbered-107">help the Emacs community grow</a>
             jQuery('.back-to-top').fadeOut(duration);
         }
     });
+
 </script>
 </div>
 </body>
