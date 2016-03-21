@@ -21,7 +21,7 @@ Additional notes: http://sachachua.com/blog/2014/03/reflecting-goals-time/
 
 See raw file or end of document for code. 
 
-#+CALL: graph-from-tables[:file "goals.svg" :cmdline "-Kdot -Tsvg -Gdpi=100 -Gsize=8,8 -Grankdir=LR"](fillcolumn=20,id="G") :results silent :exports none
+#+CALL: graph-from-tables[:outputfile "goals.svg" :cmdline "-Kdot -Tsvg -Gdpi=100 -Gsize=8,8 -Grankdir=LR"](fillcolumn=20,id="G") :results silent :exports none
 
 [[file:goals.svg]]
 
@@ -32,7 +32,7 @@ See raw file or end of document for code.
 
 See raw file or end of document for code.
 
-#+CALL: graph-from-tables[:file someday.svg :cmdline "-Kdot -Tsvg -Gsize=10,10 -Grankdir=LR"](fillcolumn=20,include-someday=1) :results silent :exports none
+#+CALL: graph-from-tables[:outputfile someday.svg :cmdline "-Kdot -Tsvg -Gsize=10,10 -Grankdir=LR"](fillcolumn=20,include-someday=1) :results silent :exports none
 
 [[file:someday.svg]]
 
@@ -256,7 +256,7 @@ So that I can [[live an awesome life]]
     :CUSTOM_ID: enrich_our_experiences
     :END:
 So that I can [[live an awesome life]]
-**** WAITING get Canadian passport                                     :Life:
+**** DONE get Canadian passport                                        :Life:
      :PROPERTIES:
      :GoalCategory: Life
      :XP:       5
@@ -605,7 +605,7 @@ So that I can [[cook yummy food]]
      :CUSTOM_ID: make_special_types_of_bread__including_sourdough
      :END:
  So that I can [[practise types of recipes][practise types of recipes]]
-**** TODO make udon noodles from scratch                            :Cooking:
+**** DONE make udon noodles from scratch                            :Cooking:
      :PROPERTIES:
      :GoalCategory: Cooking
      :XP:       5
@@ -637,7 +637,7 @@ So that I can [[cook yummy food]]
     :CUSTOM_ID: adjust_the_feel_of_things_by_using_herb_combinations
     :END:
 So that I can [[cook yummy food]]
-*** TODO develop a habit of cooking with lots of vegetables (CSA-like volume) :Cooking:
+*** DONE develop a habit of cooking with lots of vegetables (CSA-like volume) :Cooking:
     :PROPERTIES:
     :GoalCategory: Cooking
     :XP:       10
@@ -667,13 +667,13 @@ So that I can [[cook yummy food]]
    :CUSTOM_ID: learn_from_people
    :END:
 So that I can [[tickle my brain]] and [[share useful stuff]]
-*** TODO learn Japanese
+*** SOMEDAY learn Japanese
     :PROPERTIES:
     :LINK:     [[file:~/personal/organizer.org::*Learn Japanese][Learn Japanese]]
     :CUSTOM_ID: learn_Japanese
     :END:
 So that I can [[learn from people]]
-**** TODO work through the Japanese language books we have at home :Learning:
+**** DONE work through the Japanese language books we have at home :Learning:
      :PROPERTIES:
      :GoalCategory: Learning
      :XP:       10
@@ -715,7 +715,7 @@ So that I can [[learn Japanese]]
      :CUSTOM_ID: Japanese__Read_cooking_instructions_on_packages_with___80__comprehension
      :END:
 So that I can [[learn Japanese]]
-**** TODO Japanese: Complete Anki decks for JP-2000                :Learning:
+**** SOMEDAY Japanese: Complete Anki decks for JP-2000             :Learning:
      :PROPERTIES:
      :GoalCategory: Learning
      :XP:       10
@@ -727,7 +727,7 @@ So that I can [[learn Japanese]]
      :END:
 
 So that I can [[learn Japanese]]
-*** TODO host another 10 episodes of Emacs Chats or hangouts
+*** DONE host another 10 episodes of Emacs Chats or hangouts
     :PROPERTIES:
     :CUSTOM_ID: host_another_10_episodes_of_Emacs_Chats_or_hangouts
     :GoalCategory: Connecting
@@ -740,6 +740,8 @@ So that I can [[learn Japanese]]
 
 So that I can [[learn from people]] and [[help the Emacs community grow]]
 
+http://sachachua.com/blog/tag/emacs-hangout
+
 1. [X] Emacs Chat: technomancy
 2. [X] Emacs Chat: Xah Lee
 3. [X] Emacs Chat: Bozhidar Batsov
@@ -749,7 +751,8 @@ So that I can [[learn from people]] and [[help the Emacs community grow]]
 7. John Kitchin?
 8. Reach out to the other bloggers on Planet Emacsen
 
-*** SOMEDAY Set up an ongoing mentoring/coaching relationship with an Emacs coach
+
+*** CANCELLED Set up an ongoing mentoring/coaching relationship with an Emacs coach
     :PROPERTIES:
     :CUSTOM_ID: Set_up_an_ongoing_mentoring_coaching_relationship_with_an_Emacs_coach
     :END:
@@ -773,18 +776,11 @@ Possible concrete goals:
 :CUSTOM_ID: do_right_by_our_cats
 :END:
 So that I can [[learn from people]]
-*** WAITING complete the rest of the F projects                  :Connecting:
+*** DONE complete the rest of the F projects                     :Connecting:
 :PROPERTIES:
 :GoalCategory: Connecting
 :XP: 50
 :CUSTOM_ID: complete_the_rest_of_the_F_projects
-:END:
-So that I can [[learn from people]]
-*** WAITING help p with t                                        :Connecting:
-:PROPERTIES:
-:GoalCategory: Connecting
-:XP: 100
-:CUSTOM_ID: help_p_with_t
 :END:
 So that I can [[learn from people]]
 *** WAITING do right by W- and J-                                :Connecting:
@@ -795,7 +791,7 @@ So that I can [[learn from people]]
 :END:
 
 So that I can [[learn from people]]
-*** TODO develop a 4+-month habit of frequent messages to parents :Connecting:
+*** SOMEDAY develop a 4+-month habit of frequent messages to parents :Connecting:
 :PROPERTIES:
 :GoalCategory: Connecting
 :XP: 10
@@ -848,15 +844,16 @@ So that I can [[make better decisions]]
 
 So that I can [[make better decisions]]
 
-*** WAITING weather a bear market with lots of investments          :Finance:
+*** DONE weather a bear market with lots of investments             :Finance:
 :PROPERTIES:
 :GoalCategory: Finance
 :XP: 20
 :CUSTOM_ID: weather_a_bear_market_with_lots_of_investments
 :END:
 
-
 So that I can [[make better decisions]]
+
+I think 2015 counted! I managed to stay invested without freaking out too much. =)
 
 *** WAITING move to target allocation                               :Finance:
 :PROPERTIES:
@@ -882,7 +879,7 @@ So that I can [[make better decisions]]
 
 So that I can [[reach 2% goal]]
 
-*** WAITING deal with a famine year without panicking              :Business:
+*** DONE deal with a famine year without panicking                 :Business:
     :PROPERTIES:
     :GoalCategory: Business
     :XP:       50
@@ -919,7 +916,7 @@ So that I can [[get more value from my time]]
 :END:
 
 So that I can [[get more value from my time]]
-*** WAITING keep a year of private journals (short entries)         :Writing:
+*** DONE keep a year of journals (short entries)                    :Writing:
 :PROPERTIES:
 :GoalCategory: Writing
 :XP: 10
@@ -966,7 +963,7 @@ So that I can [[delegate more effectively]] and [[share useful stuff]]
 
 [[https://drive.google.com/a/sachachua.com/#folders/0B8LpkeSVIjRYVHZCQzVCYTJ5X3M][Process library]] - for my virtual assistants and for other people who are interested in delegation
 
-#+CALL: list-files-with-target(directory="~/Google Drive/Delegation - Sacha Chua/Processes", pattern="How to", target=50) :results value org
+;;#+CALL: list-files-with-target(directory="~/Google Drive/Delegation - Sacha Chua/Processes", pattern="How to", target=50) :results value org
 
 #+RESULTS:
 #+BEGIN_SRC org
@@ -1068,7 +1065,7 @@ http://sachachua.com/blog/tag/emacs-basics
 7. [ ] Save time with keyboard macros
 8. [ ] Be inspired
 
-*** TODO set up regular Emacs hangouts
+*** DONE set up regular Emacs hangouts
     :PROPERTIES:
     :GoalCategory: Connecting
     :XP:       20
@@ -1158,132 +1155,132 @@ So that I can [[help the Emacs community grow]]
 
 #+name: graph-from-tables
 #+BEGIN_SRC emacs-lisp :var fill-column=20 :var tag="goal" :var id="G"
-      (defvar include-someday nil)
-      (defun sacha/fill-string (string new-fill-column &optional replace-char)
-        "Wrap STRING to NEW-FILL-COLUMN. Change newlines to REPLACE-CHAR."
-        (with-temp-buffer
-          (insert string)
-          (let ((fill-column new-fill-column))
-            (fill-region (point-min) (point-max))
-            (if replace-char
-                (progn
-                  (goto-char (point-min))
-                  (while (re-search-forward "\n" nil t)
-                    (replace-match replace-char t t))))
-            (buffer-string))))
+  (defvar include-someday nil)
+  (defun sacha/fill-string (string new-fill-column &optional replace-char)
+    "Wrap STRING to NEW-FILL-COLUMN. Change newlines to REPLACE-CHAR."
+    (with-temp-buffer
+      (insert string)
+      (let ((fill-column new-fill-column))
+        (fill-region (point-min) (point-max))
+        (if replace-char
+            (progn
+              (goto-char (point-min))
+              (while (re-search-forward "\n" nil t)
+                (replace-match replace-char t t))))
+        (buffer-string))))
 
-      (defun sacha/org-map-goals (tag)
-        "Return an alist, based on the TAG tree and \"so that I can\" link structure.
-      Structure: ((nodes . ((components) ...)) (edges . ((a . b) ...)))"
-        (let (nodes edges)
-         ;; Go through the entries
-          (org-map-entries
-           (lambda ()
-             (let ((heading (org-heading-components)))
-               (when (or (not (elt heading 2)) (member (elt heading 2) (if include-someday '("TODO" "WAITING" "SOMEDAY") '("TODO"))))
+  (defun sacha/org-map-goals (tag)
+    "Return an alist, based on the TAG tree and \"so that I can\" link structure.
+    Structure: ((nodes . ((components) ...)) (edges . ((a . b) ...)))"
+    (let (nodes edges)
+      ;; Go through the entries
+      (org-map-entries
+       (lambda ()
+         (let ((heading (org-heading-components)))
+           (when (or (not (elt heading 2)) (member (elt heading 2) (if include-someday '("TODO" "WAITING" "SOMEDAY") '("TODO"))))
+             (save-excursion
+               (save-restriction
+                 ;; Ignore subtrees in the body
+                 (org-narrow-to-subtree)
                  (save-excursion
-                   (save-restriction
-                     ;; Ignore subtrees in the body
-                     (org-narrow-to-subtree)
-                     (save-excursion
-                       (org-set-property "CUSTOM_ID" (replace-regexp-in-string "[^A-Za-z0-9]" "_" (elt heading 4))))
-                     (end-of-line)
-                     (narrow-to-region
-                      (point-min)
-                      (if (re-search-forward
-                           (concat "[\r\n]\\(" org-outline-regexp "\\)") nil t)
-                          (match-beginning 1)
-                        (point-max)))
-                     (goto-char (point-min))
-                     (when (> (car heading) 1)
-                       (setq nodes (cons heading nodes)))
-                     (when (re-search-forward "so that I can" nil t)
-                       (while (re-search-forward org-bracket-link-regexp (line-end-position) t)
-                         (setq edges (cons (cons (elt heading 4) (match-string-no-properties 1)) edges)))))))))
-           tag)
-          (list (cons 'nodes nodes) (cons 'edges edges))))
+                   (org-set-property "CUSTOM_ID" (replace-regexp-in-string "[^A-Za-z0-9]" "_" (elt heading 4))))
+                 (end-of-line)
+                 (narrow-to-region
+                  (point-min)
+                  (if (re-search-forward
+                       (concat "[\r\n]\\(" org-outline-regexp "\\)") nil t)
+                      (match-beginning 1)
+                    (point-max)))
+                 (goto-char (point-min))
+                 (when (> (car heading) 1)
+                   (setq nodes (cons heading nodes)))
+                 (when (re-search-forward "so that I can" nil t)
+                   (while (re-search-forward org-bracket-link-regexp (line-end-position) t)
+                     (setq edges (cons (cons (elt heading 4) (match-string-no-properties 1)) edges)))))))))
+       tag)
+      (list (cons 'nodes nodes) (cons 'edges edges))))
 
-    (defvar sacha/elgraphviz-attributes '((:color . "color")
-                                          (:fontname . "fontname")
-                                          (:pad . "pad")
-                                          (:shape . "shape")
-                                          (:style . "style")
-                                          (:tooltip . "tooltip")
-                                          (:url . "URL")
-                                          (:width . "width"))
+  (defvar sacha/elgraphviz-attributes '((:color . "color")
+                                        (:fontname . "fontname")
+                                        (:pad . "pad")
+                                        (:shape . "shape")
+                                        (:style . "style")
+                                        (:tooltip . "tooltip")
+                                        (:url . "URL")
+                                        (:width . "width"))
     "List of attributes")
 
 
-      (defun sacha/elgraphviz-process-property-list (prop-list)
-        "Convert PROP-LIST to an alphabetically sorted, comma-separated attribute list."
-        (mapconcat 'identity
-                   (delq nil
-                         (mapcar (lambda (x)
-                                   (if (plist-get prop-list (car x))
-                                       (format "%s=\"%s\"" (cdr x)
-                                               (sacha/elgraphviz-quote-string (plist-get prop-list (car x))))))
-                                 sacha/elgraphviz-attributes))
-                   ","))
+  (defun sacha/elgraphviz-process-property-list (prop-list)
+    "Convert PROP-LIST to an alphabetically sorted, comma-separated attribute list."
+    (mapconcat 'identity
+               (delq nil
+                     (mapcar (lambda (x)
+                               (if (plist-get prop-list (car x))
+                                   (format "%s=\"%s\"" (cdr x)
+                                           (sacha/elgraphviz-quote-string (plist-get prop-list (car x))))))
+                             sacha/elgraphviz-attributes))
+               ","))
 
-      (ert-deftest sacha/elgraphviz-process-property-list ()
-        (should (string= (sacha/elgraphviz-process-property-list '(:width 1)) "width=\"1\"")))
+  (ert-deftest sacha/elgraphviz-process-property-list ()
+    (should (string= (sacha/elgraphviz-process-property-list '(:width 1)) "width=\"1\"")))
 
-      (defun sacha/elgraphviz-quote-string (string) "Quote \" in strings." (replace-regexp-in-string "\"" "\\\"" (format "%s" string)))
+  (defun sacha/elgraphviz-quote-string (string) "Quote \" in strings." (replace-regexp-in-string "\"" "\\\"" (format "%s" string)))
 
-      (defun sacha/elgraphviz-node (name &rest args)
-        "Return the node definition for NAME with ARGS as attributes."
-        (if args
-            (format "\"%s\" [%s]" (sacha/elgraphviz-quote-string name) (sacha/elgraphviz-process-property-list args))
-          (format "\"%s\"" (sacha/elgraphviz-quote-string name))))
-      (defun sacha/elgraphviz-directed-edge (a b &rest args)
-        "Return the node definition for NAME with ARGS as attributes."
-        (format "\"%s\" -> \"%s\" [%s]"
-                (sacha/elgraphviz-quote-string a)
-                (sacha/elgraphviz-quote-string b)
-                (sacha/elgraphviz-process-property-list args)))
+  (defun sacha/elgraphviz-node (name &rest args)
+    "Return the node definition for NAME with ARGS as attributes."
+    (if args
+        (format "\"%s\" [%s]" (sacha/elgraphviz-quote-string name) (sacha/elgraphviz-process-property-list args))
+      (format "\"%s\"" (sacha/elgraphviz-quote-string name))))
+  (defun sacha/elgraphviz-directed-edge (a b &rest args)
+    "Return the node definition for NAME with ARGS as attributes."
+    (format "\"%s\" -> \"%s\" [%s]"
+            (sacha/elgraphviz-quote-string a)
+            (sacha/elgraphviz-quote-string b)
+            (sacha/elgraphviz-process-property-list args)))
 
-      (ert-deftest sacha/elgraphviz-node ()
-        (should (string= (sacha/elgraphviz-node "Test" :style "filled" :url "http://example.com" :tooltip "test")
-                   "\"Test\" [style=\"filled\",tooltip=\"test\",URL=\"http://example.com\"]")))
+  (ert-deftest sacha/elgraphviz-node ()
+    (should (string= (sacha/elgraphviz-node "Test" :style "filled" :url "http://example.com" :tooltip "test")
+                     "\"Test\" [style=\"filled\",tooltip=\"test\",URL=\"http://example.com\"]")))
 
-      (defun sacha/elgraphviz-default-node (&rest attributes)
-        (format "node [%s]" (sacha/elgraphviz-process-property-list attributes)))
+  (defun sacha/elgraphviz-default-node (&rest attributes)
+    (format "node [%s]" (sacha/elgraphviz-process-property-list attributes)))
 
-      (ert-deftest sacha/elgraphviz-default-node ()
-        (should (string= (sacha/elgraphviz-default-node :color "#cccccc" :width 100)
-                 "node [color=\"#cccccc\",width=\"100\"]")))
+  (ert-deftest sacha/elgraphviz-default-node ()
+    (should (string= (sacha/elgraphviz-default-node :color "#cccccc" :width 100)
+                     "node [color=\"#cccccc\",width=\"100\"]")))
 
-      (defun sacha/elgraphviz-default-edge (&rest attributes)
-        (format "edge [%s]" (sacha/elgraphviz-process-property-list attributes)))
-      (defun sacha/elgraphviz-attribute (name val)
-        (format "%s=\"%s\"" name (sacha/elgraphviz-quote-string val)))
+  (defun sacha/elgraphviz-default-edge (&rest attributes)
+    (format "edge [%s]" (sacha/elgraphviz-process-property-list attributes)))
+  (defun sacha/elgraphviz-attribute (name val)
+    (format "%s=\"%s\"" name (sacha/elgraphviz-quote-string val)))
 
-      (defun sacha/elgraphviz-digraph (id &rest body)
-        (concat "digraph " id " {\n"
-                (mapconcat 'identity body "\n")
-                "}"))
+  (defun sacha/elgraphviz-digraph (id &rest body)
+    (concat "digraph " id " {\n"
+            (mapconcat 'identity body "\n")
+            "}"))
 
-      (defun sacha/org-map-to-graphviz (map fill-column id)
-        "Convert MAP to a graphviz representation. Wrap titles at FILL-COLUMN."
-        (sacha/elgraphviz-digraph id
-         (sacha/elgraphviz-attribute "id" id) 
-         (sacha/elgraphviz-default-node :shape "box" :fontname "Open Sans" :pad 1) 
-         (sacha/elgraphviz-default-edge :color "#CCCCCC") 
-         (mapconcat
-          (lambda (x)
-            (sacha/elgraphviz-directed-edge 
-             (sacha/fill-string (car x) fill-column "\\n")
-             (sacha/fill-string (cdr x) fill-column "\\n")))
-          (cdr (assoc 'edges map)) "\n")
-         (mapconcat
-          (lambda (x)
-            (sacha/elgraphviz-node
-             (sacha/fill-string (elt x 4) fill-column "\\n")
-             :style (if (null (elt x 2)) "filled")
-             :url (concat "#" (replace-regexp-in-string "[^A-Za-z0-9]" "_" (elt x 4)))
-             :tooltip (elt x 4)))
-          (cdr (assoc 'nodes map)) "\n")))
-     (org-babel-execute:dot (sacha/org-map-to-graphviz (sacha/org-map-goals tag) fill-column id) params)
+  (defun sacha/org-map-to-graphviz (map fill-column id)
+    "Convert MAP to a graphviz representation. Wrap titles at FILL-COLUMN."
+    (sacha/elgraphviz-digraph id
+                              (sacha/elgraphviz-attribute "id" id) 
+                              (sacha/elgraphviz-default-node :shape "box" :fontname "Open Sans" :pad 1) 
+                              (sacha/elgraphviz-default-edge :color "#CCCCCC") 
+                              (mapconcat
+                               (lambda (x)
+                                 (sacha/elgraphviz-directed-edge 
+                                  (sacha/fill-string (car x) fill-column "\\n")
+                                  (sacha/fill-string (cdr x) fill-column "\\n")))
+                               (cdr (assoc 'edges map)) "\n")
+                              (mapconcat
+                               (lambda (x)
+                                 (sacha/elgraphviz-node
+                                  (sacha/fill-string (elt x 4) fill-column "\\n")
+                                  :style (if (null (elt x 2)) "filled")
+                                  :url (concat "index.html#" (replace-regexp-in-string "[^A-Za-z0-9]" "_" (elt x 4)))
+                                  :tooltip (elt x 4)))
+                               (cdr (assoc 'nodes map)) "\n")))
+  (org-babel-execute:dot (sacha/org-map-to-graphviz (sacha/org-map-goals tag) fill-column id) (cons (cons :file (assoc-default :outputfile params)) params))
 #+END_SRC
 
 #+begin_html
