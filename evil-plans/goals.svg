@@ -11,7 +11,7 @@
 <polygon fill="white" stroke="none" points="-4,4 -4,-694 1501,-694 1501,4 -4,4"/>
 <!-- help the Emacs\ncommunity grow -->
 <g id="G_node1" class="node"><title>help the Emacs\ncommunity grow</title>
-<g id="a_G_node1"><a xlink:href="index.html#help_the_Emacs_community_grow" xlink:title="help the Emacs community grow">
+<g id="a_G_node1"><a xlink:href="index.html#help_the_Emacs_community_grow" xlink:title="help the Emacs community grow" target="_parent">
 <polygon fill="lightgrey" stroke="black" points="347.5,-467 214.5,-467 214.5,-429 347.5,-429 347.5,-467"/>
 <text text-anchor="middle" x="281" y="-451.8" font-family="Open Sans" font-size="14.00">help the Emacs</text>
 <text text-anchor="middle" x="281" y="-436.8" font-family="Open Sans" font-size="14.00">community grow</text>
@@ -20,7 +20,7 @@
 </g>
 <!-- share useful stuff -->
 <g id="G_node2" class="node"><title>share useful stuff</title>
-<g id="a_G_node2"><a xlink:href="index.html#share_useful_stuff" xlink:title="share useful stuff">
+<g id="a_G_node2"><a xlink:href="index.html#share_useful_stuff" xlink:title="share useful stuff" target="_parent">
 <polygon fill="lightgrey" stroke="black" points="533,-578 396,-578 396,-542 533,-542 533,-578"/>
 <text text-anchor="middle" x="464.5" y="-556.3" font-family="Open Sans" font-size="14.00">share useful stuff</text>
 </a>
@@ -33,7 +33,7 @@
 </g>
 <!-- tickle my brain -->
 <g id="G_node3" class="node"><title>tickle my brain</title>
-<g id="a_G_node3"><a xlink:href="index.html#tickle_my_brain" xlink:title="tickle my brain">
+<g id="a_G_node3"><a xlink:href="index.html#tickle_my_brain" xlink:title="tickle my brain" target="_parent">
 <polygon fill="lightgrey" stroke="black" points="1080,-504 961,-504 961,-468 1080,-468 1080,-504"/>
 <text text-anchor="middle" x="1020.5" y="-482.3" font-family="Open Sans" font-size="14.00">tickle my brain</text>
 </a>
@@ -46,7 +46,7 @@
 </g>
 <!-- get more value from\nmy time -->
 <g id="G_node5" class="node"><title>get more value from\nmy time</title>
-<g id="a_G_node5"><a xlink:href="index.html#get_more_value_from_my_time" xlink:title="get more value from my time">
+<g id="a_G_node5"><a xlink:href="index.html#get_more_value_from_my_time" xlink:title="get more value from my time" target="_parent">
 <polygon fill="lightgrey" stroke="black" points="1303.5,-450 1146.5,-450 1146.5,-412 1303.5,-412 1303.5,-450"/>
 <text text-anchor="middle" x="1225" y="-434.8" font-family="Open Sans" font-size="14.00">get more value from</text>
 <text text-anchor="middle" x="1225" y="-419.8" font-family="Open Sans" font-size="14.00">my time</text>
@@ -60,7 +60,7 @@
 </g>
 <!-- build good karma -->
 <g id="G_node13" class="node"><title>build good karma</title>
-<g id="a_G_node13"><a xlink:href="index.html#build_good_karma" xlink:title="build good karma">
+<g id="a_G_node13"><a xlink:href="index.html#build_good_karma" xlink:title="build good karma" target="_parent">
 <polygon fill="lightgrey" stroke="black" points="704,-588 569,-588 569,-552 704,-552 704,-588"/>
 <text text-anchor="middle" x="636.5" y="-566.3" font-family="Open Sans" font-size="14.00">build good karma</text>
 </a>
@@ -83,7 +83,7 @@
 </g>
 <!-- delegate more\neffectively -->
 <g id="G_node4" class="node"><title>delegate more\neffectively</title>
-<g id="a_G_node4"><a xlink:href="index.html#delegate_more_effectively" xlink:title="delegate more effectively">
+<g id="a_G_node4"><a xlink:href="index.html#delegate_more_effectively" xlink:title="delegate more effectively" target="_parent">
 <polygon fill="lightgrey" stroke="black" points="1078.5,-450 962.5,-450 962.5,-412 1078.5,-412 1078.5,-450"/>
 <text text-anchor="middle" x="1020.5" y="-434.8" font-family="Open Sans" font-size="14.00">delegate more</text>
 <text text-anchor="middle" x="1020.5" y="-419.8" font-family="Open Sans" font-size="14.00">effectively</text>
@@ -97,7 +97,7 @@
 </g>
 <!-- live an awesome life -->
 <g id="G_node7" class="node"><title>live an awesome life</title>
-<g id="a_G_node7"><a xlink:href="index.html#live_an_awesome_life" xlink:title="live an awesome life">
+<g id="a_G_node7"><a xlink:href="index.html#live_an_awesome_life" xlink:title="live an awesome life" target="_parent">
 <polygon fill="lightgrey" stroke="black" points="1497,-219 1340,-219 1340,-183 1497,-183 1497,-219"/>
 <text text-anchor="middle" x="1418.5" y="-197.3" font-family="Open Sans" font-size="14.00">live an awesome life</text>
 </a>
@@ -110,7 +110,7 @@
 </g>
 <!-- create\nsyntopicon/bibliography -->
 <g id="G_node6" class="node"><title>create\nsyntopicon/bibliography</title>
-<g id="a_G_node6"><a xlink:href="index.html#create_syntopicon_bibliography" xlink:title="create syntopicon/bibliography">
+<g id="a_G_node6"><a xlink:href="index.html#create_syntopicon_bibliography" xlink:title="create syntopicon/bibliography" target="_parent">
 <polygon fill="none" stroke="black" points="1110,-394 931,-394 931,-356 1110,-356 1110,-394"/>
 <text text-anchor="middle" x="1020.5" y="-378.8" font-family="Open Sans" font-size="14.00">create</text>
 <text text-anchor="middle" x="1020.5" y="-363.8" font-family="Open Sans" font-size="14.00">syntopicon/bibliography</text>
@@ -124,7 +124,7 @@
 </g>
 <!-- re&#45;examine spending\nand carve out more\nfor what matters -->
 <g id="G_node8" class="node"><title>re&#45;examine spending\nand carve out more\nfor what matters</title>
-<g id="a_G_node8"><a xlink:href="index.html#re_examine_spending_and_carve_out_more_for_what_matters" xlink:title="re&#45;examine spending and carve out more for what matters">
+<g id="a_G_node8"><a xlink:href="index.html#re_examine_spending_and_carve_out_more_for_what_matters" xlink:title="re&#45;examine spending and carve out more for what matters" target="_parent">
 <polygon fill="none" stroke="black" points="1101,-337.5 940,-337.5 940,-284.5 1101,-284.5 1101,-337.5"/>
 <text text-anchor="middle" x="1020.5" y="-322.3" font-family="Open Sans" font-size="14.00">re&#45;examine spending</text>
 <text text-anchor="middle" x="1020.5" y="-307.3" font-family="Open Sans" font-size="14.00">and carve out more</text>
@@ -134,7 +134,7 @@
 </g>
 <!-- make better\ndecisions -->
 <g id="G_node9" class="node"><title>make better\ndecisions</title>
-<g id="a_G_node9"><a xlink:href="index.html#make_better_decisions" xlink:title="make better decisions">
+<g id="a_G_node9"><a xlink:href="index.html#make_better_decisions" xlink:title="make better decisions" target="_parent">
 <polygon fill="lightgrey" stroke="black" points="1275.5,-330 1174.5,-330 1174.5,-292 1275.5,-292 1275.5,-330"/>
 <text text-anchor="middle" x="1225" y="-314.8" font-family="Open Sans" font-size="14.00">make better</text>
 <text text-anchor="middle" x="1225" y="-299.8" font-family="Open Sans" font-size="14.00">decisions</text>
@@ -153,7 +153,7 @@
 </g>
 <!-- learn from people -->
 <g id="G_node10" class="node"><title>learn from people</title>
-<g id="a_G_node10"><a xlink:href="index.html#learn_from_people" xlink:title="learn from people">
+<g id="a_G_node10"><a xlink:href="index.html#learn_from_people" xlink:title="learn from people" target="_parent">
 <polygon fill="lightgrey" stroke="black" points="886,-550 749,-550 749,-514 886,-514 886,-550"/>
 <text text-anchor="middle" x="817.5" y="-528.3" font-family="Open Sans" font-size="14.00">learn from people</text>
 </a>
@@ -171,7 +171,7 @@
 </g>
 <!-- practise types of\nrecipes -->
 <g id="G_node11" class="node"><title>practise types of\nrecipes</title>
-<g id="a_G_node11"><a xlink:href="index.html#practise_types_of_recipes" xlink:title="practise types of recipes">
+<g id="a_G_node11"><a xlink:href="index.html#practise_types_of_recipes" xlink:title="practise types of recipes" target="_parent">
 <polygon fill="lightgrey" stroke="black" points="1085.5,-266 955.5,-266 955.5,-228 1085.5,-228 1085.5,-266"/>
 <text text-anchor="middle" x="1020.5" y="-250.8" font-family="Open Sans" font-size="14.00">practise types of</text>
 <text text-anchor="middle" x="1020.5" y="-235.8" font-family="Open Sans" font-size="14.00">recipes</text>
@@ -180,7 +180,7 @@
 </g>
 <!-- cook yummy food -->
 <g id="G_node12" class="node"><title>cook yummy food</title>
-<g id="a_G_node12"><a xlink:href="index.html#cook_yummy_food" xlink:title="cook yummy food">
+<g id="a_G_node12"><a xlink:href="index.html#cook_yummy_food" xlink:title="cook yummy food" target="_parent">
 <polygon fill="lightgrey" stroke="black" points="1293.5,-274 1156.5,-274 1156.5,-238 1293.5,-238 1293.5,-274"/>
 <text text-anchor="middle" x="1225" y="-252.3" font-family="Open Sans" font-size="14.00">cook yummy food</text>
 </a>
@@ -203,7 +203,7 @@
 </g>
 <!-- publish 12 free/PWYC\nresources -->
 <g id="G_node14" class="node"><title>publish 12 free/PWYC\nresources</title>
-<g id="a_G_node14"><a xlink:href="index.html#publish_12_free_PWYC_resources" xlink:title="publish 12 free/PWYC resources">
+<g id="a_G_node14"><a xlink:href="index.html#publish_12_free_PWYC_resources" xlink:title="publish 12 free/PWYC resources" target="_parent">
 <polygon fill="none" stroke="black" points="166,-690 0,-690 0,-652 166,-652 166,-690"/>
 <text text-anchor="middle" x="83" y="-674.8" font-family="Open Sans" font-size="14.00">publish 12 free/PWYC</text>
 <text text-anchor="middle" x="83" y="-659.8" font-family="Open Sans" font-size="14.00">resources</text>
@@ -212,7 +212,7 @@
 </g>
 <!-- publish resources -->
 <g id="G_node15" class="node"><title>publish resources</title>
-<g id="a_G_node15"><a xlink:href="index.html#publish_resources" xlink:title="publish resources">
+<g id="a_G_node15"><a xlink:href="index.html#publish_resources" xlink:title="publish resources" target="_parent">
 <polygon fill="lightgrey" stroke="black" points="349,-689 213,-689 213,-653 349,-653 349,-689"/>
 <text text-anchor="middle" x="281" y="-667.3" font-family="Open Sans" font-size="14.00">publish resources</text>
 </a>
@@ -230,7 +230,7 @@
 </g>
 <!-- improve my coding\nskills -->
 <g id="G_node16" class="node"><title>improve my coding\nskills</title>
-<g id="a_G_node16"><a xlink:href="index.html#improve_my_coding_skills" xlink:title="improve my coding skills">
+<g id="a_G_node16"><a xlink:href="index.html#improve_my_coding_skills" xlink:title="improve my coding skills" target="_parent">
 <polygon fill="lightgrey" stroke="black" points="354,-635 208,-635 208,-597 354,-597 354,-635"/>
 <text text-anchor="middle" x="281" y="-619.8" font-family="Open Sans" font-size="14.00">improve my coding</text>
 <text text-anchor="middle" x="281" y="-604.8" font-family="Open Sans" font-size="14.00">skills</text>
@@ -244,7 +244,7 @@
 </g>
 <!-- improve my drawing\nskills -->
 <g id="G_node17" class="node"><title>improve my drawing\nskills</title>
-<g id="a_G_node17"><a xlink:href="index.html#improve_my_drawing_skills" xlink:title="improve my drawing skills">
+<g id="a_G_node17"><a xlink:href="index.html#improve_my_drawing_skills" xlink:title="improve my drawing skills" target="_parent">
 <polygon fill="lightgrey" stroke="black" points="360,-579 202,-579 202,-541 360,-541 360,-579"/>
 <text text-anchor="middle" x="281" y="-563.8" font-family="Open Sans" font-size="14.00">improve my drawing</text>
 <text text-anchor="middle" x="281" y="-548.8" font-family="Open Sans" font-size="14.00">skills</text>
@@ -258,7 +258,7 @@
 </g>
 <!-- improve my sharing\nskills -->
 <g id="G_node18" class="node"><title>improve my sharing\nskills</title>
-<g id="a_G_node18"><a xlink:href="index.html#improve_my_sharing_skills" xlink:title="improve my sharing skills">
+<g id="a_G_node18"><a xlink:href="index.html#improve_my_sharing_skills" xlink:title="improve my sharing skills" target="_parent">
 <polygon fill="lightgrey" stroke="black" points="357.5,-523 204.5,-523 204.5,-485 357.5,-485 357.5,-523"/>
 <text text-anchor="middle" x="281" y="-507.8" font-family="Open Sans" font-size="14.00">improve my sharing</text>
 <text text-anchor="middle" x="281" y="-492.8" font-family="Open Sans" font-size="14.00">skills</text>
@@ -272,7 +272,7 @@
 </g>
 <!-- develop my analysis\nskills -->
 <g id="G_node19" class="node"><title>develop my analysis\nskills</title>
-<g id="a_G_node19"><a xlink:href="index.html#develop_my_analysis_skills" xlink:title="develop my analysis skills">
+<g id="a_G_node19"><a xlink:href="index.html#develop_my_analysis_skills" xlink:title="develop my analysis skills" target="_parent">
 <polygon fill="lightgrey" stroke="black" points="895,-420 740,-420 740,-382 895,-382 895,-420"/>
 <text text-anchor="middle" x="817.5" y="-404.8" font-family="Open Sans" font-size="14.00">develop my analysis</text>
 <text text-anchor="middle" x="817.5" y="-389.8" font-family="Open Sans" font-size="14.00">skills</text>
@@ -286,7 +286,7 @@
 </g>
 <!-- enrich our\nexperiences -->
 <g id="G_node20" class="node"><title>enrich our\nexperiences</title>
-<g id="a_G_node20"><a xlink:href="index.html#enrich_our_experiences" xlink:title="enrich our experiences">
+<g id="a_G_node20"><a xlink:href="index.html#enrich_our_experiences" xlink:title="enrich our experiences" target="_parent">
 <polygon fill="lightgrey" stroke="black" points="1274,-220 1176,-220 1176,-182 1274,-182 1274,-220"/>
 <text text-anchor="middle" x="1225" y="-204.8" font-family="Open Sans" font-size="14.00">enrich our</text>
 <text text-anchor="middle" x="1225" y="-189.8" font-family="Open Sans" font-size="14.00">experiences</text>
@@ -300,7 +300,7 @@
 </g>
 <!-- cultivate equanimity -->
 <g id="G_node21" class="node"><title>cultivate equanimity</title>
-<g id="a_G_node21"><a xlink:href="index.html#cultivate_equanimity" xlink:title="cultivate equanimity">
+<g id="a_G_node21"><a xlink:href="index.html#cultivate_equanimity" xlink:title="cultivate equanimity" target="_parent">
 <polygon fill="lightgrey" stroke="black" points="1304,-164 1146,-164 1146,-128 1304,-128 1304,-164"/>
 <text text-anchor="middle" x="1225" y="-142.3" font-family="Open Sans" font-size="14.00">cultivate equanimity</text>
 </a>
@@ -313,7 +313,7 @@
 </g>
 <!-- do a 5&#45;year\nexperiment in\nself&#45;directed living -->
 <g id="G_node22" class="node"><title>do a 5&#45;year\nexperiment in\nself&#45;directed living</title>
-<g id="a_G_node22"><a xlink:href="index.html#do_a_5_year_experiment_in_self_directed_living" xlink:title="do a 5&#45;year experiment in self&#45;directed living">
+<g id="a_G_node22"><a xlink:href="index.html#do_a_5_year_experiment_in_self_directed_living" xlink:title="do a 5&#45;year experiment in self&#45;directed living" target="_parent">
 <polygon fill="none" stroke="black" points="1295.5,-109.5 1154.5,-109.5 1154.5,-56.5 1295.5,-56.5 1295.5,-109.5"/>
 <text text-anchor="middle" x="1225" y="-94.3" font-family="Open Sans" font-size="14.00">do a 5&#45;year</text>
 <text text-anchor="middle" x="1225" y="-79.3" font-family="Open Sans" font-size="14.00">experiment in</text>
@@ -328,7 +328,7 @@
 </g>
 <!-- maintain or improve\nmy health -->
 <g id="G_node23" class="node"><title>maintain or improve\nmy health</title>
-<g id="a_G_node23"><a xlink:href="index.html#maintain_or_improve_my_health" xlink:title="maintain or improve my health">
+<g id="a_G_node23"><a xlink:href="index.html#maintain_or_improve_my_health" xlink:title="maintain or improve my health" target="_parent">
 <polygon fill="lightgrey" stroke="black" points="1303,-38 1147,-38 1147,-0 1303,-0 1303,-38"/>
 <text text-anchor="middle" x="1225" y="-22.8" font-family="Open Sans" font-size="14.00">maintain or improve</text>
 <text text-anchor="middle" x="1225" y="-7.8" font-family="Open Sans" font-size="14.00">my health</text>

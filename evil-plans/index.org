@@ -2,9 +2,7 @@
 #+HTML_HEAD_EXTRA: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 #+STARTUP: lognotedone
 
-#+begin_html
-<div class="row"><div class="columns">
-#+end_html
+#+HTML: <div class="row"><div class="columns">
 
 <<top>>
 
@@ -1206,6 +1204,7 @@ So that I can [[help the Emacs community grow]]
                                         (:shape . "shape")
                                         (:style . "style")
                                         (:tooltip . "tooltip")
+                                        (:target . "target")
                                         (:url . "URL")
                                         (:width . "width"))
     "List of attributes")
@@ -1278,6 +1277,7 @@ So that I can [[help the Emacs community grow]]
                                   (sacha/fill-string (elt x 4) fill-column "\\n")
                                   :style (if (null (elt x 2)) "filled")
                                   :url (concat "index.html#" (replace-regexp-in-string "[^A-Za-z0-9]" "_" (elt x 4)))
+                                  :target "_parent"
                                   :tooltip (elt x 4)))
                                (cdr (assoc 'nodes map)) "\n")))
   (org-babel-execute:dot (sacha/org-map-to-graphviz (sacha/org-map-goals tag) fill-column id) (cons (cons :file (assoc-default :outputfile params)) params))
