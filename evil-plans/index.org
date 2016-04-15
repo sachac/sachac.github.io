@@ -19,9 +19,9 @@ Additional notes: http://sachachua.com/blog/2014/03/reflecting-goals-time/
 
 See raw file or end of document for code. 
 
-#+CALL: graph-from-tables[:outputfile "goals.svg" :cmdline "-Kdot -Tsvg -Gdpi=100 -Gsize=8,8 -Grankdir=LR"](fillcolumn=20,id="G") :results silent :exports none
+#+CALL: graph-from-tables[:outputfile "goals.png" :cmdline "-Kdot -Tpng -Gdpi=300 -Gsize=8,8 -Grankdir=LR"](fillcolumn=20,id="G") :results silent :exports none
 
-[[file:goals.svg]]
+[[file:goals.png]]
 
 * Including "Someday" goals
   :PROPERTIES:
@@ -30,9 +30,9 @@ See raw file or end of document for code.
 
 See raw file or end of document for code.
 
-#+CALL: graph-from-tables[:outputfile someday.svg :cmdline "-Kdot -Tsvg -Gsize=10,10 -Grankdir=LR"](fillcolumn=20,include-someday=1) :results silent :exports none
+#+CALL: graph-from-tables[:outputfile "someday.png" :cmdline "-Kdot -Tpng -Gdpi=300 -Gsize=10,10 -Grankdir=LR"](fillcolumn=20,include-someday=1) :results silent :exports none
 
-[[file:someday.svg]]
+[[file:someday.png]]
 
 * Table
   :PROPERTIES:
@@ -1349,7 +1349,7 @@ So that I can [[help the Emacs community grow]]
 <script type="text/javascript">
     var offset = 220;
     var duration = 500;
-    jQuery(window).scroll(function() {
+    $(window).scroll(function() {
         if (jQuery(this).scrollTop() > offset) {
             jQuery('.back-to-top').fadeIn(duration);
         } else {
