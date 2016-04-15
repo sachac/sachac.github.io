@@ -914,7 +914,7 @@ So that I can [[reach 2% goal]]
     :XP:       20
     :CUSTOM_ID: resolve_estate_amicably_or_walk_away_from_it
     :END:
-In order to [[make better decisions]]
+So that I can [[make better decisions]]
 ** get more value from my time
    :PROPERTIES:
    :CUSTOM_ID: get_more_value_from_my_time
