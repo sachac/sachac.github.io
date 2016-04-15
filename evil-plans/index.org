@@ -67,7 +67,6 @@ See raw file or end of document for code.
      | Programming  |   5 | SOMEDAY | set up smooth cross-referencing between blog posts and Flickr                                        |
      | Programming  |   5 | SOMEDAY | set up autocomplete                                                                                  |
      | Programming  |   5 | SOMEDAY | set up flychecking                                                                                   |
-
      | Programming  |   5 | SOMEDAY | make test-driven development part of my normal workflow                                              |
      | Programming  |   5 | SOMEDAY | get the hang of a CSS framework                                                                      |
      | Programming  |   5 | SOMEDAY | get the hang of a CSS preprocessor                                                                   |
