@@ -1,5 +1,5 @@
 #+TITLE: Evil plans
-#+HTML_HEAD_EXTRA: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+#+HTML: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 #+STARTUP: lognotedone
 
 #+HTML: <div class="row"><div class="columns">
