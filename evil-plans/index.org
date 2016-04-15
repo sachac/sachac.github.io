@@ -39,89 +39,77 @@ See raw file or end of document for code.
   :CUSTOM_ID: Table
   :END:
      #+BEGIN: propview :cols (GOALCATEGORY XP TODO ITEM)  :conds ((> XP 0) (not (string= TODO "DONE"))) :id global :noquote t :skip-empty-rows t 
-     | GOALCATEGORY |  XP | TODO    | ITEM                                                                                                     |
-     |--------------+-----+---------+----------------------------------------------------------------------------------------------------------|
-     | Health       |  10 | SOMEDAY | *** restart jogging with W-                                                                              |
-     | Health       |  20 | SOMEDAY | *** develop habit of biking safely and comfortably in winter (>= -5C, < 20km wind, not much ice or snow) |
-     | Health       |  50 | SOMEDAY | *** graduate from introductory exercise ladder                                                           |
-     | Life         |  20 | WAITING | **** deal with rough patches with grace                                                                  |
-     | Life         | 100 | WAITING | **** enjoy middle age                                                                                    |
-     | Life         |  10 | WAITING | **** respond with tranquility in the face of my mortality                                                |
-     | Life         |  20 | WAITING | **** respond with tranquility in the face of sickness                                                    |
-     | Life         |  30 | WAITING | **** respond with tranquility in the face of the death of someone close to me                            |
-     | Life         | 100 | WAITING | **** enjoy old age                                                                                       |
-     | Life         |   5 | WAITING | **** get Canadian passport                                                                               |
-     | Life         |  10 | SOMEDAY | **** find a cat sitter we can trust                                                                      |
-     | Life         |  10 | SOMEDAY | **** set up distinctly interesting memories for four months straight                                     |
-     | Life         |  30 | SOMEDAY | **** get driver's license?                                                                               |
-     | Analysis     |   5 | SOMEDAY | **** visualize ideas over a year                                                                         |
-     | Analysis     |  20 | SOMEDAY | **** use animations to understand data                                                                   |
-     | Learning     |  10 | SOMEDAY | **** read the visual dictionary                                                                          |
-     | Writing      |  50 | SOMEDAY | **** develop ability to look at my writing with strangers' eyes                                          |
-     | Writing      |  50 | SOMEDAY | **** cut writing ruthlessly                                                                              |
-     | Writing      |  50 | SOMEDAY | **** write in bigger chunks                                                                              |
-     | Writing      | 100 | SOMEDAY | **** write a book instead of compiling it                                                                |
-     | Writing      | 100 | SOMEDAY | **** habitually write books (>= 3 books in 5 years)                                                      |
-     | Writing      |  50 | SOMEDAY | **** habitually write mini-guides (>= 4 mini-guides in 2 years)                                          |
-     | Speaking     |  10 | SOMEDAY | **** make videos part of the way I regularly share (~12 original videos a year)                          |
-     | Drawing      |  10 | SOMEDAY | **** find or make digital equivalent of index card drawing                                               |
-     | Drawing      |  20 | SOMEDAY | **** draw recognizable people                                                                            |
-     | Programming  |   5 | SOMEDAY | **** set up smooth cross-referencing between blog posts and Flickr                                       |
-     | Programming  |   5 | SOMEDAY | **** set up autocomplete                                                                                 |
-     | Programming  |   5 | SOMEDAY | **** set up flychecking                                                                                  |
-     | Programming  |   5 | SOMEDAY | **** make test-driven development part of my normal workflow                                             |
-     | Programming  |   5 | SOMEDAY | **** get the hang of a CSS framework                                                                     |
-     | Programming  |   5 | SOMEDAY | **** get the hang of a CSS preprocessor                                                                  |
-     | Programming  |   5 | SOMEDAY | **** get the hang of a Javascript preprocessor                                                           |
-     | Programming  |   5 | SOMEDAY | **** help other people program more effectively                                                          |
-     | Programming  |  10 | SOMEDAY | **** close an open source issue                                                                          |
-     | Programming  |  10 | SOMEDAY | **** contribute to open source documentation                                                             |
-     | Programming  |  20 | SOMEDAY | **** get feedback from coaches or open source community                                                  |
-     | Programming  |  20 | SOMEDAY | **** contribute to Emacs C                                                                               |
-     | Programming  |  10 | SOMEDAY | **** contribute automated tests to Emacs packages                                                        |
-     | Writing      |  30 | SOMEDAY | **** write book about 5-year experiment to capture memories and help other people curious about it       |
-     | Writing      |  50 | SOMEDAY | **** write a set of three or four 4-part courses                                                         |
-     | Life         |  10 | SOMEDAY | **** create four major projects in 2015                                                                  |
-     | Writing      |  20 | SOMEDAY | **** write mini-book on building Emacs habits                                                            |
-     | Drawing      |   5 | SOMEDAY | **** make Sketchnotes 2014                                                                               |
-     | Cooking      |   5 | SOMEDAY | **** make paella                                                                                         |
-     | Cooking      |   5 | SOMEDAY | **** make special types of bread, including sourdough                                                    |
-     | Cooking      |   5 | TODO    | **** make udon noodles from scratch                                                                      |
-     | Cooking      |  10 | SOMEDAY | **** competently make pizza                                                                              |
-     | Cooking      |  10 | SOMEDAY | *** make braising and other fancy cooking terms part of my vocabulary                                    |
-     | Cooking      |  10 | SOMEDAY | *** adjust the feel of things by using herb combinations                                                 |
-     | Cooking      |  10 | TODO    | *** develop a habit of cooking with lots of vegetables (CSA-like volume)                                 |
-     | Cooking      |  10 | SOMEDAY | *** create monthly cycles for favourite recipes                                                          |
-     | Cooking      |  20 | SOMEDAY | *** cut standard sizes                                                                                   |
-     | Learning     |  10 | TODO    | **** work through the Japanese language books we have at home                                            |
-     | Learning     |  10 | SOMEDAY | **** Japanese: Listen to regular shows with >=80% comprehension                                          |
-     | Learning     |  10 | SOMEDAY | **** Japanese: Listen to tech talks with >=80% comprehension                                             |
-     | Learning     |  10 | SOMEDAY | **** Japanese: Listen to cooking shows with >=80% comprehension                                          |
-     | Learning     |  10 | SOMEDAY | **** Japanese: Read blog posts and tweets about tech with >=80% comprehension                            |
-     | Learning     |  10 | SOMEDAY | **** Japanese: Read cooking instructions on packages with >=80% comprehension                            |
-     | Learning     |  10 | TODO    | **** Japanese: Complete Anki decks for JP-2000                                                           |
-     | Connecting   |   5 | TODO    | *** host another 10 episodes of Emacs Chats or hangouts                                                  |
-     | Connecting   |  20 | WAITING | *** do right by our cats                                                                                 |
-     | Connecting   |  50 | WAITING | *** complete the rest of the F projects                                                                  |
-     | Connecting   | 100 | WAITING | *** help p with t                                                                                        |
-     | Connecting   | 100 | WAITING | *** do right by W- and J-                                                                                |
-     | Connecting   |  10 | TODO    | *** develop a 4+-month habit of frequent messages to parents                                             |
-     | Learning     |  30 | SOMEDAY | *** post notes and life changes from three months of working with a coach                                |
-     | Connecting   |  10 | SOMEDAY | *** have a regular plan for meeting friends at least one weekend every month                             |
-     | Finance      |  10 | WAITING | *** sell stocks in a non-registered account and properly account for them                                |
-     | Finance      |  10 | TODO    | *** re-examine spending and carve out more for what matters                                              |
-     | Finance      |  20 | WAITING | *** weather a bear market with lots of investments                                                       |
-     | Finance      |  20 | WAITING | *** move to target allocation                                                                            |
-     | Finance      |  30 | WAITING | *** reach 2% goal                                                                                        |
-     | Finance      |  10 | WAITING | *** reach 2.5% goal                                                                                      |
-     | Business     |  50 | WAITING | *** deal with a famine year without panicking                                                            |
-     | Connecting   |  20 | WAITING | *** resolve estate amicably or walk away from it                                                         |
-     | Writing      |  10 | SOMEDAY | *** develop structures for journaling                                                                    |
-     | Learning     |  10 | TODO    | *** create syntopicon/bibliography                                                                       |
-     | Writing      |  10 | WAITING | *** keep a year of private journals (short entries)                                                      |
-     | Connecting   |  20 | TODO    | *** set up regular Emacs hangouts                                                                        |
-     |--------------+-----+---------+----------------------------------------------------------------------------------------------------------|
-     |              |     |         |                                                                                                          |
+     | GOALCATEGORY |  XP | TODO    | ITEM                                                                                                 |
+     |--------------+-----+---------+------------------------------------------------------------------------------------------------------|
+     | Health       |  10 | SOMEDAY | restart jogging with W-                                                                              |
+     | Health       |  20 | SOMEDAY | develop habit of biking safely and comfortably in winter (>= -5C, < 20km wind, not much ice or snow) |
+     | Health       |  50 | SOMEDAY | graduate from introductory exercise ladder                                                           |
+     | Life         |  20 | WAITING | deal with rough patches with grace                                                                   |
+     | Life         | 100 | WAITING | enjoy middle age                                                                                     |
+     | Life         |  10 | WAITING | respond with tranquility in the face of my mortality                                                 |
+     | Life         |  20 | WAITING | respond with tranquility in the face of sickness                                                     |
+     | Life         |  30 | WAITING | respond with tranquility in the face of the death of someone close to me                             |
+     | Life         | 100 | WAITING | enjoy old age                                                                                        |
+     | Life         |  10 | SOMEDAY | find a cat sitter we can trust                                                                       |
+     | Life         |  10 | SOMEDAY | set up distinctly interesting memories for four months straight                                      |
+     | Life         |  30 | SOMEDAY | get driver's license?                                                                                |
+     | Analysis     |   5 | SOMEDAY | visualize ideas over a year                                                                          |
+     | Analysis     |  20 | SOMEDAY | use animations to understand data                                                                    |
+     | Learning     |  10 | SOMEDAY | read the visual dictionary                                                                           |
+     | Writing      |  50 | SOMEDAY | develop ability to look at my writing with strangers' eyes                                           |
+     | Writing      |  50 | SOMEDAY | cut writing ruthlessly                                                                               |
+     | Writing      |  50 | SOMEDAY | write in bigger chunks                                                                               |
+     | Writing      | 100 | SOMEDAY | write a book instead of compiling it                                                                 |
+     | Writing      | 100 | SOMEDAY | habitually write books (>= 3 books in 5 years)                                                       |
+     | Writing      |  50 | SOMEDAY | habitually write mini-guides (>= 4 mini-guides in 2 years)                                           |
+     | Speaking     |  10 | SOMEDAY | make videos part of the way I regularly share (~12 original videos a year)                           |
+     | Drawing      |  20 | SOMEDAY | draw recognizable people                                                                             |
+     | Programming  |   5 | SOMEDAY | set up smooth cross-referencing between blog posts and Flickr                                        |
+     | Programming  |   5 | SOMEDAY | set up autocomplete                                                                                  |
+     | Programming  |   5 | SOMEDAY | set up flychecking                                                                                   |
+     | Programming  |   5 | SOMEDAY | make test-driven development part of my normal workflow                                              |
+     | Programming  |   5 | SOMEDAY | get the hang of a CSS framework                                                                      |
+     | Programming  |   5 | SOMEDAY | get the hang of a CSS preprocessor                                                                   |
+     | Programming  |   5 | SOMEDAY | get the hang of a Javascript preprocessor                                                            |
+     | Programming  |   5 | SOMEDAY | help other people program more effectively                                                           |
+     | Programming  |  10 | SOMEDAY | close an open source issue                                                                           |
+     | Programming  |  10 | SOMEDAY | contribute to open source documentation                                                              |
+     | Programming  |  20 | SOMEDAY | get feedback from coaches or open source community                                                   |
+     | Programming  |  20 | SOMEDAY | contribute to Emacs C                                                                                |
+     | Programming  |  10 | SOMEDAY | contribute automated tests to Emacs packages                                                         |
+     | Writing      |  30 | SOMEDAY | write book about 5-year experiment to capture memories and help other people curious about it        |
+     | Writing      |  50 | SOMEDAY | write a set of three or four 4-part courses                                                          |
+     | Life         |  10 | SOMEDAY | create four major projects in 2015                                                                   |
+     | Writing      |  20 | SOMEDAY | write mini-book on building Emacs habits                                                             |
+     | Drawing      |   5 | STARTED | make Sketchnotes 2014                                                                                |
+     | Cooking      |   5 | SOMEDAY | make paella                                                                                          |
+     | Cooking      |   5 | SOMEDAY | make special types of bread, including sourdough                                                     |
+     | Cooking      |  10 | SOMEDAY | competently make pizza                                                                               |
+     | Cooking      |  10 | SOMEDAY | make braising and other fancy cooking terms part of my vocabulary                                    |
+     | Cooking      |  10 | SOMEDAY | adjust the feel of things by using herb combinations                                                 |
+     | Cooking      |  10 | SOMEDAY | create monthly cycles for favourite recipes                                                          |
+     | Cooking      |  20 | SOMEDAY | cut standard sizes                                                                                   |
+     | Learning     |  10 | SOMEDAY | Japanese: Listen to regular shows with >=80% comprehension                                           |
+     | Learning     |  10 | SOMEDAY | Japanese: Listen to tech talks with >=80% comprehension                                              |
+     | Learning     |  10 | SOMEDAY | Japanese: Listen to cooking shows with >=80% comprehension                                           |
+     | Learning     |  10 | SOMEDAY | Japanese: Read blog posts and tweets about tech with >=80% comprehension                             |
+     | Learning     |  10 | SOMEDAY | Japanese: Read cooking instructions on packages with >=80% comprehension                             |
+     | Learning     |  10 | SOMEDAY | Japanese: Complete Anki decks for JP-2000                                                            |
+     | Connecting   |  20 | WAITING | do right by our cats                                                                                 |
+     | Connecting   | 100 | WAITING | do right by W-, J-, and A-                                                                           |
+     | Connecting   |  10 | SOMEDAY | develop a 4+-month habit of frequent messages to parents                                             |
+     | Learning     |  30 | SOMEDAY | post notes and life changes from three months of working with a coach                                |
+     | Connecting   |  10 | SOMEDAY | have a regular plan for meeting friends at least one weekend every month                             |
+     | Finance      |  10 | WAITING | sell stocks in a non-registered account and properly account for them                                |
+     | Finance      |  10 | TODO    | re-examine spending and carve out more for what matters                                              |
+     | Finance      |  20 | WAITING | move to target allocation                                                                            |
+     | Finance      |  30 | WAITING | reach 2% goal                                                                                        |
+     | Finance      |  10 | WAITING | reach 2.5% goal                                                                                      |
+     | Connecting   |  20 | WAITING | resolve estate amicably or walk away from it                                                         |
+     | Writing      |  10 | SOMEDAY | develop structures for journaling                                                                    |
+     | Learning     |  10 | SOMEDAY | create syntopicon/bibliography                                                                       |
+     |--------------+-----+---------+------------------------------------------------------------------------------------------------------|
+     |              |     |         |                                                                                                      |
      #+END:
 
 * Goals                                                                :goal:
@@ -135,6 +123,18 @@ See raw file or end of document for code.
    :CUSTOM_ID: maintain_or_improve_my_health
    :END:
 So that I can [[live an awesome life]]
+
+*** TODO Get used to babyweight exercises  :Health:
+    :PROPERTIES:
+    :CUSTOM_ID: Get_used_to_babyweight_exercises
+    :END:
+
+So that I can [[maintain or improve my health]]
+
+- Walking for at least one hour a day, at least three times a week
+- Upper-body baby weight exercises
+
+Built-in progression, hooray!
 
 *** SOMEDAY restart jogging with W-                                  :Health:
     :PROPERTIES:
@@ -328,6 +328,11 @@ So that I can [[build good karma]] and [[get more value from my time]]
     :CUSTOM_ID: improve_my_sharing_skills
     :END:
 So that I can [[share useful stuff]]
+**** TODO harvest my backlog of notes
+     :PROPERTIES:
+     :CUSTOM_ID: harvest_my_backlog_of_notes
+     :END:
+So that I can [[improve my sharing skills]]
 **** SOMEDAY develop ability to look at my writing with strangers' eyes :Writing:
      :PROPERTIES:
      :GoalCategory: Writing
@@ -384,7 +389,12 @@ So that I can [[habitually write books (>= 3 books in 5 years)][improve my shari
     :CUSTOM_ID: improve_my_drawing_skills
     :END:
 So that I can [[share useful stuff]]
-**** SOMEDAY find or make digital equivalent of index card drawing  :Drawing:
+**** TODO Make it to another year of daily journal drawing
+     :PROPERTIES:
+     :CUSTOM_ID: Make_it_to_another_year_of_daily_journal_drawing
+     :END:
+So that I can [[improve my drawing skills][improve my drawing skills]]
+**** DONE find or make digital equivalent of index card drawing     :Drawing:
      :PROPERTIES:
      :GoalCategory: Drawing
      :XP:       10
@@ -403,6 +413,11 @@ So that I can [[improve my drawing skills][improve my drawing skills]]
     :CUSTOM_ID: improve_my_coding_skills
     :END:
 So that I can [[share useful stuff]]
+**** TODO Build visualizations for baby data
+     :PROPERTIES:
+     :CUSTOM_ID: Build_visualizations_for_baby_data
+     :END:
+So that I can [[improve my coding skills]]
 **** SOMEDAY set up smooth cross-referencing between blog posts and Flickr :Programming:
      :PROPERTIES:
      :GoalCategory: Programming
@@ -497,12 +512,12 @@ So that I can [[improve my coding skills]]
      :CUSTOM_ID: contribute_automated_tests_to_Emacs_packages
      :END:
 So that I can [[improve my coding skills]]
-*** publish resources
+*** SOMEDAY publish resources
     :PROPERTIES:
     :CUSTOM_ID: publish_resources
     :END:
 So that I can [[share useful stuff]]
-**** TODO [#C] publish 12 free/PWYC resources                       :project:
+**** SOMEDAY [#C] publish 12 free/PWYC resources                    :project:
      :PROPERTIES:
      :CUSTOM_ID: publish_12_free_PWYC_resources
      :END:
@@ -568,7 +583,6 @@ Hmm. They used to be around here somewhere. I could've sworn I'd already started
 And then a quick find -name \*.png with a regex
 
 (replace-regexp "^\\./\\([^/]+\\)/\\(.*\\).png" "\\\\sketch{\\1}{\\2}")
-
 
 ** build good karma
    :PROPERTIES:
@@ -665,6 +679,16 @@ So that I can [[cook yummy food]]
    :CUSTOM_ID: learn_from_people
    :END:
 So that I can [[tickle my brain]] and [[share useful stuff]]
+*** TODO Raise A-
+    :PROPERTIES:
+    :CUSTOM_ID: Raise_A_
+    :END:
+So that I can [[learn from people]]
+*** TODO Choose parenting activities to consistently attend
+    :PROPERTIES:
+    :CUSTOM_ID: Choose_parenting_activities_to_consistently_attend
+    :END:
+So that I can [[learn from people]]
 *** SOMEDAY learn Japanese
     :PROPERTIES:
     :LINK:     [[file:~/personal/organizer.org::*Learn Japanese][Learn Japanese]]
@@ -781,11 +805,11 @@ So that I can [[learn from people]]
 :CUSTOM_ID: complete_the_rest_of_the_F_projects
 :END:
 So that I can [[learn from people]]
-*** WAITING do right by W- and J-                                :Connecting:
+*** WAITING do right by W-, J-, and A-                           :Connecting:
 :PROPERTIES:
 :GoalCategory: Connecting
 :XP: 100
-:CUSTOM_ID: do_right_by_W__and_J_
+:CUSTOM_ID: do_right_by_W___J___and_A_
 :END:
 
 So that I can [[learn from people]]
@@ -896,6 +920,17 @@ In order to [[make better decisions]]
    :CUSTOM_ID: get_more_value_from_my_time
    :END:
 so that I can [[live an awesome life]]
+*** TODO Practise kaizen on our new routines
+    :PROPERTIES:
+    :CUSTOM_ID: Practise_kaizen_on_our_new_routines
+    :END:
+So that I can [[get more value from my time]] and [[enrich our experiences][enrich our experiences]]
+
+Current gaps/opportunities:
+- Taking care of A-'s basic needs
+- Choosing activities to consistently attend
+- Making time to think, draw, and share
+
 *** SOMEDAY develop structures for journaling                       :Writing:
 :PROPERTIES:
 :GoalCategory: Writing
@@ -903,7 +938,7 @@ so that I can [[live an awesome life]]
 :CUSTOM_ID: develop_structures_for_journaling
 :END:
 So that I can [[get more value from my time]]
-*** TODO create syntopicon/bibliography                            :Learning:
+*** SOMEDAY create syntopicon/bibliography                         :Learning:
 :PROPERTIES:
 :GoalCategory: Learning
 :XP: 10
@@ -922,7 +957,7 @@ So that I can [[get more value from my time]]
 :END:
 
 So that I can [[get more value from my time]]
-** delegate more effectively
+** SOMEDAY delegate more effectively
    :PROPERTIES:
    :CUSTOM_ID: delegate_more_effectively
    :END:
@@ -1008,6 +1043,13 @@ So that I can [[delegate more effectively]] and [[share useful stuff]]
    :CUSTOM_ID: help_the_Emacs_community_grow
    :END:
 so that I can [[tickle my brain]] and [[share useful stuff]]
+*** TODO Make it to 52 issues of Emacs News  :emacs:
+    :PROPERTIES:
+    :CUSTOM_ID: Make_it_to_52_issues_of_Emacs_News
+    :END:
+so that I can [[help the Emacs community grow]]
+
+http://sachachua.com/blog/category/emacs-news/
 *** SOMEDAY [#c] Develop emacslife.com into beginner/enthusiast resources for Emacs :emacs:project:
 		:PROPERTIES:
 		:CUSTOM_ID: Develop_emacslife_com_into_beginner_enthusiast_resources_for_Emacs
