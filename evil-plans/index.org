@@ -6,7 +6,7 @@
 
 <<top>>
 
-Curious about anything? Contact me at sacha@sachachua.com .  SVG only, so you'll need a browser with SVG support.
+Curious about anything? Contact me at sacha@sachachua.com .  
 Web: http://sachachua.com/evil-plans
 Raw files: [[https://github.com/sachac/sachac.github.io/tree/master/evil-plans][evil-plans]]
 
