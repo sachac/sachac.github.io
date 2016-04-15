@@ -19,9 +19,9 @@ Additional notes: http://sachachua.com/blog/2014/03/reflecting-goals-time/
 
 See raw file or end of document for code. 
 
-#+CALL: graph-from-tables[:outputfile "goals.png" :cmdline "-Kdot -Tpng -Gdpi=300 -Gsize=8,8 -Grankdir=LR"](fillcolumn=20,id="G") :results silent :exports none
+#+CALL: graph-from-tables[:outputfile "goals.svg" :cmdline "-Kdot -Tsvg -Gdpi=72 -Gsize=8,8 -Grankdir=LR"](fillcolumn=20,id="G") :results silent :exports none
 
-[[file:goals.png]]
+[[file:goals.svg]]
 
 * Including "Someday" goals
   :PROPERTIES:
@@ -30,9 +30,9 @@ See raw file or end of document for code.
 
 See raw file or end of document for code.
 
-#+CALL: graph-from-tables[:outputfile "someday.png" :cmdline "-Kdot -Tpng -Gdpi=300 -Gsize=10,10 -Grankdir=LR"](fillcolumn=20,include-someday=1) :results silent :exports none
+#+CALL: graph-from-tables[:outputfile "someday.svg" :cmdline "-Kdot -Tsvg -Gdpi=72 -Gsize=10,10 -Grankdir=LR"](fillcolumn=20,include-someday=1) :results silent :exports none
 
-[[file:someday.png]]
+[[file:someday.svg]]
 
 * Table
   :PROPERTIES:
@@ -67,6 +67,7 @@ See raw file or end of document for code.
      | Programming  |   5 | SOMEDAY | set up smooth cross-referencing between blog posts and Flickr                                        |
      | Programming  |   5 | SOMEDAY | set up autocomplete                                                                                  |
      | Programming  |   5 | SOMEDAY | set up flychecking                                                                                   |
+
      | Programming  |   5 | SOMEDAY | make test-driven development part of my normal workflow                                              |
      | Programming  |   5 | SOMEDAY | get the hang of a CSS framework                                                                      |
      | Programming  |   5 | SOMEDAY | get the hang of a CSS preprocessor                                                                   |
