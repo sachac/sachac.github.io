@@ -3,11 +3,11 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2016-04-15 Fri 14:42 -->
+<!-- 2017-01-05 Thu 17:08 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Evil plans</title>
-<meta name="generator" content="Org-mode" />
+<meta name="generator" content="Org mode" />
 <meta name="author" content="Sacha Chua" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -53,13 +53,97 @@
     border: 1px solid black;
   }
   pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
   pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
 
   table { border-collapse:collapse; }
   caption.t-above { caption-side: top; }
@@ -92,6 +176,7 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css"
@@ -145,28 +230,6 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
-</script>
-<script type="text/javascript"
-        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -178,8 +241,11 @@ for the JavaScript code in this tag.
 <div class="row"><div class="columns">
 
 <p>
-<a id="orgda3ff4b"></a>
+<a id="org1f409ab"></a>
 </p>
+
+
+<div class="heading-status" width="200" height="200" style="float: right; width: 220px; background: white; padding: 10px" data-type="sunburst"></div>
 
 <p>
 Curious about anything? Contact me at sacha@sachachua.com .  
@@ -191,24 +257,25 @@ Raw files: <a href="https://github.com/sachac/sachac.github.io/tree/master/evil-
 Additional notes: <a href="http://sachachua.com/blog/2014/03/reflecting-goals-time/">http://sachachua.com/blog/2014/03/reflecting-goals-time/</a>
 </p>
 
-<div id="outline-container-orgb361fda" class="outline-2">
-<h2 id="Current_goals"><a id="orgb361fda"></a>Current goals</h2>
+<div id="outline-container-orga5442d1" class="outline-2">
+<h2 id="Current_goals"><a id="orga5442d1"></a>Current goals</h2>
 <div class="outline-text-2" id="text-Current_goals">
 <p>
 See raw file or end of document for code. 
 </p>
 
 
+
 <div class="figure">
-<p><object type="image/svg+xml" data="goals.svg" >
+<p><object type="image/svg+xml" data="goals.svg" class="org-svg">
 Sorry, your browser does not support SVG.</object>
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgcb4155f" class="outline-2">
-<h2 id="Including__Someday__goals"><a id="orgcb4155f"></a>Including "Someday" goals</h2>
+<div id="outline-container-orgbd21bfa" class="outline-2">
+<h2 id="Including__Someday__goals"><a id="orgbd21bfa"></a>Including "Someday" goals</h2>
 <div class="outline-text-2" id="text-Including__Someday__goals">
 <p>
 See raw file or end of document for code.
@@ -216,15 +283,15 @@ See raw file or end of document for code.
 
 
 <div class="figure">
-<p><object type="image/svg+xml" data="someday.svg" >
+<p><object type="image/svg+xml" data="someday.svg" class="org-svg">
 Sorry, your browser does not support SVG.</object>
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org390cbee" class="outline-2">
-<h2 id="Table"><a id="org390cbee"></a>Table</h2>
+<div id="outline-container-org4df7d6e" class="outline-2">
+<h2 id="Table"><a id="org4df7d6e"></a>Table</h2>
 <div class="outline-text-2" id="text-Table">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -270,13 +337,6 @@ Sorry, your browser does not support SVG.</object>
 
 <tr>
 <td class="org-left">Life</td>
-<td class="org-right">20</td>
-<td class="org-left">WAITING</td>
-<td class="org-left">deal with rough patches with grace</td>
-</tr>
-
-<tr>
-<td class="org-left">Life</td>
 <td class="org-right">100</td>
 <td class="org-left">WAITING</td>
 <td class="org-left">enjoy middle age</td>
@@ -314,13 +374,6 @@ Sorry, your browser does not support SVG.</object>
 <td class="org-left">Life</td>
 <td class="org-right">10</td>
 <td class="org-left">SOMEDAY</td>
-<td class="org-left">find a cat sitter we can trust</td>
-</tr>
-
-<tr>
-<td class="org-left">Life</td>
-<td class="org-right">10</td>
-<td class="org-left">SOMEDAY</td>
 <td class="org-left">set up distinctly interesting memories for four months straight</td>
 </tr>
 
@@ -329,13 +382,6 @@ Sorry, your browser does not support SVG.</object>
 <td class="org-right">30</td>
 <td class="org-left">SOMEDAY</td>
 <td class="org-left">get driver's license?</td>
-</tr>
-
-<tr>
-<td class="org-left">Analysis</td>
-<td class="org-right">5</td>
-<td class="org-left">SOMEDAY</td>
-<td class="org-left">visualize ideas over a year</td>
 </tr>
 
 <tr>
@@ -493,13 +539,6 @@ Sorry, your browser does not support SVG.</object>
 </tr>
 
 <tr>
-<td class="org-left">Programming</td>
-<td class="org-right">10</td>
-<td class="org-left">SOMEDAY</td>
-<td class="org-left">contribute automated tests to Emacs packages</td>
-</tr>
-
-<tr>
 <td class="org-left">Writing</td>
 <td class="org-right">30</td>
 <td class="org-left">SOMEDAY</td>
@@ -517,7 +556,7 @@ Sorry, your browser does not support SVG.</object>
 <td class="org-left">Life</td>
 <td class="org-right">10</td>
 <td class="org-left">SOMEDAY</td>
-<td class="org-left">create four major projects in 2015</td>
+<td class="org-left">create four major projects in a year</td>
 </tr>
 
 <tr>
@@ -525,20 +564,6 @@ Sorry, your browser does not support SVG.</object>
 <td class="org-right">20</td>
 <td class="org-left">SOMEDAY</td>
 <td class="org-left">write mini-book on building Emacs habits</td>
-</tr>
-
-<tr>
-<td class="org-left">Drawing</td>
-<td class="org-right">5</td>
-<td class="org-left">STARTED</td>
-<td class="org-left">make Sketchnotes 2014</td>
-</tr>
-
-<tr>
-<td class="org-left">Cooking</td>
-<td class="org-right">5</td>
-<td class="org-left">SOMEDAY</td>
-<td class="org-left">make paella</td>
 </tr>
 
 <tr>
@@ -552,21 +577,7 @@ Sorry, your browser does not support SVG.</object>
 <td class="org-left">Cooking</td>
 <td class="org-right">10</td>
 <td class="org-left">SOMEDAY</td>
-<td class="org-left">competently make pizza</td>
-</tr>
-
-<tr>
-<td class="org-left">Cooking</td>
-<td class="org-right">10</td>
-<td class="org-left">SOMEDAY</td>
 <td class="org-left">make braising and other fancy cooking terms part of my vocabulary</td>
-</tr>
-
-<tr>
-<td class="org-left">Cooking</td>
-<td class="org-right">10</td>
-<td class="org-left">SOMEDAY</td>
-<td class="org-left">adjust the feel of things by using herb combinations</td>
 </tr>
 
 <tr>
@@ -581,48 +592,6 @@ Sorry, your browser does not support SVG.</object>
 <td class="org-right">20</td>
 <td class="org-left">SOMEDAY</td>
 <td class="org-left">cut standard sizes</td>
-</tr>
-
-<tr>
-<td class="org-left">Learning</td>
-<td class="org-right">10</td>
-<td class="org-left">SOMEDAY</td>
-<td class="org-left">Japanese: Listen to regular shows with &gt;=80% comprehension</td>
-</tr>
-
-<tr>
-<td class="org-left">Learning</td>
-<td class="org-right">10</td>
-<td class="org-left">SOMEDAY</td>
-<td class="org-left">Japanese: Listen to tech talks with &gt;=80% comprehension</td>
-</tr>
-
-<tr>
-<td class="org-left">Learning</td>
-<td class="org-right">10</td>
-<td class="org-left">SOMEDAY</td>
-<td class="org-left">Japanese: Listen to cooking shows with &gt;=80% comprehension</td>
-</tr>
-
-<tr>
-<td class="org-left">Learning</td>
-<td class="org-right">10</td>
-<td class="org-left">SOMEDAY</td>
-<td class="org-left">Japanese: Read blog posts and tweets about tech with &gt;=80% comprehension</td>
-</tr>
-
-<tr>
-<td class="org-left">Learning</td>
-<td class="org-right">10</td>
-<td class="org-left">SOMEDAY</td>
-<td class="org-left">Japanese: Read cooking instructions on packages with &gt;=80% comprehension</td>
-</tr>
-
-<tr>
-<td class="org-left">Learning</td>
-<td class="org-right">10</td>
-<td class="org-left">SOMEDAY</td>
-<td class="org-left">Japanese: Complete Anki decks for JP-2000</td>
 </tr>
 
 <tr>
@@ -663,13 +632,6 @@ Sorry, your browser does not support SVG.</object>
 <tr>
 <td class="org-left">Finance</td>
 <td class="org-right">10</td>
-<td class="org-left">WAITING</td>
-<td class="org-left">sell stocks in a non-registered account and properly account for them</td>
-</tr>
-
-<tr>
-<td class="org-left">Finance</td>
-<td class="org-right">10</td>
 <td class="org-left">TODO</td>
 <td class="org-left">re-examine spending and carve out more for what matters</td>
 </tr>
@@ -703,13 +665,6 @@ Sorry, your browser does not support SVG.</object>
 </tr>
 
 <tr>
-<td class="org-left">Writing</td>
-<td class="org-right">10</td>
-<td class="org-left">SOMEDAY</td>
-<td class="org-left">develop structures for journaling</td>
-</tr>
-
-<tr>
 <td class="org-left">Learning</td>
 <td class="org-right">10</td>
 <td class="org-left">SOMEDAY</td>
@@ -728,21 +683,28 @@ Sorry, your browser does not support SVG.</object>
 </div>
 </div>
 
-<div id="outline-container-orgd868c12" class="outline-2">
-<h2 id="Goals"><a id="orgd868c12"></a>Goals&#xa0;&#xa0;&#xa0;<span class="tag"><span class="goal">goal</span></span></h2>
+<div id="outline-container-orgf82c54b" class="outline-2">
+<h2 id="Goals"><a id="orgf82c54b"></a>Goals&#xa0;&#xa0;&#xa0;<span class="tag"><span class="goal">goal</span></span></h2>
 <div class="outline-text-2" id="text-Goals">
 </div>
 
-<div id="outline-container-orgd10b2b0" class="outline-3">
-<h3 id="maintain_or_improve_my_health"><a id="orgd10b2b0"></a>maintain or improve my health</h3>
+<div id="outline-container-org75de6e9" class="outline-3">
+<h3 id="maintain_or_improve_my_health"><a id="org75de6e9"></a>maintain or improve my health</h3>
 <div class="outline-text-3" id="text-maintain_or_improve_my_health">
 <p>
 So that I can <a href="#live_an_awesome_life">live an awesome life</a>
 </p>
 </div>
-
-<div id="outline-container-org6e084c6" class="outline-4">
-<h4 id="Get_used_to_babyweight_exercises"><a id="org6e084c6"></a><span class="todo TODO">TODO</span> Get used to babyweight exercises&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Health">Health</span></span></h4>
+<div id="outline-container-org32ad133" class="outline-4">
+<h4 id="Get_A__used_to_walking"><a id="org32ad133"></a><span class="todo TODO">TODO</span> Get A- used to walking&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Health">Health</span></span></h4>
+<div class="outline-text-4" id="text-Get_A__used_to_walking">
+<p>
+So that I can <a href="#maintain_or_improve_my_health">maintain or improve my health</a>
+</p>
+</div>
+</div>
+<div id="outline-container-orga5d5a2d" class="outline-4">
+<h4 id="Get_used_to_babyweight_exercises"><a id="orga5d5a2d"></a><span class="done DONE">DONE</span> Get used to babyweight exercises&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Health">Health</span></span></h4>
 <div class="outline-text-4" id="text-Get_used_to_babyweight_exercises">
 <p>
 So that I can <a href="#maintain_or_improve_my_health">maintain or improve my health</a>
@@ -759,24 +721,24 @@ Built-in progression, hooray!
 </div>
 </div>
 
-<div id="outline-container-org1b1d4a0" class="outline-4">
-<h4 id="restart_jogging_with_W_"><a id="org1b1d4a0"></a><span class="todo SOMEDAY">SOMEDAY</span> restart jogging with W-&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Health">Health</span></span></h4>
+<div id="outline-container-org518000c" class="outline-4">
+<h4 id="restart_jogging_with_W_"><a id="org518000c"></a><span class="todo SOMEDAY">SOMEDAY</span> restart jogging with W-&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Health">Health</span></span></h4>
 <div class="outline-text-4" id="text-restart_jogging_with_W_">
 <p>
 So that I can <a href="#maintain_or_improve_my_health">maintain or improve my health</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orgf9eabbe" class="outline-4">
-<h4 id="develop_habit_of_biking_safely_and_comfortably_in_winter______5C____20km_wind__not_much_ice_or_snow_"><a id="orgf9eabbe"></a><span class="todo SOMEDAY">SOMEDAY</span> develop habit of biking safely and comfortably in winter (&gt;= -5C, &lt; 20km wind, not much ice or snow)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Health">Health</span></span></h4>
+<div id="outline-container-org9dd701a" class="outline-4">
+<h4 id="develop_habit_of_biking_safely_and_comfortably_in_winter______5C____20km_wind__not_much_ice_or_snow_"><a id="org9dd701a"></a><span class="todo SOMEDAY">SOMEDAY</span> develop habit of biking safely and comfortably in winter (&gt;= -5C, &lt; 20km wind, not much ice or snow)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Health">Health</span></span></h4>
 <div class="outline-text-4" id="text-develop_habit_of_biking_safely_and_comfortably_in_winter______5C____20km_wind__not_much_ice_or_snow_">
 <p>
 So that I can <a href="#maintain_or_improve_my_health">maintain or improve my health</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org40d9438" class="outline-4">
-<h4 id="graduate_from_introductory_exercise_ladder"><a id="org40d9438"></a><span class="todo SOMEDAY">SOMEDAY</span> graduate from introductory exercise ladder&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Health">Health</span></span></h4>
+<div id="outline-container-org5c46974" class="outline-4">
+<h4 id="graduate_from_introductory_exercise_ladder"><a id="org5c46974"></a><span class="todo SOMEDAY">SOMEDAY</span> graduate from introductory exercise ladder&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Health">Health</span></span></h4>
 <div class="outline-text-4" id="text-graduate_from_introductory_exercise_ladder">
 <p>
 So that I can <a href="#maintain_or_improve_my_health">maintain or improve my health</a>
@@ -784,12 +746,12 @@ So that I can <a href="#maintain_or_improve_my_health">maintain or improve my he
 </div>
 </div>
 </div>
-<div id="outline-container-org5366b89" class="outline-3">
-<h3 id="live_an_awesome_life"><a id="org5366b89"></a>live an awesome life</h3>
+<div id="outline-container-org5a598bc" class="outline-3">
+<h3 id="live_an_awesome_life"><a id="org5a598bc"></a>live an awesome life</h3>
 <div class="outline-text-3" id="text-live_an_awesome_life">
 </div>
-<div id="outline-container-org8ecc869" class="outline-4">
-<h4 id="do_a_5_year_experiment_in_self_directed_living"><a id="org8ecc869"></a><span class="todo TODO">TODO</span> do a 5-year experiment in self-directed living</h4>
+<div id="outline-container-orgcea6621" class="outline-4">
+<h4 id="do_a_5_year_experiment_in_self_directed_living"><a id="orgcea6621"></a><span class="todo TODO">TODO</span> do a 5-year experiment in self-directed living</h4>
 <div class="outline-text-4" id="text-do_a_5_year_experiment_in_self_directed_living">
 <p>
 so that I can <a href="#live_an_awesome_life">live an awesome life</a>
@@ -841,275 +803,291 @@ What kind of concrete actions or projects will move me towards that? What kinds 
 </div>
 </div>
 
-<div id="outline-container-org93a0a86" class="outline-4">
-<h4 id="cultivate_equanimity"><a id="org93a0a86"></a>cultivate equanimity</h4>
+<div id="outline-container-orgfe6ff81" class="outline-4">
+<h4 id="cultivate_equanimity"><a id="orgfe6ff81"></a>cultivate equanimity</h4>
 <div class="outline-text-4" id="text-cultivate_equanimity">
 <p>
 So that I can <a href="#live_an_awesome_life">live an awesome life</a>
 </p>
 </div>
-<ul class="org-ul"><li><a id="deal_with_rough_patches_with_grace"></a><a id="org6d38f5a"></a><span class="todo WAITING">WAITING</span> deal with rough patches with grace&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Life">Life</span></span><br  /><div class="outline-text-5" id="text-deal_with_rough_patches_with_grace">
+<ul class="org-ul"><li><a id="adapt_to_A__s_needs_as_a_toddler"></a><a id="org59d41df"></a><span class="todo TODO">TODO</span> adapt to A-'s needs as a toddler<br  /><div class="outline-text-5" id="text-adapt_to_A__s_needs_as_a_toddler">
 <p>
-So that I can <a href="#enjoy_middle_age">enjoy middle age</a>
+So that I can <a href="#cultivate_equanimity">cultivate equanimity</a>
 </p>
 </div></li>
-<li><a id="enjoy_middle_age"></a><a id="org86cb429"></a><span class="todo WAITING">WAITING</span> enjoy middle age&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Life">Life</span></span><br  /><div class="outline-text-5" id="text-enjoy_middle_age">
+
+<li><a id="deal_with_rough_patches_with_grace"></a><a id="org2f1128e"></a><span class="done DONE">DONE</span> deal with rough patches with grace&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Life">Life</span></span><br  /><div class="outline-text-5" id="text-deal_with_rough_patches_with_grace">
+<p>
+So that I can <a href="#live_an_awesome_life">live an awesome life</a>
+</p>
+</div></li>
+<li><a id="enjoy_middle_age"></a><a id="org2e75838"></a><span class="todo WAITING">WAITING</span> enjoy middle age&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Life">Life</span></span><br  /><div class="outline-text-5" id="text-enjoy_middle_age">
 <p>
 So that I can <a href="#enjoy_old_age">enjoy old age</a>
 </p>
 </div></li>
 
-<li><a id="respond_with_tranquility_in_the_face_of_my_mortality"></a><a id="orge145ffc"></a><span class="todo WAITING">WAITING</span> respond with tranquility in the face of my mortality&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Life">Life</span></span><br  /><div class="outline-text-5" id="text-respond_with_tranquility_in_the_face_of_my_mortality">
+<li><a id="respond_with_tranquility_in_the_face_of_my_mortality"></a><a id="orgaf8b82c"></a><span class="todo WAITING">WAITING</span> respond with tranquility in the face of my mortality&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Life">Life</span></span><br  /><div class="outline-text-5" id="text-respond_with_tranquility_in_the_face_of_my_mortality">
 <p>
 So that I can <a href="#enjoy_old_age">enjoy old age</a>
 </p>
 </div></li>
 
-<li><a id="respond_with_tranquility_in_the_face_of_sickness"></a><a id="org4b0701c"></a><span class="todo WAITING">WAITING</span> respond with tranquility in the face of sickness&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Life">Life</span></span><br  /><div class="outline-text-5" id="text-respond_with_tranquility_in_the_face_of_sickness">
+<li><a id="respond_with_tranquility_in_the_face_of_sickness"></a><a id="org33d4d63"></a><span class="todo WAITING">WAITING</span> respond with tranquility in the face of sickness&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Life">Life</span></span><br  /><div class="outline-text-5" id="text-respond_with_tranquility_in_the_face_of_sickness">
 <p>
 So that I can <a href="#respond_with_tranquility_in_the_face_of_the_death_of_someone_close_to_me">respond with tranquility in the face of the death of someone close to me</a>
 </p>
 </div></li>
 
-<li><a id="respond_with_tranquility_in_the_face_of_the_death_of_someone_close_to_me"></a><a id="org23baa8a"></a><span class="todo WAITING">WAITING</span> respond with tranquility in the face of the death of someone close to me&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Life">Life</span></span><br  /><div class="outline-text-5" id="text-respond_with_tranquility_in_the_face_of_the_death_of_someone_close_to_me">
+<li><a id="respond_with_tranquility_in_the_face_of_the_death_of_someone_close_to_me"></a><a id="orgc368613"></a><span class="todo WAITING">WAITING</span> respond with tranquility in the face of the death of someone close to me&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Life">Life</span></span><br  /><div class="outline-text-5" id="text-respond_with_tranquility_in_the_face_of_the_death_of_someone_close_to_me">
 <p>
 So that I can <a href="#respond_with_tranquility_in_the_face_of_my_mortality">respond with tranquility in the face of my mortality</a>
 </p>
 </div></li>
 
-<li><a id="enjoy_old_age"></a><a id="org6e8316b"></a><span class="todo WAITING">WAITING</span> enjoy old age&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Life">Life</span></span><br  /><div class="outline-text-5" id="text-enjoy_old_age">
+<li><a id="enjoy_old_age"></a><a id="orgd2af654"></a><span class="todo WAITING">WAITING</span> enjoy old age&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Life">Life</span></span><br  /><div class="outline-text-5" id="text-enjoy_old_age">
 <p>
 So that I can <a href="#cultivate_equanimity">cultivate equanimity</a>
 </p>
 </div></li></ul>
 </div>
 
-<div id="outline-container-org7552312" class="outline-4">
-<h4 id="enrich_our_experiences"><a id="org7552312"></a>enrich our experiences</h4>
+<div id="outline-container-org3bf02e2" class="outline-4">
+<h4 id="enrich_our_experiences"><a id="org3bf02e2"></a>enrich our experiences</h4>
 <div class="outline-text-4" id="text-enrich_our_experiences">
 <p>
 So that I can <a href="#live_an_awesome_life">live an awesome life</a>
 </p>
 </div>
-<ul class="org-ul"><li><a id="get_Canadian_passport"></a><a id="orgcc035af"></a><span class="done DONE">DONE</span> get Canadian passport&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Life">Life</span></span><br  /><div class="outline-text-5" id="text-get_Canadian_passport">
+<ul class="org-ul"><li><a id="get_Canadian_passport"></a><a id="org53d21a4"></a><span class="done DONE">DONE</span> get Canadian passport&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Life">Life</span></span><br  /><div class="outline-text-5" id="text-get_Canadian_passport">
 <p>
 So that I can <a href="#enrich_our_experiences">enrich our experiences</a>
 </p>
 </div></li>
-<li><a id="find_a_cat_sitter_we_can_trust"></a><a id="org3c760d8"></a><span class="todo SOMEDAY">SOMEDAY</span> find a cat sitter we can trust&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Life">Life</span></span><br  /><div class="outline-text-5" id="text-find_a_cat_sitter_we_can_trust">
+<li><a id="find_a_cat_sitter_we_can_trust"></a><a id="orgae414cc"></a><span class="done DONE">DONE</span> find a cat sitter we can trust&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Life">Life</span></span><br  /><div class="outline-text-5" id="text-find_a_cat_sitter_we_can_trust">
+<p>
+So that I can <a href="#enrich_our_experiences">enrich our experiences</a>
+</p>
+
+<p>
+J- did all right
+</p>
+</div></li>
+<li><a id="set_up_distinctly_interesting_memories_for_four_months_straight"></a><a id="org6f915b5"></a><span class="todo SOMEDAY">SOMEDAY</span> set up distinctly interesting memories for four months straight&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Life">Life</span></span><br  /><div class="outline-text-5" id="text-set_up_distinctly_interesting_memories_for_four_months_straight">
 <p>
 So that I can <a href="#enrich_our_experiences">enrich our experiences</a>
 </p>
 </div></li>
 
-<li><a id="set_up_distinctly_interesting_memories_for_four_months_straight"></a><a id="org118199"></a><span class="todo SOMEDAY">SOMEDAY</span> set up distinctly interesting memories for four months straight&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Life">Life</span></span><br  /><div class="outline-text-5" id="text-set_up_distinctly_interesting_memories_for_four_months_straight">
-<p>
-So that I can <a href="#enrich_our_experiences">enrich our experiences</a>
-</p>
-</div></li>
-
-<li><a id="get_driver_s_license_"></a><a id="org175017c"></a><span class="todo SOMEDAY">SOMEDAY</span> get driver's license?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Life">Life</span></span><br  /><div class="outline-text-5" id="text-get_driver_s_license_">
+<li><a id="get_driver_s_license_"></a><a id="orgb7af8ea"></a><span class="todo SOMEDAY">SOMEDAY</span> get driver's license?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Life">Life</span></span><br  /><div class="outline-text-5" id="text-get_driver_s_license_">
 <p>
 So that I can <a href="#enrich_our_experiences">enrich our experiences</a>
 </p>
 </div></li></ul>
 </div>
 </div>
-<div id="outline-container-org2851735" class="outline-3">
-<h3 id="tickle_my_brain"><a id="org2851735"></a>tickle my brain</h3>
+<div id="outline-container-org08f4445" class="outline-3">
+<h3 id="tickle_my_brain"><a id="org08f4445"></a>tickle my brain</h3>
 <div class="outline-text-3" id="text-tickle_my_brain">
 <p>
 so that I can <a href="#get_more_value_from_my_time">get more value from my time</a> and <a href="#share_useful_stuff">share useful stuff</a>
 </p>
 </div>
-<div id="outline-container-orgc6b3871" class="outline-4">
-<h4 id="develop_my_analysis_skills"><a id="orgc6b3871"></a>develop my analysis skills</h4>
+<div id="outline-container-org9d5b143" class="outline-4">
+<h4 id="develop_my_analysis_skills"><a id="org9d5b143"></a>develop my analysis skills</h4>
 <div class="outline-text-4" id="text-develop_my_analysis_skills">
 <p>
 So that I can <a href="#tickle_my_brain">tickle my brain</a>
 </p>
 </div>
-<ul class="org-ul"><li><a id="visualize_ideas_over_a_year"></a><a id="orga838c9a"></a><span class="todo SOMEDAY">SOMEDAY</span> visualize ideas over a year&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Analysis">Analysis</span></span><br  /><div class="outline-text-5" id="text-visualize_ideas_over_a_year">
+<ul class="org-ul"><li><a id="use_animations_to_understand_data"></a><a id="org6526329"></a><span class="todo SOMEDAY">SOMEDAY</span> use animations to understand data&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Analysis">Analysis</span></span><br  /><div class="outline-text-5" id="text-use_animations_to_understand_data">
 <p>
 So that I can <a href="#develop_my_analysis_skills">develop my analysis skills</a>
 </p>
 </div></li>
-<li><a id="use_animations_to_understand_data"></a><a id="orgaa3a7ec"></a><span class="todo SOMEDAY">SOMEDAY</span> use animations to understand data&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Analysis">Analysis</span></span><br  /><div class="outline-text-5" id="text-use_animations_to_understand_data">
+<li><a id="read_the_visual_dictionary"></a><a id="orgc1c43ed"></a><span class="todo SOMEDAY">SOMEDAY</span> read the visual dictionary&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Learning">Learning</span></span><br  /><div class="outline-text-5" id="text-read_the_visual_dictionary">
 <p>
 So that I can <a href="#develop_my_analysis_skills">develop my analysis skills</a>
 </p>
 </div></li>
-<li><a id="read_the_visual_dictionary"></a><a id="orgc78dac0"></a><span class="todo SOMEDAY">SOMEDAY</span> read the visual dictionary&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Learning">Learning</span></span><br  /><div class="outline-text-5" id="text-read_the_visual_dictionary">
+<li><a id="visualize_ideas_over_a_year"></a><a id="orgb31d0dc"></a><span class="done DONE">DONE</span> visualize ideas over a year&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Analysis">Analysis</span></span><br  /><div class="outline-text-5" id="text-visualize_ideas_over_a_year">
 <p>
 So that I can <a href="#develop_my_analysis_skills">develop my analysis skills</a>
 </p>
 </div></li></ul>
 </div>
 </div>
-<div id="outline-container-orga4c7015" class="outline-3">
-<h3 id="share_useful_stuff"><a id="orga4c7015"></a>share useful stuff</h3>
+<div id="outline-container-org1e7445d" class="outline-3">
+<h3 id="share_useful_stuff"><a id="org1e7445d"></a>share useful stuff</h3>
 <div class="outline-text-3" id="text-share_useful_stuff">
 <p>
 So that I can <a href="#build_good_karma">build good karma</a> and <a href="#get_more_value_from_my_time">get more value from my time</a>
 </p>
 </div>
-<div id="outline-container-orgf9705b1" class="outline-4">
-<h4 id="improve_my_sharing_skills"><a id="orgf9705b1"></a>improve my sharing skills</h4>
+<div id="outline-container-orgae50ba4" class="outline-4">
+<h4 id="improve_my_sharing_skills"><a id="orgae50ba4"></a>improve my sharing skills</h4>
 <div class="outline-text-4" id="text-improve_my_sharing_skills">
 <p>
 So that I can <a href="#share_useful_stuff">share useful stuff</a>
 </p>
 </div>
-<ul class="org-ul"><li><a id="harvest_my_backlog_of_notes"></a><a id="org1406efa"></a><span class="todo TODO">TODO</span> harvest my backlog of notes<br  /><div class="outline-text-5" id="text-harvest_my_backlog_of_notes">
+<ul class="org-ul"><li><a id="harvest_my_backlog_of_notes"></a><a id="org6c28989"></a><span class="todo TODO">TODO</span> harvest my backlog of notes<br  /><div class="outline-text-5" id="text-harvest_my_backlog_of_notes">
 <p>
 So that I can <a href="#improve_my_sharing_skills">improve my sharing skills</a>
 </p>
 </div></li>
-<li><a id="develop_ability_to_look_at_my_writing_with_strangers__eyes"></a><a id="org4ec3e1c"></a><span class="todo SOMEDAY">SOMEDAY</span> develop ability to look at my writing with strangers' eyes&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Writing">Writing</span></span><br  /><div class="outline-text-5" id="text-develop_ability_to_look_at_my_writing_with_strangers__eyes">
+<li><a id="develop_ability_to_look_at_my_writing_with_strangers__eyes"></a><a id="orgdd039d7"></a><span class="todo SOMEDAY">SOMEDAY</span> develop ability to look at my writing with strangers' eyes&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Writing">Writing</span></span><br  /><div class="outline-text-5" id="text-develop_ability_to_look_at_my_writing_with_strangers__eyes">
 <p>
 So that I can <a href="#cut_writing_ruthlessly">cut writing ruthlessly</a>
 </p>
 </div></li>
-<li><a id="cut_writing_ruthlessly"></a><a id="org423f5f1"></a><span class="todo SOMEDAY">SOMEDAY</span> cut writing ruthlessly&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Writing">Writing</span></span><br  /><div class="outline-text-5" id="text-cut_writing_ruthlessly">
+<li><a id="cut_writing_ruthlessly"></a><a id="org33c7c79"></a><span class="todo SOMEDAY">SOMEDAY</span> cut writing ruthlessly&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Writing">Writing</span></span><br  /><div class="outline-text-5" id="text-cut_writing_ruthlessly">
 <p>
 So that I can <a href="#write_a_book_instead_of_compiling_it">write a book instead of compiling it</a>
 </p>
 </div></li>
-<li><a id="write_in_bigger_chunks"></a><a id="org15d4b7a"></a><span class="todo SOMEDAY">SOMEDAY</span> write in bigger chunks&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Writing">Writing</span></span><br  /><div class="outline-text-5" id="text-write_in_bigger_chunks">
+<li><a id="write_in_bigger_chunks"></a><a id="orga289d96"></a><span class="todo SOMEDAY">SOMEDAY</span> write in bigger chunks&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Writing">Writing</span></span><br  /><div class="outline-text-5" id="text-write_in_bigger_chunks">
 <p>
 So that I can <a href="#write_a_book_instead_of_compiling_it">write a book instead of compiling it</a>     
 </p>
 </div></li>
-<li><a id="write_a_book_instead_of_compiling_it"></a><a id="org802b7c7"></a><span class="todo SOMEDAY">SOMEDAY</span> write a book instead of compiling it&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Writing">Writing</span></span><br  /><div class="outline-text-5" id="text-write_a_book_instead_of_compiling_it">
+<li><a id="write_a_book_instead_of_compiling_it"></a><a id="orgcf9a2e0"></a><span class="todo SOMEDAY">SOMEDAY</span> write a book instead of compiling it&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Writing">Writing</span></span><br  /><div class="outline-text-5" id="text-write_a_book_instead_of_compiling_it">
 <p>
 So that I can <a href="#habitually_write_books_____3_books_in_5_years_">habitually write books (&gt;= 3 books in 5 years)</a>
 </p>
 </div></li>
-<li><a id="habitually_write_books_____3_books_in_5_years_"></a><a id="org3d02902"></a><span class="todo SOMEDAY">SOMEDAY</span> habitually write books (&gt;= 3 books in 5 years)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Writing">Writing</span></span><br  /><div class="outline-text-5" id="text-habitually_write_books_____3_books_in_5_years_">
+<li><a id="habitually_write_books_____3_books_in_5_years_"></a><a id="org91a0cb7"></a><span class="todo SOMEDAY">SOMEDAY</span> habitually write books (&gt;= 3 books in 5 years)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Writing">Writing</span></span><br  /><div class="outline-text-5" id="text-habitually_write_books_____3_books_in_5_years_">
 <p>
 So that I can <a href="#improve_my_sharing_skills">improve my sharing skills</a>
 </p>
 </div></li>
-<li><a id="habitually_write_mini_guides_____4_mini_guides_in_2_years_"></a><a id="org282a0ab"></a><span class="todo SOMEDAY">SOMEDAY</span> habitually write mini-guides (&gt;= 4 mini-guides in 2 years)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Writing">Writing</span></span><br  /><div class="outline-text-5" id="text-habitually_write_mini_guides_____4_mini_guides_in_2_years_">
+<li><a id="habitually_write_mini_guides_____4_mini_guides_in_2_years_"></a><a id="org6f8bfa3"></a><span class="todo SOMEDAY">SOMEDAY</span> habitually write mini-guides (&gt;= 4 mini-guides in 2 years)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Writing">Writing</span></span><br  /><div class="outline-text-5" id="text-habitually_write_mini_guides_____4_mini_guides_in_2_years_">
 <p>
 So that I can <a href="#habitually_write_books_____3_books_in_5_years_">improve my sharing skills</a>
 </p>
 </div></li>
-<li><a id="make_videos_part_of_the_way_I_regularly_share___12_original_videos_a_year_"></a><a id="org6e25aeb"></a><span class="todo SOMEDAY">SOMEDAY</span> make videos part of the way I regularly share (~12 original videos a year)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Speaking">Speaking</span></span><br  /><div class="outline-text-5" id="text-make_videos_part_of_the_way_I_regularly_share___12_original_videos_a_year_">
+<li><a id="make_videos_part_of_the_way_I_regularly_share___12_original_videos_a_year_"></a><a id="orgfef7afd"></a><span class="todo SOMEDAY">SOMEDAY</span> make videos part of the way I regularly share (~12 original videos a year)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Speaking">Speaking</span></span><br  /><div class="outline-text-5" id="text-make_videos_part_of_the_way_I_regularly_share___12_original_videos_a_year_">
 <p>
 So that I can <a href="#share_useful_stuff">share useful stuff</a>
 </p>
 </div></li></ul>
 </div>
-<div id="outline-container-org4f65b9a" class="outline-4">
-<h4 id="improve_my_drawing_skills"><a id="org4f65b9a"></a>improve my drawing skills</h4>
+<div id="outline-container-orge71dcdd" class="outline-4">
+<h4 id="improve_my_drawing_skills"><a id="orge71dcdd"></a>improve my drawing skills</h4>
 <div class="outline-text-4" id="text-improve_my_drawing_skills">
 <p>
 So that I can <a href="#share_useful_stuff">share useful stuff</a>
 </p>
 </div>
-<ul class="org-ul"><li><a id="Make_it_to_another_year_of_daily_journal_drawing"></a><a id="orgd118c51"></a><span class="todo TODO">TODO</span> Make it to another year of daily journal drawing<br  /><div class="outline-text-5" id="text-Make_it_to_another_year_of_daily_journal_drawing">
+<ul class="org-ul"><li><a id="Make_it_to_another_year_of_daily_journal_drawing"></a><a id="org5c9d4c3"></a><span class="done DONE">DONE</span> Make it to another year of daily journal drawing<br  /><div class="outline-text-5" id="text-Make_it_to_another_year_of_daily_journal_drawing">
 <p>
 So that I can <a href="#improve_my_drawing_skills">improve my drawing skills</a>
 </p>
 </div></li>
-<li><a id="find_or_make_digital_equivalent_of_index_card_drawing"></a><a id="org83c1c26"></a><span class="done DONE">DONE</span> find or make digital equivalent of index card drawing&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Drawing">Drawing</span></span><br  /><div class="outline-text-5" id="text-find_or_make_digital_equivalent_of_index_card_drawing">
+<li><a id="find_or_make_digital_equivalent_of_index_card_drawing"></a><a id="orgfecb223"></a><span class="done DONE">DONE</span> find or make digital equivalent of index card drawing&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Drawing">Drawing</span></span><br  /><div class="outline-text-5" id="text-find_or_make_digital_equivalent_of_index_card_drawing">
 <p>
 So that I can <a href="#improve_my_drawing_skills">improve my drawing skills</a>
 </p>
 </div></li>
-<li><a id="draw_recognizable_people"></a><a id="orge16e13f"></a><span class="todo SOMEDAY">SOMEDAY</span> draw recognizable people&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Drawing">Drawing</span></span><br  /><div class="outline-text-5" id="text-draw_recognizable_people">
+<li><a id="draw_recognizable_people"></a><a id="org04c6bed"></a><span class="todo SOMEDAY">SOMEDAY</span> draw recognizable people&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Drawing">Drawing</span></span><br  /><div class="outline-text-5" id="text-draw_recognizable_people">
 <p>
 So that I can <a href="#improve_my_drawing_skills">improve my drawing skills</a>
 </p>
 </div></li></ul>
 </div>
-<div id="outline-container-org9a82993" class="outline-4">
-<h4 id="improve_my_coding_skills"><a id="org9a82993"></a>improve my coding skills</h4>
+<div id="outline-container-orga2c2876" class="outline-4">
+<h4 id="improve_my_coding_skills"><a id="orga2c2876"></a>improve my coding skills</h4>
 <div class="outline-text-4" id="text-improve_my_coding_skills">
 <p>
 So that I can <a href="#share_useful_stuff">share useful stuff</a>
 </p>
 </div>
-<ul class="org-ul"><li><a id="Build_visualizations_for_baby_data"></a><a id="org16ff54e"></a><span class="todo TODO">TODO</span> Build visualizations for baby data<br  /><div class="outline-text-5" id="text-Build_visualizations_for_baby_data">
+<ul class="org-ul"><li><a id="Build_visualizations_for_baby_data"></a><a id="orga5d02dd"></a><span class="done DONE">DONE</span> Build visualizations for baby data<br  /><div class="outline-text-5" id="text-Build_visualizations_for_baby_data">
 <p>
 So that I can <a href="#improve_my_coding_skills">improve my coding skills</a>
 </p>
 </div></li>
-<li><a id="set_up_smooth_cross_referencing_between_blog_posts_and_Flickr"></a><a id="org1aa40b"></a><span class="todo SOMEDAY">SOMEDAY</span> set up smooth cross-referencing between blog posts and Flickr&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br  /><div class="outline-text-5" id="text-set_up_smooth_cross_referencing_between_blog_posts_and_Flickr">
+<li><a id="set_up_smooth_cross_referencing_between_blog_posts_and_Flickr"></a><a id="org59cc31c"></a><span class="done DONE">DONE</span> set up smooth cross-referencing between blog posts and Flickr&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br  /><div class="outline-text-5" id="text-set_up_smooth_cross_referencing_between_blog_posts_and_Flickr">
+<p>
+So that I can <a href="#improve_my_coding_skills">improve my coding skills</a>
+Handled by IDs, tags, and my own sketch reviewer
+</p>
+</div></li>
+<li><a id="set_up_autocomplete"></a><a id="org0c212ce"></a><span class="todo SOMEDAY">SOMEDAY</span> set up autocomplete&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br  /><div class="outline-text-5" id="text-set_up_autocomplete">
 <p>
 So that I can <a href="#improve_my_coding_skills">improve my coding skills</a>
 </p>
 </div></li>
-<li><a id="set_up_autocomplete"></a><a id="org31aea68"></a><span class="todo SOMEDAY">SOMEDAY</span> set up autocomplete&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br  /><div class="outline-text-5" id="text-set_up_autocomplete">
+<li><a id="set_up_flychecking"></a><a id="org83bb41c"></a><span class="todo SOMEDAY">SOMEDAY</span> set up flychecking&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br  /><div class="outline-text-5" id="text-set_up_flychecking">
 <p>
 So that I can <a href="#improve_my_coding_skills">improve my coding skills</a>
 </p>
 </div></li>
-<li><a id="set_up_flychecking"></a><a id="orgc511790"></a><span class="todo SOMEDAY">SOMEDAY</span> set up flychecking&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br  /><div class="outline-text-5" id="text-set_up_flychecking">
+<li><a id="make_test_driven_development_part_of_my_normal_workflow"></a><a id="org62bc855"></a><span class="todo SOMEDAY">SOMEDAY</span> make test-driven development part of my normal workflow&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br  /><div class="outline-text-5" id="text-make_test_driven_development_part_of_my_normal_workflow">
 <p>
 So that I can <a href="#improve_my_coding_skills">improve my coding skills</a>
 </p>
 </div></li>
-<li><a id="make_test_driven_development_part_of_my_normal_workflow"></a><a id="orgfc102d3"></a><span class="todo SOMEDAY">SOMEDAY</span> make test-driven development part of my normal workflow&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br  /><div class="outline-text-5" id="text-make_test_driven_development_part_of_my_normal_workflow">
-<p>
-So that I can <a href="#improve_my_coding_skills">improve my coding skills</a>
-</p>
-</div></li>
-<li><a id="get_the_hang_of_a_CSS_framework"></a><a id="org711642c"></a><span class="todo SOMEDAY">SOMEDAY</span> get the hang of a CSS framework&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br  /><div class="outline-text-5" id="text-get_the_hang_of_a_CSS_framework">
+<li><a id="get_the_hang_of_a_CSS_framework"></a><a id="org707ef17"></a><span class="todo SOMEDAY">SOMEDAY</span> get the hang of a CSS framework&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br  /><div class="outline-text-5" id="text-get_the_hang_of_a_CSS_framework">
 <p>
 So that I can <a href="#get_the_hang_of_a_CSS_preprocessor">get the hang of a CSS preprocessor</a>
 </p>
 </div></li>
-<li><a id="get_the_hang_of_a_CSS_preprocessor"></a><a id="org15d9162"></a><span class="todo SOMEDAY">SOMEDAY</span> get the hang of a CSS preprocessor&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br  /><div class="outline-text-5" id="text-get_the_hang_of_a_CSS_preprocessor">
+<li><a id="get_the_hang_of_a_CSS_preprocessor"></a><a id="orgfa5b82d"></a><span class="todo SOMEDAY">SOMEDAY</span> get the hang of a CSS preprocessor&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br  /><div class="outline-text-5" id="text-get_the_hang_of_a_CSS_preprocessor">
 <p>
 So that I can <a href="#improve_my_coding_skills">improve my coding skills</a>
 </p>
 </div></li>
-<li><a id="get_the_hang_of_a_Javascript_preprocessor"></a><a id="org2e457a9"></a><span class="todo SOMEDAY">SOMEDAY</span> get the hang of a Javascript preprocessor&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br  /><div class="outline-text-5" id="text-get_the_hang_of_a_Javascript_preprocessor">
+<li><a id="get_the_hang_of_a_Javascript_preprocessor"></a><a id="orgfb097c4"></a><span class="todo SOMEDAY">SOMEDAY</span> get the hang of a Javascript preprocessor&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br  /><div class="outline-text-5" id="text-get_the_hang_of_a_Javascript_preprocessor">
 <p>
 So that I can <a href="#improve_my_coding_skills">improve my coding skills</a>
 </p>
 </div></li>
-<li><a id="help_other_people_program_more_effectively"></a><a id="orge1b9d88"></a><span class="todo SOMEDAY">SOMEDAY</span> help other people program more effectively&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br  /><div class="outline-text-5" id="text-help_other_people_program_more_effectively">
+<li><a id="help_other_people_program_more_effectively"></a><a id="orgfd2200e"></a><span class="todo SOMEDAY">SOMEDAY</span> help other people program more effectively&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br  /><div class="outline-text-5" id="text-help_other_people_program_more_effectively">
 <p>
 So that I can <a href="#improve_my_coding_skills">improve my coding skills</a>
 </p>
 </div></li>
-<li><a id="close_an_open_source_issue"></a><a id="org114d674"></a><span class="todo SOMEDAY">SOMEDAY</span> close an open source issue&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br  /><div class="outline-text-5" id="text-close_an_open_source_issue">
+<li><a id="close_an_open_source_issue"></a><a id="org176b376"></a><span class="done DONE">DONE</span> close an open source issue&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br  /><div class="outline-text-5" id="text-close_an_open_source_issue">
 <p>
 So that I can <a href="#improve_my_coding_skills">improve my coding skills</a>
 </p>
 </div></li>
-<li><a id="contribute_to_open_source_documentation"></a><a id="org55942da"></a><span class="todo SOMEDAY">SOMEDAY</span> contribute to open source documentation&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br  /><div class="outline-text-5" id="text-contribute_to_open_source_documentation">
+<li><a id="contribute_to_open_source_documentation"></a><a id="orgd491560"></a><span class="todo SOMEDAY">SOMEDAY</span> contribute to open source documentation&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br  /><div class="outline-text-5" id="text-contribute_to_open_source_documentation">
 <p>
 So that I can <a href="#improve_my_coding_skills">improve my coding skills</a>
 </p>
 </div></li>
-<li><a id="get_feedback_from_coaches_or_open_source_community"></a><a id="orge671e45"></a><span class="todo SOMEDAY">SOMEDAY</span> get feedback from coaches or open source community&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br  /><div class="outline-text-5" id="text-get_feedback_from_coaches_or_open_source_community">
+<li><a id="get_feedback_from_coaches_or_open_source_community"></a><a id="org089bd01"></a><span class="todo SOMEDAY">SOMEDAY</span> get feedback from coaches or open source community&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br  /><div class="outline-text-5" id="text-get_feedback_from_coaches_or_open_source_community">
 <p>
 So that I can <a href="#improve_my_coding_skills">improve my coding skills</a>
 </p>
 </div></li>
-<li><a id="contribute_to_Emacs_C"></a><a id="org7422237"></a><span class="todo SOMEDAY">SOMEDAY</span> contribute to Emacs C&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br  /><div class="outline-text-5" id="text-contribute_to_Emacs_C">
+<li><a id="contribute_to_Emacs_C"></a><a id="org1bbd1ea"></a><span class="todo SOMEDAY">SOMEDAY</span> contribute to Emacs C&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br  /><div class="outline-text-5" id="text-contribute_to_Emacs_C">
 <p>
 So that I can <a href="#improve_my_coding_skills">improve my coding skills</a>
 </p>
 </div></li>
-<li><a id="contribute_automated_tests_to_Emacs_packages"></a><a id="org2fc7154"></a><span class="todo SOMEDAY">SOMEDAY</span> contribute automated tests to Emacs packages&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br  /><div class="outline-text-5" id="text-contribute_automated_tests_to_Emacs_packages">
+<li><a id="contribute_automated_tests_to_Emacs_packages"></a><a id="org468018a"></a><span class="done DONE">DONE</span> contribute automated tests to Emacs packages&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br  /><div class="outline-text-5" id="text-contribute_automated_tests_to_Emacs_packages">
 <p>
 So that I can <a href="#improve_my_coding_skills">improve my coding skills</a>
 </p>
 </div></li></ul>
 </div>
-<div id="outline-container-orgd89c861" class="outline-4">
-<h4 id="publish_resources"><a id="orgd89c861"></a><span class="todo SOMEDAY">SOMEDAY</span> publish resources</h4>
+<div id="outline-container-org19ecc2b" class="outline-4">
+<h4 id="publish_resources"><a id="org19ecc2b"></a><span class="todo SOMEDAY">SOMEDAY</span> publish resources</h4>
 <div class="outline-text-4" id="text-publish_resources">
 <p>
 So that I can <a href="#share_useful_stuff">share useful stuff</a>
 </p>
 </div>
-<ul class="org-ul"><li><a id="publish_12_free_PWYC_resources"></a><a id="org7322f5"></a><span class="todo SOMEDAY">SOMEDAY</span> publish 12 free/PWYC resources&#xa0;&#xa0;&#xa0;<span class="tag"><span class="project">project</span></span><br  /><div class="outline-text-5" id="text-publish_12_free_PWYC_resources">
+<ul class="org-ul"><li><a id="write_book_about_5_year_experiment_to_capture_memories_and_help_other_people_curious_about_it"></a><a id="org91e6ce0"></a><span class="todo TODO">TODO</span> write book about 5-year experiment to capture memories and help other people curious about it&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Writing">Writing</span></span><br  /><div class="outline-text-5" id="text-write_book_about_5_year_experiment_to_capture_memories_and_help_other_people_curious_about_it">
+<p>
+So that I can <a href="#publish_resources">publish resources</a>
+</p>
+</div></li>
+
+<li><a id="publish_12_free_PWYC_resources"></a><a id="orgf497cb3"></a><span class="todo SOMEDAY">SOMEDAY</span> publish 12 free/PWYC resources&#xa0;&#xa0;&#xa0;<span class="tag"><span class="project">project</span></span><br  /><div class="outline-text-5" id="text-publish_12_free_PWYC_resources">
 <p>
 So that I can <a href="#publish_resources">publish resources</a>
 </p>
@@ -1130,47 +1108,32 @@ So that I can <a href="#publish_resources">publish resources</a>
 </ul>
 </div></li>
 
-<li><a id="write_book_about_5_year_experiment_to_capture_memories_and_help_other_people_curious_about_it"></a><a id="orgdf30346"></a><span class="todo SOMEDAY">SOMEDAY</span> write book about 5-year experiment to capture memories and help other people curious about it&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Writing">Writing</span></span><br  /><div class="outline-text-5" id="text-write_book_about_5_year_experiment_to_capture_memories_and_help_other_people_curious_about_it">
+<li><a id="write_a_set_of_three_or_four_4_part_courses"></a><a id="org27cd286"></a><span class="todo SOMEDAY">SOMEDAY</span> write a set of three or four 4-part courses&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Writing">Writing</span></span><br  /><div class="outline-text-5" id="text-write_a_set_of_three_or_four_4_part_courses">
 <p>
 So that I can <a href="#publish_resources">publish resources</a>
 </p>
 </div></li>
 
-<li><a id="write_a_set_of_three_or_four_4_part_courses"></a><a id="orgff037d7"></a><span class="todo SOMEDAY">SOMEDAY</span> write a set of three or four 4-part courses&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Writing">Writing</span></span><br  /><div class="outline-text-5" id="text-write_a_set_of_three_or_four_4_part_courses">
+<li><a id="create_four_major_projects_in_a_year"></a><a id="orgb597611"></a><span class="todo SOMEDAY">SOMEDAY</span> create four major projects in a year&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Life">Life</span></span><br  /><div class="outline-text-5" id="text-create_four_major_projects_in_a_year">
 <p>
 So that I can <a href="#publish_resources">publish resources</a>
 </p>
 </div></li>
-
-<li><a id="create_four_major_projects_in_2015"></a><a id="orgcff5576"></a><span class="todo SOMEDAY">SOMEDAY</span> create four major projects in 2015&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Life">Life</span></span><br  /><div class="outline-text-5" id="text-create_four_major_projects_in_2015">
+<li><a id="write_mini_book_on_building_Emacs_habits"></a><a id="org32d10b8"></a><span class="todo SOMEDAY">SOMEDAY</span> write mini-book on building Emacs habits&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Writing">Writing</span></span><br  /><div class="outline-text-5" id="text-write_mini_book_on_building_Emacs_habits">
 <p>
-So that I can <a href="#publish_resources">publish resources</a>
+So that I can <a href="#create_four_major_projects_in_a_year">create four major projects in a year</a> and <a href="#help_the_Emacs_community_grow">help the Emacs community grow</a>
 </p>
 </div></li>
-<li><a id="write_mini_book_on_building_Emacs_habits"></a><a id="org46bea0a"></a><span class="todo SOMEDAY">SOMEDAY</span> write mini-book on building Emacs habits&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Writing">Writing</span></span><br  /><div class="outline-text-5" id="text-write_mini_book_on_building_Emacs_habits">
+<li><a id="make_Sketchnotes_2014"></a><a id="org7889250"></a><span class="done DONE">DONE</span> make Sketchnotes 2014&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Drawing">Drawing</span></span><br  /><div class="outline-text-5" id="text-make_Sketchnotes_2014">
 <p>
-So that I can <a href="#create_four_major_projects_in_2015">create four major projects in 2015</a> and <a href="#help_the_Emacs_community_grow">help the Emacs community grow</a>
-</p>
-</div></li>
-<li><a id="make_Sketchnotes_2014"></a><a id="orgcd65476"></a><span class="todo STARTED">STARTED</span> make Sketchnotes 2014&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Drawing">Drawing</span></span><br  /><div class="outline-text-5" id="text-make_Sketchnotes_2014">
-<p>
-So that I can <a href="#create_four_major_projects_in_2015">create four major projects in 2015</a>
-</p>
-
-<p>
-Hmm. They used to be around here somewhere. I could've sworn I'd already started organizing those&#x2026; Where did I put them? Ah, <a href="g:/code/2014-sketchnotes">g:/code/2014-sketchnotes</a>. 
-And then a quick find -name \*.png with a regex
-</p>
-
-<p>
-(replace-regexp "^\\./\\([^/]+\\)/\\(.*\\).png" "\\\\sketch{\\1}{\\2}")
+So that I can <a href="#create_four_major_projects_in_a_year">create four major projects in a year</a>
 </p>
 </div></li></ul>
 </div>
 </div>
 
-<div id="outline-container-org592442d" class="outline-3">
-<h3 id="build_good_karma"><a id="org592442d"></a>build good karma</h3>
+<div id="outline-container-org5e83ed1" class="outline-3">
+<h3 id="build_good_karma"><a id="org5e83ed1"></a>build good karma</h3>
 <div class="outline-text-3" id="text-build_good_karma">
 <p>
 So that I can <a href="#learn_from_people">learn from people</a>
@@ -1183,75 +1146,79 @@ there projects that support this instead of the other stuff?
 </div>
 </div>
 
-<div id="outline-container-orgad3728a" class="outline-3">
-<h3 id="cook_yummy_food"><a id="orgad3728a"></a>cook yummy food</h3>
+<div id="outline-container-org806b910" class="outline-3">
+<h3 id="cook_yummy_food"><a id="org806b910"></a>cook yummy food</h3>
 <div class="outline-text-3" id="text-cook_yummy_food">
 <p>
 So that I can <a href="#live_an_awesome_life">live an awesome life</a>
 </p>
 </div>
-<div id="outline-container-org5e14f45" class="outline-4">
-<h4 id="practise_types_of_recipes"><a id="org5e14f45"></a>practise types of recipes</h4>
+<div id="outline-container-org10f5281" class="outline-4">
+<h4 id="practise_types_of_recipes"><a id="org10f5281"></a>practise types of recipes</h4>
 <div class="outline-text-4" id="text-practise_types_of_recipes">
 <p>
 So that I can <a href="#cook_yummy_food">cook yummy food</a>
 </p>
 </div>
-<ul class="org-ul"><li><a id="make_paella"></a><a id="org6274c57"></a><span class="todo SOMEDAY">SOMEDAY</span> make paella&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Cooking">Cooking</span></span><br  /><div class="outline-text-5" id="text-make_paella">
+<ul class="org-ul"><li><a id="make_special_types_of_bread__including_sourdough"></a><a id="orgda2fc02"></a><span class="todo SOMEDAY">SOMEDAY</span> make special types of bread, including sourdough&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Cooking">Cooking</span></span><br  /><div class="outline-text-5" id="text-make_special_types_of_bread__including_sourdough">
 <p>
 So that I can <a href="#practise_types_of_recipes">practise types of recipes</a>
 </p>
 </div></li>
-<li><a id="make_special_types_of_bread__including_sourdough"></a><a id="org12a72b9"></a><span class="todo SOMEDAY">SOMEDAY</span> make special types of bread, including sourdough&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Cooking">Cooking</span></span><br  /><div class="outline-text-5" id="text-make_special_types_of_bread__including_sourdough">
+<li><a id="make_udon_noodles_from_scratch"></a><a id="orgda8fe7f"></a><span class="done DONE">DONE</span> make udon noodles from scratch&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Cooking">Cooking</span></span><br  /><div class="outline-text-5" id="text-make_udon_noodles_from_scratch">
 <p>
 So that I can <a href="#practise_types_of_recipes">practise types of recipes</a>
 </p>
 </div></li>
-<li><a id="make_udon_noodles_from_scratch"></a><a id="orgdad395a"></a><span class="done DONE">DONE</span> make udon noodles from scratch&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Cooking">Cooking</span></span><br  /><div class="outline-text-5" id="text-make_udon_noodles_from_scratch">
-<p>
-So that I can <a href="#practise_types_of_recipes">practise types of recipes</a>
-</p>
-</div></li>
-<li><a id="competently_make_pizza"></a><a id="org55dfdd3"></a><span class="todo SOMEDAY">SOMEDAY</span> competently make pizza&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Cooking">Cooking</span></span><br  /><div class="outline-text-5" id="text-competently_make_pizza">
+<li><a id="competently_make_pizza"></a><a id="orgde0cbd9"></a><span class="done DONE">DONE</span> competently make pizza&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Cooking">Cooking</span></span><br  /><div class="outline-text-5" id="text-competently_make_pizza">
 <p>
 So that I can <a href="#practise_types_of_recipes">practise types of recipes</a>
 </p>
 </div></li></ul>
 </div>
-<div id="outline-container-orgf1bd2c1" class="outline-4">
-<h4 id="make_braising_and_other_fancy_cooking_terms_part_of_my_vocabulary"><a id="orgf1bd2c1"></a><span class="todo SOMEDAY">SOMEDAY</span> make braising and other fancy cooking terms part of my vocabulary&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Cooking">Cooking</span></span></h4>
+
+<div id="outline-container-orgb5d3ab1" class="outline-4">
+<h4 id="figure_out_recipes_easily_compatible_with_taking_care_of_a_kid"><a id="orgb5d3ab1"></a><span class="todo TODO">TODO</span> figure out recipes easily compatible with taking care of a kid&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Cooking">Cooking</span></span></h4>
+<div class="outline-text-4" id="text-figure_out_recipes_easily_compatible_with_taking_care_of_a_kid">
+<p>
+So that I can <a href="#cook_yummy_food">cook yummy food</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org590d403" class="outline-4">
+<h4 id="make_braising_and_other_fancy_cooking_terms_part_of_my_vocabulary"><a id="org590d403"></a><span class="todo SOMEDAY">SOMEDAY</span> make braising and other fancy cooking terms part of my vocabulary&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Cooking">Cooking</span></span></h4>
 <div class="outline-text-4" id="text-make_braising_and_other_fancy_cooking_terms_part_of_my_vocabulary">
 <p>
 So that I can <a href="#cook_yummy_food">cook yummy food</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org4a5f594" class="outline-4">
-<h4 id="adjust_the_feel_of_things_by_using_herb_combinations"><a id="org4a5f594"></a><span class="todo SOMEDAY">SOMEDAY</span> adjust the feel of things by using herb combinations&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Cooking">Cooking</span></span></h4>
+<div id="outline-container-org54e8b61" class="outline-4">
+<h4 id="adjust_the_feel_of_things_by_using_herb_combinations"><a id="org54e8b61"></a><span class="done DONE">DONE</span> adjust the feel of things by using herb combinations&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Cooking">Cooking</span></span></h4>
 <div class="outline-text-4" id="text-adjust_the_feel_of_things_by_using_herb_combinations">
 <p>
 So that I can <a href="#cook_yummy_food">cook yummy food</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org438a8fb" class="outline-4">
-<h4 id="develop_a_habit_of_cooking_with_lots_of_vegetables__CSA_like_volume_"><a id="org438a8fb"></a><span class="done DONE">DONE</span> develop a habit of cooking with lots of vegetables (CSA-like volume)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Cooking">Cooking</span></span></h4>
+<div id="outline-container-orgca2b870" class="outline-4">
+<h4 id="develop_a_habit_of_cooking_with_lots_of_vegetables__CSA_like_volume_"><a id="orgca2b870"></a><span class="done DONE">DONE</span> develop a habit of cooking with lots of vegetables (CSA-like volume)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Cooking">Cooking</span></span></h4>
 <div class="outline-text-4" id="text-develop_a_habit_of_cooking_with_lots_of_vegetables__CSA_like_volume_">
 <p>
 So that I can <a href="#cook_yummy_food">cook yummy food</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orgeed8c67" class="outline-4">
-<h4 id="create_monthly_cycles_for_favourite_recipes"><a id="orgeed8c67"></a><span class="todo SOMEDAY">SOMEDAY</span> create monthly cycles for favourite recipes&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Cooking">Cooking</span></span></h4>
+<div id="outline-container-org970e0ef" class="outline-4">
+<h4 id="create_monthly_cycles_for_favourite_recipes"><a id="org970e0ef"></a><span class="todo SOMEDAY">SOMEDAY</span> create monthly cycles for favourite recipes&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Cooking">Cooking</span></span></h4>
 <div class="outline-text-4" id="text-create_monthly_cycles_for_favourite_recipes">
 <p>
 So that I can <a href="#cook_yummy_food">cook yummy food</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org1926d79" class="outline-4">
-<h4 id="cut_standard_sizes"><a id="org1926d79"></a><span class="todo SOMEDAY">SOMEDAY</span> cut standard sizes&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Cooking">Cooking</span></span></h4>
+<div id="outline-container-org2fdc79e" class="outline-4">
+<h4 id="cut_standard_sizes"><a id="org2fdc79e"></a><span class="todo SOMEDAY">SOMEDAY</span> cut standard sizes&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Cooking">Cooking</span></span></h4>
 <div class="outline-text-4" id="text-cut_standard_sizes">
 <p>
 So that I can <a href="#cook_yummy_food">cook yummy food</a>
@@ -1259,74 +1226,97 @@ So that I can <a href="#cook_yummy_food">cook yummy food</a>
 </div>
 </div>
 </div>
-<div id="outline-container-org1e67089" class="outline-3">
-<h3 id="learn_from_people"><a id="org1e67089"></a>learn from people</h3>
+<div id="outline-container-org6751d66" class="outline-3">
+<h3 id="learn_from_people"><a id="org6751d66"></a>learn from people</h3>
 <div class="outline-text-3" id="text-learn_from_people">
 <p>
 So that I can <a href="#tickle_my_brain">tickle my brain</a> and <a href="#share_useful_stuff">share useful stuff</a>
 </p>
 </div>
-<div id="outline-container-orgb30b8b" class="outline-4">
-<h4 id="Raise_A_"><a id="orgb30b8b"></a><span class="todo TODO">TODO</span> Raise A-</h4>
+<div id="outline-container-org5870c58" class="outline-4">
+<h4 id="Raise_A_"><a id="org5870c58"></a><span class="todo TODO">TODO</span> Raise A-</h4>
 <div class="outline-text-4" id="text-Raise_A_">
 <p>
 So that I can <a href="#learn_from_people">learn from people</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orgaa7a595" class="outline-4">
-<h4 id="Choose_parenting_activities_to_consistently_attend"><a id="orgaa7a595"></a><span class="todo TODO">TODO</span> Choose parenting activities to consistently attend</h4>
-<div class="outline-text-4" id="text-Choose_parenting_activities_to_consistently_attend">
+<div id="outline-container-org8540848" class="outline-4">
+<h4 id="do_right_by_our_cats"><a id="org8540848"></a><span class="todo WAITING">WAITING</span> do right by our cats&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Connecting">Connecting</span></span></h4>
+<div class="outline-text-4" id="text-do_right_by_our_cats">
 <p>
 So that I can <a href="#learn_from_people">learn from people</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orgaf86953" class="outline-4">
-<h4 id="learn_Japanese"><a id="orgaf86953"></a><span class="todo SOMEDAY">SOMEDAY</span> learn Japanese</h4>
-<div class="outline-text-4" id="text-learn_Japanese">
+<div id="outline-container-org9f19b5d" class="outline-4">
+<h4 id="complete_the_rest_of_the_F_projects"><a id="org9f19b5d"></a><span class="done DONE">DONE</span> complete the rest of the F projects&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Connecting">Connecting</span></span></h4>
+<div class="outline-text-4" id="text-complete_the_rest_of_the_F_projects">
 <p>
 So that I can <a href="#learn_from_people">learn from people</a>
 </p>
 </div>
-<ul class="org-ul"><li><a id="work_through_the_Japanese_language_books_we_have_at_home"></a><a id="orga0b4326"></a><span class="done DONE">DONE</span> work through the Japanese language books we have at home&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Learning">Learning</span></span><br  /><div class="outline-text-5" id="text-work_through_the_Japanese_language_books_we_have_at_home">
-<p>
-So that I can <a href="#learn_Japanese">learn Japanese</a>
-</p>
-</div></li>
-<li><a id="Japanese__Listen_to_regular_shows_with___80__comprehension"></a><a id="org5b25426"></a><span class="todo SOMEDAY">SOMEDAY</span> Japanese: Listen to regular shows with &gt;=80% comprehension&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Learning">Learning</span></span><br  /><div class="outline-text-5" id="text-Japanese__Listen_to_regular_shows_with___80__comprehension">
-<p>
-So that I can <a href="#learn_Japanese">learn Japanese</a>
-</p>
-</div></li>
-<li><a id="Japanese__Listen_to_tech_talks_with___80__comprehension"></a><a id="org12d946b"></a><span class="todo SOMEDAY">SOMEDAY</span> Japanese: Listen to tech talks with &gt;=80% comprehension&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Learning">Learning</span></span><br  /><div class="outline-text-5" id="text-Japanese__Listen_to_tech_talks_with___80__comprehension">
-<p>
-So that I can <a href="#learn_Japanese">learn Japanese</a>
-</p>
-</div></li>
-<li><a id="Japanese__Listen_to_cooking_shows_with___80__comprehension"></a><a id="org3ddfb75"></a><span class="todo SOMEDAY">SOMEDAY</span> Japanese: Listen to cooking shows with &gt;=80% comprehension&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Learning">Learning</span></span><br  /><div class="outline-text-5" id="text-Japanese__Listen_to_cooking_shows_with___80__comprehension">
-<p>
-So that I can <a href="#learn_Japanese">learn Japanese</a>
-</p>
-</div></li>
-<li><a id="Japanese__Read_blog_posts_and_tweets_about_tech_with___80__comprehension"></a><a id="org9228a1a"></a><span class="todo SOMEDAY">SOMEDAY</span> Japanese: Read blog posts and tweets about tech with &gt;=80% comprehension&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Learning">Learning</span></span><br  /><div class="outline-text-5" id="text-Japanese__Read_blog_posts_and_tweets_about_tech_with___80__comprehension">
-<p>
-So that I can <a href="#learn_Japanese">learn Japanese</a>
-</p>
-</div></li>
-<li><a id="Japanese__Read_cooking_instructions_on_packages_with___80__comprehension"></a><a id="orgb2c442d"></a><span class="todo SOMEDAY">SOMEDAY</span> Japanese: Read cooking instructions on packages with &gt;=80% comprehension&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Learning">Learning</span></span><br  /><div class="outline-text-5" id="text-Japanese__Read_cooking_instructions_on_packages_with___80__comprehension">
-<p>
-So that I can <a href="#learn_Japanese">learn Japanese</a>
-</p>
-</div></li>
-<li><a id="Japanese__Complete_Anki_decks_for_JP_2000"></a><a id="org210536f"></a><span class="todo SOMEDAY">SOMEDAY</span> Japanese: Complete Anki decks for JP-2000&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Learning">Learning</span></span><br  /><div class="outline-text-5" id="text-Japanese__Complete_Anki_decks_for_JP_2000">
-<p>
-So that I can <a href="#learn_Japanese">learn Japanese</a>
-</p>
-</div></li></ul>
 </div>
-<div id="outline-container-orga0aa93b" class="outline-4">
-<h4 id="complete_another_10_episodes_of_Emacs_Chats"><a id="orga0aa93b"></a><span class="done DONE">DONE</span> host another 10 episodes of Emacs Chats or hangouts</h4>
+<div id="outline-container-org60f03d5" class="outline-4">
+<h4 id="do_right_by_W___J___and_A_"><a id="org60f03d5"></a><span class="todo WAITING">WAITING</span> do right by W-, J-, and A-&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Connecting">Connecting</span></span></h4>
+<div class="outline-text-4" id="text-do_right_by_W___J___and_A_">
+<p>
+So that I can <a href="#learn_from_people">learn from people</a>
+</p>
+</div>
+</div>
+<div id="outline-container-orge55b076" class="outline-4">
+<h4 id="develop_a_4__month_habit_of_frequent_messages_to_parents"><a id="orge55b076"></a><span class="todo SOMEDAY">SOMEDAY</span> develop a 4+-month habit of frequent messages to parents&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Connecting">Connecting</span></span></h4>
+<div class="outline-text-4" id="text-develop_a_4__month_habit_of_frequent_messages_to_parents">
+<p>
+So that I can <a href="#learn_from_people">learn from people</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org097557d" class="outline-4">
+<h4 id="post_notes_and_life_changes_from_three_months_of_working_with_a_coach"><a id="org097557d"></a><span class="todo SOMEDAY">SOMEDAY</span> post notes and life changes from three months of working with a coach&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Learning">Learning</span></span></h4>
+<div class="outline-text-4" id="text-post_notes_and_life_changes_from_three_months_of_working_with_a_coach">
+<p>
+So that I can <a href="#learn_from_people">learn from people</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org405e950" class="outline-4">
+<h4 id="have_a_regular_plan_for_meeting_friends_at_least_one_weekend_every_month"><a id="org405e950"></a><span class="todo SOMEDAY">SOMEDAY</span> have a regular plan for meeting friends at least one weekend every month&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Connecting">Connecting</span></span></h4>
+<div class="outline-text-4" id="text-have_a_regular_plan_for_meeting_friends_at_least_one_weekend_every_month">
+<p>
+So that I can <a href="#learn_from_people">learn from people</a>
+</p>
+</div>
+</div>
+<div id="outline-container-orga9d8073" class="outline-4">
+<h4 id="Set_up_an_ongoing_mentoring_coaching_relationship_with_an_Emacs_coach"><a id="orga9d8073"></a><span class="done CANCELLED">CANCELLED</span> Set up an ongoing mentoring/coaching relationship with an Emacs coach</h4>
+<div class="outline-text-4" id="text-Set_up_an_ongoing_mentoring_coaching_relationship_with_an_Emacs_coach">
+<p>
+So that I can <a href="#get_more_value_from_my_time">get more value from my time</a>
+</p>
+
+<p>
+<a href="https://www.codementor.io/sanityinc">https://www.codementor.io/sanityinc</a>: RoR, jQuery, TDD, Emacs, Javascript
+<a href="https://www.codementor.io/skeeto">https://www.codementor.io/skeeto</a>
+<a href="http://emacs-doctor.com">http://emacs-doctor.com</a>
+</p>
+
+<p>
+Possible concrete goals:
+</p>
+<ul class="org-ul">
+<li>Follow best practices in setting up my web development environment (Rails, Javascript, NodeJS, Angular); learn how to think syntactically</li>
+<li>Discover what else I should be doing with Org Mode</li>
+<li>Set up a solid external data and backup plan</li>
+<li>Learn more about what I don't know I don't know (Hard!)</li>
+<li>Get into Emacs development</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8ea9319" class="outline-4">
+<h4 id="complete_another_10_episodes_of_Emacs_Chats"><a id="org8ea9319"></a><span class="done DONE">DONE</span> host another 10 episodes of Emacs Chats or hangouts</h4>
 <div class="outline-text-4" id="text-complete_another_10_episodes_of_Emacs_Chats">
 <p>
 So that I can <a href="#learn_from_people">learn from people</a> and <a href="#help_the_Emacs_community_grow">help the Emacs community grow</a>
@@ -1349,91 +1339,24 @@ So that I can <a href="#learn_from_people">learn from people</a> and <a href="#h
 </div>
 </div>
 
-
-<div id="outline-container-orgb7808fb" class="outline-4">
-<h4 id="Set_up_an_ongoing_mentoring_coaching_relationship_with_an_Emacs_coach"><a id="orgb7808fb"></a><span class="done CANCELLED">CANCELLED</span> Set up an ongoing mentoring/coaching relationship with an Emacs coach</h4>
-<div class="outline-text-4" id="text-Set_up_an_ongoing_mentoring_coaching_relationship_with_an_Emacs_coach">
-<p>
-So that I can <a href="#get_more_value_from_my_time">get more value from my time</a>
-</p>
-
-<p>
-<a href="https://www.codementor.io/sanityinc">https://www.codementor.io/sanityinc</a>: RoR, jQuery, TDD, Emacs, Javascript
-<a href="https://www.codementor.io/skeeto">https://www.codementor.io/skeeto</a>
-<a href="http://emacs-doctor.com/">http://emacs-doctor.com/</a>
-</p>
-
-<p>
-Possible concrete goals:
-</p>
-<ul class="org-ul">
-<li>Follow best practices in setting up my web development environment (Rails, Javascript, NodeJS, Angular); learn how to think syntactically</li>
-<li>Discover what else I should be doing with Org Mode</li>
-<li>Set up a solid external data and backup plan</li>
-<li>Learn more about what I don't know I don't know (Hard!)</li>
-<li>Get into Emacs development</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org7e99db3" class="outline-4">
-<h4 id="do_right_by_our_cats"><a id="org7e99db3"></a><span class="todo WAITING">WAITING</span> do right by our cats&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Connecting">Connecting</span></span></h4>
-<div class="outline-text-4" id="text-do_right_by_our_cats">
-<p>
-So that I can <a href="#learn_from_people">learn from people</a>
-</p>
-</div>
-</div>
-<div id="outline-container-orgbcce3d8" class="outline-4">
-<h4 id="complete_the_rest_of_the_F_projects"><a id="orgbcce3d8"></a><span class="done DONE">DONE</span> complete the rest of the F projects&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Connecting">Connecting</span></span></h4>
-<div class="outline-text-4" id="text-complete_the_rest_of_the_F_projects">
-<p>
-So that I can <a href="#learn_from_people">learn from people</a>
-</p>
-</div>
-</div>
-<div id="outline-container-org17a7321" class="outline-4">
-<h4 id="do_right_by_W___J___and_A_"><a id="org17a7321"></a><span class="todo WAITING">WAITING</span> do right by W-, J-, and A-&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Connecting">Connecting</span></span></h4>
-<div class="outline-text-4" id="text-do_right_by_W___J___and_A_">
-<p>
-So that I can <a href="#learn_from_people">learn from people</a>
-</p>
-</div>
-</div>
-<div id="outline-container-org5d00e59" class="outline-4">
-<h4 id="develop_a_4__month_habit_of_frequent_messages_to_parents"><a id="org5d00e59"></a><span class="todo SOMEDAY">SOMEDAY</span> develop a 4+-month habit of frequent messages to parents&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Connecting">Connecting</span></span></h4>
-<div class="outline-text-4" id="text-develop_a_4__month_habit_of_frequent_messages_to_parents">
-<p>
-So that I can <a href="#learn_from_people">learn from people</a>
-</p>
-</div>
-</div>
-<div id="outline-container-orgd7b914c" class="outline-4">
-<h4 id="post_notes_and_life_changes_from_three_months_of_working_with_a_coach"><a id="orgd7b914c"></a><span class="todo SOMEDAY">SOMEDAY</span> post notes and life changes from three months of working with a coach&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Learning">Learning</span></span></h4>
-<div class="outline-text-4" id="text-post_notes_and_life_changes_from_three_months_of_working_with_a_coach">
-<p>
-So that I can <a href="#learn_from_people">learn from people</a>
-</p>
-</div>
-</div>
-<div id="outline-container-org3400579" class="outline-4">
-<h4 id="have_a_regular_plan_for_meeting_friends_at_least_one_weekend_every_month"><a id="org3400579"></a><span class="todo SOMEDAY">SOMEDAY</span> have a regular plan for meeting friends at least one weekend every month&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Connecting">Connecting</span></span></h4>
-<div class="outline-text-4" id="text-have_a_regular_plan_for_meeting_friends_at_least_one_weekend_every_month">
+<div id="outline-container-org2723ddd" class="outline-4">
+<h4 id="Choose_parenting_activities_to_consistently_attend"><a id="org2723ddd"></a><span class="done DONE">DONE</span> Choose parenting activities to consistently attend</h4>
+<div class="outline-text-4" id="text-Choose_parenting_activities_to_consistently_attend">
 <p>
 So that I can <a href="#learn_from_people">learn from people</a>
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-orgf82c3f2" class="outline-3">
-<h3 id="make_better_decisions"><a id="orgf82c3f2"></a>make better decisions</h3>
+<div id="outline-container-org1849941" class="outline-3">
+<h3 id="make_better_decisions"><a id="org1849941"></a>make better decisions</h3>
 <div class="outline-text-3" id="text-make_better_decisions">
 <p>
 so that I can <a href="#live_an_awesome_life">live an awesome life</a>
 </p>
 </div>
-<div id="outline-container-org664fa36" class="outline-4">
-<h4 id="sell_stocks_in_a_non_registered_account_and_properly_account_for_them"><a id="org664fa36"></a><span class="todo WAITING">WAITING</span> sell stocks in a non-registered account and properly account for them&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Finance">Finance</span></span></h4>
+<div id="outline-container-orgbd37e61" class="outline-4">
+<h4 id="sell_stocks_in_a_non_registered_account_and_properly_account_for_them"><a id="orgbd37e61"></a><span class="done DONE">DONE</span> sell stocks in a non-registered account and properly account for them&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Finance">Finance</span></span></h4>
 <div class="outline-text-4" id="text-sell_stocks_in_a_non_registered_account_and_properly_account_for_them">
 <p>
 So that I can <a href="#make_better_decisions">make better decisions</a>
@@ -1441,8 +1364,8 @@ So that I can <a href="#make_better_decisions">make better decisions</a>
 </div>
 </div>
 
-<div id="outline-container-org89b42a4" class="outline-4">
-<h4 id="re_examine_spending_and_carve_out_more_for_what_matters"><a id="org89b42a4"></a><span class="todo TODO">TODO</span> re-examine spending and carve out more for what matters&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Finance">Finance</span></span></h4>
+<div id="outline-container-org1562988" class="outline-4">
+<h4 id="re_examine_spending_and_carve_out_more_for_what_matters"><a id="org1562988"></a><span class="todo TODO">TODO</span> re-examine spending and carve out more for what matters&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Finance">Finance</span></span></h4>
 <div class="outline-text-4" id="text-re_examine_spending_and_carve_out_more_for_what_matters">
 <p>
 So that I can <a href="#make_better_decisions">make better decisions</a>
@@ -1450,8 +1373,8 @@ So that I can <a href="#make_better_decisions">make better decisions</a>
 </div>
 </div>
 
-<div id="outline-container-orga8ec4be" class="outline-4">
-<h4 id="weather_a_bear_market_with_lots_of_investments"><a id="orga8ec4be"></a><span class="done DONE">DONE</span> weather a bear market with lots of investments&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Finance">Finance</span></span></h4>
+<div id="outline-container-orgcc73518" class="outline-4">
+<h4 id="weather_a_bear_market_with_lots_of_investments"><a id="orgcc73518"></a><span class="done DONE">DONE</span> weather a bear market with lots of investments&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Finance">Finance</span></span></h4>
 <div class="outline-text-4" id="text-weather_a_bear_market_with_lots_of_investments">
 <p>
 So that I can <a href="#make_better_decisions">make better decisions</a>
@@ -1463,24 +1386,8 @@ I think 2015 counted! I managed to stay invested without freaking out too much. 
 </div>
 </div>
 
-<div id="outline-container-org7e9c903" class="outline-4">
-<h4 id="move_to_target_allocation"><a id="org7e9c903"></a><span class="todo WAITING">WAITING</span> move to target allocation&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Finance">Finance</span></span></h4>
-<div class="outline-text-4" id="text-move_to_target_allocation">
-<p>
-So that I can <a href="#make_better_decisions">make better decisions</a>
-</p>
-</div>
-</div>
-<div id="outline-container-org513299f" class="outline-4">
-<h4 id="reach_2__goal"><a id="org513299f"></a><span class="todo WAITING">WAITING</span> reach 2% goal&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Finance">Finance</span></span></h4>
-<div class="outline-text-4" id="text-reach_2__goal">
-<p>
-So that I can <a href="#make_better_decisions">make better decisions</a>
-</p>
-</div>
-</div>
-<div id="outline-container-org844a9bc" class="outline-4">
-<h4 id="reach_2_5__goal"><a id="org844a9bc"></a><span class="todo WAITING">WAITING</span> reach 2.5% goal&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Finance">Finance</span></span></h4>
+<div id="outline-container-org04ee02c" class="outline-4">
+<h4 id="reach_2_5__goal"><a id="org04ee02c"></a><span class="todo TODO">TODO</span> reach 2.5% goal&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Finance">Finance</span></span></h4>
 <div class="outline-text-4" id="text-reach_2_5__goal">
 <p>
 So that I can <a href="#reach_2__goal">reach 2% goal</a>
@@ -1488,16 +1395,32 @@ So that I can <a href="#reach_2__goal">reach 2% goal</a>
 </div>
 </div>
 
-<div id="outline-container-org5852e28" class="outline-4">
-<h4 id="deal_with_a_famine_year_without_panicking"><a id="org5852e28"></a><span class="done DONE">DONE</span> deal with a famine year without panicking&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Business">Business</span></span></h4>
+<div id="outline-container-org726e9cf" class="outline-4">
+<h4 id="move_to_target_allocation"><a id="org726e9cf"></a><span class="todo WAITING">WAITING</span> move to target allocation&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Finance">Finance</span></span></h4>
+<div class="outline-text-4" id="text-move_to_target_allocation">
+<p>
+So that I can <a href="#make_better_decisions">make better decisions</a>
+</p>
+</div>
+</div>
+<div id="outline-container-orgfd95b28" class="outline-4">
+<h4 id="reach_2__goal"><a id="orgfd95b28"></a><span class="todo WAITING">WAITING</span> reach 2% goal&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Finance">Finance</span></span></h4>
+<div class="outline-text-4" id="text-reach_2__goal">
+<p>
+So that I can <a href="#make_better_decisions">make better decisions</a>
+</p>
+</div>
+</div>
+<div id="outline-container-orgede346c" class="outline-4">
+<h4 id="deal_with_a_famine_year_without_panicking"><a id="orgede346c"></a><span class="done DONE">DONE</span> deal with a famine year without panicking&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Business">Business</span></span></h4>
 <div class="outline-text-4" id="text-deal_with_a_famine_year_without_panicking">
 <p>
 So that I can <a href="#make_better_decisions">make better decisions</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org3eeb84c" class="outline-4">
-<h4 id="resolve_estate_amicably_or_walk_away_from_it"><a id="org3eeb84c"></a><span class="todo WAITING">WAITING</span> resolve estate amicably or walk away from it&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Connecting">Connecting</span></span></h4>
+<div id="outline-container-orga958709" class="outline-4">
+<h4 id="resolve_estate_amicably_or_walk_away_from_it"><a id="orga958709"></a><span class="todo WAITING">WAITING</span> resolve estate amicably or walk away from it&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Connecting">Connecting</span></span></h4>
 <div class="outline-text-4" id="text-resolve_estate_amicably_or_walk_away_from_it">
 <p>
 So that I can <a href="#make_better_decisions">make better decisions</a>
@@ -1505,15 +1428,15 @@ So that I can <a href="#make_better_decisions">make better decisions</a>
 </div>
 </div>
 </div>
-<div id="outline-container-org24840c0" class="outline-3">
-<h3 id="get_more_value_from_my_time"><a id="org24840c0"></a>get more value from my time</h3>
+<div id="outline-container-orgb8cb34c" class="outline-3">
+<h3 id="get_more_value_from_my_time"><a id="orgb8cb34c"></a>get more value from my time</h3>
 <div class="outline-text-3" id="text-get_more_value_from_my_time">
 <p>
 so that I can <a href="#live_an_awesome_life">live an awesome life</a>
 </p>
 </div>
-<div id="outline-container-org7f93f84" class="outline-4">
-<h4 id="Practise_kaizen_on_our_new_routines"><a id="org7f93f84"></a><span class="todo TODO">TODO</span> Practise kaizen on our new routines</h4>
+<div id="outline-container-org75e2dcb" class="outline-4">
+<h4 id="Practise_kaizen_on_our_new_routines"><a id="org75e2dcb"></a><span class="done DONE">DONE</span> Practise kaizen on our new routines</h4>
 <div class="outline-text-4" id="text-Practise_kaizen_on_our_new_routines">
 <p>
 So that I can <a href="#get_more_value_from_my_time">get more value from my time</a> and <a href="#enrich_our_experiences">enrich our experiences</a>
@@ -1530,24 +1453,24 @@ Current gaps/opportunities:
 </div>
 </div>
 
-<div id="outline-container-orgfd59a36" class="outline-4">
-<h4 id="develop_structures_for_journaling"><a id="orgfd59a36"></a><span class="todo SOMEDAY">SOMEDAY</span> develop structures for journaling&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Writing">Writing</span></span></h4>
+<div id="outline-container-orgaece9b2" class="outline-4">
+<h4 id="develop_structures_for_journaling"><a id="orgaece9b2"></a><span class="done DONE">DONE</span> develop structures for journaling&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Writing">Writing</span></span></h4>
 <div class="outline-text-4" id="text-develop_structures_for_journaling">
 <p>
 So that I can <a href="#get_more_value_from_my_time">get more value from my time</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org79374cf" class="outline-4">
-<h4 id="create_syntopicon_bibliography"><a id="org79374cf"></a><span class="todo SOMEDAY">SOMEDAY</span> create syntopicon/bibliography&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Learning">Learning</span></span></h4>
+<div id="outline-container-orgec77c80" class="outline-4">
+<h4 id="create_syntopicon_bibliography"><a id="orgec77c80"></a><span class="todo SOMEDAY">SOMEDAY</span> create syntopicon/bibliography&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Learning">Learning</span></span></h4>
 <div class="outline-text-4" id="text-create_syntopicon_bibliography">
 <p>
 So that I can <a href="#get_more_value_from_my_time">get more value from my time</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org2d4571e" class="outline-4">
-<h4 id="keep_a_year_of_private_journals__short_entries_"><a id="org2d4571e"></a><span class="done DONE">DONE</span> keep a year of journals (short entries)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Writing">Writing</span></span></h4>
+<div id="outline-container-org442ac69" class="outline-4">
+<h4 id="keep_a_year_of_private_journals__short_entries_"><a id="org442ac69"></a><span class="done DONE">DONE</span> keep a year of journals (short entries)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Writing">Writing</span></span></h4>
 <div class="outline-text-4" id="text-keep_a_year_of_private_journals__short_entries_">
 <p>
 So that I can <a href="#get_more_value_from_my_time">get more value from my time</a>
@@ -1555,15 +1478,15 @@ So that I can <a href="#get_more_value_from_my_time">get more value from my time
 </div>
 </div>
 </div>
-<div id="outline-container-org55f4c6f" class="outline-3">
-<h3 id="delegate_more_effectively"><a id="org55f4c6f"></a><span class="todo SOMEDAY">SOMEDAY</span> delegate more effectively</h3>
+<div id="outline-container-org73d8280" class="outline-3">
+<h3 id="delegate_more_effectively"><a id="org73d8280"></a><span class="todo SOMEDAY">SOMEDAY</span> delegate more effectively</h3>
 <div class="outline-text-3" id="text-delegate_more_effectively">
 <p>
 So that I can <a href="#get_more_value_from_my_time">get more value from my time</a>
 </p>
 </div>
-<div id="outline-container-orgd980e7c" class="outline-4">
-<h4 id="delegate_2_000_hours_or__20_000_of_meaningful__useful_work"><a id="orgd980e7c"></a><span class="todo SOMEDAY">SOMEDAY</span> delegate 2,000 hours or $20,000 of meaningful, useful work&#xa0;&#xa0;&#xa0;<span class="tag"><span class="delegation">delegation</span>&#xa0;<span class="project">project</span></span></h4>
+<div id="outline-container-org6fde3bb" class="outline-4">
+<h4 id="delegate_2_000_hours_or__20_000_of_meaningful__useful_work"><a id="org6fde3bb"></a><span class="todo SOMEDAY">SOMEDAY</span> delegate 2,000 hours or $20,000 of meaningful, useful work&#xa0;&#xa0;&#xa0;<span class="tag"><span class="delegation">delegation</span>&#xa0;<span class="project">project</span></span></h4>
 <div class="outline-text-4" id="text-delegate_2_000_hours_or__20_000_of_meaningful__useful_work">
 <p>
 So that I can <a href="#delegate_more_effectively">delegate more effectively</a> and <a href="#build_good_karma">build good karma</a>
@@ -1574,7 +1497,6 @@ So far:
 </p>
 
 <div class="org-src-container">
-
 <pre class="src src-emacs-lisp">(<span class="org-keyword">let</span> ((dollars 8229.45)
       (hours 486))
   (format <span class="org-string">"%d dollars - %d%%; %d hours - %d%%"</span>
@@ -1596,8 +1518,8 @@ Need to compensate for 2,166 hours as of 2014-05-16
 </p>
 </div>
 </div>
-<div id="outline-container-orgc4cb6d2" class="outline-4">
-<h4 id="add_50_items_to_my_process_library"><a id="orgc4cb6d2"></a><span class="todo SOMEDAY">SOMEDAY</span> add 50 items to my process library&#xa0;&#xa0;&#xa0;<span class="tag"><span class="delegation">delegation</span></span></h4>
+<div id="outline-container-org7273da4" class="outline-4">
+<h4 id="add_50_items_to_my_process_library"><a id="org7273da4"></a><span class="todo SOMEDAY">SOMEDAY</span> add 50 items to my process library&#xa0;&#xa0;&#xa0;<span class="tag"><span class="delegation">delegation</span></span></h4>
 <div class="outline-text-4" id="text-add_50_items_to_my_process_library">
 <p>
 So that I can <a href="#delegate_more_effectively">delegate more effectively</a> and <a href="#share_useful_stuff">share useful stuff</a>
@@ -1612,7 +1534,6 @@ So that I can <a href="#delegate_more_effectively">delegate more effectively</a>
 </p>
 
 <div class="org-src-container">
-
 <pre class="src src-org">35 items - 70%
 1. How to add blogs to Feedly
 2. How to add resources to the resources page and sidebar widget
@@ -1655,15 +1576,15 @@ So that I can <a href="#delegate_more_effectively">delegate more effectively</a>
 </div>
 </div>
 
-<div id="outline-container-orgaddd35b" class="outline-3">
-<h3 id="help_the_Emacs_community_grow"><a id="orgaddd35b"></a>help the Emacs community grow</h3>
+<div id="outline-container-orgd870177" class="outline-3">
+<h3 id="help_the_Emacs_community_grow"><a id="orgd870177"></a>help the Emacs community grow</h3>
 <div class="outline-text-3" id="text-help_the_Emacs_community_grow">
 <p>
 so that I can <a href="#tickle_my_brain">tickle my brain</a> and <a href="#share_useful_stuff">share useful stuff</a>
 </p>
 </div>
-<div id="outline-container-orgc15a499" class="outline-4">
-<h4 id="Make_it_to_52_issues_of_Emacs_News"><a id="orgc15a499"></a><span class="todo TODO">TODO</span> Make it to 52 issues of Emacs News&#xa0;&#xa0;&#xa0;<span class="tag"><span class="emacs">emacs</span></span></h4>
+<div id="outline-container-org731ee0e" class="outline-4">
+<h4 id="Make_it_to_52_issues_of_Emacs_News"><a id="org731ee0e"></a><span class="done DONE">DONE</span> Make it to 52 issues of Emacs News&#xa0;&#xa0;&#xa0;<span class="tag"><span class="emacs">emacs</span></span></h4>
 <div class="outline-text-4" id="text-Make_it_to_52_issues_of_Emacs_News">
 <p>
 so that I can <a href="#help_the_Emacs_community_grow">help the Emacs community grow</a>
@@ -1674,8 +1595,8 @@ so that I can <a href="#help_the_Emacs_community_grow">help the Emacs community 
 </p>
 </div>
 </div>
-<div id="outline-container-org3f7834d" class="outline-4">
-<h4 id="Develop_emacslife_com_into_beginner_enthusiast_resources_for_Emacs"><a id="org3f7834d"></a><span class="todo SOMEDAY">SOMEDAY</span> Develop emacslife.com into beginner/enthusiast resources for Emacs&#xa0;&#xa0;&#xa0;<span class="tag"><span class="emacs">emacs</span>&#xa0;<span class="project">project</span></span></h4>
+<div id="outline-container-org7747e1d" class="outline-4">
+<h4 id="Develop_emacslife_com_into_beginner_enthusiast_resources_for_Emacs"><a id="org7747e1d"></a><span class="todo SOMEDAY">SOMEDAY</span> Develop emacslife.com into beginner/enthusiast resources for Emacs&#xa0;&#xa0;&#xa0;<span class="tag"><span class="emacs">emacs</span>&#xa0;<span class="project">project</span></span></h4>
 <div class="outline-text-4" id="text-Develop_emacslife_com_into_beginner_enthusiast_resources_for_Emacs">
 <p>
 so that I can <a href="#help_the_Emacs_community_grow">help the Emacs community grow</a>
@@ -1730,8 +1651,8 @@ This gives me great ways to:
 </div>
 </div>
 
-<div id="outline-container-org4cdf57e" class="outline-4">
-<h4 id="create_a_10_week_Emacs_Basics_course"><a id="org4cdf57e"></a><span class="todo SOMEDAY">SOMEDAY</span> create a 10-week Emacs Basics course&#xa0;&#xa0;&#xa0;<span class="tag"><span class="emacs">emacs</span>&#xa0;<span class="specific">specific</span>&#xa0;<span class="project">project</span>&#xa0;<span class="someday">someday</span></span></h4>
+<div id="outline-container-orgf840580" class="outline-4">
+<h4 id="create_a_10_week_Emacs_Basics_course"><a id="orgf840580"></a><span class="todo SOMEDAY">SOMEDAY</span> create a 10-week Emacs Basics course&#xa0;&#xa0;&#xa0;<span class="tag"><span class="emacs">emacs</span>&#xa0;<span class="specific">specific</span>&#xa0;<span class="project">project</span>&#xa0;<span class="someday">someday</span></span></h4>
 <div class="outline-text-4" id="text-create_a_10_week_Emacs_Basics_course">
 <p>
 So that I can <a href="#help_the_Emacs_community_grow">help the Emacs community grow</a>
@@ -1754,8 +1675,8 @@ So that I can <a href="#help_the_Emacs_community_grow">help the Emacs community 
 </div>
 </div>
 
-<div id="outline-container-org7a582f3" class="outline-4">
-<h4 id="set_up_regular_Emacs_hangouts"><a id="org7a582f3"></a><span class="done DONE">DONE</span> set up regular Emacs hangouts</h4>
+<div id="outline-container-org2037ff7" class="outline-4">
+<h4 id="set_up_regular_Emacs_hangouts"><a id="org2037ff7"></a><span class="done DONE">DONE</span> set up regular Emacs hangouts</h4>
 <div class="outline-text-4" id="text-set_up_regular_Emacs_hangouts">
 <p>
 so that I can <a href="#help_the_Emacs_community_grow">help the Emacs community grow</a>
@@ -1767,8 +1688,8 @@ Every two weeks? Every month? Need a co-host.
 </div>
 </div>
 
-<div id="outline-container-org18e7dda" class="outline-4">
-<h4 id="draw_10_visual_guides_for_learning_Emacs"><a id="org18e7dda"></a><span class="todo SOMEDAY">SOMEDAY</span> draw 10 visual guides for learning Emacs</h4>
+<div id="outline-container-org57744cf" class="outline-4">
+<h4 id="draw_10_visual_guides_for_learning_Emacs"><a id="org57744cf"></a><span class="todo SOMEDAY">SOMEDAY</span> draw 10 visual guides for learning Emacs</h4>
 <div class="outline-text-4" id="text-draw_10_visual_guides_for_learning_Emacs">
 <p>
 So that I can <a href="#help_the_Emacs_community_grow">help the Emacs community grow</a>
@@ -1785,23 +1706,22 @@ So that I can <a href="#help_the_Emacs_community_grow">help the Emacs community 
 </div>
 </div>
 
-<div id="outline-container-org292d9f2" class="outline-2">
-<h2 id="Old_graph"><a id="org292d9f2"></a>Old graph</h2>
+<div id="outline-container-org9e462dd" class="outline-2">
+<h2 id="Old_graph"><a id="org9e462dd"></a>Old graph</h2>
 <div class="outline-text-2" id="text-Old_graph">
 
 <div class="figure">
-<p><a href="http://sachachua.com/sharing/goals.png" width="640"><img src="goals.png" alt="goals.png" width="640" /></a>
+<p><a href="http://sachachua.com/sharing/goals.png" width="640"><img src="goals.png" alt="goals.png" /></a>
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org4f8315" class="outline-2">
-<h2 id="Code"><a id="org4f8315"></a>Code</h2>
+<div id="outline-container-orgcfabfe6" class="outline-2">
+<h2 id="Code"><a id="orgcfabfe6"></a>Code</h2>
 <div class="outline-text-2" id="text-Code">
 <div class="org-src-container">
-
-<pre class="src src-emacs-lisp" id="org2e9e727">(<span class="org-keyword">let</span> ((count 0)
+<pre class="src src-emacs-lisp" id="org577c5da">(<span class="org-keyword">let</span> ((count 0)
       (files
        (directory-files directory nil pattern)))
   (format <span class="org-string">"%d items - %d%%\n%s"</span>
@@ -1816,9 +1736,9 @@ So that I can <a href="#help_the_Emacs_community_grow">help the Emacs community 
 </pre>
 </div>
 
-<div class="org-src-container">
 
-<pre class="src src-emacs-lisp" id="org4ca0eb6">(<span class="org-keyword">defvar</span> <span class="org-variable-name">include-someday</span> nil)
+<div class="org-src-container">
+<pre class="src src-emacs-lisp" id="orga26d30e">(<span class="org-keyword">defvar</span> <span class="org-variable-name">include-someday</span> nil)
 (<span class="org-keyword">defun</span> <span class="org-function-name">sacha/fill-string</span> (string new-fill-column <span class="org-type">&amp;optional</span> replace-char)
   <span class="org-doc">"Wrap STRING to NEW-FILL-COLUMN. Change newlines to REPLACE-CHAR."</span>
   (<span class="org-keyword">with-temp-buffer</span>
@@ -1945,13 +1865,11 @@ So that I can <a href="#help_the_Emacs_community_grow">help the Emacs community 
                                 <span class="org-builtin">:target</span> <span class="org-string">"_parent"</span>
                                 <span class="org-builtin">:tooltip</span> (elt x 4)))
                              (cdr (assoc 'nodes map)) <span class="org-string">"\n"</span>)))
-(org-babel-execute:dot (sacha/org-map-to-graphviz (sacha/org-map-goals tag) fill-column id) (cons (cons <span class="org-builtin">:file</span> (assoc-default <span class="org-builtin">:outputfile</span> params)) params))
+(org-babel-execute:dot (sacha/org-map-to-graphviz (sacha/org-map-goals tag) fill-column id) (list (cons <span class="org-builtin">:file</span> outputfile) (cons <span class="org-builtin">:cmdline</span> cmdline)))
 </pre>
 </div>
 
-<div class="html">
-<p>
-&lt;style type="text/css"&gt;
+<style type="text/css">
 .back-to-top {
     position: fixed;
     bottom: 2em;
@@ -1963,41 +1881,135 @@ So that I can <a href="#help_the_Emacs_community_grow">help the Emacs community 
     padding: 1em;
     display: none;
 }
-</p>
 
-<p>
 .back-to-top:hover {
     background-color: rgba(135, 135, 135, 0.50);
 }
-&lt;/style&gt;
-</p>
+</style>
 
-<p>
-&lt;a class="back-to-top" href="#top"&gt;Back to top&lt;/a&gt;
-</p>
+<a class="back-to-top" href="#top">Back to top</a>
 
-<p>
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
     var offset = 220;
     var duration = 500;
     $(window).scroll(function() {
-        if (jQuery(this).scrollTop() &gt; offset) {
+        if (jQuery(this).scrollTop() > offset) {
             jQuery('.back-to-top').fadeIn(duration);
         } else {
             jQuery('.back-to-top').fadeOut(duration);
         }
     });
-&lt;/script&gt;
-</p>
+</script>
 
-</div>
+</div></div><!-- columns, row-->
 
-<div class="html">
-<p>
-&lt;/div&gt;&lt;/div&gt;&lt;!&#x2013; columns, row&#x2013;&gt;
-</p>
+  <style type="text/css">
+  .Green { fill: green; color: white; background: green}
+  .Yellow { fill: yellow; background: yellow }
+  .Red { fill: red; color: white; background: red }
+  svg .heading { cursor: pointer; stroke: 2px white; }
+  path.heading.TODO { fill: green }
+  path.heading.SOMEDAY { fill: yellow }
 
-</div>
+  </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+<script type="text/javascript">
+// Returns a hierarchical JSON of the tree structure
+function buildHeadingTree() {
+  var lastNode = {level: 0, children: []};
+  var root = lastNode;
+  var headings = $(':header');
+  for (var i = 0; i < headings.length; i++) {
+    var matches = headings[i].tagName.match(/[0-9]+/);
+    var level = +(matches[0]);
+    while (level <= lastNode.level && lastNode.parent) {
+      lastNode = lastNode.parent;
+    }
+    var newNode = {parent: lastNode,
+                   children: [],
+                   level: level,
+                   element: headings[i]};
+    lastNode.children.push(newNode);
+    lastNode = newNode;
+  }
+  return root;
+}
+
+function classValue(d) {
+  var m = d.element.innerHTML.match(/TODO|SOMEDAY|DONE/i);
+  return ((m && m[0]) || 'TODO') + ' heading';
+//  return d.element.innerHTML.match(/Green|Yellow|Red/i)[0];
+}
+function labelValue(d) {
+  return '<a href="#' + d.element.id + '">' + d.element.innerHTML + '</a>';
+}
+
+// Code from https://bl.ocks.org/mbostock/1005873
+// Draws the chart of status
+function drawHeadingStatusChart(output, data) {
+  var width = output.attr('width'),
+      height = output.attr('height'),
+      partition = d3.layout.partition()
+        .value(function(d) { return 1; }),
+      svg = output.append('svg').attr('width', width).attr('height', height),
+      breadcrumbs = output.append('div').attr('class', 'heading-breadcrumbs'),
+      clickHandler = function(d) { window.location.hash = '#' + d.element.id; },
+      showBreadcrumbs = function(d) {
+      var links = [labelValue(d)];
+      while (d.parent) {
+        d = d.parent;
+        if (d.element) {
+        links.unshift(labelValue(d));
+        }
+      }
+      breadcrumbs.html(links.join(' &lt; '));
+  };
+  if (output.attr('data-type') == 'sunburst') {
+    var radius = Math.min(width, height) / 2;
+    svg = svg.append('g').attr('transform', 'translate(' + (width / 2) + ',' + (height / 2) + ')');
+    var x = d3.scale.linear().range([0, 2 * Math.PI]),
+        y = d3.scale.sqrt().range([0, radius]),
+        arc = d3.svg.arc()
+    .startAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x))); })
+    .endAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x + d.dx))); })
+    .innerRadius(function(d) { return Math.max(0, y(d.y)); })
+    .outerRadius(function(d) { return Math.max(0, y(d.y + d.dy)); }),
+    path = svg.selectAll('path').data(partition(data))
+                  .enter().append('path').attr('d', arc)
+                  .attr('class', classValue)
+                  .on('click', clickHandler)
+                  .on('mouseover', showBreadcrumbs);
+  } else {
+    var x = d3.scale.linear().range([0, width]),
+        y = d3.scale.linear().range([0, height]),
+        rect = svg.selectAll('rect');
+        rect.data(partition(data))  
+          .enter()
+          .append('rect')
+          .attr('x', function(d) { return x(d.x); })
+          .attr('y', function(d) { return y(d.y); })
+          .attr('width', function(d) { return x(d.dx); })
+          .attr('height', function(d) { return y(d.dy); })
+          .attr('class', classValue)
+          .on('mouseover', showBreadcrumbs)
+          .on('click', clickHandler);
+  }
+}
+
+function addClassToHeadings() {
+  var headings = $(':header');
+  for (var i = 0; i < headings.length; i++) {
+    $(headings[i]).addClass(classValue({element: headings[i]}));
+  }
+}
+
+$(document).ready(function() {
+  drawHeadingStatusChart(d3.select('.heading-status'),  
+   buildHeadingTree().children[0]);
+  addClassToHeadings();
+});
+</script>
 </div>
 </div>
 </div>

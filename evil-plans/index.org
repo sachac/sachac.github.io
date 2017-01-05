@@ -6,6 +6,9 @@
 
 <<top>>
 
+
+#+HTML: <div class="heading-status" width="200" height="200" style="float: right; width: 220px; background: white; padding: 10px" data-type="sunburst"></div>
+
 Curious about anything? Contact me at sacha@sachachua.com .  
 Web: http://sachachua.com/evil-plans
 Raw files: [[https://github.com/sachac/sachac.github.io/tree/master/evil-plans][evil-plans]]
@@ -19,7 +22,8 @@ Additional notes: http://sachachua.com/blog/2014/03/reflecting-goals-time/
 
 See raw file or end of document for code. 
 
-#+CALL: graph-from-tables[:outputfile "goals.svg" :cmdline "-Kdot -Tsvg -Gdpi=72 -Gsize=8,8 -Grankdir=LR"](fillcolumn=20,id="G") :results silent :exports none
+
+#+CALL: graph-from-tables[](fillcolumn=20,id="G",outputfile="goals.svg",cmdline="-Kdot -Tsvg -Gdpi=72 -Gsize=8,8 -Grankdir=LR") :results silent :exports none
 
 [[file:goals.svg]]
 
@@ -30,7 +34,7 @@ See raw file or end of document for code.
 
 See raw file or end of document for code.
 
-#+CALL: graph-from-tables[:outputfile "someday.svg" :cmdline "-Kdot -Tsvg -Gdpi=72 -Gsize=10,10 -Grankdir=LR"](fillcolumn=20,include-someday=1) :results silent :exports none
+#+CALL: graph-from-tables[](fillcolumn=20,include-someday=1,outputfile="someday.svg",cmdline="-Kdot -Tsvg -Gdpi=72 -Gsize=10,10 -Grankdir=LR") :results silent :exports none
 
 [[file:someday.svg]]
 
@@ -44,16 +48,13 @@ See raw file or end of document for code.
      | Health       |  10 | SOMEDAY | restart jogging with W-                                                                              |
      | Health       |  20 | SOMEDAY | develop habit of biking safely and comfortably in winter (>= -5C, < 20km wind, not much ice or snow) |
      | Health       |  50 | SOMEDAY | graduate from introductory exercise ladder                                                           |
-     | Life         |  20 | WAITING | deal with rough patches with grace                                                                   |
      | Life         | 100 | WAITING | enjoy middle age                                                                                     |
      | Life         |  10 | WAITING | respond with tranquility in the face of my mortality                                                 |
      | Life         |  20 | WAITING | respond with tranquility in the face of sickness                                                     |
      | Life         |  30 | WAITING | respond with tranquility in the face of the death of someone close to me                             |
      | Life         | 100 | WAITING | enjoy old age                                                                                        |
-     | Life         |  10 | SOMEDAY | find a cat sitter we can trust                                                                       |
      | Life         |  10 | SOMEDAY | set up distinctly interesting memories for four months straight                                      |
      | Life         |  30 | SOMEDAY | get driver's license?                                                                                |
-     | Analysis     |   5 | SOMEDAY | visualize ideas over a year                                                                          |
      | Analysis     |  20 | SOMEDAY | use animations to understand data                                                                    |
      | Learning     |  10 | SOMEDAY | read the visual dictionary                                                                           |
      | Writing      |  50 | SOMEDAY | develop ability to look at my writing with strangers' eyes                                           |
@@ -76,37 +77,24 @@ See raw file or end of document for code.
      | Programming  |  10 | SOMEDAY | contribute to open source documentation                                                              |
      | Programming  |  20 | SOMEDAY | get feedback from coaches or open source community                                                   |
      | Programming  |  20 | SOMEDAY | contribute to Emacs C                                                                                |
-     | Programming  |  10 | SOMEDAY | contribute automated tests to Emacs packages                                                         |
      | Writing      |  30 | SOMEDAY | write book about 5-year experiment to capture memories and help other people curious about it        |
      | Writing      |  50 | SOMEDAY | write a set of three or four 4-part courses                                                          |
-     | Life         |  10 | SOMEDAY | create four major projects in 2015                                                                   |
+     | Life         |  10 | SOMEDAY | create four major projects in a year                                                                 |
      | Writing      |  20 | SOMEDAY | write mini-book on building Emacs habits                                                             |
-     | Drawing      |   5 | STARTED | make Sketchnotes 2014                                                                                |
-     | Cooking      |   5 | SOMEDAY | make paella                                                                                          |
      | Cooking      |   5 | SOMEDAY | make special types of bread, including sourdough                                                     |
-     | Cooking      |  10 | SOMEDAY | competently make pizza                                                                               |
      | Cooking      |  10 | SOMEDAY | make braising and other fancy cooking terms part of my vocabulary                                    |
-     | Cooking      |  10 | SOMEDAY | adjust the feel of things by using herb combinations                                                 |
      | Cooking      |  10 | SOMEDAY | create monthly cycles for favourite recipes                                                          |
      | Cooking      |  20 | SOMEDAY | cut standard sizes                                                                                   |
-     | Learning     |  10 | SOMEDAY | Japanese: Listen to regular shows with >=80% comprehension                                           |
-     | Learning     |  10 | SOMEDAY | Japanese: Listen to tech talks with >=80% comprehension                                              |
-     | Learning     |  10 | SOMEDAY | Japanese: Listen to cooking shows with >=80% comprehension                                           |
-     | Learning     |  10 | SOMEDAY | Japanese: Read blog posts and tweets about tech with >=80% comprehension                             |
-     | Learning     |  10 | SOMEDAY | Japanese: Read cooking instructions on packages with >=80% comprehension                             |
-     | Learning     |  10 | SOMEDAY | Japanese: Complete Anki decks for JP-2000                                                            |
      | Connecting   |  20 | WAITING | do right by our cats                                                                                 |
      | Connecting   | 100 | WAITING | do right by W-, J-, and A-                                                                           |
      | Connecting   |  10 | SOMEDAY | develop a 4+-month habit of frequent messages to parents                                             |
      | Learning     |  30 | SOMEDAY | post notes and life changes from three months of working with a coach                                |
      | Connecting   |  10 | SOMEDAY | have a regular plan for meeting friends at least one weekend every month                             |
-     | Finance      |  10 | WAITING | sell stocks in a non-registered account and properly account for them                                |
      | Finance      |  10 | TODO    | re-examine spending and carve out more for what matters                                              |
      | Finance      |  20 | WAITING | move to target allocation                                                                            |
      | Finance      |  30 | WAITING | reach 2% goal                                                                                        |
      | Finance      |  10 | WAITING | reach 2.5% goal                                                                                      |
      | Connecting   |  20 | WAITING | resolve estate amicably or walk away from it                                                         |
-     | Writing      |  10 | SOMEDAY | develop structures for journaling                                                                    |
      | Learning     |  10 | SOMEDAY | create syntopicon/bibliography                                                                       |
      |--------------+-----+---------+------------------------------------------------------------------------------------------------------|
      |              |     |         |                                                                                                      |
@@ -123,8 +111,13 @@ See raw file or end of document for code.
    :CUSTOM_ID: maintain_or_improve_my_health
    :END:
 So that I can [[live an awesome life]]
-
-*** TODO Get used to babyweight exercises  :Health:
+*** TODO Get A- used to walking  :Health:
+    :PROPERTIES:
+    :XP:       10
+    :CUSTOM_ID: Get_A__used_to_walking
+    :END:
+So that I can [[maintain or improve my health]]
+*** DONE Get used to babyweight exercises                            :Health:
     :PROPERTIES:
     :CUSTOM_ID: Get_used_to_babyweight_exercises
     :END:
@@ -200,13 +193,21 @@ What kind of concrete actions or projects will move me towards that? What kinds 
     :CUSTOM_ID: cultivate_equanimity
     :END:
 So that I can [[live an awesome life]]
-**** WAITING deal with rough patches with grace                        :Life:
+**** TODO adapt to A-'s needs as a toddler
+     :PROPERTIES:
+     :GoalCategory: Life
+     :XP:       20
+     :CUSTOM_ID: adapt_to_A__s_needs_as_a_toddler
+     :END:
+     So that I can [[cultivate equanimity]]
+
+**** DONE deal with rough patches with grace                           :Life:
      :PROPERTIES:
      :GoalCategory: Life
      :XP:       20
      :CUSTOM_ID: deal_with_rough_patches_with_grace
      :END:
- So that I can [[enjoy middle age]]
+So that I can [[live an awesome life]]
 **** WAITING enjoy middle age                                          :Life:
      :PROPERTIES:
      :GoalCategory: Life
@@ -261,7 +262,7 @@ So that I can [[live an awesome life]]
      :CUSTOM_ID: get_Canadian_passport
      :END:
  So that I can [[enrich our experiences][enrich our experiences]]
-**** SOMEDAY find a cat sitter we can trust                            :Life:
+**** DONE find a cat sitter we can trust                               :Life:
      :PROPERTIES:
      :GoalCategory: Life
      :XP:       10
@@ -269,6 +270,7 @@ So that I can [[live an awesome life]]
      :END:
  So that I can [[enrich our experiences][enrich our experiences]]
 
+J- did all right
 **** SOMEDAY set up distinctly interesting memories for four months straight :Life:
      :PROPERTIES:
      :GoalCategory: Life
@@ -295,13 +297,6 @@ so that I can [[get more value from my time]] and [[share useful stuff]]
     :CUSTOM_ID: develop_my_analysis_skills
     :END:
 So that I can [[tickle my brain]]
-**** SOMEDAY visualize ideas over a year                           :Analysis:
-     :PROPERTIES:
-     :GoalCategory: Analysis
-     :XP:       5
-     :CUSTOM_ID: visualize_ideas_over_a_year
-     :END:
- So that I can [[develop my analysis skills][develop my analysis skills]]
 **** SOMEDAY use animations to understand data                     :Analysis:
      :PROPERTIES:
      :GoalCategory: Analysis
@@ -317,6 +312,13 @@ So that I can [[tickle my brain]]
      :CUSTOM_ID: read_the_visual_dictionary
      :END:
 
+ So that I can [[develop my analysis skills][develop my analysis skills]]
+**** DONE visualize ideas over a year                              :Analysis:
+     :PROPERTIES:
+     :GoalCategory: Analysis
+     :XP:       5
+     :CUSTOM_ID: visualize_ideas_over_a_year
+     :END:
  So that I can [[develop my analysis skills][develop my analysis skills]]
 ** share useful stuff
    :PROPERTIES:
@@ -389,7 +391,7 @@ So that I can [[habitually write books (>= 3 books in 5 years)][improve my shari
     :CUSTOM_ID: improve_my_drawing_skills
     :END:
 So that I can [[share useful stuff]]
-**** TODO Make it to another year of daily journal drawing
+**** DONE Make it to another year of daily journal drawing
      :PROPERTIES:
      :CUSTOM_ID: Make_it_to_another_year_of_daily_journal_drawing
      :END:
@@ -413,12 +415,12 @@ So that I can [[improve my drawing skills][improve my drawing skills]]
     :CUSTOM_ID: improve_my_coding_skills
     :END:
 So that I can [[share useful stuff]]
-**** TODO Build visualizations for baby data
+**** DONE Build visualizations for baby data
      :PROPERTIES:
      :CUSTOM_ID: Build_visualizations_for_baby_data
      :END:
 So that I can [[improve my coding skills]]
-**** SOMEDAY set up smooth cross-referencing between blog posts and Flickr :Programming:
+**** DONE set up smooth cross-referencing between blog posts and Flickr :Programming:
      :PROPERTIES:
      :GoalCategory: Programming
      :XP:       5
@@ -426,6 +428,7 @@ So that I can [[improve my coding skills]]
      :END:
 
 So that I can [[improve my coding skills]]
+Handled by IDs, tags, and my own sketch reviewer
 **** SOMEDAY set up autocomplete                                :Programming:
      :PROPERTIES:
      :GoalCategory: Programming
@@ -476,7 +479,7 @@ So that I can [[improve my coding skills]]
      :END:
 
 So that I can [[improve my coding skills]]
-**** SOMEDAY close an open source issue                         :Programming:
+**** DONE close an open source issue                            :Programming:
      :PROPERTIES:
      :GoalCategory: Programming
      :XP:       10
@@ -505,7 +508,7 @@ So that I can [[improve my coding skills]]
      :END:
 
 So that I can [[improve my coding skills]]
-**** SOMEDAY contribute automated tests to Emacs packages       :Programming:
+**** DONE contribute automated tests to Emacs packages          :Programming:
      :PROPERTIES:
      :GoalCategory: Programming
      :XP:       10
@@ -517,6 +520,17 @@ So that I can [[improve my coding skills]]
     :CUSTOM_ID: publish_resources
     :END:
 So that I can [[share useful stuff]]
+**** TODO write book about 5-year experiment to capture memories and help other people curious about it :Writing:
+     :PROPERTIES:
+     :GoalCategory: Writing
+     :XP:       30
+     :CUSTOM_ID: write_book_about_5_year_experiment_to_capture_memories_and_help_other_people_curious_about_it
+     :END:
+     :LOGBOOK:
+     - State "TODO"       from "SOMEDAY"    [2017-01-05 Thu 17:01]
+     :END:
+ So that I can [[publish resources][publish resources]]
+
 **** SOMEDAY [#C] publish 12 free/PWYC resources                    :project:
      :PROPERTIES:
      :CUSTOM_ID: publish_12_free_PWYC_resources
@@ -534,14 +548,6 @@ So that I can [[share useful stuff]]
      2. M-x
      3. Customize
 
-**** SOMEDAY write book about 5-year experiment to capture memories and help other people curious about it :Writing:
-     :PROPERTIES:
-     :GoalCategory: Writing
-     :XP:       30
-     :CUSTOM_ID: write_book_about_5_year_experiment_to_capture_memories_and_help_other_people_curious_about_it
-     :END:
- So that I can [[publish resources][publish resources]]
-
 **** SOMEDAY write a set of three or four 4-part courses            :Writing:
      :PROPERTIES:
      :GoalCategory: Writing
@@ -550,11 +556,11 @@ So that I can [[share useful stuff]]
      :END:
  So that I can [[publish resources][publish resources]]
 
-**** SOMEDAY create four major projects in 2015                        :Life:
+**** SOMEDAY create four major projects in a year                      :Life:
      :PROPERTIES:
      :GoalCategory: Life
      :XP:       10
-     :CUSTOM_ID: create_four_major_projects_in_2015
+     :CUSTOM_ID: create_four_major_projects_in_a_year
      :END:
 
  So that I can [[publish resources][publish resources]]
@@ -565,8 +571,8 @@ So that I can [[share useful stuff]]
      :CUSTOM_ID: write_mini_book_on_building_Emacs_habits
      :END:
 
- So that I can [[create four major projects in 2015]] and [[help the Emacs community grow]]
-**** STARTED [#A] make Sketchnotes 2014                             :Drawing:
+ So that I can [[create four major projects in a year]] and [[help the Emacs community grow]]
+**** DONE [#A] make Sketchnotes 2014                                :Drawing:
      :PROPERTIES:
      :GoalCategory: Drawing
      :XP:       5
@@ -577,12 +583,7 @@ So that I can [[share useful stuff]]
      :LOGBOOK:
      CLOCK: [2015-02-03 Tue 19:13]--[2015-02-03 Tue 19:13] =>  0:00
      :END:
- So that I can [[create four major projects in 2015]]
-
-Hmm. They used to be around here somewhere. I could've sworn I'd already started organizing those... Where did I put them? Ah, [[file:g:/code/2014-sketchnotes]]. 
-And then a quick find -name \*.png with a regex
-
-(replace-regexp "^\\./\\([^/]+\\)/\\(.*\\).png" "\\\\sketch{\\1}{\\2}")
+ So that I can [[create four major projects in a year]]
 
 ** build good karma
    :PROPERTIES:
@@ -603,13 +604,6 @@ So that I can [[live an awesome life]]
     :CUSTOM_ID: practise_types_of_recipes
     :END:
 So that I can [[cook yummy food]]
-**** SOMEDAY make paella                                            :Cooking:
-     :PROPERTIES:
-     :GoalCategory: Cooking
-     :XP:       5
-     :CUSTOM_ID: make_paella
-     :END:
- So that I can [[practise types of recipes][practise types of recipes]]
 **** SOMEDAY make special types of bread, including sourdough       :Cooking:
      :PROPERTIES:
      :GoalCategory: Cooking
@@ -628,13 +622,21 @@ So that I can [[cook yummy food]]
        Next goal
      :END:
  So that I can [[practise types of recipes][practise types of recipes]]
-**** SOMEDAY competently make pizza                                 :Cooking:
+**** DONE competently make pizza                                    :Cooking:
      :PROPERTIES:
      :GoalCategory: Cooking
      :XP:       10
      :CUSTOM_ID: competently_make_pizza
      :END:
  So that I can [[practise types of recipes][practise types of recipes]]
+
+*** TODO figure out recipes easily compatible with taking care of a kid  :Cooking:
+    :PROPERTIES:
+    :GoalCategory: Cooking
+    :XP:       10
+    :CUSTOM_ID: figure_out_recipes_easily_compatible_with_taking_care_of_a_kid
+    :END:
+So that I can [[cook yummy food]]
 *** SOMEDAY make braising and other fancy cooking terms part of my vocabulary :Cooking:
     :PROPERTIES:
     :GoalCategory: Cooking
@@ -642,7 +644,7 @@ So that I can [[cook yummy food]]
     :CUSTOM_ID: make_braising_and_other_fancy_cooking_terms_part_of_my_vocabulary
     :END:
 So that I can [[cook yummy food]]
-*** SOMEDAY adjust the feel of things by using herb combinations    :Cooking:
+*** DONE adjust the feel of things by using herb combinations       :Cooking:
     :PROPERTIES:
     :GoalCategory: Cooking
     :XP:       10
@@ -684,113 +686,6 @@ So that I can [[tickle my brain]] and [[share useful stuff]]
     :CUSTOM_ID: Raise_A_
     :END:
 So that I can [[learn from people]]
-*** TODO Choose parenting activities to consistently attend
-    :PROPERTIES:
-    :CUSTOM_ID: Choose_parenting_activities_to_consistently_attend
-    :END:
-So that I can [[learn from people]]
-*** SOMEDAY learn Japanese
-    :PROPERTIES:
-    :LINK:     [[file:~/personal/organizer.org::*Learn Japanese][Learn Japanese]]
-    :CUSTOM_ID: learn_Japanese
-    :END:
-So that I can [[learn from people]]
-**** DONE work through the Japanese language books we have at home :Learning:
-     :PROPERTIES:
-     :GoalCategory: Learning
-     :XP:       10
-     :CUSTOM_ID: work_through_the_Japanese_language_books_we_have_at_home
-     :END:
-So that I can [[learn Japanese]]
-**** SOMEDAY Japanese: Listen to regular shows with >=80% comprehension :Learning:
-     :PROPERTIES:
-     :GoalCategory: Learning
-     :XP:       10
-     :CUSTOM_ID: Japanese__Listen_to_regular_shows_with___80__comprehension
-     :END:
-So that I can [[learn Japanese]]
-**** SOMEDAY Japanese: Listen to tech talks with >=80% comprehension :Learning:
-     :PROPERTIES:
-     :GoalCategory: Learning
-     :XP:       10
-     :CUSTOM_ID: Japanese__Listen_to_tech_talks_with___80__comprehension
-     :END:
-So that I can [[learn Japanese]]
-**** SOMEDAY Japanese: Listen to cooking shows with >=80% comprehension :Learning:
-     :PROPERTIES:
-     :GoalCategory: Learning
-     :XP:       10
-     :CUSTOM_ID: Japanese__Listen_to_cooking_shows_with___80__comprehension
-     :END:
-So that I can [[learn Japanese]]
-**** SOMEDAY Japanese: Read blog posts and tweets about tech with >=80% comprehension :Learning:
-     :PROPERTIES:
-     :GoalCategory: Learning
-     :XP:       10
-     :CUSTOM_ID: Japanese__Read_blog_posts_and_tweets_about_tech_with___80__comprehension
-     :END:
-So that I can [[learn Japanese]]
-**** SOMEDAY Japanese: Read cooking instructions on packages with >=80% comprehension :Learning:
-     :PROPERTIES:
-     :GoalCategory: Learning
-     :XP:       10
-     :CUSTOM_ID: Japanese__Read_cooking_instructions_on_packages_with___80__comprehension
-     :END:
-So that I can [[learn Japanese]]
-**** SOMEDAY Japanese: Complete Anki decks for JP-2000             :Learning:
-     :PROPERTIES:
-     :GoalCategory: Learning
-     :XP:       10
-     :CUSTOM_ID: Japanese__Complete_Anki_decks_for_JP_2000
-     :END:
-     :LOGBOOK:
-     - State "TODO"       from "SOMEDAY"    [2015-01-26 Mon 17:41] \\
-       Active
-     :END:
-
-So that I can [[learn Japanese]]
-*** DONE host another 10 episodes of Emacs Chats or hangouts
-    :PROPERTIES:
-    :CUSTOM_ID: host_another_10_episodes_of_Emacs_Chats_or_hangouts
-    :GoalCategory: Connecting
-    :XP: 5
-    :CUSTOM_ID: complete_another_10_episodes_of_Emacs_Chats
-    :END:
-		:LOGBOOK:
-		- State "TODO"       from "DONE"       [2014-11-01 Sat 16:58]
-		:END:
-
-So that I can [[learn from people]] and [[help the Emacs community grow]]
-
-http://sachachua.com/blog/tag/emacs-hangout
-
-1. [X] Emacs Chat: technomancy
-2. [X] Emacs Chat: Xah Lee
-3. [X] Emacs Chat: Bozhidar Batsov
-4. Bodil Stokke?
-5. Steve Purcell? - Jan
-6. Stefan Monnier?
-7. John Kitchin?
-8. Reach out to the other bloggers on Planet Emacsen
-
-
-*** CANCELLED Set up an ongoing mentoring/coaching relationship with an Emacs coach
-    :PROPERTIES:
-    :CUSTOM_ID: Set_up_an_ongoing_mentoring_coaching_relationship_with_an_Emacs_coach
-    :END:
-So that I can [[get more value from my time]]
-
-https://www.codementor.io/sanityinc: RoR, jQuery, TDD, Emacs, Javascript
-https://www.codementor.io/skeeto
-http://emacs-doctor.com
-
-Possible concrete goals:
-- Follow best practices in setting up my web development environment (Rails, Javascript, NodeJS, Angular); learn how to think syntactically
-- Discover what else I should be doing with Org Mode
-- Set up a solid external data and backup plan
-- Learn more about what I don't know I don't know (Hard!)
-- Get into Emacs development
-
 *** WAITING do right by our cats                                 :Connecting:
 :PROPERTIES:
 :GoalCategory: Connecting
@@ -840,12 +735,58 @@ So that I can [[learn from people]]
     :END:
 
 So that I can [[learn from people]]
+*** CANCELLED Set up an ongoing mentoring/coaching relationship with an Emacs coach
+    :PROPERTIES:
+    :CUSTOM_ID: Set_up_an_ongoing_mentoring_coaching_relationship_with_an_Emacs_coach
+    :END:
+  So that I can [[get more value from my time]]
+
+  https://www.codementor.io/sanityinc: RoR, jQuery, TDD, Emacs, Javascript
+  https://www.codementor.io/skeeto
+  http://emacs-doctor.com
+
+  Possible concrete goals:
+  - Follow best practices in setting up my web development environment (Rails, Javascript, NodeJS, Angular); learn how to think syntactically
+  - Discover what else I should be doing with Org Mode
+  - Set up a solid external data and backup plan
+  - Learn more about what I don't know I don't know (Hard!)
+  - Get into Emacs development
+
+*** DONE host another 10 episodes of Emacs Chats or hangouts
+    :PROPERTIES:
+    :CUSTOM_ID: host_another_10_episodes_of_Emacs_Chats_or_hangouts
+    :GoalCategory: Connecting
+    :XP:       5
+    :CUSTOM_ID: complete_another_10_episodes_of_Emacs_Chats
+    :END:
+		  :LOGBOOK:
+		  - State "TODO"       from "DONE"       [2014-11-01 Sat 16:58]
+		  :END:
+
+  So that I can [[learn from people]] and [[help the Emacs community grow]]
+
+  http://sachachua.com/blog/tag/emacs-hangout
+
+  1. [X] Emacs Chat: technomancy
+  2. [X] Emacs Chat: Xah Lee
+  3. [X] Emacs Chat: Bozhidar Batsov
+  4. Bodil Stokke?
+  5. Steve Purcell? - Jan
+  6. Stefan Monnier?
+  7. John Kitchin?
+  8. Reach out to the other bloggers on Planet Emacsen
+
+*** DONE Choose parenting activities to consistently attend
+    :PROPERTIES:
+    :CUSTOM_ID: Choose_parenting_activities_to_consistently_attend
+    :END:
+So that I can [[learn from people]]
 ** make better decisions
    :PROPERTIES:
    :CUSTOM_ID: make_better_decisions
    :END:
 so that I can [[live an awesome life]]
-*** WAITING sell stocks in a non-registered account and properly account for them :Finance:
+*** DONE sell stocks in a non-registered account and properly account for them :Finance:
 :PROPERTIES:
 :GoalCategory: Finance
 :XP: 10
@@ -877,6 +818,19 @@ So that I can [[make better decisions]]
 
 I think 2015 counted! I managed to stay invested without freaking out too much. =)
 
+*** TODO reach 2.5% goal                                            :Finance:
+:PROPERTIES:
+:GoalCategory: Finance
+:XP: 10
+:CUSTOM_ID: reach_2_5__goal
+:END:
+:LOGBOOK:
+- State "TODO"       from "WAITING"    [2017-01-05 Thu 17:02] \\
+  Building assets...
+:END:
+
+So that I can [[reach 2% goal]]
+
 *** WAITING move to target allocation                               :Finance:
 :PROPERTIES:
 :GoalCategory: Finance
@@ -892,15 +846,6 @@ So that I can [[make better decisions]]
 :END:
 
 So that I can [[make better decisions]]
-*** WAITING reach 2.5% goal                                         :Finance:
-:PROPERTIES:
-:GoalCategory: Finance
-:XP: 10
-:CUSTOM_ID: reach_2_5__goal
-:END:
-
-So that I can [[reach 2% goal]]
-
 *** DONE deal with a famine year without panicking                 :Business:
     :PROPERTIES:
     :GoalCategory: Business
@@ -920,7 +865,7 @@ So that I can [[make better decisions]]
    :CUSTOM_ID: get_more_value_from_my_time
    :END:
 so that I can [[live an awesome life]]
-*** TODO Practise kaizen on our new routines
+*** DONE Practise kaizen on our new routines
     :PROPERTIES:
     :CUSTOM_ID: Practise_kaizen_on_our_new_routines
     :END:
@@ -931,7 +876,7 @@ Current gaps/opportunities:
 - Choosing activities to consistently attend
 - Making time to think, draw, and share
 
-*** SOMEDAY develop structures for journaling                       :Writing:
+*** DONE develop structures for journaling                          :Writing:
 :PROPERTIES:
 :GoalCategory: Writing
 :XP: 10
@@ -1043,7 +988,7 @@ So that I can [[delegate more effectively]] and [[share useful stuff]]
    :CUSTOM_ID: help_the_Emacs_community_grow
    :END:
 so that I can [[tickle my brain]] and [[share useful stuff]]
-*** TODO Make it to 52 issues of Emacs News  :emacs:
+*** DONE Make it to 52 issues of Emacs News                           :emacs:
     :PROPERTIES:
     :CUSTOM_ID: Make_it_to_52_issues_of_Emacs_News
     :END:
@@ -1193,6 +1138,7 @@ So that I can [[help the Emacs community grow]]
              "\n")))
 #+end_src
 
+
 #+name: graph-from-tables
 #+BEGIN_SRC emacs-lisp :var fill-column=20 :var tag="goal" :var id="G"
   (defvar include-someday nil)
@@ -1322,10 +1268,10 @@ So that I can [[help the Emacs community grow]]
                                   :target "_parent"
                                   :tooltip (elt x 4)))
                                (cdr (assoc 'nodes map)) "\n")))
-  (org-babel-execute:dot (sacha/org-map-to-graphviz (sacha/org-map-goals tag) fill-column id) (cons (cons :file (assoc-default :outputfile params)) params))
+  (org-babel-execute:dot (sacha/org-map-to-graphviz (sacha/org-map-goals tag) fill-column id) (list (cons :file outputfile) (cons :cmdline cmdline)))
 #+END_SRC
 
-#+begin_html
+#+begin_EXPORT html
 <style type="text/css">
 .back-to-top {
     position: fixed;
@@ -1357,8 +1303,118 @@ So that I can [[help the Emacs community grow]]
         }
     });
 </script>
-#+end_html
+#+end_EXPORT
 
-#+begin_html
+#+begin_EXPORT html
 </div></div><!-- columns, row-->
-#+end_html
+#+end_EXPORT
+
+#+BEGIN_EXPORT html
+  <style type="text/css">
+  .Green { fill: green; color: white; background: green}
+  .Yellow { fill: yellow; background: yellow }
+  .Red { fill: red; color: white; background: red }
+  svg .heading { cursor: pointer; stroke: 2px white; }
+  path.heading.TODO { fill: green }
+  path.heading.SOMEDAY { fill: yellow }
+
+  </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+<script type="text/javascript">
+// Returns a hierarchical JSON of the tree structure
+function buildHeadingTree() {
+  var lastNode = {level: 0, children: []};
+  var root = lastNode;
+  var headings = $(':header');
+  for (var i = 0; i < headings.length; i++) {
+    var matches = headings[i].tagName.match(/[0-9]+/);
+    var level = +(matches[0]);
+    while (level <= lastNode.level && lastNode.parent) {
+      lastNode = lastNode.parent;
+    }
+    var newNode = {parent: lastNode,
+                   children: [],
+                   level: level,
+                   element: headings[i]};
+    lastNode.children.push(newNode);
+    lastNode = newNode;
+  }
+  return root;
+}
+
+function classValue(d) {
+  var m = d.element.innerHTML.match(/TODO|SOMEDAY|DONE/i);
+  return ((m && m[0]) || 'TODO') + ' heading';
+//  return d.element.innerHTML.match(/Green|Yellow|Red/i)[0];
+}
+function labelValue(d) {
+  return '<a href="#' + d.element.id + '">' + d.element.innerHTML + '</a>';
+}
+
+// Code from https://bl.ocks.org/mbostock/1005873
+// Draws the chart of status
+function drawHeadingStatusChart(output, data) {
+  var width = output.attr('width'),
+      height = output.attr('height'),
+      partition = d3.layout.partition()
+        .value(function(d) { return 1; }),
+      svg = output.append('svg').attr('width', width).attr('height', height),
+      breadcrumbs = output.append('div').attr('class', 'heading-breadcrumbs'),
+      clickHandler = function(d) { window.location.hash = '#' + d.element.id; },
+      showBreadcrumbs = function(d) {
+      var links = [labelValue(d)];
+      while (d.parent) {
+        d = d.parent;
+        if (d.element) {
+        links.unshift(labelValue(d));
+        }
+      }
+      breadcrumbs.html(links.join(' &lt; '));
+  };
+  if (output.attr('data-type') == 'sunburst') {
+    var radius = Math.min(width, height) / 2;
+    svg = svg.append('g').attr('transform', 'translate(' + (width / 2) + ',' + (height / 2) + ')');
+    var x = d3.scale.linear().range([0, 2 * Math.PI]),
+        y = d3.scale.sqrt().range([0, radius]),
+        arc = d3.svg.arc()
+    .startAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x))); })
+    .endAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x + d.dx))); })
+    .innerRadius(function(d) { return Math.max(0, y(d.y)); })
+    .outerRadius(function(d) { return Math.max(0, y(d.y + d.dy)); }),
+    path = svg.selectAll('path').data(partition(data))
+                  .enter().append('path').attr('d', arc)
+                  .attr('class', classValue)
+                  .on('click', clickHandler)
+                  .on('mouseover', showBreadcrumbs);
+  } else {
+    var x = d3.scale.linear().range([0, width]),
+        y = d3.scale.linear().range([0, height]),
+        rect = svg.selectAll('rect');
+        rect.data(partition(data))  
+          .enter()
+          .append('rect')
+          .attr('x', function(d) { return x(d.x); })
+          .attr('y', function(d) { return y(d.y); })
+          .attr('width', function(d) { return x(d.dx); })
+          .attr('height', function(d) { return y(d.dy); })
+          .attr('class', classValue)
+          .on('mouseover', showBreadcrumbs)
+          .on('click', clickHandler);
+  }
+}
+
+function addClassToHeadings() {
+  var headings = $(':header');
+  for (var i = 0; i < headings.length; i++) {
+    $(headings[i]).addClass(classValue({element: headings[i]}));
+  }
+}
+
+$(document).ready(function() {
+  drawHeadingStatusChart(d3.select('.heading-status'),  
+   buildHeadingTree().children[0]);
+  addClassToHeadings();
+});
+</script>
+#+END_EXPORT
