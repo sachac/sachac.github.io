@@ -22,7 +22,6 @@ Additional notes: http://sachachua.com/blog/2014/03/reflecting-goals-time/
 
 See raw file or end of document for code. 
 
-
 #+CALL: graph-from-tables[](fillcolumn=20,id="G",outputfile="goals.svg",cmdline="-Kdot -Tsvg -Gdpi=72 -Gsize=8,8 -Grankdir=LR") :results silent :exports none
 
 [[file:goals.svg]]
@@ -43,61 +42,19 @@ See raw file or end of document for code.
   :CUSTOM_ID: Table
   :END:
      #+BEGIN: propview :cols (GOALCATEGORY XP TODO ITEM)  :conds ((> XP 0) (not (string= TODO "DONE"))) :id global :noquote t :skip-empty-rows t 
-     | GOALCATEGORY |  XP | TODO    | ITEM                                                                                                 |
-     |--------------+-----+---------+------------------------------------------------------------------------------------------------------|
-     | Health       |  10 | SOMEDAY | restart jogging with W-                                                                              |
-     | Health       |  20 | SOMEDAY | develop habit of biking safely and comfortably in winter (>= -5C, < 20km wind, not much ice or snow) |
-     | Health       |  50 | SOMEDAY | graduate from introductory exercise ladder                                                           |
-     | Life         | 100 | WAITING | enjoy middle age                                                                                     |
-     | Life         |  10 | WAITING | respond with tranquility in the face of my mortality                                                 |
-     | Life         |  20 | WAITING | respond with tranquility in the face of sickness                                                     |
-     | Life         |  30 | WAITING | respond with tranquility in the face of the death of someone close to me                             |
-     | Life         | 100 | WAITING | enjoy old age                                                                                        |
-     | Life         |  10 | SOMEDAY | set up distinctly interesting memories for four months straight                                      |
-     | Life         |  30 | SOMEDAY | get driver's license?                                                                                |
-     | Analysis     |  20 | SOMEDAY | use animations to understand data                                                                    |
-     | Learning     |  10 | SOMEDAY | read the visual dictionary                                                                           |
-     | Writing      |  50 | SOMEDAY | develop ability to look at my writing with strangers' eyes                                           |
-     | Writing      |  50 | SOMEDAY | cut writing ruthlessly                                                                               |
-     | Writing      |  50 | SOMEDAY | write in bigger chunks                                                                               |
-     | Writing      | 100 | SOMEDAY | write a book instead of compiling it                                                                 |
-     | Writing      | 100 | SOMEDAY | habitually write books (>= 3 books in 5 years)                                                       |
-     | Writing      |  50 | SOMEDAY | habitually write mini-guides (>= 4 mini-guides in 2 years)                                           |
-     | Speaking     |  10 | SOMEDAY | make videos part of the way I regularly share (~12 original videos a year)                           |
-     | Drawing      |  20 | SOMEDAY | draw recognizable people                                                                             |
-     | Programming  |   5 | SOMEDAY | set up smooth cross-referencing between blog posts and Flickr                                        |
-     | Programming  |   5 | SOMEDAY | set up autocomplete                                                                                  |
-     | Programming  |   5 | SOMEDAY | set up flychecking                                                                                   |
-     | Programming  |   5 | SOMEDAY | make test-driven development part of my normal workflow                                              |
-     | Programming  |   5 | SOMEDAY | get the hang of a CSS framework                                                                      |
-     | Programming  |   5 | SOMEDAY | get the hang of a CSS preprocessor                                                                   |
-     | Programming  |   5 | SOMEDAY | get the hang of a Javascript preprocessor                                                            |
-     | Programming  |   5 | SOMEDAY | help other people program more effectively                                                           |
-     | Programming  |  10 | SOMEDAY | close an open source issue                                                                           |
-     | Programming  |  10 | SOMEDAY | contribute to open source documentation                                                              |
-     | Programming  |  20 | SOMEDAY | get feedback from coaches or open source community                                                   |
-     | Programming  |  20 | SOMEDAY | contribute to Emacs C                                                                                |
-     | Writing      |  30 | SOMEDAY | write book about 5-year experiment to capture memories and help other people curious about it        |
-     | Writing      |  50 | SOMEDAY | write a set of three or four 4-part courses                                                          |
-     | Life         |  10 | SOMEDAY | create four major projects in a year                                                                 |
-     | Writing      |  20 | SOMEDAY | write mini-book on building Emacs habits                                                             |
-     | Cooking      |   5 | SOMEDAY | make special types of bread, including sourdough                                                     |
-     | Cooking      |  10 | SOMEDAY | make braising and other fancy cooking terms part of my vocabulary                                    |
-     | Cooking      |  10 | SOMEDAY | create monthly cycles for favourite recipes                                                          |
-     | Cooking      |  20 | SOMEDAY | cut standard sizes                                                                                   |
-     | Connecting   |  20 | WAITING | do right by our cats                                                                                 |
-     | Connecting   | 100 | WAITING | do right by W-, J-, and A-                                                                           |
-     | Connecting   |  10 | SOMEDAY | develop a 4+-month habit of frequent messages to parents                                             |
-     | Learning     |  30 | SOMEDAY | post notes and life changes from three months of working with a coach                                |
-     | Connecting   |  10 | SOMEDAY | have a regular plan for meeting friends at least one weekend every month                             |
-     | Finance      |  10 | TODO    | re-examine spending and carve out more for what matters                                              |
-     | Finance      |  20 | WAITING | move to target allocation                                                                            |
-     | Finance      |  30 | WAITING | reach 2% goal                                                                                        |
-     | Finance      |  10 | WAITING | reach 2.5% goal                                                                                      |
-     | Connecting   |  20 | WAITING | resolve estate amicably or walk away from it                                                         |
-     | Learning     |  10 | SOMEDAY | create syntopicon/bibliography                                                                       |
-     |--------------+-----+---------+------------------------------------------------------------------------------------------------------|
-     |              |     |         |                                                                                                      |
+     | GOALCATEGORY | XP | TODO    | ITEM                                                                                          |
+     |--------------+----+---------+-----------------------------------------------------------------------------------------------|
+     | Life         | 10 | SOMEDAY | set up distinctly interesting memories for four months straight                               |
+     | Life         | 30 | SOMEDAY | get driver's license?                                                                         |
+     | Drawing      | 20 | SOMEDAY | draw recognizable people                                                                      |
+     | Programming  | 10 | SOMEDAY | contribute to open source documentation                                                       |
+     | Writing      | 30 | SOMEDAY | write book about 5-year experiment to capture memories and help other people curious about it |
+     | Writing      | 50 | SOMEDAY | write a set of three or four 4-part courses                                                   |
+     | Life         | 10 | SOMEDAY | create four major projects in a year                                                          |
+     | Writing      | 20 | SOMEDAY | write mini-book on building Emacs habits                                                      |
+     | Learning     | 10 | SOMEDAY | create syntopicon/bibliography                                                                |
+     |--------------+----+---------+-----------------------------------------------------------------------------------------------|
+     |              |    |         |                                                                                               |
      #+END:
 
 * Goals                                                                :goal:
@@ -106,171 +63,25 @@ See raw file or end of document for code.
 :CUSTOM_ID: Goals
 :END:
 
-** maintain or improve my health
+** SOMEDAY maintain or improve my health
    :PROPERTIES:
    :CUSTOM_ID: maintain_or_improve_my_health
    :END:
 So that I can [[live an awesome life]]
-*** TODO Get A- used to walking  :Health:
-    :PROPERTIES:
-    :XP:       10
-    :CUSTOM_ID: Get_A__used_to_walking
-    :END:
-So that I can [[maintain or improve my health]]
-*** DONE Get used to babyweight exercises                            :Health:
-    :PROPERTIES:
-    :CUSTOM_ID: Get_used_to_babyweight_exercises
-    :END:
-
-So that I can [[maintain or improve my health]]
-
-- Walking for at least one hour a day, at least three times a week
-- Upper-body baby weight exercises
-
-Built-in progression, hooray!
-
-*** SOMEDAY restart jogging with W-                                  :Health:
-    :PROPERTIES:
-    :GoalCategory: Health
-    :XP:       10
-    :CUSTOM_ID: restart_jogging_with_W_
-    :END:
-So that I can [[maintain or improve my health]]
-*** SOMEDAY develop habit of biking safely and comfortably in winter (>= -5C, < 20km wind, not much ice or snow) :Health:
-    :PROPERTIES:
-    :GoalCategory: Health
-    :XP:       20
-    :CUSTOM_ID: develop_habit_of_biking_safely_and_comfortably_in_winter______5C____20km_wind__not_much_ice_or_snow_
-    :END:
-So that I can [[maintain or improve my health]]
-*** SOMEDAY graduate from introductory exercise ladder               :Health:
-    :PROPERTIES:
-    :GoalCategory: Health
-    :XP:       50
-    :CUSTOM_ID: graduate_from_introductory_exercise_ladder
-    :END:
-
-So that I can [[maintain or improve my health]]
 ** live an awesome life
    :PROPERTIES:
 	 :CUSTOM_ID: live_an_awesome_life
    :END:
-*** TODO do a 5-year experiment in self-directed living
-    :PROPERTIES:
-    :CUSTOM_ID: do_a_5_year_experiment_in_self_directed_living
-    :LINK:     [[file:~/personal/business.org::*5-year experiment][5-year experiment]]
-    :END:
-so that I can [[live an awesome life]]
-
-2012-2017
-
-Questions to resolve:
-- Would I prefer the structure of a regular career, or can I learn how to make the most of a more self-directed life?
-- Do I understand my wants and needs enough to manage my finances with reasonable safety?
-
-More information: http://sachachua.com/blog/experiment
-
-What could "awesome" look like?
-- Good handle on expenses, resisted lifestyle inflation
-- Expenses covered by dividends/capital gains, with a reasonable buffer for the next correction (and so that I can buy the next time stocks go on sale)
-- Be the kind of happy, loving, equanimous person I want to be
-- Icing on the cake:
-  - Tickled brain from learning lots of things
-  - Good karma from helping lots of people
-  - Scaling up (building resources)
-- Confederates whom I know well and am in touch with
-
-What kind of concrete actions or projects will move me towards that? What kinds of things do I want to explore?
-- [X] E-book publishing: Easy to do once I have a clear idea of what I want to put together. I like pay-what-you-want.
-- [X] Print publishing: Doable with LaTeX and CreateSpace.
-- [ ] Useful, organized non-fiction
-- [ ] A way for people to self-identify as tribe members (ex: e-book purchases, mailing list signups)
-- [ ] Git-tip and other microtipping?
-- See other projects in this file
-
-*** cultivate equanimity
-    :PROPERTIES:
-    :CUSTOM_ID: cultivate_equanimity
-    :END:
-So that I can [[live an awesome life]]
-**** TODO adapt to A-'s needs as a toddler
-     :PROPERTIES:
-     :GoalCategory: Life
-     :XP:       20
-     :CUSTOM_ID: adapt_to_A__s_needs_as_a_toddler
-     :END:
-     So that I can [[cultivate equanimity]]
-
-**** DONE deal with rough patches with grace                           :Life:
-     :PROPERTIES:
-     :GoalCategory: Life
-     :XP:       20
-     :CUSTOM_ID: deal_with_rough_patches_with_grace
-     :END:
-So that I can [[live an awesome life]]
-**** WAITING enjoy middle age                                          :Life:
-     :PROPERTIES:
-     :GoalCategory: Life
-     :XP:       100
-     :CUSTOM_ID: enjoy_middle_age
-     :END:
- So that I can [[enjoy old age][enjoy old age]]
-
-**** WAITING respond with tranquility in the face of my mortality      :Life:
-     :PROPERTIES:
-     :GoalCategory: Life
-     :XP:       10
-     :CUSTOM_ID: respond_with_tranquility_in_the_face_of_my_mortality
-     :END:
-
- So that I can [[enjoy old age][enjoy old age]]
-
-**** WAITING respond with tranquility in the face of sickness          :Life:
-     :PROPERTIES:
-     :GoalCategory: Life
-     :XP:       20
-     :CUSTOM_ID: respond_with_tranquility_in_the_face_of_sickness
-     :END:
- So that I can [[respond with tranquility in the face of the death of someone close to me]]
-
-**** WAITING respond with tranquility in the face of the death of someone close to me :Life:
-     :PROPERTIES:
-     :GoalCategory: Life
-     :XP:       30
-     :CUSTOM_ID: respond_with_tranquility_in_the_face_of_the_death_of_someone_close_to_me
-     :END:
-
- So that I can [[respond with tranquility in the face of my mortality]]
-
-**** WAITING enjoy old age                                             :Life:
-     :PROPERTIES:
-     :GoalCategory: Life
-     :XP:       100
-     :CUSTOM_ID: enjoy_old_age
-     :END:
- So that I can [[cultivate equanimity][cultivate equanimity]]
-
 *** enrich our experiences
     :PROPERTIES:
     :CUSTOM_ID: enrich_our_experiences
     :END:
 So that I can [[live an awesome life]]
-**** DONE get Canadian passport                                        :Life:
+**** TODO try two weeks of having prepared activities/provocations for A-
      :PROPERTIES:
-     :GoalCategory: Life
-     :XP:       5
-     :CUSTOM_ID: get_Canadian_passport
+     :CUSTOM_ID: try_two_weeks_of_having_prepared_activities_provocations_for_A_
      :END:
- So that I can [[enrich our experiences][enrich our experiences]]
-**** DONE find a cat sitter we can trust                               :Life:
-     :PROPERTIES:
-     :GoalCategory: Life
-     :XP:       10
-     :CUSTOM_ID: find_a_cat_sitter_we_can_trust
-     :END:
- So that I can [[enrich our experiences][enrich our experiences]]
-
-J- did all right
+So that I can [[enrich our experiences]]
 **** SOMEDAY set up distinctly interesting memories for four months straight :Life:
      :PROPERTIES:
      :GoalCategory: Life
@@ -292,106 +103,32 @@ J- did all right
    :CUSTOM_ID: tickle_my_brain
    :END:
 so that I can [[get more value from my time]] and [[share useful stuff]]
-*** develop my analysis skills
+*** TODO sew more clothes for A- and me
     :PROPERTIES:
-    :CUSTOM_ID: develop_my_analysis_skills
+    :CUSTOM_ID: sew_more_clothes_for_A__and_me
     :END:
-So that I can [[tickle my brain]]
-**** SOMEDAY use animations to understand data                     :Analysis:
-     :PROPERTIES:
-     :GoalCategory: Analysis
-     :XP:       20
-     :CUSTOM_ID: use_animations_to_understand_data
-     :END:
-
- So that I can [[develop my analysis skills][develop my analysis skills]]
-**** SOMEDAY read the visual dictionary                            :Learning:
-     :PROPERTIES:
-     :GoalCategory: Learning
-     :XP:       10
-     :CUSTOM_ID: read_the_visual_dictionary
-     :END:
-
- So that I can [[develop my analysis skills][develop my analysis skills]]
-**** DONE visualize ideas over a year                              :Analysis:
-     :PROPERTIES:
-     :GoalCategory: Analysis
-     :XP:       5
-     :CUSTOM_ID: visualize_ideas_over_a_year
-     :END:
- So that I can [[develop my analysis skills][develop my analysis skills]]
+so that I can [[tickle my brain]]
+*** TODO build organizers and other things for the house
+    :PROPERTIES:
+    :CUSTOM_ID: build_organizers_and_other_things_for_the_house
+    :END:
+so that I can [[tickle my brain]]
 ** share useful stuff
    :PROPERTIES:
    :CUSTOM_ID: share_useful_stuff
    :END:
-So that I can [[build good karma]] and [[get more value from my time]]
-*** improve my sharing skills
-    :PROPERTIES:
-    :CUSTOM_ID: improve_my_sharing_skills
-    :END:
-So that I can [[share useful stuff]]
-**** TODO harvest my backlog of notes
-     :PROPERTIES:
-     :CUSTOM_ID: harvest_my_backlog_of_notes
-     :END:
-So that I can [[improve my sharing skills]]
-**** SOMEDAY develop ability to look at my writing with strangers' eyes :Writing:
-     :PROPERTIES:
-     :GoalCategory: Writing
-     :XP:       50
-     :CUSTOM_ID: develop_ability_to_look_at_my_writing_with_strangers__eyes
-     :END:
-So that I can [[cut writing ruthlessly]]
-**** SOMEDAY cut writing ruthlessly              :Writing:
-     :PROPERTIES:
-     :GoalCategory: Writing
-     :XP:       50
-     :CUSTOM_ID: cut_writing_ruthlessly
-     :END:
-So that I can [[write a book instead of compiling it][write a book instead of compiling it]]
-**** SOMEDAY write in bigger chunks  :Writing:
-     :PROPERTIES:
-     :GoalCategory: Writing
-     :XP:       50
-     :CUSTOM_ID: write_in_bigger_chunks
-     :END:
-So that I can [[write a book instead of compiling it]]     
-**** SOMEDAY write a book instead of compiling it                   :Writing:
-     :PROPERTIES:
-     :GoalCategory: Writing
-     :XP:       100
-     :CUSTOM_ID: write_a_book_instead_of_compiling_it
-     :END:
-So that I can [[habitually write books (>= 3 books in 5 years)]]
-**** SOMEDAY habitually write books (>= 3 books in 5 years)         :Writing:
-     :PROPERTIES:
-     :GoalCategory: Writing
-     :XP:       100
-     :CUSTOM_ID: habitually_write_books_____3_books_in_5_years_
-     :END:
-
-So that I can [[improve my sharing skills][improve my sharing skills]]
-**** SOMEDAY habitually write mini-guides (>= 4 mini-guides in 2 years) :Writing:
-     :PROPERTIES:
-     :GoalCategory: Writing
-     :XP:       50
-     :CUSTOM_ID: habitually_write_mini_guides_____4_mini_guides_in_2_years_
-     :END:
-So that I can [[habitually write books (>= 3 books in 5 years)][improve my sharing skills]]
-**** SOMEDAY make videos part of the way I regularly share (~12 original videos a year) :Speaking:
-     :PROPERTIES:
-     :GoalCategory: Speaking
-     :XP:       10
-     :CUSTOM_ID: make_videos_part_of_the_way_I_regularly_share___12_original_videos_a_year_
-     :END:
-
- So that I can [[share useful stuff]]
+So that I can [[get more value from my time]]
 *** improve my drawing skills
     :PROPERTIES:
     :CUSTOM_ID: improve_my_drawing_skills
     :END:
 So that I can [[share useful stuff]]
-**** DONE Make it to another year of daily journal drawing
+**** TODO illustrate another book for A- or her cousins
+     :PROPERTIES:
+     :CUSTOM_ID: illustrate_another_book_for_A__or_her_cousins
+     :END:
+So that I can [[improve my drawing skills]]
+**** DONE make it to another year of daily journal drawing
      :PROPERTIES:
      :CUSTOM_ID: Make_it_to_another_year_of_daily_journal_drawing
      :END:
@@ -414,70 +151,41 @@ So that I can [[improve my drawing skills][improve my drawing skills]]
     :PROPERTIES:
     :CUSTOM_ID: improve_my_coding_skills
     :END:
-So that I can [[share useful stuff]]
-**** DONE Build visualizations for baby data
+So that I can [[tickle my brain]]
+**** TODO move my services into Docker or similar containers
      :PROPERTIES:
-     :CUSTOM_ID: Build_visualizations_for_baby_data
+     :CUSTOM_ID: move_my_services_into_Docker_or_similar_containers
      :END:
 So that I can [[improve my coding skills]]
-**** DONE set up smooth cross-referencing between blog posts and Flickr :Programming:
-     :PROPERTIES:
-     :GoalCategory: Programming
-     :XP:       5
-     :CUSTOM_ID: set_up_smooth_cross_referencing_between_blog_posts_and_Flickr
-     :END:
-
-So that I can [[improve my coding skills]]
-Handled by IDs, tags, and my own sketch reviewer
-**** SOMEDAY set up autocomplete                                :Programming:
-     :PROPERTIES:
-     :GoalCategory: Programming
-     :XP:       5
-     :CUSTOM_ID: set_up_autocomplete
-     :END:
-So that I can [[improve my coding skills]]
-**** SOMEDAY set up flychecking                                 :Programming:
-     :PROPERTIES:
-     :GoalCategory: Programming
-     :XP:       5
-     :CUSTOM_ID: set_up_flychecking
-     :END:
-So that I can [[improve my coding skills]]
-**** SOMEDAY make test-driven development part of my normal workflow :Programming:
+(and make my setup easier to reproduce)
+ 
+**** DONE make test-driven development part of my normal workflow :Programming:
      :PROPERTIES:
      :GoalCategory: Programming
      :XP:       5
      :CUSTOM_ID: make_test_driven_development_part_of_my_normal_workflow
      :END:
 So that I can [[improve my coding skills]]
-**** SOMEDAY get the hang of a CSS framework                    :Programming:
+**** DONE get the hang of a CSS framework                       :Programming:
      :PROPERTIES:
      :GoalCategory: Programming
      :XP:       5
      :CUSTOM_ID: get_the_hang_of_a_CSS_framework
      :END:
 So that I can [[get the hang of a CSS preprocessor][get the hang of a CSS preprocessor]]
-**** SOMEDAY get the hang of a CSS preprocessor                 :Programming:
+**** DONE get the hang of a CSS preprocessor                    :Programming:
      :PROPERTIES:
      :GoalCategory: Programming
      :XP:       5
      :CUSTOM_ID: get_the_hang_of_a_CSS_preprocessor
      :END:
 So that I can [[improve my coding skills]]
-**** SOMEDAY get the hang of a Javascript preprocessor          :Programming:
+**** DONE get the hang of a Javascript preprocessor             :Programming:
      :PROPERTIES:
      :GoalCategory: Programming
      :XP:       5
      :CUSTOM_ID: get_the_hang_of_a_Javascript_preprocessor
      :END:
-So that I can [[improve my coding skills]]
-**** SOMEDAY help other people program more effectively         :Programming:
-     :PROPERTIES:
-     :GoalCategory: Programming
-     :XP:       5
-     :CUSTOM_ID: help_other_people_program_more_effectively
-     :END:
-
 So that I can [[improve my coding skills]]
 **** DONE close an open source issue                            :Programming:
      :PROPERTIES:
@@ -493,21 +201,6 @@ So that I can [[improve my coding skills]]
      :CUSTOM_ID: contribute_to_open_source_documentation
      :END:
 So that I can [[improve my coding skills]]
-**** SOMEDAY get feedback from coaches or open source community :Programming:
-     :PROPERTIES:
-     :GoalCategory: Programming
-     :XP:       20
-     :CUSTOM_ID: get_feedback_from_coaches_or_open_source_community
-     :END:
-So that I can [[improve my coding skills]]
-**** SOMEDAY contribute to Emacs C                              :Programming:
-     :PROPERTIES:
-     :GoalCategory: Programming
-     :XP:       20
-     :CUSTOM_ID: contribute_to_Emacs_C
-     :END:
-
-So that I can [[improve my coding skills]]
 **** DONE contribute automated tests to Emacs packages          :Programming:
      :PROPERTIES:
      :GoalCategory: Programming
@@ -520,17 +213,6 @@ So that I can [[improve my coding skills]]
     :CUSTOM_ID: publish_resources
     :END:
 So that I can [[share useful stuff]]
-**** TODO write book about 5-year experiment to capture memories and help other people curious about it :Writing:
-     :PROPERTIES:
-     :GoalCategory: Writing
-     :XP:       30
-     :CUSTOM_ID: write_book_about_5_year_experiment_to_capture_memories_and_help_other_people_curious_about_it
-     :END:
-     :LOGBOOK:
-     - State "TODO"       from "SOMEDAY"    [2017-01-05 Thu 17:01]
-     :END:
- So that I can [[publish resources][publish resources]]
-
 **** SOMEDAY [#C] publish 12 free/PWYC resources                    :project:
      :PROPERTIES:
      :CUSTOM_ID: publish_12_free_PWYC_resources
@@ -543,10 +225,6 @@ So that I can [[share useful stuff]]
  - [X] How to learn Emacs Lisp by customizing Emacs: http://sach.ac/baby-steps-emacs-lisp - 2014-05-07
  - [ ] Baby steps guide to managing your tasks with Org: http://sach.ac/baby-steps-org-todo
  - [ ] Intermediate guide to Emacs
- - 10-week Emacs Basics course (or 12...)
-     1. Mouse, copy, paste
-     2. M-x
-     3. Customize
 
 **** SOMEDAY write a set of three or four 4-part courses            :Writing:
      :PROPERTIES:
@@ -585,217 +263,12 @@ So that I can [[share useful stuff]]
      :END:
  So that I can [[create four major projects in a year]]
 
-** build good karma
-   :PROPERTIES:
-   :CUSTOM_ID: build_good_karma
-   :END:
-So that I can [[learn from people]]
-
-Is this a true goal, or it mainly on the way to something else? Are
-there projects that support this instead of the other stuff?
-
-** cook yummy food
-   :PROPERTIES:
-   :CUSTOM_ID: cook_yummy_food
-   :END:
-So that I can [[live an awesome life]]
-*** practise types of recipes
-    :PROPERTIES:
-    :CUSTOM_ID: practise_types_of_recipes
-    :END:
-So that I can [[cook yummy food]]
-**** SOMEDAY make special types of bread, including sourdough       :Cooking:
-     :PROPERTIES:
-     :GoalCategory: Cooking
-     :XP:       5
-     :CUSTOM_ID: make_special_types_of_bread__including_sourdough
-     :END:
- So that I can [[practise types of recipes][practise types of recipes]]
-**** DONE make udon noodles from scratch                            :Cooking:
-     :PROPERTIES:
-     :GoalCategory: Cooking
-     :XP:       5
-     :CUSTOM_ID: make_udon_noodles_from_scratch
-     :END:
-     :LOGBOOK:
-     - State "TODO"       from "SOMEDAY"    [2015-01-26 Mon 17:43] \\
-       Next goal
-     :END:
- So that I can [[practise types of recipes][practise types of recipes]]
-**** DONE competently make pizza                                    :Cooking:
-     :PROPERTIES:
-     :GoalCategory: Cooking
-     :XP:       10
-     :CUSTOM_ID: competently_make_pizza
-     :END:
- So that I can [[practise types of recipes][practise types of recipes]]
-
-*** TODO figure out recipes easily compatible with taking care of a kid  :Cooking:
-    :PROPERTIES:
-    :GoalCategory: Cooking
-    :XP:       10
-    :CUSTOM_ID: figure_out_recipes_easily_compatible_with_taking_care_of_a_kid
-    :END:
-So that I can [[cook yummy food]]
-*** SOMEDAY make braising and other fancy cooking terms part of my vocabulary :Cooking:
-    :PROPERTIES:
-    :GoalCategory: Cooking
-    :XP:       10
-    :CUSTOM_ID: make_braising_and_other_fancy_cooking_terms_part_of_my_vocabulary
-    :END:
-So that I can [[cook yummy food]]
-*** DONE adjust the feel of things by using herb combinations       :Cooking:
-    :PROPERTIES:
-    :GoalCategory: Cooking
-    :XP:       10
-    :CUSTOM_ID: adjust_the_feel_of_things_by_using_herb_combinations
-    :END:
-So that I can [[cook yummy food]]
-*** DONE develop a habit of cooking with lots of vegetables (CSA-like volume) :Cooking:
-    :PROPERTIES:
-    :GoalCategory: Cooking
-    :XP:       10
-    :CUSTOM_ID: develop_a_habit_of_cooking_with_lots_of_vegetables__CSA_like_volume_
-    :END:
-    :LOGBOOK:
-    - State "TODO"       from "SOMEDAY"    [2015-01-26 Mon 17:43] \\
-      Active
-    :END:
-So that I can [[cook yummy food]]
-*** SOMEDAY create monthly cycles for favourite recipes             :Cooking:
-    :PROPERTIES:
-    :GoalCategory: Cooking
-    :XP:       10
-    :CUSTOM_ID: create_monthly_cycles_for_favourite_recipes
-    :END:
-So that I can [[cook yummy food]]
-*** SOMEDAY cut standard sizes                                      :Cooking:
-    :PROPERTIES:
-    :GoalCategory: Cooking
-    :XP:       20
-    :CUSTOM_ID: cut_standard_sizes
-    :END:
-So that I can [[cook yummy food]]
-** learn from people
-   :PROPERTIES:
-   :CUSTOM_ID: learn_from_people
-   :END:
-So that I can [[tickle my brain]] and [[share useful stuff]]
-*** TODO Raise A-
-    :PROPERTIES:
-    :CUSTOM_ID: Raise_A_
-    :END:
-So that I can [[learn from people]]
-*** WAITING do right by our cats                                 :Connecting:
-:PROPERTIES:
-:GoalCategory: Connecting
-:XP: 20
-:CUSTOM_ID: do_right_by_our_cats
-:END:
-So that I can [[learn from people]]
-*** DONE complete the rest of the F projects                     :Connecting:
-:PROPERTIES:
-:GoalCategory: Connecting
-:XP: 50
-:CUSTOM_ID: complete_the_rest_of_the_F_projects
-:END:
-So that I can [[learn from people]]
-*** WAITING do right by W-, J-, and A-                           :Connecting:
-:PROPERTIES:
-:GoalCategory: Connecting
-:XP: 100
-:CUSTOM_ID: do_right_by_W___J___and_A_
-:END:
-
-So that I can [[learn from people]]
-*** SOMEDAY develop a 4+-month habit of frequent messages to parents :Connecting:
-:PROPERTIES:
-:GoalCategory: Connecting
-:XP: 10
-:CUSTOM_ID: develop_a_4__month_habit_of_frequent_messages_to_parents
-:END:
-:LOGBOOK:
-- State "TODO"       from "SOMEDAY"    [2015-01-26 Mon 17:43] \\
-  Active
-:END:
-
-So that I can [[learn from people]]
-*** SOMEDAY post notes and life changes from three months of working with a coach :Learning:
-:PROPERTIES:
-:GoalCategory: Learning
-:XP: 30
-:CUSTOM_ID: post_notes_and_life_changes_from_three_months_of_working_with_a_coach
-:END:
-So that I can [[learn from people]]
-*** SOMEDAY have a regular plan for meeting friends at least one weekend every month :Connecting:
-    :PROPERTIES:
-    :GoalCategory: Connecting
-    :XP:       10
-    :CUSTOM_ID: have_a_regular_plan_for_meeting_friends_at_least_one_weekend_every_month
-    :END:
-
-So that I can [[learn from people]]
-*** CANCELLED Set up an ongoing mentoring/coaching relationship with an Emacs coach
-    :PROPERTIES:
-    :CUSTOM_ID: Set_up_an_ongoing_mentoring_coaching_relationship_with_an_Emacs_coach
-    :END:
-  So that I can [[get more value from my time]]
-
-  https://www.codementor.io/sanityinc: RoR, jQuery, TDD, Emacs, Javascript
-  https://www.codementor.io/skeeto
-  http://emacs-doctor.com
-
-  Possible concrete goals:
-  - Follow best practices in setting up my web development environment (Rails, Javascript, NodeJS, Angular); learn how to think syntactically
-  - Discover what else I should be doing with Org Mode
-  - Set up a solid external data and backup plan
-  - Learn more about what I don't know I don't know (Hard!)
-  - Get into Emacs development
-
-*** DONE host another 10 episodes of Emacs Chats or hangouts
-    :PROPERTIES:
-    :CUSTOM_ID: host_another_10_episodes_of_Emacs_Chats_or_hangouts
-    :GoalCategory: Connecting
-    :XP:       5
-    :CUSTOM_ID: complete_another_10_episodes_of_Emacs_Chats
-    :END:
-		  :LOGBOOK:
-		  - State "TODO"       from "DONE"       [2014-11-01 Sat 16:58]
-		  :END:
-
-  So that I can [[learn from people]] and [[help the Emacs community grow]]
-
-  http://sachachua.com/blog/tag/emacs-hangout
-
-  1. [X] Emacs Chat: technomancy
-  2. [X] Emacs Chat: Xah Lee
-  3. [X] Emacs Chat: Bozhidar Batsov
-  4. Bodil Stokke?
-  5. Steve Purcell? - Jan
-  6. Stefan Monnier?
-  7. John Kitchin?
-  8. Reach out to the other bloggers on Planet Emacsen
-
-*** DONE Choose parenting activities to consistently attend
-    :PROPERTIES:
-    :CUSTOM_ID: Choose_parenting_activities_to_consistently_attend
-    :END:
-So that I can [[learn from people]]
-** make better decisions
+** SOMEDAY make better decisions
    :PROPERTIES:
    :CUSTOM_ID: make_better_decisions
    :END:
 so that I can [[live an awesome life]]
-*** DONE sell stocks in a non-registered account and properly account for them :Finance:
-:PROPERTIES:
-:GoalCategory: Finance
-:XP: 10
-:CUSTOM_ID: sell_stocks_in_a_non_registered_account_and_properly_account_for_them
-:END:
-
-So that I can [[make better decisions]]
-
-*** TODO re-examine spending and carve out more for what matters    :Finance:
+*** DONE re-examine spending and carve out more for what matters    :Finance:
 :PROPERTIES:
 :GoalCategory: Finance
 :XP: 10
@@ -807,59 +280,7 @@ So that I can [[make better decisions]]
 
 So that I can [[make better decisions]]
 
-*** DONE weather a bear market with lots of investments             :Finance:
-:PROPERTIES:
-:GoalCategory: Finance
-:XP: 20
-:CUSTOM_ID: weather_a_bear_market_with_lots_of_investments
-:END:
 
-So that I can [[make better decisions]]
-
-I think 2015 counted! I managed to stay invested without freaking out too much. =)
-
-*** TODO reach 2.5% goal                                            :Finance:
-:PROPERTIES:
-:GoalCategory: Finance
-:XP: 10
-:CUSTOM_ID: reach_2_5__goal
-:END:
-:LOGBOOK:
-- State "TODO"       from "WAITING"    [2017-01-05 Thu 17:02] \\
-  Building assets...
-:END:
-
-So that I can [[reach 2% goal]]
-
-*** WAITING move to target allocation                               :Finance:
-:PROPERTIES:
-:GoalCategory: Finance
-:XP: 20
-:CUSTOM_ID: move_to_target_allocation
-:END:
-So that I can [[make better decisions]]
-*** WAITING reach 2% goal                                           :Finance:
-:PROPERTIES:
-:GoalCategory: Finance
-:XP: 30
-:CUSTOM_ID: reach_2__goal
-:END:
-
-So that I can [[make better decisions]]
-*** DONE deal with a famine year without panicking                 :Business:
-    :PROPERTIES:
-    :GoalCategory: Business
-    :XP:       50
-    :CUSTOM_ID: deal_with_a_famine_year_without_panicking
-    :END:
- So that I can [[make better decisions]]
-*** WAITING resolve estate amicably or walk away from it    :Connecting:
-    :PROPERTIES:
-    :GoalCategory: Connecting
-    :XP:       20
-    :CUSTOM_ID: resolve_estate_amicably_or_walk_away_from_it
-    :END:
-So that I can [[make better decisions]]
 ** get more value from my time
    :PROPERTIES:
    :CUSTOM_ID: get_more_value_from_my_time
@@ -988,7 +409,18 @@ So that I can [[delegate more effectively]] and [[share useful stuff]]
    :CUSTOM_ID: help_the_Emacs_community_grow
    :END:
 so that I can [[tickle my brain]] and [[share useful stuff]]
-*** DONE Make it to 52 issues of Emacs News                           :emacs:
+*** TODO smoothen Emacs and Org use on my phone
+    :PROPERTIES:
+    :CUSTOM_ID: smoothen_Emacs_and_Org_use_on_my_phone
+    :END:
+so that I can [[help the Emacs community grow]]
+*** SOMEDAY get back into Emacs Hangouts
+    :PROPERTIES:
+    :CUSTOM_ID: get_back_into_Emacs_Hangouts
+    :END:
+so that I can [[help the Emacs community grow]]
+
+*** DONE make it to 52 issues of Emacs News                           :emacs:
     :PROPERTIES:
     :CUSTOM_ID: Make_it_to_52_issues_of_Emacs_News
     :END:
@@ -1062,17 +494,6 @@ http://sachachua.com/blog/tag/emacs-basics
 so that I can [[help the Emacs community grow]]
 
 Every two weeks? Every month? Need a co-host.
-
-*** SOMEDAY draw 10 visual guides for learning Emacs
-    :PROPERTIES:
-    :CUSTOM_ID: draw_10_visual_guides_for_learning_Emacs
-    :END:
-So that I can [[help the Emacs community grow]]
-- [X] Beginner's guide
-- [X] Keyboard shortcuts
-- [X] Org mode
-- [X] Dired
-- [X] Managing your tasks
 
 * Old graph
   :PROPERTIES:
