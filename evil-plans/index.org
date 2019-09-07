@@ -1,7 +1,7 @@
 #+TITLE: Evil plans
 #+HTML: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 #+STARTUP: lognotedone
-
+#+FILETAGS: :evilplans:
 #+HTML: <div class="row"><div class="columns">
 
 <<top>>
@@ -414,6 +414,14 @@ so that I can [[tickle my brain]] and [[share useful stuff]]
     :CUSTOM_ID: smoothen_Emacs_and_Org_use_on_my_phone
     :END:
 so that I can [[help the Emacs community grow]]
+*** TODO help organize a virtual Emacs conference
+    :PROPERTIES:
+    :CUSTOM_ID: help_organize_a_virtual_Emacs_conference
+    :END:
+so that I can [[help the Emacs community grow]]
+
+https://emacsconf.org
+
 *** SOMEDAY get back into Emacs Hangouts
     :PROPERTIES:
     :CUSTOM_ID: get_back_into_Emacs_Hangouts

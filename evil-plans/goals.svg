@@ -9,13 +9,14 @@
 <g id="G" class="graph" transform="scale(.5062 .5062) rotate(0) translate(4 297)">
 <title>G</title>
 <polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-297 1134,-297 1134,4 -4,4"/>
-<!-- smoothen Emacs and\nOrg use on my phone -->
+<!-- help organize a\nvirtual Emacs\nconference -->
 <g id="G_node1" class="node">
-<title>smoothen Emacs and\nOrg use on my phone</title>
-<g id="a_G_node1"><a xlink:href="index.html#smoothen_Emacs_and_Org_use_on_my_phone" xlink:title="smoothen Emacs and Org use on my phone" target="_parent">
-<polygon fill="none" stroke="#000000" points="162,-221.5 0,-221.5 0,-183.5 162,-183.5 162,-221.5"/>
-<text text-anchor="middle" x="81" y="-206.3" font-family="Open Sans" font-size="14.00" fill="#000000">smoothen Emacs and</text>
-<text text-anchor="middle" x="81" y="-191.3" font-family="Open Sans" font-size="14.00" fill="#000000">Org use on my phone</text>
+<title>help organize a\nvirtual Emacs\nconference</title>
+<g id="a_G_node1"><a xlink:href="index.html#help_organize_a_virtual_Emacs_conference" xlink:title="help organize a virtual Emacs conference" target="_parent">
+<polygon fill="none" stroke="#000000" points="141,-208 21,-208 21,-155 141,-155 141,-208"/>
+<text text-anchor="middle" x="81" y="-192.8" font-family="Open Sans" font-size="14.00" fill="#000000">help organize a</text>
+<text text-anchor="middle" x="81" y="-177.8" font-family="Open Sans" font-size="14.00" fill="#000000">virtual Emacs</text>
+<text text-anchor="middle" x="81" y="-162.8" font-family="Open Sans" font-size="14.00" fill="#000000">conference</text>
 </a>
 </g>
 </g>
@@ -29,46 +30,62 @@
 </a>
 </g>
 </g>
-<!-- smoothen Emacs and\nOrg use on my phone&#45;&gt;help the Emacs\ncommunity grow -->
+<!-- help organize a\nvirtual Emacs\nconference&#45;&gt;help the Emacs\ncommunity grow -->
 <g id="G_edge1" class="edge">
-<title>smoothen Emacs and\nOrg use on my phone&#45;&gt;help the Emacs\ncommunity grow</title>
-<path fill="none" stroke="#cccccc" d="M162.2112,-202.5C175.1248,-202.5 188.4351,-202.5 201.2049,-202.5"/>
-<polygon fill="#cccccc" stroke="#cccccc" points="201.3122,-206.0001 211.3122,-202.5 201.3121,-199.0001 201.3122,-206.0001"/>
+<title>help organize a\nvirtual Emacs\nconference&#45;&gt;help the Emacs\ncommunity grow</title>
+<path fill="none" stroke="#cccccc" d="M141.2517,-187.972C160.2551,-190.0133 181.4873,-192.294 201.3937,-194.4323"/>
+<polygon fill="#cccccc" stroke="#cccccc" points="201.0359,-197.9139 211.3525,-195.5021 201.7835,-190.954 201.0359,-197.9139"/>
 </g>
 <!-- share useful stuff -->
-<g id="G_node3" class="node">
+<g id="G_node4" class="node">
 <title>share useful stuff</title>
-<g id="a_G_node3"><a xlink:href="index.html#share_useful_stuff" xlink:title="share useful stuff" target="_parent">
+<g id="a_G_node4"><a xlink:href="index.html#share_useful_stuff" xlink:title="share useful stuff" target="_parent">
 <polygon fill="#d3d3d3" stroke="#000000" points="734,-217.5 600,-217.5 600,-181.5 734,-181.5 734,-217.5"/>
 <text text-anchor="middle" x="667" y="-195.8" font-family="Open Sans" font-size="14.00" fill="#000000">share useful stuff</text>
 </a>
 </g>
 </g>
 <!-- help the Emacs\ncommunity grow&#45;&gt;share useful stuff -->
-<g id="G_edge2" class="edge">
+<g id="G_edge3" class="edge">
 <title>help the Emacs\ncommunity grow&#45;&gt;share useful stuff</title>
 <path fill="none" stroke="#cccccc" d="M341.8609,-201.9979C410.0487,-201.474 516.9173,-200.653 589.3586,-200.0965"/>
 <polygon fill="#cccccc" stroke="#cccccc" points="589.8154,-203.5932 599.7882,-200.0164 589.7616,-196.5934 589.8154,-203.5932"/>
 </g>
 <!-- tickle my brain -->
-<g id="G_node4" class="node">
+<g id="G_node5" class="node">
 <title>tickle my brain</title>
-<g id="a_G_node4"><a xlink:href="index.html#tickle_my_brain" xlink:title="tickle my brain" target="_parent">
+<g id="a_G_node5"><a xlink:href="index.html#tickle_my_brain" xlink:title="tickle my brain" target="_parent">
 <polygon fill="#d3d3d3" stroke="#000000" points="527,-169.5 411,-169.5 411,-133.5 527,-133.5 527,-169.5"/>
 <text text-anchor="middle" x="469" y="-147.8" font-family="Open Sans" font-size="14.00" fill="#000000">tickle my brain</text>
 </a>
 </g>
 </g>
 <!-- help the Emacs\ncommunity grow&#45;&gt;tickle my brain -->
-<g id="G_edge3" class="edge">
+<g id="G_edge4" class="edge">
 <title>help the Emacs\ncommunity grow&#45;&gt;tickle my brain</title>
 <path fill="none" stroke="#cccccc" d="M341.6717,-185.2337C360.8056,-180.1645 381.7751,-174.6089 401.0763,-169.4954"/>
 <polygon fill="#cccccc" stroke="#cccccc" points="402.2288,-172.8109 410.9989,-166.8665 400.436,-166.0443 402.2288,-172.8109"/>
 </g>
+<!-- smoothen Emacs and\nOrg use on my phone -->
+<g id="G_node3" class="node">
+<title>smoothen Emacs and\nOrg use on my phone</title>
+<g id="a_G_node3"><a xlink:href="index.html#smoothen_Emacs_and_Org_use_on_my_phone" xlink:title="smoothen Emacs and Org use on my phone" target="_parent">
+<polygon fill="none" stroke="#000000" points="162,-264.5 0,-264.5 0,-226.5 162,-226.5 162,-264.5"/>
+<text text-anchor="middle" x="81" y="-249.3" font-family="Open Sans" font-size="14.00" fill="#000000">smoothen Emacs and</text>
+<text text-anchor="middle" x="81" y="-234.3" font-family="Open Sans" font-size="14.00" fill="#000000">Org use on my phone</text>
+</a>
+</g>
+</g>
+<!-- smoothen Emacs and\nOrg use on my phone&#45;&gt;help the Emacs\ncommunity grow -->
+<g id="G_edge2" class="edge">
+<title>smoothen Emacs and\nOrg use on my phone&#45;&gt;help the Emacs\ncommunity grow</title>
+<path fill="none" stroke="#cccccc" d="M162.2112,-227.6377C175.1248,-224.7974 188.4351,-221.8698 201.2049,-219.0611"/>
+<polygon fill="#cccccc" stroke="#cccccc" points="202.2975,-222.4045 211.3122,-216.838 200.7937,-215.5679 202.2975,-222.4045"/>
+</g>
 <!-- get more value from\nmy time -->
-<g id="G_node5" class="node">
+<g id="G_node6" class="node">
 <title>get more value from\nmy time</title>
-<g id="a_G_node5"><a xlink:href="index.html#get_more_value_from_my_time" xlink:title="get more value from my time" target="_parent">
+<g id="a_G_node6"><a xlink:href="index.html#get_more_value_from_my_time" xlink:title="get more value from my time" target="_parent">
 <polygon fill="#d3d3d3" stroke="#000000" points="941,-171.5 787,-171.5 787,-133.5 941,-133.5 941,-171.5"/>
 <text text-anchor="middle" x="864" y="-156.3" font-family="Open Sans" font-size="14.00" fill="#000000">get more value from</text>
 <text text-anchor="middle" x="864" y="-141.3" font-family="Open Sans" font-size="14.00" fill="#000000">my time</text>
@@ -76,42 +93,42 @@
 </g>
 </g>
 <!-- share useful stuff&#45;&gt;get more value from\nmy time -->
-<g id="G_edge9" class="edge">
+<g id="G_edge10" class="edge">
 <title>share useful stuff&#45;&gt;get more value from\nmy time</title>
 <path fill="none" stroke="#cccccc" d="M734.2452,-183.4567C748.011,-180.1725 762.6853,-176.6715 777.029,-173.2494"/>
 <polygon fill="#cccccc" stroke="#cccccc" points="777.9764,-176.6217 786.8912,-170.8965 776.3519,-169.8128 777.9764,-176.6217"/>
 </g>
 <!-- tickle my brain&#45;&gt;share useful stuff -->
-<g id="G_edge12" class="edge">
+<g id="G_edge13" class="edge">
 <title>tickle my brain&#45;&gt;share useful stuff</title>
 <path fill="none" stroke="#cccccc" d="M527.0687,-165.5773C546.7704,-170.3534 569.0971,-175.766 590.0379,-180.8425"/>
 <polygon fill="#cccccc" stroke="#cccccc" points="589.3238,-184.2707 599.867,-183.2253 590.9731,-177.4678 589.3238,-184.2707"/>
 </g>
 <!-- tickle my brain&#45;&gt;get more value from\nmy time -->
-<g id="G_edge13" class="edge">
+<g id="G_edge14" class="edge">
 <title>tickle my brain&#45;&gt;get more value from\nmy time</title>
 <path fill="none" stroke="#cccccc" d="M527.2836,-151.6476C593.108,-151.8142 700.9104,-152.0871 776.7705,-152.2792"/>
 <polygon fill="#cccccc" stroke="#cccccc" points="776.7796,-155.7791 786.7885,-152.3045 776.7974,-148.7791 776.7796,-155.7791"/>
 </g>
 <!-- live an awesome life -->
-<g id="G_node6" class="node">
+<g id="G_node7" class="node">
 <title>live an awesome life</title>
-<g id="a_G_node6"><a xlink:href="index.html#live_an_awesome_life" xlink:title="live an awesome life" target="_parent">
+<g id="a_G_node7"><a xlink:href="index.html#live_an_awesome_life" xlink:title="live an awesome life" target="_parent">
 <polygon fill="#d3d3d3" stroke="#000000" points="1130,-139.5 977,-139.5 977,-103.5 1130,-103.5 1130,-139.5"/>
 <text text-anchor="middle" x="1053.5" y="-117.8" font-family="Open Sans" font-size="14.00" fill="#000000">live an awesome life</text>
 </a>
 </g>
 </g>
 <!-- get more value from\nmy time&#45;&gt;live an awesome life -->
-<g id="G_edge4" class="edge">
+<g id="G_edge5" class="edge">
 <title>get more value from\nmy time&#45;&gt;live an awesome life</title>
 <path fill="none" stroke="#cccccc" d="M941.0769,-139.8911C949.5466,-138.5056 958.2116,-137.0881 966.7882,-135.685"/>
 <polygon fill="#cccccc" stroke="#cccccc" points="967.4949,-139.116 976.7987,-134.0474 966.3648,-132.2079 967.4949,-139.116"/>
 </g>
 <!-- move my services\ninto Docker or\nsimilar containers -->
-<g id="G_node7" class="node">
+<g id="G_node8" class="node">
 <title>move my services\ninto Docker or\nsimilar containers</title>
-<g id="a_G_node7"><a xlink:href="index.html#move_my_services_into_Docker_or_similar_containers" xlink:title="move my services into Docker or similar containers" target="_parent">
+<g id="a_G_node8"><a xlink:href="index.html#move_my_services_into_Docker_or_similar_containers" xlink:title="move my services into Docker or similar containers" target="_parent">
 <polygon fill="none" stroke="#000000" points="149.5,-117 12.5,-117 12.5,-64 149.5,-64 149.5,-117"/>
 <text text-anchor="middle" x="81" y="-101.8" font-family="Open Sans" font-size="14.00" fill="#000000">move my services</text>
 <text text-anchor="middle" x="81" y="-86.8" font-family="Open Sans" font-size="14.00" fill="#000000">into Docker or</text>
@@ -120,9 +137,9 @@
 </g>
 </g>
 <!-- improve my coding\nskills -->
-<g id="G_node8" class="node">
+<g id="G_node9" class="node">
 <title>improve my coding\nskills</title>
-<g id="a_G_node8"><a xlink:href="index.html#improve_my_coding_skills" xlink:title="improve my coding skills" target="_parent">
+<g id="a_G_node9"><a xlink:href="index.html#improve_my_coding_skills" xlink:title="improve my coding skills" target="_parent">
 <polygon fill="#d3d3d3" stroke="#000000" points="349.5,-109.5 203.5,-109.5 203.5,-71.5 349.5,-71.5 349.5,-109.5"/>
 <text text-anchor="middle" x="276.5" y="-94.3" font-family="Open Sans" font-size="14.00" fill="#000000">improve my coding</text>
 <text text-anchor="middle" x="276.5" y="-79.3" font-family="Open Sans" font-size="14.00" fill="#000000">skills</text>
@@ -130,21 +147,21 @@
 </g>
 </g>
 <!-- move my services\ninto Docker or\nsimilar containers&#45;&gt;improve my coding\nskills -->
-<g id="G_edge5" class="edge">
+<g id="G_edge6" class="edge">
 <title>move my services\ninto Docker or\nsimilar containers&#45;&gt;improve my coding\nskills</title>
 <path fill="none" stroke="#cccccc" d="M149.6511,-90.5C163.7752,-90.5 178.7911,-90.5 193.3637,-90.5"/>
 <polygon fill="#cccccc" stroke="#cccccc" points="193.3653,-94.0001 203.3652,-90.5 193.3652,-87.0001 193.3653,-94.0001"/>
 </g>
 <!-- improve my coding\nskills&#45;&gt;tickle my brain -->
-<g id="G_edge6" class="edge">
+<g id="G_edge7" class="edge">
 <title>improve my coding\nskills&#45;&gt;tickle my brain</title>
 <path fill="none" stroke="#cccccc" d="M336.6164,-109.5499C357.4712,-116.1584 380.9737,-123.606 402.3254,-130.372"/>
 <polygon fill="#cccccc" stroke="#cccccc" points="401.377,-133.7429 411.9671,-133.4272 403.4916,-127.0699 401.377,-133.7429"/>
 </g>
 <!-- illustrate another\nbook for A&#45; or her\ncousins -->
-<g id="G_node9" class="node">
+<g id="G_node10" class="node">
 <title>illustrate another\nbook for A&#45; or her\ncousins</title>
-<g id="a_G_node9"><a xlink:href="index.html#illustrate_another_book_for_A__or_her_cousins" xlink:title="illustrate another book for A&#45; or her cousins" target="_parent">
+<g id="a_G_node10"><a xlink:href="index.html#illustrate_another_book_for_A__or_her_cousins" xlink:title="illustrate another book for A&#45; or her cousins" target="_parent">
 <polygon fill="none" stroke="#000000" points="343.5,-293 209.5,-293 209.5,-240 343.5,-240 343.5,-293"/>
 <text text-anchor="middle" x="276.5" y="-277.8" font-family="Open Sans" font-size="14.00" fill="#000000">illustrate another</text>
 <text text-anchor="middle" x="276.5" y="-262.8" font-family="Open Sans" font-size="14.00" fill="#000000">book for A&#45; or her</text>
@@ -153,9 +170,9 @@
 </g>
 </g>
 <!-- improve my drawing\nskills -->
-<g id="G_node10" class="node">
+<g id="G_node11" class="node">
 <title>improve my drawing\nskills</title>
-<g id="a_G_node10"><a xlink:href="index.html#improve_my_drawing_skills" xlink:title="improve my drawing skills" target="_parent">
+<g id="a_G_node11"><a xlink:href="index.html#improve_my_drawing_skills" xlink:title="improve my drawing skills" target="_parent">
 <polygon fill="#d3d3d3" stroke="#000000" points="547,-275.5 391,-275.5 391,-237.5 547,-237.5 547,-275.5"/>
 <text text-anchor="middle" x="469" y="-260.3" font-family="Open Sans" font-size="14.00" fill="#000000">improve my drawing</text>
 <text text-anchor="middle" x="469" y="-245.3" font-family="Open Sans" font-size="14.00" fill="#000000">skills</text>
@@ -163,21 +180,21 @@
 </g>
 </g>
 <!-- illustrate another\nbook for A&#45; or her\ncousins&#45;&gt;improve my drawing\nskills -->
-<g id="G_edge7" class="edge">
+<g id="G_edge8" class="edge">
 <title>illustrate another\nbook for A&#45; or her\ncousins&#45;&gt;improve my drawing\nskills</title>
 <path fill="none" stroke="#cccccc" d="M343.5569,-263.0165C355.6291,-262.3894 368.3781,-261.7271 380.9396,-261.0746"/>
 <polygon fill="#cccccc" stroke="#cccccc" points="381.1522,-264.5683 390.9571,-260.5542 380.7889,-257.5778 381.1522,-264.5683"/>
 </g>
 <!-- improve my drawing\nskills&#45;&gt;share useful stuff -->
-<g id="G_edge8" class="edge">
+<g id="G_edge9" class="edge">
 <title>improve my drawing\nskills&#45;&gt;share useful stuff</title>
 <path fill="none" stroke="#cccccc" d="M535.2064,-237.4406C554.2488,-231.9587 575.1159,-225.9515 594.5165,-220.3665"/>
 <polygon fill="#cccccc" stroke="#cccccc" points="595.5667,-223.7064 604.2081,-217.5764 593.6301,-216.9795 595.5667,-223.7064"/>
 </g>
 <!-- build organizers and\nother things for the\nhouse -->
-<g id="G_node11" class="node">
+<g id="G_node12" class="node">
 <title>build organizers and\nother things for the\nhouse</title>
-<g id="a_G_node11"><a xlink:href="index.html#build_organizers_and_other_things_for_the_house" xlink:title="build organizers and other things for the house" target="_parent">
+<g id="a_G_node12"><a xlink:href="index.html#build_organizers_and_other_things_for_the_house" xlink:title="build organizers and other things for the house" target="_parent">
 <polygon fill="none" stroke="#000000" points="354,-53 199,-53 199,0 354,0 354,-53"/>
 <text text-anchor="middle" x="276.5" y="-37.8" font-family="Open Sans" font-size="14.00" fill="#000000">build organizers and</text>
 <text text-anchor="middle" x="276.5" y="-22.8" font-family="Open Sans" font-size="14.00" fill="#000000">other things for the</text>
@@ -186,15 +203,15 @@
 </g>
 </g>
 <!-- build organizers and\nother things for the\nhouse&#45;&gt;tickle my brain -->
-<g id="G_edge10" class="edge">
+<g id="G_edge11" class="edge">
 <title>build organizers and\nother things for the\nhouse&#45;&gt;tickle my brain</title>
 <path fill="none" stroke="#cccccc" d="M338.0755,-53.0512C343.892,-56.0603 349.6198,-59.2278 355,-62.5 386.1434,-81.4412 418.6251,-107.5205 440.9123,-126.5511"/>
 <polygon fill="#cccccc" stroke="#cccccc" points="438.7824,-129.3361 448.6408,-133.2172 443.3544,-124.0354 438.7824,-129.3361"/>
 </g>
 <!-- sew more clothes for\nA&#45; and me -->
-<g id="G_node12" class="node">
+<g id="G_node13" class="node">
 <title>sew more clothes for\nA&#45; and me</title>
-<g id="a_G_node12"><a xlink:href="index.html#sew_more_clothes_for_A__and_me" xlink:title="sew more clothes for A&#45; and me" target="_parent">
+<g id="a_G_node13"><a xlink:href="index.html#sew_more_clothes_for_A__and_me" xlink:title="sew more clothes for A&#45; and me" target="_parent">
 <polygon fill="none" stroke="#000000" points="355,-165.5 198,-165.5 198,-127.5 355,-127.5 355,-165.5"/>
 <text text-anchor="middle" x="276.5" y="-150.3" font-family="Open Sans" font-size="14.00" fill="#000000">sew more clothes for</text>
 <text text-anchor="middle" x="276.5" y="-135.3" font-family="Open Sans" font-size="14.00" fill="#000000">A&#45; and me</text>
@@ -202,15 +219,15 @@
 </g>
 </g>
 <!-- sew more clothes for\nA&#45; and me&#45;&gt;tickle my brain -->
-<g id="G_edge11" class="edge">
+<g id="G_edge12" class="edge">
 <title>sew more clothes for\nA&#45; and me&#45;&gt;tickle my brain</title>
 <path fill="none" stroke="#cccccc" d="M355.0748,-148.5409C370.1947,-148.9336 385.9172,-149.342 400.68,-149.7255"/>
 <polygon fill="#cccccc" stroke="#cccccc" points="400.6404,-153.2255 410.7279,-149.9864 400.8222,-146.2279 400.6404,-153.2255"/>
 </g>
 <!-- try two weeks of\nhaving prepared\nactivities/provocations\nfor A&#45; -->
-<g id="G_node13" class="node">
+<g id="G_node14" class="node">
 <title>try two weeks of\nhaving prepared\nactivities/provocations\nfor A&#45;</title>
-<g id="a_G_node13"><a xlink:href="index.html#try_two_weeks_of_having_prepared_activities_provocations_for_A_" xlink:title="try two weeks of having prepared activities/provocations for A&#45;" target="_parent">
+<g id="a_G_node14"><a xlink:href="index.html#try_two_weeks_of_having_prepared_activities_provocations_for_A_" xlink:title="try two weeks of having prepared activities/provocations for A&#45;" target="_parent">
 <polygon fill="none" stroke="#000000" points="751,-124.5 583,-124.5 583,-56.5 751,-56.5 751,-124.5"/>
 <text text-anchor="middle" x="667" y="-109.3" font-family="Open Sans" font-size="14.00" fill="#000000">try two weeks of</text>
 <text text-anchor="middle" x="667" y="-94.3" font-family="Open Sans" font-size="14.00" fill="#000000">having prepared</text>
@@ -220,9 +237,9 @@
 </g>
 </g>
 <!-- enrich our\nexperiences -->
-<g id="G_node14" class="node">
+<g id="G_node15" class="node">
 <title>enrich our\nexperiences</title>
-<g id="a_G_node14"><a xlink:href="index.html#enrich_our_experiences" xlink:title="enrich our experiences" target="_parent">
+<g id="a_G_node15"><a xlink:href="index.html#enrich_our_experiences" xlink:title="enrich our experiences" target="_parent">
 <polygon fill="#d3d3d3" stroke="#000000" points="913,-112.5 815,-112.5 815,-74.5 913,-74.5 913,-112.5"/>
 <text text-anchor="middle" x="864" y="-97.3" font-family="Open Sans" font-size="14.00" fill="#000000">enrich our</text>
 <text text-anchor="middle" x="864" y="-82.3" font-family="Open Sans" font-size="14.00" fill="#000000">experiences</text>
@@ -230,13 +247,13 @@
 </g>
 </g>
 <!-- try two weeks of\nhaving prepared\nactivities/provocations\nfor A&#45;&#45;&gt;enrich our\nexperiences -->
-<g id="G_edge14" class="edge">
+<g id="G_edge15" class="edge">
 <title>try two weeks of\nhaving prepared\nactivities/provocations\nfor A&#45;&#45;&gt;enrich our\nexperiences</title>
 <path fill="none" stroke="#cccccc" d="M751.1172,-91.781C769.1307,-92.0553 787.8002,-92.3396 804.6454,-92.5961"/>
 <polygon fill="#cccccc" stroke="#cccccc" points="804.8238,-96.0992 814.876,-92.7519 804.9305,-89.1 804.8238,-96.0992"/>
 </g>
 <!-- enrich our\nexperiences&#45;&gt;live an awesome life -->
-<g id="G_edge15" class="edge">
+<g id="G_edge16" class="edge">
 <title>enrich our\nexperiences&#45;&gt;live an awesome life</title>
 <path fill="none" stroke="#cccccc" d="M913.2942,-100.7836C929.6718,-103.2035 948.4241,-105.9743 966.7722,-108.6853"/>
 <polygon fill="#cccccc" stroke="#cccccc" points="966.5022,-112.1834 976.9064,-110.1827 967.5254,-105.2585 966.5022,-112.1834"/>
