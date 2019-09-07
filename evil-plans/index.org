@@ -41,20 +41,20 @@ See raw file or end of document for code.
   :PROPERTIES:
   :CUSTOM_ID: Table
   :END:
+
      #+BEGIN: propview :cols (GOALCATEGORY XP TODO ITEM)  :conds ((> XP 0) (not (string= TODO "DONE"))) :id global :noquote t :skip-empty-rows t 
-     | GOALCATEGORY | XP | TODO    | ITEM                                                                                          |
-     |--------------+----+---------+-----------------------------------------------------------------------------------------------|
-     | Life         | 10 | SOMEDAY | set up distinctly interesting memories for four months straight                               |
-     | Life         | 30 | SOMEDAY | get driver's license?                                                                         |
-     | Drawing      | 20 | SOMEDAY | draw recognizable people                                                                      |
-     | Programming  | 10 | SOMEDAY | contribute to open source documentation                                                       |
-     | Writing      | 30 | SOMEDAY | write book about 5-year experiment to capture memories and help other people curious about it |
-     | Writing      | 50 | SOMEDAY | write a set of three or four 4-part courses                                                   |
-     | Life         | 10 | SOMEDAY | create four major projects in a year                                                          |
-     | Writing      | 20 | SOMEDAY | write mini-book on building Emacs habits                                                      |
-     | Learning     | 10 | SOMEDAY | create syntopicon/bibliography                                                                |
-     |--------------+----+---------+-----------------------------------------------------------------------------------------------|
-     |              |    |         |                                                                                               |
+     | GOALCATEGORY | XP | TODO    | ITEM                                                            |
+     |--------------+----+---------+-----------------------------------------------------------------|
+     | Life         | 10 | SOMEDAY | set up distinctly interesting memories for four months straight |
+     | Life         | 30 | SOMEDAY | get driver's license?                                           |
+     | Drawing      | 20 | SOMEDAY | draw recognizable people                                        |
+     | Programming  | 10 | SOMEDAY | contribute to open source documentation                         |
+     | Writing      | 50 | SOMEDAY | write a set of three or four 4-part courses                     |
+     | Life         | 10 | SOMEDAY | create four major projects in a year                            |
+     | Writing      | 20 | SOMEDAY | write mini-book on building Emacs habits                        |
+     | Learning     | 10 | SOMEDAY | create syntopicon/bibliography                                  |
+     |--------------+----+---------+-----------------------------------------------------------------|
+     |              |    |         |                                                                 |
      #+END:
 
 * Goals                                                                :goal:
@@ -123,6 +123,14 @@ So that I can [[get more value from my time]]
     :CUSTOM_ID: improve_my_drawing_skills
     :END:
 So that I can [[share useful stuff]]
+**** TODO make a book about microphthalmia for A-
+     DEADLINE: <2020-09-01 Tue>
+     :PROPERTIES:
+     :CUSTOM_ID: make_a_book_about_microphthalmia_for_A_
+     :END:
+
+So that I can [[improve my drawing skills]]
+
 **** TODO illustrate another book for A- or her cousins
      :PROPERTIES:
      :CUSTOM_ID: illustrate_another_book_for_A__or_her_cousins
@@ -152,7 +160,7 @@ So that I can [[improve my drawing skills][improve my drawing skills]]
     :CUSTOM_ID: improve_my_coding_skills
     :END:
 So that I can [[tickle my brain]]
-**** TODO move my services into Docker or similar containers
+**** SOMEDAY move my services into Docker or similar containers
      :PROPERTIES:
      :CUSTOM_ID: move_my_services_into_Docker_or_similar_containers
      :END:
