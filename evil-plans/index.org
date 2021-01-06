@@ -343,9 +343,8 @@ Need to have graphviz installed.
   .Yellow { fill: yellow; background: yellow }
   .Red { fill: red; color: white; background: red }
   svg .heading { cursor: pointer; stroke: 2px white; }
-  path.heading.TODO { fill: green }
-  path.heading.SOMEDAY { fill: yellow }
-
+  path.heading.todo { fill: green }
+  path.heading.someday { fill: gray }
   </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>

@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-01-05 Tue 22:39 -->
+<!-- 2021-01-05 Tue 22:43 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Evil plans</title>
@@ -231,7 +231,7 @@ href="//sachachua.com/blog/wp-content/themes/sacha-v3/foundation/css/foundation.
 <div class="row"><div class="columns">
 
 <p>
-<a id="org77b58a2"></a>
+<a id="org214f857"></a>
 </p>
 
 
@@ -255,7 +255,7 @@ See raw file or end of document for code.
 </p>
 
 
-<div id="orgeddf669" class="figure">
+<div id="org60855f7" class="figure">
 <p><object type="image/svg+xml" data="goals.svg" class="org-svg">
 Sorry, your browser does not support SVG.</object>
 </p>
@@ -271,7 +271,7 @@ See raw file or end of document for code.
 </p>
 
 
-<div id="orgde01a67" class="figure">
+<div id="orgb389622" class="figure">
 <p><object type="image/svg+xml" data="someday.svg" class="org-svg">
 Sorry, your browser does not support SVG.</object>
 </p>
@@ -378,7 +378,7 @@ so that I can <a href="#set_up_my_new_laptop">set up my new laptop</a>
 <h2 id="Old_graph">Old graph</h2>
 <div class="outline-text-2" id="text-Old_graph">
 
-<div id="orgd81b2c6" class="figure">
+<div id="orgf2ac9d0" class="figure">
 <p><a href="http://sachachua.com/sharing/goals.png" width="640"><img src="goals.png" alt="goals.png" width="640" /></a>
 </p>
 </div>
@@ -393,7 +393,7 @@ Need to have graphviz installed.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="orgc392cbd">(<span class="org-keyword">let</span> ((count 0)
+<pre class="src src-emacs-lisp" id="orgba4b684">(<span class="org-keyword">let</span> ((count 0)
       (files
        (directory-files directory nil pattern)))
   (format <span class="org-string">"%d items - %d%%\n%s"</span>
@@ -409,7 +409,7 @@ Need to have graphviz installed.
 </div>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="orgad18e53">(<span class="org-keyword">defvar</span> <span class="org-variable-name">include-someday</span> nil)
+<pre class="src src-emacs-lisp" id="orgc87028a">(<span class="org-keyword">defvar</span> <span class="org-variable-name">include-someday</span> nil)
 (<span class="org-keyword">defun</span> <span class="org-function-name">sacha/fill-string</span> (string new-fill-column <span class="org-type">&amp;optional</span> replace-char)
   <span class="org-doc">"Wrap STRING to NEW-FILL-COLUMN. Change newlines to REPLACE-CHAR."</span>
   (<span class="org-keyword">with-temp-buffer</span>
@@ -579,9 +579,8 @@ Need to have graphviz installed.
   .Yellow { fill: yellow; background: yellow }
   .Red { fill: red; color: white; background: red }
   svg .heading { cursor: pointer; stroke: 2px white; }
-  path.heading.TODO { fill: green }
-  path.heading.SOMEDAY { fill: yellow }
-
+  path.heading.todo { fill: green }
+  path.heading.someday { fill: gray }
   </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
