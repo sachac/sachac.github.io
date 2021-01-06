@@ -10,7 +10,7 @@
 #+HTML: <div class="heading-status" width="200" height="200" style="float: right; width: 220px; background: white; padding: 10px" data-type="sunburst"></div>
 
 Curious about anything? Contact me at sacha@sachachua.com .  
-Web: http://sachachua.com/evil-plans
+Web: https://sachachua.com/evil-plans
 Raw files: [[https://github.com/sachac/sachac.github.io/tree/master/evil-plans][evil-plans]]
 
 Additional notes: http://sachachua.com/blog/2014/03/reflecting-goals-time/
@@ -37,480 +37,70 @@ See raw file or end of document for code.
 
 [[file:someday.svg]]
 
-* Table
-  :PROPERTIES:
-  :CUSTOM_ID: Table
-  :END:
-
-     #+BEGIN: propview :cols (GOALCATEGORY XP TODO ITEM)  :conds ((> XP 0) (not (string= TODO "DONE"))) :id global :noquote t :skip-empty-rows t 
-     | GOALCATEGORY | XP | TODO    | ITEM                                                            |
-     |--------------+----+---------+-----------------------------------------------------------------|
-     | Life         | 10 | SOMEDAY | set up distinctly interesting memories for four months straight |
-     | Life         | 30 | SOMEDAY | get driver's license?                                           |
-     | Drawing      | 20 | SOMEDAY | draw recognizable people                                        |
-     | Programming  | 10 | SOMEDAY | contribute to open source documentation                         |
-     | Writing      | 50 | SOMEDAY | write a set of three or four 4-part courses                     |
-     | Life         | 10 | SOMEDAY | create four major projects in a year                            |
-     | Writing      | 20 | SOMEDAY | write mini-book on building Emacs habits                        |
-     | Learning     | 10 | SOMEDAY | create syntopicon/bibliography                                  |
-     |--------------+----+---------+-----------------------------------------------------------------|
-     |              |    |         |                                                                 |
-     #+END:
-
 * Goals                                                                :goal:
 :PROPERTIES:
 :LOGGING:  TODO(@)
 :CUSTOM_ID: Goals
 :END:
 
-** SOMEDAY maintain or improve my health
+** tickle my brain and live an awesome life
    :PROPERTIES:
-   :CUSTOM_ID: maintain_or_improve_my_health
+   :CUSTOM_ID: tickle_my_brain_and_live_an_awesome_life
    :END:
-So that I can [[live an awesome life]]
-** live an awesome life
+
+** TODO fill in at least one observation for each specific expectation in the Ontario Kindergarten Program
+   DEADLINE: <2021-06-30 Wed>
    :PROPERTIES:
-	 :CUSTOM_ID: live_an_awesome_life
+   :CUSTOM_ID: fill_in_at_least_one_observation_for_each_specific_expectation_in_the_Ontario_Kindergarten_Program
    :END:
-*** enrich our experiences
-    :PROPERTIES:
-    :CUSTOM_ID: enrich_our_experiences
-    :END:
-So that I can [[live an awesome life]]
-**** TODO try two weeks of having prepared activities/provocations for A-
-     :PROPERTIES:
-     :CUSTOM_ID: try_two_weeks_of_having_prepared_activities_provocations_for_A_
-     :END:
-So that I can [[enrich our experiences]]
-**** SOMEDAY set up distinctly interesting memories for four months straight :Life:
-     :PROPERTIES:
-     :GoalCategory: Life
-     :XP:       10
-     :CUSTOM_ID: set_up_distinctly_interesting_memories_for_four_months_straight
-     :END:
- So that I can [[enrich our experiences][enrich our experiences]]
-
-**** SOMEDAY get driver's license?                                     :Life:
-     :PROPERTIES:
-     :GoalCategory: Life
-     :XP:       30
-     :CUSTOM_ID: get_driver_s_license_
-     :END:
-
- So that I can [[enrich our experiences][enrich our experiences]]
-** tickle my brain
+so that I can [[tickle my brain and live an awesome life]]
+https://www.ontario.ca/document/kindergarten-program-2016/appendix-overall-expectations-related-specific-expectations
+** SOMEDAY move my services into Docker or similar containers
    :PROPERTIES:
-   :CUSTOM_ID: tickle_my_brain
+   :CUSTOM_ID: move_my_services_into_Docker_or_similar_containers
    :END:
-so that I can [[get more value from my time]] and [[share useful stuff]]
-*** TODO sew more clothes for A- and me
-    :PROPERTIES:
-    :CUSTOM_ID: sew_more_clothes_for_A__and_me
-    :END:
-so that I can [[tickle my brain]]
-*** TODO build organizers and other things for the house
-    :PROPERTIES:
-    :CUSTOM_ID: build_organizers_and_other_things_for_the_house
-    :END:
-so that I can [[tickle my brain]]
-** share useful stuff
-   :PROPERTIES:
-   :CUSTOM_ID: share_useful_stuff
-   :END:
-So that I can [[get more value from my time]]
-*** improve my drawing skills
-    :PROPERTIES:
-    :CUSTOM_ID: improve_my_drawing_skills
-    :END:
-So that I can [[share useful stuff]]
-**** TODO make a book about microphthalmia for A-
-     DEADLINE: <2020-09-01 Tue>
-     :PROPERTIES:
-     :CUSTOM_ID: make_a_book_about_microphthalmia_for_A_
-     :END:
-
-So that I can [[improve my drawing skills]]
-
-**** TODO illustrate another book for A- or her cousins
-     :PROPERTIES:
-     :CUSTOM_ID: illustrate_another_book_for_A__or_her_cousins
-     :END:
-So that I can [[improve my drawing skills]]
-**** DONE make it to another year of daily journal drawing
-     :PROPERTIES:
-     :CUSTOM_ID: Make_it_to_another_year_of_daily_journal_drawing
-     :END:
-So that I can [[improve my drawing skills][improve my drawing skills]]
-**** DONE find or make digital equivalent of index card drawing     :Drawing:
-     :PROPERTIES:
-     :GoalCategory: Drawing
-     :XP:       10
-     :CUSTOM_ID: find_or_make_digital_equivalent_of_index_card_drawing
-     :END:
-So that I can [[improve my drawing skills][improve my drawing skills]]
-**** SOMEDAY draw recognizable people                               :Drawing:
-     :PROPERTIES:
-     :GoalCategory: Drawing
-     :XP:       20
-     :CUSTOM_ID: draw_recognizable_people
-     :END:
-So that I can [[improve my drawing skills][improve my drawing skills]]
-*** improve my coding skills
-    :PROPERTIES:
-    :CUSTOM_ID: improve_my_coding_skills
-    :END:
-So that I can [[tickle my brain]]
-**** SOMEDAY move my services into Docker or similar containers
-     :PROPERTIES:
-     :CUSTOM_ID: move_my_services_into_Docker_or_similar_containers
-     :END:
-So that I can [[improve my coding skills]]
+So that I can [[tickle my brain and live an awesome life]]
 (and make my setup easier to reproduce)
- 
-**** DONE make test-driven development part of my normal workflow :Programming:
-     :PROPERTIES:
-     :GoalCategory: Programming
-     :XP:       5
-     :CUSTOM_ID: make_test_driven_development_part_of_my_normal_workflow
-     :END:
-So that I can [[improve my coding skills]]
-**** DONE get the hang of a CSS framework                       :Programming:
-     :PROPERTIES:
-     :GoalCategory: Programming
-     :XP:       5
-     :CUSTOM_ID: get_the_hang_of_a_CSS_framework
-     :END:
-So that I can [[get the hang of a CSS preprocessor][get the hang of a CSS preprocessor]]
-**** DONE get the hang of a CSS preprocessor                    :Programming:
-     :PROPERTIES:
-     :GoalCategory: Programming
-     :XP:       5
-     :CUSTOM_ID: get_the_hang_of_a_CSS_preprocessor
-     :END:
-So that I can [[improve my coding skills]]
-**** DONE get the hang of a Javascript preprocessor             :Programming:
-     :PROPERTIES:
-     :GoalCategory: Programming
-     :XP:       5
-     :CUSTOM_ID: get_the_hang_of_a_Javascript_preprocessor
-     :END:
-So that I can [[improve my coding skills]]
-**** DONE close an open source issue                            :Programming:
-     :PROPERTIES:
-     :GoalCategory: Programming
-     :XP:       10
-     :CUSTOM_ID: close_an_open_source_issue
-     :END:
-So that I can [[improve my coding skills]]
-**** SOMEDAY contribute to open source documentation            :Programming:
-     :PROPERTIES:
-     :GoalCategory: Programming
-     :XP:       10
-     :CUSTOM_ID: contribute_to_open_source_documentation
-     :END:
-So that I can [[improve my coding skills]]
-**** DONE contribute automated tests to Emacs packages          :Programming:
-     :PROPERTIES:
-     :GoalCategory: Programming
-     :XP:       10
-     :CUSTOM_ID: contribute_automated_tests_to_Emacs_packages
-     :END:
-So that I can [[improve my coding skills]]
-*** SOMEDAY publish resources
-    :PROPERTIES:
-    :CUSTOM_ID: publish_resources
-    :END:
-So that I can [[share useful stuff]]
-**** SOMEDAY [#C] publish 12 free/PWYC resources                    :project:
-     :PROPERTIES:
-     :CUSTOM_ID: publish_12_free_PWYC_resources
-     :END:
- So that I can [[publish resources][publish resources]]
- - [X] Sketchnoting resources
- - [X] No Excuses Guide to Blogging
- - [X] Sketchnotes 2012
- - [X] Sketchnotes 2013
- - [X] How to learn Emacs Lisp by customizing Emacs: http://sach.ac/baby-steps-emacs-lisp - 2014-05-07
- - [ ] Baby steps guide to managing your tasks with Org: http://sach.ac/baby-steps-org-todo
- - [ ] Intermediate guide to Emacs
-
-**** SOMEDAY write a set of three or four 4-part courses            :Writing:
-     :PROPERTIES:
-     :GoalCategory: Writing
-     :XP:       50
-     :CUSTOM_ID: write_a_set_of_three_or_four_4_part_courses
-     :END:
- So that I can [[publish resources][publish resources]]
-
-**** SOMEDAY create four major projects in a year                      :Life:
-     :PROPERTIES:
-     :GoalCategory: Life
-     :XP:       10
-     :CUSTOM_ID: create_four_major_projects_in_a_year
-     :END:
-
- So that I can [[publish resources][publish resources]]
-**** SOMEDAY write mini-book on building Emacs habits               :Writing:
-     :PROPERTIES:
-     :GoalCategory: Writing
-     :XP:       20
-     :CUSTOM_ID: write_mini_book_on_building_Emacs_habits
-     :END:
-
- So that I can [[create four major projects in a year]] and [[help the Emacs community grow]]
-**** DONE [#A] make Sketchnotes 2014                                :Drawing:
-     :PROPERTIES:
-     :GoalCategory: Drawing
-     :XP:       5
-     :CUSTOM_ID: make_Sketchnotes_2014
-     :Effort:   4:00
-     :QUANTIFIED: Packaging
-     :END:
-     :LOGBOOK:
-     CLOCK: [2015-02-03 Tue 19:13]--[2015-02-03 Tue 19:13] =>  0:00
-     :END:
- So that I can [[create four major projects in a year]]
-
-** SOMEDAY make better decisions
-   :PROPERTIES:
-   :CUSTOM_ID: make_better_decisions
-   :END:
-so that I can [[live an awesome life]]
-*** DONE re-examine spending and carve out more for what matters    :Finance:
-:PROPERTIES:
-:GoalCategory: Finance
-:XP: 10
-:CUSTOM_ID: re_examine_spending_and_carve_out_more_for_what_matters
-:END:
-:LOGBOOK:
-- State "TODO"       from "SOMEDAY"    [2015-01-26 Mon 17:44]
-:END:
-
-So that I can [[make better decisions]]
-
-
-** get more value from my time
-   :PROPERTIES:
-   :CUSTOM_ID: get_more_value_from_my_time
-   :END:
-so that I can [[live an awesome life]]
-*** DONE Practise kaizen on our new routines
-    :PROPERTIES:
-    :CUSTOM_ID: Practise_kaizen_on_our_new_routines
-    :END:
-So that I can [[get more value from my time]] and [[enrich our experiences][enrich our experiences]]
-
-Current gaps/opportunities:
-- Taking care of A-'s basic needs
-- Choosing activities to consistently attend
-- Making time to think, draw, and share
-
-*** DONE develop structures for journaling                          :Writing:
-:PROPERTIES:
-:GoalCategory: Writing
-:XP: 10
-:CUSTOM_ID: develop_structures_for_journaling
-:END:
-So that I can [[get more value from my time]]
-*** SOMEDAY create syntopicon/bibliography                         :Learning:
-:PROPERTIES:
-:GoalCategory: Learning
-:XP: 10
-:CUSTOM_ID: create_syntopicon_bibliography
-:END:
-:LOGBOOK:
-- State "TODO"       from "SOMEDAY"    [2015-01-26 Mon 17:44]
-:END:
-
-So that I can [[get more value from my time]]
-*** DONE keep a year of journals (short entries)                    :Writing:
-:PROPERTIES:
-:GoalCategory: Writing
-:XP: 10
-:CUSTOM_ID: keep_a_year_of_private_journals__short_entries_
-:END:
-
-So that I can [[get more value from my time]]
-** SOMEDAY delegate more effectively
-   :PROPERTIES:
-   :CUSTOM_ID: delegate_more_effectively
-   :END:
-So that I can [[get more value from my time]]
-*** SOMEDAY [#c] delegate 2,000 hours or $20,000 of meaningful, useful work :delegation:project:
-   :PROPERTIES:
-   :Goal:     Delegate
-	 :CUSTOM_ID: delegate_2_000_hours_or__20_000_of_meaningful__useful_work
-   :END:
-So that I can [[delegate more effectively]] and [[build good karma]]
-
-So far:
-
-#+begin_src emacs-lisp
-  (let ((dollars 8229.45)
-        (hours 486))
-    (format "%d dollars - %d%%; %d hours - %d%%"
-            dollars (* (/ dollars 20000.0) 100.0)
-            hours (* (/ hours 2000.0) 100.0)))
-#+end_src
-
-#+RESULTS:
-: 8229 dollars - 41%; 486 hours - 24%
-
-The work should:
-- move me towards my primary goals
-- help assistants improve their skills and justify better rates in the marketplace
-
-Need to compensate for 2,166 hours as of 2014-05-16
-*** SOMEDAY add 50 items to my process library 									 :delegation:
-    :PROPERTIES:
-    :CUSTOM_ID: add_50_items_to_my_process_library
-		:LINK:     [[file:~/personal/business.org::*Add 50 items to my process library][Add 50 items to my process library]]
-    :END:
-So that I can [[delegate more effectively]] and [[share useful stuff]]
-
-[[https://drive.google.com/a/sachachua.com/#folders/0B8LpkeSVIjRYVHZCQzVCYTJ5X3M][Process library]] - for my virtual assistants and for other people who are interested in delegation
-
-;;#+CALL: list-files-with-target(directory="~/Google Drive/Delegation - Sacha Chua/Processes", pattern="How to", target=50) :results value org
-
-#+RESULTS:
-#+BEGIN_SRC org
-35 items - 70%
-1. How to add blogs to Feedly
-2. How to add resources to the resources page and sidebar widget
-3. How to add tags to Flickr sketches
-4. How to animate sketches with Autodesk Sketchbook Pro and Camtasia Studio
-5. How to convert a Vimeo or YouTube video to MP3 and save it for offline listening
-6. How to create a Frugal FIRE event on Google+
-7. How to create a Google+ Event banner
-8. How to create a Helpers Help Out event on Google+
-9. How to download invoices from InvoiceTrack
-10. How to draft Q&A posts based on a transcript
-11. How to draft an Emacs Basics blog post
-12. How to draw and implement highlighted hand-drawn icons using CSS sprites
-13. How to extract the MP3 from YouTube or an MP4
-14. How to file a healthcare claim for massage
-15. How to identify Q&A from a transcript
-16. How to import my theme into your local development environment and get ready for work
-17. How to look up additional information for people
-18. How to post show notes
-19. How to prepare for and host a Google Hangout on Air
-20. How to process audio in Audacity
-21. How to process scheduling requests
-22. How to request books from the library
-23. How to research related posts
-24. How to set up a public conversation over Google Hangouts On Air
-25. How to set up a public conversation
-26. How to set up a redirection URL
-27. How to summarize blog posts as tweets
-28. How to transcribe audio
-29. How to update Flickr with blog post URLs
-30. How to update QuantifiedSelf.ca blog posts with video embeds
-31. How to update a blog post with an MP3
-32. How to update a book through CreateSpace
-33. How to update the MP3 metadata
-34. How to upload an MP3 to archive.org
-35. How to write a blog post
-#+END_SRC
-
 ** help the Emacs community grow
    :PROPERTIES:
    :CUSTOM_ID: help_the_Emacs_community_grow
    :END:
-so that I can [[tickle my brain]] and [[share useful stuff]]
-*** TODO smoothen Emacs and Org use on my phone
+so that I can [[tickle my brain and live an awesome life]] 
+*** TODO edit the rest of the subtitles for EmacsConf
     :PROPERTIES:
-    :CUSTOM_ID: smoothen_Emacs_and_Org_use_on_my_phone
+    :CUSTOM_ID: edit_the_rest_of_the_subtitles_for_EmacsConf
+    :END:
+so that I can [[help the Emacs community grow]] and make things more searchable
+
+[[file:~/orgzly/organizer.org::*Edit another subtitle file][Edit another subtitle file]]
+*** SOMEDAY figure out a workflow for pointing to Emacs meetups
+    :PROPERTIES:
+    :CUSTOM_ID: figure_out_a_workflow_for_pointing_to_Emacs_meetups
+    :END:
+so that I can help people connect and [[help the Emacs community grow]]
+*** SOMEDAY make quick screencasts and animated GIFs
+    :PROPERTIES:
+    :CUSTOM_ID: make_quick_screencasts_and_animated_GIFs
     :END:
 so that I can [[help the Emacs community grow]]
-*** TODO help organize a virtual Emacs conference
+*** SOMEDAY figure out signposts and maps
     :PROPERTIES:
-    :CUSTOM_ID: help_organize_a_virtual_Emacs_conference
+    :CUSTOM_ID: figure_out_signposts_and_maps
     :END:
 so that I can [[help the Emacs community grow]]
-
-https://emacsconf.org
-
-*** SOMEDAY get back into Emacs Hangouts
+** TODO set up my new laptop
+   :PROPERTIES:
+   :CUSTOM_ID: set_up_my_new_laptop
+   :END:
+   so that I can [[tickle my brain and live an awesome life]]
+[[file:~/orgzly/organizer.org::*Set up new laptop][Set up new laptop]]
+*** TODO figure out new drawing workflow
     :PROPERTIES:
-    :CUSTOM_ID: get_back_into_Emacs_Hangouts
+    :CUSTOM_ID: figure_out_new_drawing_workflow
     :END:
-so that I can [[help the Emacs community grow]]
+    so that I can [[set up my new laptop]]
 
-*** DONE make it to 52 issues of Emacs News                           :emacs:
-    :PROPERTIES:
-    :CUSTOM_ID: Make_it_to_52_issues_of_Emacs_News
-    :END:
-so that I can [[help the Emacs community grow]]
-
-http://sachachua.com/blog/category/emacs-news/
-*** SOMEDAY [#c] Develop emacslife.com into beginner/enthusiast resources for Emacs :emacs:project:
-		:PROPERTIES:
-		:CUSTOM_ID: Develop_emacslife_com_into_beginner_enthusiast_resources_for_Emacs
-		:END:
-so that I can [[help the Emacs community grow]]
-
-What do I want to learn from working on EmacsLife?
-
-- Organizing questions logically, and adding links between sections
-- Writing based on an outline
-- Revising with feedback
-- Developing a smooth workflow for exporting my blog posts
-  - Update monthly, perhaps?
-- Herding cats: Delegating to other geeks
-- Eventually: structuring courses, creating resources
-
-Sketching the future:
-
-Because of the time I've invested in working on resources for the
-Emacs community, I have the confidence that I can logically structure
-my thoughts and write technical learning-oriented books. I have a
-community of people happy to proof-read/beta. I have a lot of
-experience in creating rich media resources as well.
-
-I have a smooth workflow for identifying topics, outlining them,
-organizing the topics, researching information, filling in the gaps
-(whether I'm writing things myself or paying other people to do so),
-pulling everything together, and publishing and sharing the results.
-This may even be self-financing. I create a useful resource of at
-least 10,000 words at least every 12 weeks.
-
-This gives me great ways to:
-- Learn more about what I'm curious about
-- Organize my thoughts and identify gaps
-- Communicate clearly, approachably, and engagingly
-- Share in scalable ways
-
-*** SOMEDAY [#c] create a 10-week Emacs Basics course :emacs:specific:project:someday:
-    :PROPERTIES:
-    :CUSTOM_ID: create_a_10_week_Emacs_Basics_course
-		:LINK:     [[file:~/personal/business.org::*Emacs Basics][Emacs Basics]]
-    :END:
-So that I can [[help the Emacs community grow]]
-
-http://sachachua.com/blog/tag/emacs-basics
-
-1. [X] Use the mouse
-2. [X] [[http://sachachua.com/blog/?p=27062&shareadraft=baba27062_532732552c1f8][Call commands by name with M-x]]
-3. [X] Customize and configure
-4. [ ] Learn keyboard shortcuts
-5. [ ] Learn Emacs Lisp
-6. [ ] Customize keyboard shortcuts
-7. [ ] Save time with keyboard macros
-8. [ ] Be inspired
-
-*** DONE set up regular Emacs hangouts
-    :PROPERTIES:
-    :GoalCategory: Connecting
-    :XP:       20
-    :CUSTOM_ID: set_up_regular_Emacs_hangouts
-    :END:
-    :LOGBOOK:
-    - State "TODO"       from "SOMEDAY"    [2015-01-26 Mon 17:44]
-    :END:
-so that I can [[help the Emacs community grow]]
-
-Every two weeks? Every month? Need a co-host.
-
+[[file:~/orgzly/organizer.org::*figure out new drawing workflow][figure out new drawing workflow]]
 * Old graph
   :PROPERTIES:
   :CUSTOM_ID: Old_graph
@@ -559,8 +149,10 @@ Every two weeks? Every month? Need a co-host.
   :CUSTOM_ID: Code
   :END:
 
+Need to have graphviz installed.
+
 #+name: list-files-with-target
-#+begin_src emacs-lisp :var directory="~/Google Drive/Delegation/Processes" :var pattern="How to" :var target=50 :var strip="\\.gdoc$"
+#+begin_src emacs-lisp :var directory="" :var pattern="How to" :var target=50 :var strip="\\.gdoc$" :eval no
   (let ((count 0)
         (files
          (directory-files directory nil pattern)))
@@ -574,7 +166,6 @@ Every two weeks? Every month? Need a co-host.
              files
              "\n")))
 #+end_src
-
 
 #+name: graph-from-tables
 #+BEGIN_SRC emacs-lisp :var fill-column=20 :var tag="goal" :var id="G"
@@ -855,3 +446,15 @@ $(document).ready(function() {
 });
 </script>
 #+END_EXPORT
+* Old table  :noexport:
+  :PROPERTIES:
+  :CUSTOM_ID: Table
+  :END:
+
+     #+BEGIN: propview :cols (GOALCATEGORY XP TODO ITEM)  :conds ((> XP 0) (not (string= TODO "DONE"))) :id global :noquote t :skip-empty-rows t 
+     | GOALCATEGORY | XP | TODO | ITEM |
+     |--------------+----+------+------|
+     |--------------+----+------+------|
+     |              |    |      |      |
+     #+END:
+

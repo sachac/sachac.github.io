@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2019-07-08 Mon 23:47 -->
+<!-- 2021-01-05 Tue 22:39 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Evil plans</title>
@@ -40,7 +40,7 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
+    overflow: auto;
     padding-top: 1.2em;
   }
   pre.src:before {
@@ -52,7 +52,7 @@
     padding: 3px;
     border: 1px solid black;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
@@ -194,55 +194,31 @@
   /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css"
-href="http://sachachua.com/blog/wp-content/themes/sacha-v3/foundation/css/foundation.min.css"></link>
-<link rel="stylesheet" type="text/css" href="http://sachachua.com/org-export.css"></link>
-<link rel="stylesheet" type="text/css" href="http://sachachua.com/blog/wp-content/themes/sacha-v3/style.css"></link>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+href="//sachachua.com/blog/wp-content/themes/sacha-v3/foundation/css/foundation.min.css"></link>
+<link rel="stylesheet" type="text/css" href="//sachachua.com/org-export.css"></link>
+<link rel="stylesheet" type="text/css" href="//sachachua.com/blog/wp-content/themes/sacha-v3/style.css"></link>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2019 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
 <!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
 </script>
 </head>
 <body>
@@ -255,7 +231,7 @@ for the JavaScript code in this tag.
 <div class="row"><div class="columns">
 
 <p>
-<a id="org3b08c3e"></a>
+<a id="org77b58a2"></a>
 </p>
 
 
@@ -263,7 +239,7 @@ for the JavaScript code in this tag.
 
 <p>
 Curious about anything? Contact me at sacha@sachachua.com .  
-Web: <a href="http://sachachua.com/evil-plans">http://sachachua.com/evil-plans</a>
+Web: <a href="https://sachachua.com/evil-plans">https://sachachua.com/evil-plans</a>
 Raw files: <a href="https://github.com/sachac/sachac.github.io/tree/master/evil-plans">evil-plans</a>
 </p>
 
@@ -271,7 +247,7 @@ Raw files: <a href="https://github.com/sachac/sachac.github.io/tree/master/evil-
 Additional notes: <a href="http://sachachua.com/blog/2014/03/reflecting-goals-time/">http://sachachua.com/blog/2014/03/reflecting-goals-time/</a>
 </p>
 
-<div id="outline-container-org6b700c1" class="outline-2">
+<div id="outline-container-Current_goals" class="outline-2">
 <h2 id="Current_goals">Current goals</h2>
 <div class="outline-text-2" id="text-Current_goals">
 <p>
@@ -279,7 +255,7 @@ See raw file or end of document for code.
 </p>
 
 
-<div class="figure">
+<div id="orgeddf669" class="figure">
 <p><object type="image/svg+xml" data="goals.svg" class="org-svg">
 Sorry, your browser does not support SVG.</object>
 </p>
@@ -287,7 +263,7 @@ Sorry, your browser does not support SVG.</object>
 </div>
 </div>
 
-<div id="outline-container-orgd6e0d4b" class="outline-2">
+<div id="outline-container-Including__Someday__goals" class="outline-2">
 <h2 id="Including__Someday__goals">Including "Someday" goals</h2>
 <div class="outline-text-2" id="text-Including__Someday__goals">
 <p>
@@ -295,7 +271,7 @@ See raw file or end of document for code.
 </p>
 
 
-<div class="figure">
+<div id="orgde01a67" class="figure">
 <p><object type="image/svg+xml" data="someday.svg" class="org-svg">
 Sorry, your browser does not support SVG.</object>
 </p>
@@ -303,663 +279,121 @@ Sorry, your browser does not support SVG.</object>
 </div>
 </div>
 
-<div id="outline-container-orga6f1ab7" class="outline-2">
-<h2 id="Table">Table</h2>
-<div class="outline-text-2" id="text-Table">
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-right" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">GOALCATEGORY</th>
-<th scope="col" class="org-right">XP</th>
-<th scope="col" class="org-left">TODO</th>
-<th scope="col" class="org-left">ITEM</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="org-left">Life</td>
-<td class="org-right">10</td>
-<td class="org-left">SOMEDAY</td>
-<td class="org-left">set up distinctly interesting memories for four months straight</td>
-</tr>
-
-<tr>
-<td class="org-left">Life</td>
-<td class="org-right">30</td>
-<td class="org-left">SOMEDAY</td>
-<td class="org-left">get driver's license?</td>
-</tr>
-
-<tr>
-<td class="org-left">Drawing</td>
-<td class="org-right">20</td>
-<td class="org-left">SOMEDAY</td>
-<td class="org-left">draw recognizable people</td>
-</tr>
-
-<tr>
-<td class="org-left">Programming</td>
-<td class="org-right">10</td>
-<td class="org-left">SOMEDAY</td>
-<td class="org-left">contribute to open source documentation</td>
-</tr>
-
-<tr>
-<td class="org-left">Writing</td>
-<td class="org-right">30</td>
-<td class="org-left">SOMEDAY</td>
-<td class="org-left">write book about 5-year experiment to capture memories and help other people curious about it</td>
-</tr>
-
-<tr>
-<td class="org-left">Writing</td>
-<td class="org-right">50</td>
-<td class="org-left">SOMEDAY</td>
-<td class="org-left">write a set of three or four 4-part courses</td>
-</tr>
-
-<tr>
-<td class="org-left">Life</td>
-<td class="org-right">10</td>
-<td class="org-left">SOMEDAY</td>
-<td class="org-left">create four major projects in a year</td>
-</tr>
-
-<tr>
-<td class="org-left">Writing</td>
-<td class="org-right">20</td>
-<td class="org-left">SOMEDAY</td>
-<td class="org-left">write mini-book on building Emacs habits</td>
-</tr>
-
-<tr>
-<td class="org-left">Learning</td>
-<td class="org-right">10</td>
-<td class="org-left">SOMEDAY</td>
-<td class="org-left">create syntopicon/bibliography</td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-right">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-
-<div id="outline-container-org6161011" class="outline-2">
+<div id="outline-container-Goals" class="outline-2">
 <h2 id="Goals">Goals&#xa0;&#xa0;&#xa0;<span class="tag"><span class="goal">goal</span></span></h2>
 <div class="outline-text-2" id="text-Goals">
 </div>
 
-<div id="outline-container-org62eae6f" class="outline-3">
-<h3 id="maintain_or_improve_my_health"><span class="todo SOMEDAY">SOMEDAY</span> maintain or improve my health</h3>
-<div class="outline-text-3" id="text-maintain_or_improve_my_health">
-<p>
-So that I can <a href="#live_an_awesome_life">live an awesome life</a>
-</p>
+<div id="outline-container-tickle_my_brain_and_live_an_awesome_life" class="outline-3">
+<h3 id="tickle_my_brain_and_live_an_awesome_life">tickle my brain and live an awesome life</h3>
+<div class="outline-text-3" id="text-tickle_my_brain_and_live_an_awesome_life">
 </div>
 </div>
-<div id="outline-container-org0363254" class="outline-3">
-<h3 id="live_an_awesome_life">live an awesome life</h3>
-<div class="outline-text-3" id="text-live_an_awesome_life">
-</div>
-<div id="outline-container-org55cdb7d" class="outline-4">
-<h4 id="enrich_our_experiences">enrich our experiences</h4>
-<div class="outline-text-4" id="text-enrich_our_experiences">
-<p>
-So that I can <a href="#live_an_awesome_life">live an awesome life</a>
-</p>
-</div>
-<ul class="org-ul">
-<li><a id="try_two_weeks_of_having_prepared_activities_provocations_for_A_"></a><span class="todo TODO">TODO</span> try two weeks of having prepared activities/provocations for A-<br />
-<div class="outline-text-5" id="text-try_two_weeks_of_having_prepared_activities_provocations_for_A_">
-<p>
-So that I can <a href="#enrich_our_experiences">enrich our experiences</a>
-</p>
-</div>
-</li>
-<li><a id="set_up_distinctly_interesting_memories_for_four_months_straight"></a><span class="todo SOMEDAY">SOMEDAY</span> set up distinctly interesting memories for four months straight&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Life">Life</span></span><br />
-<div class="outline-text-5" id="text-set_up_distinctly_interesting_memories_for_four_months_straight">
-<p>
-So that I can <a href="#enrich_our_experiences">enrich our experiences</a>
-</p>
-</div>
-</li>
 
-<li><a id="get_driver_s_license_"></a><span class="todo SOMEDAY">SOMEDAY</span> get driver's license?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Life">Life</span></span><br />
-<div class="outline-text-5" id="text-get_driver_s_license_">
+<div id="outline-container-fill_in_at_least_one_observation_for_each_specific_expectation_in_the_Ontario_Kindergarten_Program" class="outline-3">
+<h3 id="fill_in_at_least_one_observation_for_each_specific_expectation_in_the_Ontario_Kindergarten_Program"><span class="todo TODO">TODO</span> fill in at least one observation for each specific expectation in the Ontario Kindergarten Program</h3>
+<div class="outline-text-3" id="text-fill_in_at_least_one_observation_for_each_specific_expectation_in_the_Ontario_Kindergarten_Program">
 <p>
-So that I can <a href="#enrich_our_experiences">enrich our experiences</a>
-</p>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-orgb65e70e" class="outline-3">
-<h3 id="tickle_my_brain">tickle my brain</h3>
-<div class="outline-text-3" id="text-tickle_my_brain">
-<p>
-so that I can <a href="#get_more_value_from_my_time">get more value from my time</a> and <a href="#share_useful_stuff">share useful stuff</a>
-</p>
-</div>
-<div id="outline-container-org12e72d8" class="outline-4">
-<h4 id="sew_more_clothes_for_A__and_me"><span class="todo TODO">TODO</span> sew more clothes for A- and me</h4>
-<div class="outline-text-4" id="text-sew_more_clothes_for_A__and_me">
-<p>
-so that I can <a href="#tickle_my_brain">tickle my brain</a>
+so that I can <a href="#tickle_my_brain_and_live_an_awesome_life">tickle my brain and live an awesome life</a>
+<a href="https://www.ontario.ca/document/kindergarten-program-2016/appendix-overall-expectations-related-specific-expectations">https://www.ontario.ca/document/kindergarten-program-2016/appendix-overall-expectations-related-specific-expectations</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org2f134e9" class="outline-4">
-<h4 id="build_organizers_and_other_things_for_the_house"><span class="todo TODO">TODO</span> build organizers and other things for the house</h4>
-<div class="outline-text-4" id="text-build_organizers_and_other_things_for_the_house">
+<div id="outline-container-move_my_services_into_Docker_or_similar_containers" class="outline-3">
+<h3 id="move_my_services_into_Docker_or_similar_containers"><span class="todo SOMEDAY">SOMEDAY</span> move my services into Docker or similar containers</h3>
+<div class="outline-text-3" id="text-move_my_services_into_Docker_or_similar_containers">
 <p>
-so that I can <a href="#tickle_my_brain">tickle my brain</a>
-</p>
-</div>
-</div>
-</div>
-<div id="outline-container-orgda9c321" class="outline-3">
-<h3 id="share_useful_stuff">share useful stuff</h3>
-<div class="outline-text-3" id="text-share_useful_stuff">
-<p>
-So that I can <a href="#get_more_value_from_my_time">get more value from my time</a>
-</p>
-</div>
-<div id="outline-container-org96bc507" class="outline-4">
-<h4 id="improve_my_drawing_skills">improve my drawing skills</h4>
-<div class="outline-text-4" id="text-improve_my_drawing_skills">
-<p>
-So that I can <a href="#share_useful_stuff">share useful stuff</a>
-</p>
-</div>
-<ul class="org-ul">
-<li><a id="illustrate_another_book_for_A__or_her_cousins"></a><span class="todo TODO">TODO</span> illustrate another book for A- or her cousins<br />
-<div class="outline-text-5" id="text-illustrate_another_book_for_A__or_her_cousins">
-<p>
-So that I can <a href="#improve_my_drawing_skills">improve my drawing skills</a>
-</p>
-</div>
-</li>
-<li><a id="Make_it_to_another_year_of_daily_journal_drawing"></a><span class="done DONE">DONE</span> make it to another year of daily journal drawing<br />
-<div class="outline-text-5" id="text-Make_it_to_another_year_of_daily_journal_drawing">
-<p>
-So that I can <a href="#improve_my_drawing_skills">improve my drawing skills</a>
-</p>
-</div>
-</li>
-<li><a id="find_or_make_digital_equivalent_of_index_card_drawing"></a><span class="done DONE">DONE</span> find or make digital equivalent of index card drawing&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Drawing">Drawing</span></span><br />
-<div class="outline-text-5" id="text-find_or_make_digital_equivalent_of_index_card_drawing">
-<p>
-So that I can <a href="#improve_my_drawing_skills">improve my drawing skills</a>
-</p>
-</div>
-</li>
-<li><a id="draw_recognizable_people"></a><span class="todo SOMEDAY">SOMEDAY</span> draw recognizable people&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Drawing">Drawing</span></span><br />
-<div class="outline-text-5" id="text-draw_recognizable_people">
-<p>
-So that I can <a href="#improve_my_drawing_skills">improve my drawing skills</a>
-</p>
-</div>
-</li>
-</ul>
-</div>
-<div id="outline-container-org7be5ed9" class="outline-4">
-<h4 id="improve_my_coding_skills">improve my coding skills</h4>
-<div class="outline-text-4" id="text-improve_my_coding_skills">
-<p>
-So that I can <a href="#tickle_my_brain">tickle my brain</a>
-</p>
-</div>
-<ul class="org-ul">
-<li><a id="move_my_services_into_Docker_or_similar_containers"></a><span class="todo TODO">TODO</span> move my services into Docker or similar containers<br />
-<div class="outline-text-5" id="text-move_my_services_into_Docker_or_similar_containers">
-<p>
-So that I can <a href="#improve_my_coding_skills">improve my coding skills</a>
+So that I can <a href="#tickle_my_brain_and_live_an_awesome_life">tickle my brain and live an awesome life</a>
 (and make my setup easier to reproduce)
 </p>
 </div>
-</li>
-
-<li><a id="make_test_driven_development_part_of_my_normal_workflow"></a><span class="done DONE">DONE</span> make test-driven development part of my normal workflow&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br />
-<div class="outline-text-5" id="text-make_test_driven_development_part_of_my_normal_workflow">
-<p>
-So that I can <a href="#improve_my_coding_skills">improve my coding skills</a>
-</p>
 </div>
-</li>
-<li><a id="get_the_hang_of_a_CSS_framework"></a><span class="done DONE">DONE</span> get the hang of a CSS framework&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br />
-<div class="outline-text-5" id="text-get_the_hang_of_a_CSS_framework">
-<p>
-So that I can <a href="#get_the_hang_of_a_CSS_preprocessor">get the hang of a CSS preprocessor</a>
-</p>
-</div>
-</li>
-<li><a id="get_the_hang_of_a_CSS_preprocessor"></a><span class="done DONE">DONE</span> get the hang of a CSS preprocessor&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br />
-<div class="outline-text-5" id="text-get_the_hang_of_a_CSS_preprocessor">
-<p>
-So that I can <a href="#improve_my_coding_skills">improve my coding skills</a>
-</p>
-</div>
-</li>
-<li><a id="get_the_hang_of_a_Javascript_preprocessor"></a><span class="done DONE">DONE</span> get the hang of a Javascript preprocessor&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br />
-<div class="outline-text-5" id="text-get_the_hang_of_a_Javascript_preprocessor">
-<p>
-So that I can <a href="#improve_my_coding_skills">improve my coding skills</a>
-</p>
-</div>
-</li>
-<li><a id="close_an_open_source_issue"></a><span class="done DONE">DONE</span> close an open source issue&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br />
-<div class="outline-text-5" id="text-close_an_open_source_issue">
-<p>
-So that I can <a href="#improve_my_coding_skills">improve my coding skills</a>
-</p>
-</div>
-</li>
-<li><a id="contribute_to_open_source_documentation"></a><span class="todo SOMEDAY">SOMEDAY</span> contribute to open source documentation&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br />
-<div class="outline-text-5" id="text-contribute_to_open_source_documentation">
-<p>
-So that I can <a href="#improve_my_coding_skills">improve my coding skills</a>
-</p>
-</div>
-</li>
-<li><a id="contribute_automated_tests_to_Emacs_packages"></a><span class="done DONE">DONE</span> contribute automated tests to Emacs packages&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Programming">Programming</span></span><br />
-<div class="outline-text-5" id="text-contribute_automated_tests_to_Emacs_packages">
-<p>
-So that I can <a href="#improve_my_coding_skills">improve my coding skills</a>
-</p>
-</div>
-</li>
-</ul>
-</div>
-<div id="outline-container-orga86c436" class="outline-4">
-<h4 id="publish_resources"><span class="todo SOMEDAY">SOMEDAY</span> publish resources</h4>
-<div class="outline-text-4" id="text-publish_resources">
-<p>
-So that I can <a href="#share_useful_stuff">share useful stuff</a>
-</p>
-</div>
-<ul class="org-ul">
-<li><a id="publish_12_free_PWYC_resources"></a><span class="todo SOMEDAY">SOMEDAY</span> publish 12 free/PWYC resources&#xa0;&#xa0;&#xa0;<span class="tag"><span class="project">project</span></span><br />
-<div class="outline-text-5" id="text-publish_12_free_PWYC_resources">
-<p>
-So that I can <a href="#publish_resources">publish resources</a>
-</p>
-<ul class="org-ul">
-<li class="on">&#x2611; Sketchnoting resources</li>
-<li class="on">&#x2611; No Excuses Guide to Blogging</li>
-<li class="on">&#x2611; Sketchnotes 2012</li>
-<li class="on">&#x2611; Sketchnotes 2013</li>
-<li class="on">&#x2611; How to learn Emacs Lisp by customizing Emacs: <a href="http://sach.ac/baby-steps-emacs-lisp">http://sach.ac/baby-steps-emacs-lisp</a> - 2014-05-07</li>
-<li class="off">&#x2610; Baby steps guide to managing your tasks with Org: <a href="http://sach.ac/baby-steps-org-todo">http://sach.ac/baby-steps-org-todo</a></li>
-<li class="off">&#x2610; Intermediate guide to Emacs</li>
-</ul>
-</div>
-</li>
-
-<li><a id="write_a_set_of_three_or_four_4_part_courses"></a><span class="todo SOMEDAY">SOMEDAY</span> write a set of three or four 4-part courses&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Writing">Writing</span></span><br />
-<div class="outline-text-5" id="text-write_a_set_of_three_or_four_4_part_courses">
-<p>
-So that I can <a href="#publish_resources">publish resources</a>
-</p>
-</div>
-</li>
-
-<li><a id="create_four_major_projects_in_a_year"></a><span class="todo SOMEDAY">SOMEDAY</span> create four major projects in a year&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Life">Life</span></span><br />
-<div class="outline-text-5" id="text-create_four_major_projects_in_a_year">
-<p>
-So that I can <a href="#publish_resources">publish resources</a>
-</p>
-</div>
-</li>
-<li><a id="write_mini_book_on_building_Emacs_habits"></a><span class="todo SOMEDAY">SOMEDAY</span> write mini-book on building Emacs habits&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Writing">Writing</span></span><br />
-<div class="outline-text-5" id="text-write_mini_book_on_building_Emacs_habits">
-<p>
-So that I can <a href="#create_four_major_projects_in_a_year">create four major projects in a year</a> and <a href="#help_the_Emacs_community_grow">help the Emacs community grow</a>
-</p>
-</div>
-</li>
-<li><a id="make_Sketchnotes_2014"></a><span class="done DONE">DONE</span> make Sketchnotes 2014&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Drawing">Drawing</span></span><br />
-<div class="outline-text-5" id="text-make_Sketchnotes_2014">
-<p>
-So that I can <a href="#create_four_major_projects_in_a_year">create four major projects in a year</a>
-</p>
-</div>
-</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orgeafb800" class="outline-3">
-<h3 id="make_better_decisions"><span class="todo SOMEDAY">SOMEDAY</span> make better decisions</h3>
-<div class="outline-text-3" id="text-make_better_decisions">
-<p>
-so that I can <a href="#live_an_awesome_life">live an awesome life</a>
-</p>
-</div>
-<div id="outline-container-org797baa4" class="outline-4">
-<h4 id="re_examine_spending_and_carve_out_more_for_what_matters"><span class="done DONE">DONE</span> re-examine spending and carve out more for what matters&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Finance">Finance</span></span></h4>
-<div class="outline-text-4" id="text-re_examine_spending_and_carve_out_more_for_what_matters">
-<p>
-So that I can <a href="#make_better_decisions">make better decisions</a>
-</p>
-</div>
-</div>
-</div>
-
-
-<div id="outline-container-org8c42721" class="outline-3">
-<h3 id="get_more_value_from_my_time">get more value from my time</h3>
-<div class="outline-text-3" id="text-get_more_value_from_my_time">
-<p>
-so that I can <a href="#live_an_awesome_life">live an awesome life</a>
-</p>
-</div>
-<div id="outline-container-org159a184" class="outline-4">
-<h4 id="Practise_kaizen_on_our_new_routines"><span class="done DONE">DONE</span> Practise kaizen on our new routines</h4>
-<div class="outline-text-4" id="text-Practise_kaizen_on_our_new_routines">
-<p>
-So that I can <a href="#get_more_value_from_my_time">get more value from my time</a> and <a href="#enrich_our_experiences">enrich our experiences</a>
-</p>
-
-<p>
-Current gaps/opportunities:
-</p>
-<ul class="org-ul">
-<li>Taking care of A-'s basic needs</li>
-<li>Choosing activities to consistently attend</li>
-<li>Making time to think, draw, and share</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org1b462b8" class="outline-4">
-<h4 id="develop_structures_for_journaling"><span class="done DONE">DONE</span> develop structures for journaling&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Writing">Writing</span></span></h4>
-<div class="outline-text-4" id="text-develop_structures_for_journaling">
-<p>
-So that I can <a href="#get_more_value_from_my_time">get more value from my time</a>
-</p>
-</div>
-</div>
-<div id="outline-container-org5cbeebf" class="outline-4">
-<h4 id="create_syntopicon_bibliography"><span class="todo SOMEDAY">SOMEDAY</span> create syntopicon/bibliography&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Learning">Learning</span></span></h4>
-<div class="outline-text-4" id="text-create_syntopicon_bibliography">
-<p>
-So that I can <a href="#get_more_value_from_my_time">get more value from my time</a>
-</p>
-</div>
-</div>
-<div id="outline-container-org78b39de" class="outline-4">
-<h4 id="keep_a_year_of_private_journals__short_entries_"><span class="done DONE">DONE</span> keep a year of journals (short entries)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Writing">Writing</span></span></h4>
-<div class="outline-text-4" id="text-keep_a_year_of_private_journals__short_entries_">
-<p>
-So that I can <a href="#get_more_value_from_my_time">get more value from my time</a>
-</p>
-</div>
-</div>
-</div>
-<div id="outline-container-org667d1e7" class="outline-3">
-<h3 id="delegate_more_effectively"><span class="todo SOMEDAY">SOMEDAY</span> delegate more effectively</h3>
-<div class="outline-text-3" id="text-delegate_more_effectively">
-<p>
-So that I can <a href="#get_more_value_from_my_time">get more value from my time</a>
-</p>
-</div>
-<div id="outline-container-orge98a4ac" class="outline-4">
-<h4 id="delegate_2_000_hours_or__20_000_of_meaningful__useful_work"><span class="todo SOMEDAY">SOMEDAY</span> delegate 2,000 hours or $20,000 of meaningful, useful work&#xa0;&#xa0;&#xa0;<span class="tag"><span class="delegation">delegation</span>&#xa0;<span class="project">project</span></span></h4>
-<div class="outline-text-4" id="text-delegate_2_000_hours_or__20_000_of_meaningful__useful_work">
-<p>
-So that I can <a href="#delegate_more_effectively">delegate more effectively</a> and 
-</p>
-
-<p>
-So far:
-</p>
-
-<div class="org-src-container">
-<pre class="src src-emacs-lisp">(<span class="org-keyword">let</span> ((dollars 8229.45)
-      (hours 486))
-  (format <span class="org-string">"%d dollars - %d%%; %d hours - %d%%"</span>
-          dollars (* (/ dollars 20000.0) 100.0)
-          hours (* (/ hours 2000.0) 100.0)))
-</pre>
-</div>
-
-<p>
-The work should:
-</p>
-<ul class="org-ul">
-<li>move me towards my primary goals</li>
-<li>help assistants improve their skills and justify better rates in the marketplace</li>
-</ul>
-
-<p>
-Need to compensate for 2,166 hours as of 2014-05-16
-</p>
-</div>
-</div>
-<div id="outline-container-org422854c" class="outline-4">
-<h4 id="add_50_items_to_my_process_library"><span class="todo SOMEDAY">SOMEDAY</span> add 50 items to my process library&#xa0;&#xa0;&#xa0;<span class="tag"><span class="delegation">delegation</span></span></h4>
-<div class="outline-text-4" id="text-add_50_items_to_my_process_library">
-<p>
-So that I can <a href="#delegate_more_effectively">delegate more effectively</a> and <a href="#share_useful_stuff">share useful stuff</a>
-</p>
-
-<p>
-<a href="https://drive.google.com/a/sachachua.com/#folders/0B8LpkeSVIjRYVHZCQzVCYTJ5X3M">Process library</a> - for my virtual assistants and for other people who are interested in delegation
-</p>
-
-<p>
-;;#+CALL: list-files-with-target(directory="~/Google Drive/Delegation - Sacha Chua/Processes", pattern="How to", target=50) :results value org
-</p>
-
-<div class="org-src-container">
-<pre class="src src-org">35 items - 70%
-1. How to add blogs to Feedly
-2. How to add resources to the resources page and sidebar widget
-3. How to add tags to Flickr sketches
-4. How to animate sketches with Autodesk Sketchbook Pro and Camtasia Studio
-5. How to convert a Vimeo or YouTube video to MP3 and save it for offline listening
-6. How to create a Frugal FIRE event on Google+
-7. How to create a Google+ Event banner
-8. How to create a Helpers Help Out event on Google+
-9. How to download invoices from InvoiceTrack
-10. How to draft Q&amp;A posts based on a transcript
-11. How to draft an Emacs Basics blog post
-12. How to draw and implement highlighted hand-drawn icons using CSS sprites
-13. How to extract the MP3 from YouTube or an MP4
-14. How to file a healthcare claim for massage
-15. How to identify Q&amp;A from a transcript
-16. How to import my theme into your local development environment and get ready for work
-17. How to look up additional information for people
-18. How to post show notes
-19. How to prepare for and host a Google Hangout on Air
-20. How to process audio in Audacity
-21. How to process scheduling requests
-22. How to request books from the library
-23. How to research related posts
-24. How to set up a public conversation over Google Hangouts On Air
-25. How to set up a public conversation
-26. How to set up a redirection URL
-27. How to summarize blog posts as tweets
-28. How to transcribe audio
-29. How to update Flickr with blog post URLs
-30. How to update QuantifiedSelf.ca blog posts with video embeds
-31. How to update a blog post with an MP3
-32. How to update a book through CreateSpace
-33. How to update the MP3 metadata
-34. How to upload an MP3 to archive.org
-35. How to write a blog post
-</pre>
-</div>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org8cd578f" class="outline-3">
+<div id="outline-container-help_the_Emacs_community_grow" class="outline-3">
 <h3 id="help_the_Emacs_community_grow">help the Emacs community grow</h3>
 <div class="outline-text-3" id="text-help_the_Emacs_community_grow">
 <p>
-so that I can <a href="#tickle_my_brain">tickle my brain</a> and <a href="#share_useful_stuff">share useful stuff</a>
+so that I can <a href="#tickle_my_brain_and_live_an_awesome_life">tickle my brain and live an awesome life</a> 
 </p>
 </div>
-<div id="outline-container-org962c01a" class="outline-4">
-<h4 id="smoothen_Emacs_and_Org_use_on_my_phone"><span class="todo TODO">TODO</span> smoothen Emacs and Org use on my phone</h4>
-<div class="outline-text-4" id="text-smoothen_Emacs_and_Org_use_on_my_phone">
+<div id="outline-container-edit_the_rest_of_the_subtitles_for_EmacsConf" class="outline-4">
+<h4 id="edit_the_rest_of_the_subtitles_for_EmacsConf"><span class="todo TODO">TODO</span> edit the rest of the subtitles for EmacsConf</h4>
+<div class="outline-text-4" id="text-edit_the_rest_of_the_subtitles_for_EmacsConf">
+<p>
+so that I can <a href="#help_the_Emacs_community_grow">help the Emacs community grow</a> and make things more searchable
+</p>
+
+<p>
+<a href="file:///home/sacha/orgzly/organizer.html#MissingReference">Edit another subtitle file</a>
+</p>
+</div>
+</div>
+<div id="outline-container-figure_out_a_workflow_for_pointing_to_Emacs_meetups" class="outline-4">
+<h4 id="figure_out_a_workflow_for_pointing_to_Emacs_meetups"><span class="todo SOMEDAY">SOMEDAY</span> figure out a workflow for pointing to Emacs meetups</h4>
+<div class="outline-text-4" id="text-figure_out_a_workflow_for_pointing_to_Emacs_meetups">
+<p>
+so that I can help people connect and <a href="#help_the_Emacs_community_grow">help the Emacs community grow</a>
+</p>
+</div>
+</div>
+<div id="outline-container-make_quick_screencasts_and_animated_GIFs" class="outline-4">
+<h4 id="make_quick_screencasts_and_animated_GIFs"><span class="todo SOMEDAY">SOMEDAY</span> make quick screencasts and animated GIFs</h4>
+<div class="outline-text-4" id="text-make_quick_screencasts_and_animated_GIFs">
 <p>
 so that I can <a href="#help_the_Emacs_community_grow">help the Emacs community grow</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org9bc2f01" class="outline-4">
-<h4 id="get_back_into_Emacs_Hangouts"><span class="todo SOMEDAY">SOMEDAY</span> get back into Emacs Hangouts</h4>
-<div class="outline-text-4" id="text-get_back_into_Emacs_Hangouts">
+<div id="outline-container-figure_out_signposts_and_maps" class="outline-4">
+<h4 id="figure_out_signposts_and_maps"><span class="todo SOMEDAY">SOMEDAY</span> figure out signposts and maps</h4>
+<div class="outline-text-4" id="text-figure_out_signposts_and_maps">
 <p>
 so that I can <a href="#help_the_Emacs_community_grow">help the Emacs community grow</a>
 </p>
 </div>
 </div>
-
-<div id="outline-container-org3b0dd2d" class="outline-4">
-<h4 id="Make_it_to_52_issues_of_Emacs_News"><span class="done DONE">DONE</span> make it to 52 issues of Emacs News&#xa0;&#xa0;&#xa0;<span class="tag"><span class="emacs">emacs</span></span></h4>
-<div class="outline-text-4" id="text-Make_it_to_52_issues_of_Emacs_News">
+</div>
+<div id="outline-container-set_up_my_new_laptop" class="outline-3">
+<h3 id="set_up_my_new_laptop"><span class="todo TODO">TODO</span> set up my new laptop</h3>
+<div class="outline-text-3" id="text-set_up_my_new_laptop">
 <p>
-so that I can <a href="#help_the_Emacs_community_grow">help the Emacs community grow</a>
-</p>
-
-<p>
-<a href="http://sachachua.com/blog/category/emacs-news/">http://sachachua.com/blog/category/emacs-news/</a>
+so that I can <a href="#tickle_my_brain_and_live_an_awesome_life">tickle my brain and live an awesome life</a>
+<a href="file:///home/sacha/orgzly/organizer.html#MissingReference">Set up new laptop</a>
 </p>
 </div>
-</div>
-<div id="outline-container-org3ad5f0b" class="outline-4">
-<h4 id="Develop_emacslife_com_into_beginner_enthusiast_resources_for_Emacs"><span class="todo SOMEDAY">SOMEDAY</span> Develop emacslife.com into beginner/enthusiast resources for Emacs&#xa0;&#xa0;&#xa0;<span class="tag"><span class="emacs">emacs</span>&#xa0;<span class="project">project</span></span></h4>
-<div class="outline-text-4" id="text-Develop_emacslife_com_into_beginner_enthusiast_resources_for_Emacs">
+<div id="outline-container-figure_out_new_drawing_workflow" class="outline-4">
+<h4 id="figure_out_new_drawing_workflow"><span class="todo TODO">TODO</span> figure out new drawing workflow</h4>
+<div class="outline-text-4" id="text-figure_out_new_drawing_workflow">
 <p>
-so that I can <a href="#help_the_Emacs_community_grow">help the Emacs community grow</a>
+so that I can <a href="#set_up_my_new_laptop">set up my new laptop</a>
 </p>
 
 <p>
-What do I want to learn from working on EmacsLife?
-</p>
-
-<ul class="org-ul">
-<li>Organizing questions logically, and adding links between sections</li>
-<li>Writing based on an outline</li>
-<li>Revising with feedback</li>
-<li>Developing a smooth workflow for exporting my blog posts
-<ul class="org-ul">
-<li>Update monthly, perhaps?</li>
-</ul></li>
-<li>Herding cats: Delegating to other geeks</li>
-<li>Eventually: structuring courses, creating resources</li>
-</ul>
-
-<p>
-Sketching the future:
-</p>
-
-<p>
-Because of the time I've invested in working on resources for the
-Emacs community, I have the confidence that I can logically structure
-my thoughts and write technical learning-oriented books. I have a
-community of people happy to proof-read/beta. I have a lot of
-experience in creating rich media resources as well.
-</p>
-
-<p>
-I have a smooth workflow for identifying topics, outlining them,
-organizing the topics, researching information, filling in the gaps
-(whether I'm writing things myself or paying other people to do so),
-pulling everything together, and publishing and sharing the results.
-This may even be self-financing. I create a useful resource of at
-least 10,000 words at least every 12 weeks.
-</p>
-
-<p>
-This gives me great ways to:
-</p>
-<ul class="org-ul">
-<li>Learn more about what I'm curious about</li>
-<li>Organize my thoughts and identify gaps</li>
-<li>Communicate clearly, approachably, and engagingly</li>
-<li>Share in scalable ways</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orgc4dc227" class="outline-4">
-<h4 id="create_a_10_week_Emacs_Basics_course"><span class="todo SOMEDAY">SOMEDAY</span> create a 10-week Emacs Basics course&#xa0;&#xa0;&#xa0;<span class="tag"><span class="emacs">emacs</span>&#xa0;<span class="specific">specific</span>&#xa0;<span class="project">project</span>&#xa0;<span class="someday">someday</span></span></h4>
-<div class="outline-text-4" id="text-create_a_10_week_Emacs_Basics_course">
-<p>
-So that I can <a href="#help_the_Emacs_community_grow">help the Emacs community grow</a>
-</p>
-
-<p>
-<a href="http://sachachua.com/blog/tag/emacs-basics">http://sachachua.com/blog/tag/emacs-basics</a>
-</p>
-
-<ol class="org-ol">
-<li class="on">&#x2611; Use the mouse</li>
-<li class="on">&#x2611; <a href="http://sachachua.com/blog/?p=27062&amp;shareadraft=baba27062_532732552c1f8">Call commands by name with M-x</a></li>
-<li class="on">&#x2611; Customize and configure</li>
-<li class="off">&#x2610; Learn keyboard shortcuts</li>
-<li class="off">&#x2610; Learn Emacs Lisp</li>
-<li class="off">&#x2610; Customize keyboard shortcuts</li>
-<li class="off">&#x2610; Save time with keyboard macros</li>
-<li class="off">&#x2610; Be inspired</li>
-</ol>
-</div>
-</div>
-
-<div id="outline-container-orga937c81" class="outline-4">
-<h4 id="set_up_regular_Emacs_hangouts"><span class="done DONE">DONE</span> set up regular Emacs hangouts</h4>
-<div class="outline-text-4" id="text-set_up_regular_Emacs_hangouts">
-<p>
-so that I can <a href="#help_the_Emacs_community_grow">help the Emacs community grow</a>
-</p>
-
-<p>
-Every two weeks? Every month? Need a co-host.
+<a href="file:///home/sacha/orgzly/organizer.html#MissingReference">figure out new drawing workflow</a>
 </p>
 </div>
 </div>
 </div>
 </div>
-
-<div id="outline-container-org206cdd1" class="outline-2">
+<div id="outline-container-Old_graph" class="outline-2">
 <h2 id="Old_graph">Old graph</h2>
 <div class="outline-text-2" id="text-Old_graph">
 
-<div class="figure">
+<div id="orgd81b2c6" class="figure">
 <p><a href="http://sachachua.com/sharing/goals.png" width="640"><img src="goals.png" alt="goals.png" width="640" /></a>
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org192cf67" class="outline-2">
+<div id="outline-container-Code" class="outline-2">
 <h2 id="Code">Code</h2>
 <div class="outline-text-2" id="text-Code">
+<p>
+Need to have graphviz installed.
+</p>
+
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="orgc628cab">(<span class="org-keyword">let</span> ((count 0)
+<pre class="src src-emacs-lisp" id="orgc392cbd">(<span class="org-keyword">let</span> ((count 0)
       (files
        (directory-files directory nil pattern)))
   (format <span class="org-string">"%d items - %d%%\n%s"</span>
@@ -974,9 +408,8 @@ Every two weeks? Every month? Need a co-host.
 </pre>
 </div>
 
-
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="orgeb1ea73">(<span class="org-keyword">defvar</span> <span class="org-variable-name">include-someday</span> nil)
+<pre class="src src-emacs-lisp" id="orgad18e53">(<span class="org-keyword">defvar</span> <span class="org-variable-name">include-someday</span> nil)
 (<span class="org-keyword">defun</span> <span class="org-function-name">sacha/fill-string</span> (string new-fill-column <span class="org-type">&amp;optional</span> replace-char)
   <span class="org-doc">"Wrap STRING to NEW-FILL-COLUMN. Change newlines to REPLACE-CHAR."</span>
   (<span class="org-keyword">with-temp-buffer</span>
