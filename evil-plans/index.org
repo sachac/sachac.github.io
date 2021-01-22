@@ -55,6 +55,12 @@ See raw file or end of document for code.
    :END:
 so that I can [[tickle my brain and live an awesome life]]
 https://www.ontario.ca/document/kindergarten-program-2016/appendix-overall-expectations-related-specific-expectations
+** SOMEDAY move my blog to a static site generator
+   :PROPERTIES:
+   :CUSTOM_ID: move_my_blog_to_a_static_site_generator
+   :END:
+so that I can [[make my server more reproducible]]   
+This should make it faster and easier to maintain. It would be nice to not break all the links.   
 ** SOMEDAY move my services into Docker or similar containers
    :PROPERTIES:
    :CUSTOM_ID: move_my_services_into_Docker_or_similar_containers
