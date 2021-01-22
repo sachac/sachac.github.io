@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-01-05 Tue 22:43 -->
+<!-- 2021-01-21 Thu 23:31 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Evil plans</title>
@@ -231,7 +231,7 @@ href="//sachachua.com/blog/wp-content/themes/sacha-v3/foundation/css/foundation.
 <div class="row"><div class="columns">
 
 <p>
-<a id="org214f857"></a>
+<a id="org9709d74"></a>
 </p>
 
 
@@ -255,7 +255,7 @@ See raw file or end of document for code.
 </p>
 
 
-<div id="org60855f7" class="figure">
+<div id="org733005c" class="figure">
 <p><object type="image/svg+xml" data="goals.svg" class="org-svg">
 Sorry, your browser does not support SVG.</object>
 </p>
@@ -271,7 +271,7 @@ See raw file or end of document for code.
 </p>
 
 
-<div id="orgb389622" class="figure">
+<div id="org403bd78" class="figure">
 <p><object type="image/svg+xml" data="someday.svg" class="org-svg">
 Sorry, your browser does not support SVG.</object>
 </p>
@@ -303,7 +303,7 @@ so that I can <a href="#tickle_my_brain_and_live_an_awesome_life">tickle my brai
 <h3 id="move_my_services_into_Docker_or_similar_containers"><span class="todo SOMEDAY">SOMEDAY</span> move my services into Docker or similar containers</h3>
 <div class="outline-text-3" id="text-move_my_services_into_Docker_or_similar_containers">
 <p>
-So that I can <a href="#tickle_my_brain_and_live_an_awesome_life">tickle my brain and live an awesome life</a>
+So that I can <a href="#org1eaf8f4">make my server more reproducible</a>
 (and make my setup easier to reproduce)
 </p>
 </div>
@@ -352,33 +352,36 @@ so that I can <a href="#help_the_Emacs_community_grow">help the Emacs community 
 </div>
 </div>
 </div>
-<div id="outline-container-set_up_my_new_laptop" class="outline-3">
-<h3 id="set_up_my_new_laptop"><span class="todo TODO">TODO</span> set up my new laptop</h3>
-<div class="outline-text-3" id="text-set_up_my_new_laptop">
+<div id="outline-container-orga8f3133" class="outline-3">
+<h3 id="orga8f3133"><span class="todo SOMEDAY">SOMEDAY</span> make an EPUB3 read-aloud book that's also viewable through the web</h3>
+<div class="outline-text-3" id="text-orga8f3133">
 <p>
-so that I can <a href="#tickle_my_brain_and_live_an_awesome_life">tickle my brain and live an awesome life</a>
-<a href="file:///home/sacha/orgzly/organizer.html#MissingReference">Set up new laptop</a>
-</p>
-</div>
-<div id="outline-container-figure_out_new_drawing_workflow" class="outline-4">
-<h4 id="figure_out_new_drawing_workflow"><span class="todo TODO">TODO</span> figure out new drawing workflow</h4>
-<div class="outline-text-4" id="text-figure_out_new_drawing_workflow">
-<p>
-so that I can <a href="#set_up_my_new_laptop">set up my new laptop</a>
+so that I can <a href="#tickle_my_brain_and_live_an_awesome_life">tickle my brain and live an awesome life</a> 
 </p>
 
 <p>
-<a href="file:///home/sacha/orgzly/organizer.html#MissingReference">figure out new drawing workflow</a>
+Readium looks promising. <a href="https://readium.firebaseapp.com/?epub=https%3A%2F%2Fcdn.rawgit.com%2FIDPF%2Fepub3-samples%2Fmaster%2F30%2Fmoby-dick-mo&amp;epubs=epub_content%2Fidpf_samples.opds&amp;goto=epubcfi(/6/14!/4/2/2%5Bc01h01%5D/1:0)">Sample</a>
+<a href="https://github.com/readium/readium-js-viewer/blob/master/README.md">https://github.com/readium/readium-js-viewer/blob/master/README.md</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1eaf8f4" class="outline-3">
+<h3 id="org1eaf8f4"><span class="todo SOMEDAY">SOMEDAY</span> make my server more reproducible</h3>
+<div class="outline-text-3" id="text-org1eaf8f4">
+<p>
+so that I can <a href="#tickle_my_brain_and_live_an_awesome_life">tickle my brain and live an awesome life</a>
+and so that I can restore from backups
 </p>
 </div>
 </div>
 </div>
-</div>
+
 <div id="outline-container-Old_graph" class="outline-2">
 <h2 id="Old_graph">Old graph</h2>
 <div class="outline-text-2" id="text-Old_graph">
 
-<div id="orgf2ac9d0" class="figure">
+<div id="org75b57a4" class="figure">
 <p><a href="http://sachachua.com/sharing/goals.png" width="640"><img src="goals.png" alt="goals.png" width="640" /></a>
 </p>
 </div>
@@ -393,7 +396,7 @@ Need to have graphviz installed.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="orgba4b684">(<span class="org-keyword">let</span> ((count 0)
+<pre class="src src-emacs-lisp" id="org331e9f2">(<span class="org-keyword">let</span> ((count 0)
       (files
        (directory-files directory nil pattern)))
   (format <span class="org-string">"%d items - %d%%\n%s"</span>
@@ -409,7 +412,7 @@ Need to have graphviz installed.
 </div>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="orgc87028a">(<span class="org-keyword">defvar</span> <span class="org-variable-name">include-someday</span> nil)
+<pre class="src src-emacs-lisp" id="orgf1641b0">(<span class="org-keyword">defvar</span> <span class="org-variable-name">include-someday</span> nil)
 (<span class="org-keyword">defun</span> <span class="org-function-name">sacha/fill-string</span> (string new-fill-column <span class="org-type">&amp;optional</span> replace-char)
   <span class="org-doc">"Wrap STRING to NEW-FILL-COLUMN. Change newlines to REPLACE-CHAR."</span>
   (<span class="org-keyword">with-temp-buffer</span>

@@ -59,7 +59,7 @@ https://www.ontario.ca/document/kindergarten-program-2016/appendix-overall-expec
    :PROPERTIES:
    :CUSTOM_ID: move_my_services_into_Docker_or_similar_containers
    :END:
-So that I can [[tickle my brain and live an awesome life]]
+So that I can [[make my server more reproducible]]
 (and make my setup easier to reproduce)
 ** help the Emacs community grow
    :PROPERTIES:
@@ -73,11 +73,6 @@ so that I can [[tickle my brain and live an awesome life]]
 so that I can [[help the Emacs community grow]] and make things more searchable
 
 [[file:~/orgzly/organizer.org::*Edit another subtitle file][Edit another subtitle file]]
-*** SOMEDAY figure out a workflow for pointing to Emacs meetups
-    :PROPERTIES:
-    :CUSTOM_ID: figure_out_a_workflow_for_pointing_to_Emacs_meetups
-    :END:
-so that I can help people connect and [[help the Emacs community grow]]
 *** SOMEDAY make quick screencasts and animated GIFs
     :PROPERTIES:
     :CUSTOM_ID: make_quick_screencasts_and_animated_GIFs
@@ -88,19 +83,22 @@ so that I can [[help the Emacs community grow]]
     :CUSTOM_ID: figure_out_signposts_and_maps
     :END:
 so that I can [[help the Emacs community grow]]
-** TODO set up my new laptop
+** SOMEDAY make an EPUB3 read-aloud book that's also viewable through the web
    :PROPERTIES:
-   :CUSTOM_ID: set_up_my_new_laptop
+   :CUSTOM_ID: make_an_EPUB3_read_aloud_book_that_s_also_viewable_through_the_web
    :END:
-   so that I can [[tickle my brain and live an awesome life]]
-[[file:~/orgzly/organizer.org::*Set up new laptop][Set up new laptop]]
-*** TODO figure out new drawing workflow
-    :PROPERTIES:
-    :CUSTOM_ID: figure_out_new_drawing_workflow
-    :END:
-    so that I can [[set up my new laptop]]
+so that I can [[tickle my brain and live an awesome life]] 
 
-[[file:~/orgzly/organizer.org::*figure out new drawing workflow][figure out new drawing workflow]]
+Readium looks promising. [[https://readium.firebaseapp.com/?epub=https%3A%2F%2Fcdn.rawgit.com%2FIDPF%2Fepub3-samples%2Fmaster%2F30%2Fmoby-dick-mo&epubs=epub_content%2Fidpf_samples.opds&goto=epubcfi(/6/14!/4/2/2%5Bc01h01%5D/1:0)][Sample]]
+https://github.com/readium/readium-js-viewer/blob/master/README.md
+
+** SOMEDAY make my server more reproducible
+   :PROPERTIES:
+   :CUSTOM_ID: make_my_server_more_reproducible
+   :END:
+so that I can [[tickle my brain and live an awesome life]]
+and so that I can restore from backups
+
 * Old graph
   :PROPERTIES:
   :CUSTOM_ID: Old_graph
