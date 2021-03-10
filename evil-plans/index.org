@@ -15,7 +15,7 @@ Raw files: [[https://github.com/sachac/sachac.github.io/tree/master/evil-plans][
 
 Additional notes: http://sachachua.com/blog/2014/03/reflecting-goals-time/
 
-* Current goals
+* Current projects
   :PROPERTIES:
   :CUSTOM_ID: Current_goals
   :END:
@@ -26,7 +26,7 @@ See raw file or end of document for code.
 
 [[file:goals.svg]]
 
-* Including "Someday" goals
+* Including "Someday" projects
   :PROPERTIES:
   :CUSTOM_ID: Including__Someday__goals
   :END:
@@ -72,6 +72,26 @@ So that I can [[make my server more reproducible]]
    :CUSTOM_ID: help_the_Emacs_community_grow
    :END:
 so that I can [[tickle my brain and live an awesome life]] 
+*** TODO get the hang of streaming
+    :PROPERTIES:
+    :CUSTOM_ID: get_the_hang_of_streaming
+    :END:
+so that I can [[help the Emacs community grow]]
+and other people can pick up ideas from how I do things
+and other people can help me with suggestions
+and I can turn more stuff into videos and blog posts
+
+[[file:~/code/stream/notes.org::*Get the hang of streaming][Get the hang of streaming]]
+
+*** TODO make it easier to get stuff out of Emacs meetups
+    :PROPERTIES:
+    :CUSTOM_ID: make_it_easier_to_get_stuff_out_of_Emacs_meetups
+    :END:
+so that I can [[help the Emacs community grow]]
+and turn more stuff into videos and blog posts
+
+[[file:~/code/stream/notes.org::*Make it easier to get stuff out of Emacs meetups][Make it easier to get stuff out of Emacs meetups]]
+
 *** TODO edit the rest of the subtitles for EmacsConf
     :PROPERTIES:
     :CUSTOM_ID: edit_the_rest_of_the_subtitles_for_EmacsConf
@@ -79,6 +99,14 @@ so that I can [[tickle my brain and live an awesome life]]
 so that I can [[help the Emacs community grow]] and make things more searchable
 
 [[file:~/orgzly/organizer.org::*Edit another subtitle file][Edit another subtitle file]]
+*** TODO smoothen the workflow for Emacs Calendar
+    :PROPERTIES:
+    :CUSTOM_ID: smoothen_the_workflow_for_Emacs_Calendar
+    :END:
+
+so that I can [[help the Emacs community grow]]
+and help people feel more connected
+
 *** SOMEDAY make quick screencasts and animated GIFs
     :PROPERTIES:
     :CUSTOM_ID: make_quick_screencasts_and_animated_GIFs
